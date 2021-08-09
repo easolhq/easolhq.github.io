@@ -4,7 +4,6 @@ title: Footer
 nav_order: 2
 parent: Objects
 has_children: true
-grand_parent: Reference
 ---
 
 The `footer` object has the following attributes:

@@ -4,7 +4,6 @@ title: Menu
 nav_order: 2
 parent: Objects
 has_children: true
-grand_parent: Reference
 ---
 
 Additional logos can be found within [Company](undefined)

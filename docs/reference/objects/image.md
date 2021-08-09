@@ -3,7 +3,6 @@ layout: default
 title: Image
 nav_order: 2
 parent: Objects
-grand_parent: Reference
 ---
 
 All images used in canvas themes have the following attributes

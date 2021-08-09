@@ -3,7 +3,6 @@ layout: default
 title: Company
 nav_order: 2
 parent: Objects
-grand_parent: Reference
 ---
 
 Company is a _global_ variable, meaning it should always be accessible to you when developing on canvas

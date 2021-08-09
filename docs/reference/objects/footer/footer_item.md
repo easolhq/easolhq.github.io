@@ -2,7 +2,6 @@
 layout: default
 title: Footer Item
 parent: Footer
-grand_parent: Objects
 ---
 
 When using a `item` object you have access to the following attributes

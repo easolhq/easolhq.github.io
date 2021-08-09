@@ -3,7 +3,6 @@ layout: default
 title: Series
 nav_order: 2
 parent: Objects
-grand_parent: Reference
 ---
 
 When using a `series` object you have access to the following attributes

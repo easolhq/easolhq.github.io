@@ -3,7 +3,6 @@ layout: default
 title: Biographies
 nav_order: 2
 parent: Objects
-grand_parent: Reference
 ---
 
 The `biography` object has the following attributes

@@ -3,7 +3,6 @@ layout: default
 title: Pagination
 nav_order: 2
 parent: Objects
-grand_parent: Reference
 ---
 
 When using a `pagination` object you will have access to the following methods to manage the layout and UI.

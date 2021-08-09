@@ -4,7 +4,6 @@ title: Product
 nav_order: 2
 parent: Objects
 has_children: true
-grand_parent: Reference
 ---
 
 When using a `product` object you have access to the following attributes

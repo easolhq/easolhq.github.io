@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-remote_theme: pmarsceill/just-the-docs
+remote_theme: pdmosses/just-the-docs@rec-nav-2
 
 # Exclude from processing.
 # The following items will not be processed, by default.

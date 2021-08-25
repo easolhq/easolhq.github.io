@@ -18,6 +18,6 @@ Returns the text colour selected within My Site > Footer
 
 # footer.items
 
-Returns an array of the footer [items](undefined)
+Returns an array of the footer [items]({% link docs/reference/objects/footer/footer_item.md %})
 
 

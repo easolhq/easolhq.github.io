@@ -5,7 +5,6 @@ parent: Product
 ---
 
 When using an `faq` object you have access to the following attributes
-Can be accessed on a product like below
 
 # faq.answer
 

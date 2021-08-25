@@ -21,8 +21,5 @@ Returns a unique id for the highlight
 
 # highlight.image
 
-Returns the highlights [image](undefined)
-
-# 
-
+Returns the highlights [image]({% link docs/reference/objects/image.md %})
 

@@ -13,7 +13,7 @@ Returns the body of the host, this is a rich text field and so will return html 
 
 # host.image
 
-Returns the [image](undefined) of the host
+Returns the [image]({% link docs/reference/objects/image.md %}) of the host
 
 # host.instagram_username
 
@@ -26,7 +26,3 @@ Returns the name of the host
 # host_section.overview
 
 Returns the overview for the host section
-
-# 
-
-

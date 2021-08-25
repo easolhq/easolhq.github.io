@@ -6,7 +6,8 @@ parent: Objects
 has_children: true
 ---
 
-Additional logos can be found within [Company](undefined)
+Additional logos can be found within [Company]({% link docs/reference/objects/company.md %})
+
 The `menu` object has the following attributes:
 
 # menu.background_colour
@@ -35,9 +36,9 @@ Returns the target url for the CTA
 
 # menu.brand_override
 
-Returns the brand override logo as an [image](undefined). 
+Returns the brand override logo as an [image]({% link docs/reference/objects/image.md %}). 
 
 # menu.items
 
-Returns an array of the menu [items](undefined)
+Returns an array of the menu [items]({% link docs/reference/objects/menu/menu_item.md %})
 

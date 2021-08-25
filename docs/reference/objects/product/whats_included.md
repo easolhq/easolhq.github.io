@@ -1,3 +1,9 @@
+---
+layout: default
+title: Whats Included
+parent: Product
+---
+
 The `whats_included` object have the following attributes
 
 # whats_included.included

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Variant
+parent: Product
+---
+
 When using a `variant` object you have access to the following attributes
 Can be accessed on a product like below
 
@@ -11,7 +17,7 @@ Returns a unique id for the variant
 
 # variant.image
 
-Returns the variants [image](undefined) it it has one associated
+Returns the variants [image]({% link docs/reference/objects/image.md %}) it it has one associated
 
 # variant.minimum_nights
 
@@ -27,7 +33,7 @@ Returns the variants cheapest price per unit e.g. `$124 Per Room` or `$124 Per P
 
 # variant.promotion
 
-Returns the variants current active [promotion](undefined) if there is one
+Returns the variants current active [promotion]({% link docs/reference/objects/product/promotion.md %}) if there is one
 
 # variant.remaining_stock
 

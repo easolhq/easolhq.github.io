@@ -5,7 +5,6 @@ parent: Product
 ---
 
 When using a `promotion` object you have access to the following attributes
-Can be accessed on a variant like below
 
 # promotion.active
 

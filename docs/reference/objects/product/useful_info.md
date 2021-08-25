@@ -1,3 +1,9 @@
+---
+layout: default
+title: Useful Info
+parent: Product
+---
+
 The `useful_info` object has the following attributes
 
 # useful_info.check_in

@@ -10,11 +10,11 @@ When using a `product` object you have access to the following attributes
 
 # product.accommodations
 
-Returns an array of the products [accommodations](undefined)
+Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation.md %})
 
 # product.address
 
-Returns the product [address](undefined)
+Returns the product [address]({% link docs/reference/objects/product/address.md %})
 
 # product.category
 
@@ -60,31 +60,31 @@ Returns an array of the products extras
 # product.facilities 
 
 Returns an array of the products facilities
-_Deprecated please use _[`whats_included.included`](https://app.gitbook.com/@fixers/s/canvas-developer/~/drafts/-Lq5lxwCSxv8n7gXxLxV/primary/objects/product#product-whats_included)
+_Deprecated please use _[`whats_included.included`]({% link docs/reference/objects/product/whats_included.md %}#whats_includedincluded)
 
 # product.hero_image
 
-Returns the products hero [image](undefined)
+Returns the products hero [image]({% link docs/reference/objects/image.md %})
 
 # product.faqs
 
-Returns an array of the products [faqs](undefined)
+Returns an array of the products [faqs]({% link docs/reference/objects/product/faq.md %})
 
 # product.featured_accommodations
 
-Returns an array of the products [accommodations](undefined) which are flagged as featured
+Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation.md %}) which are flagged as featured
 
 # product.gallery
 
-Returns an array of [image objects](undefined) for the products gallery
+Returns an array of [image objects]({% link docs/reference/objects/image.md %}) for the products gallery
 
 # product.has_active_promotion
 
-Returns true if one of the [variants](undefined) in the product has an active [promotion](undefined)
+Returns true if one of the [variants]({% link docs/reference/objects/product/variant.md %}) in the product has an active [promotion]{% link docs/reference/objects/product/promotion.md %})
 
 # product.highlights
 
-Returns an array of the products [highlights](undefined)
+Returns an array of the products [highlights]({% link docs/reference/objects/product/highlight.md %})
 
 # product.host [ Deprecated, see product.host_section ]
 
@@ -93,7 +93,7 @@ Deprecated please use [`hosts`](https://app.gitbook.com/@fixers/s/canvas-develop
 
 # product.host_section
 
-Returns the product [host section](undefined)
+Returns the product [host section]({% link docs/reference/objects/product/host.md %})
 
 # product.id
 
@@ -123,7 +123,7 @@ Returns the overview of the product
 
 # product.overview_image
 
-Returns the products overview [image](undefined)
+Returns the products overview [image]({% link docs/reference/objects/image.md %})
 
 # product.remaining_stock
 
@@ -131,11 +131,11 @@ Returns the sum of remaining stock for a products variants, if any of the produc
 
 # product.schedule
 
-Returns an array of the products [schedule elements](undefined)
+Returns an array of the products [schedule elements]({% link docs/reference/objects/product/schedule_element.md %})
 
 # product.series
 
-If the product is in a series this will return a [series object](undefined)
+If the product is in a series this will return a [series object]({% link docs/reference/objects/series.md %})
 
 # product.shop_path
 
@@ -155,11 +155,11 @@ Returns the tagline of the product
 
 # product.testimonials
 
-Returns an array of the products [testimonials](undefined)
+Returns an array of the products [testimonials]({% link docs/reference/objects/product/testimonial.md %})
 
 # product.trip_tips
 
-Returns an array of the products [trip tips](undefined)
+Returns an array of the products [trip tips]({% link docs/reference/objects/product/trip_tip.md %})
 
 # product.url
 
@@ -167,17 +167,17 @@ Returns the url for the product's page in the site
 
 # product.useful_info
 
-Returns the product's [useful info](undefined)
+Returns the product's [useful info]({% link docs/reference/objects/product/useful_info.md %})
 
 # product.variants
 
-Returns an array of the products [variants](undefined).
+Returns an array of the products [variants]({% link docs/reference/objects/product/variant.md %}).
 
 # product.venue
 
-Returns the products [venue](undefined)
+Returns the products [venue]({% link docs/reference/objects/product/venue.md %})
 
 # product.whats_included
 
-Return the product [whats_included](https://app.gitbook.com/@fixers/s/canvas-developer/~/edit/drafts/-Lq5lxwCSxv8n7gXxLxV/objects/product/whats-included)
+Return the product [whats_included]({% link docs/reference/objects/product/whats_included.md %})
 

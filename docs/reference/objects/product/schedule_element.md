@@ -5,7 +5,6 @@ parent: Product
 ---
 
 When using a `schedule element` object you have access to the following attributes
-Can be accessed on a product like below
 
 # element.body
 
@@ -21,7 +20,7 @@ Returns a unique id for the schedule element
 
 # element.image
 
-Returns the [image](undefined) for the schedule element if present
+Returns the [image]({% link docs/reference/objects/image.md %}) for the schedule element if present
 
 # element.type
 
@@ -38,7 +37,4 @@ Returns an `Array` of `Strings`  with what's not included on this schedule eleme
 # element.locale
 
 Returns the locale for the schedule element
-
-# 
-
 

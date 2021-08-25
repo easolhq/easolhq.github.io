@@ -1,0 +1,10 @@
+blockquote {
+  --background: #f3f8f3;
+  --title: #489e49;
+  --border: #50af51;
+
+  background: var(--background);
+  padding: 1.33rem;
+  margin-left: 0;
+  border-left: 2px solid var(--border);
+}

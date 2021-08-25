@@ -49,5 +49,5 @@ Returns the url for the biography's page in the site
 
 # biography.image
 
-Returns the biography's [image](undefined). 
+Returns the biography's [image]({% link docs/reference/objects/image.md %}). 
 

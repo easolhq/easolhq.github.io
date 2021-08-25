@@ -20,7 +20,7 @@ Returns a unique id for the accommodation
 
 # accommodation.image
 
-Returns the accommodation [image](undefined)
+Returns the accommodation [image]({% link docs/reference/objects/image.md %})
 
 # accommodation.locale
 
@@ -33,7 +33,4 @@ Returns the name of the accommodation
 # accommodation.overview
 
 Returns the overview of the accommodation
-
-# 
-
 

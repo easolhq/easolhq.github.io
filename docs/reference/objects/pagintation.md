@@ -22,7 +22,7 @@ The page number currently being displayed, this is driven by a query param e.g. 
 
 # pagination.next
 
-Returns a [pagination link](undefined) to go to the next page, if there is no next page this won't be set
+Returns a pagination link to go to the next page, if there is no next page this won't be set
 
 # pagination.page_count
 
@@ -34,9 +34,9 @@ The maximum number of items displayed on each page
 
 # pagination.parts
 
-This returns an array of [pagination links](undefined) which represents links to specific page numbers of the collection, this handles abbreviation to an ellipsis if the number of pages is too high.
+This returns an array of pagination links which represents links to specific page numbers of the collection, this handles abbreviation to an ellipsis if the number of pages is too high.
 
 # pagination.previous
 
-Returns a [pagination link](undefined) to go to the previous page, if there is no previous page this won't be set
+Returns a pagination link to go to the previous page, if there is no previous page this won't be set
 

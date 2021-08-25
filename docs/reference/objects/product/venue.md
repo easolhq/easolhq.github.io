@@ -1,3 +1,9 @@
+---
+layout: default
+title: Venue
+parent: Product
+---
+
 When using a `venue` object you have access to the following attributes
 Can be accessed on a product like below
 
@@ -15,12 +21,8 @@ Returns a unique id for the venue
 
 # venue.image
 
-Returns the venue's [image](undefined)
+Returns the venue's [image]({% link docs/reference/objects/image.md %})
 
 # venue.tagline
 
 Returns the tagline for the venue
-
-# 
-
-

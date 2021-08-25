@@ -5,7 +5,6 @@ parent: Product
 ---
 
 When using a `testimonial` object you have access to the following attributes
-Can be accessed on a product like below
 
 # testimonial.body
 
@@ -17,11 +16,11 @@ Returns a unique id for the testimonial
 
 # testimonial.image
 
-Returns the [image](undefined) for the testimonial if present
+Returns the [image]({% link docs/reference/objects/image.md %}) for the testimonial if present
 
 # testimonial.source_image
 
-Returns the [image](undefined) for the testimonial's source if present
+Returns the [image]({% link docs/reference/objects/image.md %}) for the testimonial's source if present
 
 # testimonial.source_link
 
@@ -30,7 +29,4 @@ Returns the url the testimonial has been attributed to
 # testimonial.source_name
 
 Returns the name for the source of the testimonial
-
-# 
-
 

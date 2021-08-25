@@ -1,3 +1,9 @@
+---
+layout: default
+title: Trip Tip
+parent: Product
+---
+
 When using a `Trip tip` object you have access to the following attributes
 Can be accessed on a product like below
 
@@ -15,8 +21,5 @@ Returns a unique id for the trip tip
 
 # trip_tip.image
 
-Returns the trip tips [image](undefined)
-
-# 
-
+Returns the trip tips [image]({% link docs/reference/objects/image.md %})
 

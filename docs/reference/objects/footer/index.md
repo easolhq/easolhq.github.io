@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Footer
-nav_order: 2
 parent: Objects
 has_children: true
 ---

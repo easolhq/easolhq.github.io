@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Pagination
-nav_order: 2
 parent: Objects
 ---
 

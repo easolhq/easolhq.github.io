@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Product
-nav_order: 2
 parent: Objects
 has_children: true
 ---

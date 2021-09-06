@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Series
-nav_order: 2
 parent: Objects
 ---
 

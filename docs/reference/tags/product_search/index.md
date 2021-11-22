@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Search
-parent: Objects
+title: Product Search
+parent: Tags
 has_children: false
 ---
 

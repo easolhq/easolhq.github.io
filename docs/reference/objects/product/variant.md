@@ -11,6 +11,10 @@ Can be accessed on a product like below
 
 Returns a humanized price for the variants deposit amount, if deposit's are not set on the variant this will just return `variant.price` e.g. `$250 Per Person`
 
+# variant.has_infinite_stock
+
+Returns true if the variant has infinite stock
+
 # variant.id
 
 Returns a unique id for the variant
@@ -18,6 +22,10 @@ Returns a unique id for the variant
 # variant.image
 
 Returns the variants [image]({% link docs/reference/objects/image.md %}) it it has one associated
+
+# variant.initial_stock
+
+Returns the initial stock for the variant, if the variant has infinite inventory this will return `nil`
 
 # variant.minimum_nights
 
@@ -37,7 +45,7 @@ Returns the variants current active [promotion]({% link docs/reference/objects/p
 
 # variant.remaining_stock
 
-Returns the remaining stock for the variants if the variant has infinite inventory this will return `INFINITE_STOCK`
+Returns the remaining stock for the variant, if the variant has infinite inventory this will return `nil`
 
 # variant.segment_name
 

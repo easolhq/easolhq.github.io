@@ -128,9 +128,13 @@ Returns the products overview [image]({% link docs/reference/objects/image.md %}
 
 Returns the sum of remaining stock for a products variants, if any of the products has infinite inventory this will return `INFINITE_STOCK`
 
-# product.schedule
+# product.schedule [ Deprecated, see product.schedule_section ]
 
 Returns an array of the products [schedule elements]({% link docs/reference/objects/product/schedule_element.md %})
+
+# product.schedule_section
+
+Returns the schedule of the product [schedule section]({% link docs/reference/objects/product/schedule.md %})
 
 # product.series
 

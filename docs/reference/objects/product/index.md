@@ -54,12 +54,16 @@ Returns true if the product has been marked as Enquiry Only within the product p
 
 # product.extras
 
-Returns an array of the products extras 
+Returns an array of the products [extras]({% link docs/reference/objects/product/extra.md %})
 
 # product.facilities 
 
 Returns an array of the products facilities
 _Deprecated please use _[`whats_included.included`]({% link docs/reference/objects/product/whats_included.md %}#whats_includedincluded)
+
+# product.has_infinite_stock
+
+Returns true if the product has infinite stock
 
 # product.hero_image
 
@@ -126,7 +130,7 @@ Returns the products overview [image]({% link docs/reference/objects/image.md %}
 
 # product.remaining_stock
 
-Returns the sum of remaining stock for a products variants, if any of the products has infinite inventory this will return `INFINITE_STOCK`
+Returns the sum of remaining stock for a products variants, if any of the products has infinite inventory this will return `nil`
 
 # product.schedule [ Deprecated, see product.schedule_section ]
 

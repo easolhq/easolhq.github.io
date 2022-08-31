@@ -5,7 +5,7 @@ parent: Objects
 has_children: true
 ---
 
-When using a `product` object you have access to the following attributes
+When using a `product` object you have access to the following attributes.
 
 # product.accommodations
 
@@ -14,6 +14,10 @@ Returns an array of the products [accommodations]({% link docs/reference/objects
 # product.address
 
 Returns the product [address]({% link docs/reference/objects/product/address.md %})
+
+# product.blog_post_section
+
+Returns the blog post section]({% link docs/reference/objects/product/blog_post_section.md %})
 
 # product.category
 
@@ -56,18 +60,13 @@ Returns true if the product has been marked as Enquiry Only within the product p
 
 Returns an array of the products [extras]({% link docs/reference/objects/product/extra.md %})
 
-# product.facilities 
+# product.facilities _(deprecated)_
 
 Returns an array of the products facilities
-_Deprecated please use _[`whats_included.included`]({% link docs/reference/objects/product/whats_included.md %}#whats_includedincluded)
 
-# product.has_infinite_stock
-
-Returns true if the product has infinite stock
-
-# product.hero_image
-
-Returns the products hero [image]({% link docs/reference/objects/image.md %})
+> **Deprecated**
+>
+> Please use [`product.whats_included.included`]({% link docs/reference/objects/product/whats_included.md %}#whats_includedincluded)
 
 # product.faqs
 
@@ -77,9 +76,21 @@ Returns an array of the products [faqs]({% link docs/reference/objects/product/f
 
 Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation.md %}) which are flagged as featured
 
+# product.featured_variant
+
+Returns the "featured" [variant]({% link docs/reference/objects/product/variant.md %}). This will be the display variant for this product, otherwise the variant with the cheapest per-person price, factoring in any promotions.
+
 # product.gallery
 
 Returns an array of [image objects]({% link docs/reference/objects/image.md %}) for the products gallery
+
+# product.has_infinite_stock
+
+Returns true if the product has infinite stock
+
+# product.hero_image
+
+Returns the products hero [image]({% link docs/reference/objects/image.md %}
 
 # product.has_active_promotion
 
@@ -89,10 +100,14 @@ Returns true if one of the [variants]({% link docs/reference/objects/product/var
 
 Returns an array of the products [highlights]({% link docs/reference/objects/product/highlight.md %})
 
-# product.host [ Deprecated, see product.host_section ]
+# product.host _(deprecated)_
 
 Returns the products [host](https://app.gitbook.com/@fixers/s/canvas-developer/~/edit/drafts/-Lqg456H1ILVvLu_Ti3G/objects/product/host)
 Deprecated please use [`hosts`](https://app.gitbook.com/@fixers/s/canvas-developer/~/drafts/-Lqg456H1ILVvLu_Ti3G/primary/objects/product#product-hosts)
+
+> **Deprecated**
+>
+> Use [`product.host_section`]({% link docs/reference/objects/product/index.md %}#producthost_section) instead.
 
 # product.host_section
 
@@ -106,11 +121,15 @@ Returns the product id
 
 Returns a boolean indicating whether or not the product includes accommodation or is just a ticket
 
-# product.min_price
+# product.min_price _(deprecated)_
 
 Returns a humanized price for the products cheapest configuration e.g. `$1,027 Per Person` or `$150 Per Night`
 This excludes Sold Out and Hidden variants.
  If the display variant is changed within the product this will be used instead of the cheapest variant
+
+> **Deprecated**
+>
+> Prices should be retrieved from the product's variants instead. `product.featured_variant` can be used to get the "featured" variant.
 
 # product.minimum_nights
 
@@ -132,9 +151,13 @@ Returns the products overview [image]({% link docs/reference/objects/image.md %}
 
 Returns the sum of remaining stock for a products variants, if any of the products has infinite inventory this will return `nil`
 
-# product.schedule [ Deprecated, see product.schedule_section ]
+# product.schedule _(deprecated)_
 
 Returns an array of the products [schedule elements]({% link docs/reference/objects/product/schedule_element.md %})
+
+> **Deprecated**
+>
+> Use [`product.schedule_section`]({% link docs/reference/objects/product/index.md %}#productschedule_section) instead.
 
 # product.schedule_section
 
@@ -146,7 +169,11 @@ If the product is in a series this will return a [series object]({% link docs/re
 
 # product.shop_path
 
-Returns the url for the product's cart shop page
+Returns the path for the product's cart shop page.
+
+# product.shop_url
+
+Returns the url for the product's cart shop page.
 
 # product.sold_out
 
@@ -162,15 +189,22 @@ Returns the tagline of the product
 
 # product.testimonials
 
-Returns an array of the products [testimonials]({% link docs/reference/objects/product/testimonial.md %})
+Returns an array of the product's [testimonials]({% link docs/reference/objects/product/testimonial.md %})
+
+# product.transfers
+
+Returns an array of the product's [transfers]({% link docs/reference/objects/product/transfer.md %})
 
 # product.trip_tips
 
-Returns an array of the products [trip tips]({% link docs/reference/objects/product/trip_tip.md %})
+Returns an array of the product's [trip tips]({% link docs/reference/objects/product/trip_tip.md %})
+# product.type
+
+Returns the type of this product, one of `"experience"` or `"accommodation"`.
 
 # product.url
 
-Returns the url for the product's page in the site  
+Returns the url for the product's page in the site
 
 # product.useful_info
 
@@ -178,7 +212,11 @@ Returns the product's [useful info]({% link docs/reference/objects/product/usefu
 
 # product.variants
 
-Returns an array of the products [variants]({% link docs/reference/objects/product/variant.md %}).
+Returns an array of the product's [variants]({% link docs/reference/objects/product/variant.md %}).
+
+# product.variant_modifiers
+
+Returns an array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product through its variants.
 
 # product.venue
 
@@ -188,3 +226,11 @@ Returns the products [venue]({% link docs/reference/objects/product/venue.md %})
 
 Return the product [whats_included]({% link docs/reference/objects/product/whats_included.md %})
 
+
+<!--
+
+Methods not publicly documented:
+
+- base_resource_url
+
+-->

@@ -59,3 +59,6 @@ Returns true if the variant is sold out
 
 Returns the variants tagline
 
+# variant.type
+
+Returns the type of this variant, one of `"experience_variant"` or `"accommodation_variant"`.

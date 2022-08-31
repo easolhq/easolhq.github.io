@@ -123,3 +123,7 @@ Returns true if the extra is sold out.
 # extra.tagline
 
 Returns the extras tagline.
+
+# extra.type
+
+Will always return `"extra"`. This is useful when you have a list of `variant` and `extra` objects and you need to distinguish between them.

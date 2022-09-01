@@ -119,7 +119,7 @@ The name of the modifier.
 
 # modifier.price
 
-The price of the modifier as a fractional in the subunit of the current user's currency.
+The price of the modifier as a fractional in the sub-unit of the current user's currency.
 e.g. considering the amount $19.50, it will return 1950.
 
 # modifier.remaining_stock

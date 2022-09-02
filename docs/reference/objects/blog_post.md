@@ -28,7 +28,7 @@ A `blog_post` object for the previous post for the blog.
 
 # blog_post.published_at
 
-The date the blog was published as a timestamp. This can then be used in conjunction with Liquid's [ built in filters ](https://shopify.github.io/liquid/filters/date/).
+The date the blog post was published as a timestamp. This can then be used in conjunction with Liquid's [ built in filters ](https://shopify.github.io/liquid/filters/date/).
 
 # blog_post.tagline
 

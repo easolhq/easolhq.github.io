@@ -4,11 +4,46 @@ title: Company
 parent: Objects
 ---
 
-Company is a _global_ variable, meaning it should always be accessible to you when developing on canvas
+Company is a _global_ variable, meaning it will always be accessible on any Liquid template.
+
+# company.authors
+
+A list of all the company's [authors]({% link docs/reference/objects/author.md %}).
+
+# company.avatar_logo
+
+The company's logo as an [image]({% link docs/reference/objects/image.md %}). The logo is set within **Settings** > **Your Brand**.
+
+# company.biographies
+
+A list of all the company's [biographies]({% link docs/reference/objects/biography.md %}).
+
+# company.countries
+
+A list of the names of countries with products. e.g. `["Canada", "United Kingdom"]`
+
+# company.facebook_username
+
+The facebook username set within **My Site** > **Social**.
+
+# company.instagram_username
+
+The instagram username set within **My Site** > **Social**.
+
+# company.logo
+
+The company's workmark logo as an [image]({% link docs/reference/objects/image.md %}). The logo is set within **Settings** > **Your Brand**.
+# company.name
+
+The name of the company.
+
+# company.posts
+
+A list of all the company's published [blog posts]({% link docs/reference/objects/blog_post.md %}), ordered by the most recently published first.
 
 # company.products
 
-This will return an array of the companies published [products]({% link docs/reference/objects/product/index.md %}) excluding any private products
+A list of the company's published [products]({% link docs/reference/objects/product/index.md %}) excluding any private products.
 e.g.
 
 {% raw %}
@@ -22,42 +57,12 @@ e.g.
 
 # company.series
 
-This will return an array of the companies [series]({% link docs/reference/objects/series.md %})
-
-# company.biographies
-
-This will return an array of the companies [biographies]({% link docs/reference/objects/biography.md %})
-
-# company.countries
-
-This will return an array of the names of countries with products
-e.g.
-
-# company.name
-
-Returns the name of the company
+A list of all the company's [series]({% link docs/reference/objects/series.md %}).
 
 # company.subdomain
 
-Returns the subdomain of the company
-
-# company.facebook_username
-
-Returns the facebook username set within My Site > Social
-
-# company.instagram_username
-
-Returns the instagram username set within My Site > Social
+The subdomain of the company.
 
 # company.twitter_username
 
-Returns the twitter username set within My Site > Social
-
-# company.avatar_logo
-
-Returns the company's logo as an [image]({% link docs/reference/objects/image.md %}). The logo is set within Settings > Your Brand.
-
-# company.logo
-
-Returns the company's workmark logo as an [image]({% link docs/reference/objects/image.md %}). The logo is set within Settings > Your Brand.
-
+The twitter username set within **My Site** > **Social**.

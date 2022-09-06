@@ -4,26 +4,28 @@ title: Page
 parent: Objects
 ---
 
-Page is a _global_ variable, meaning it should always be accessible to you when developing themes on Easol
+This object represents a site page. It is returned for `page` variables used in blocks and is also available to [menu items]({% link docs/reference/objects/menu/menu_item.md %}) that are associated with a site page.
 
-If a user visits https://example.com/shop/my-product-2021-10-09 for example
-
-The following will be available in the templates:
-
-# page.url
-
-The full url of the request
-
-`=> https://example.com/shop/my-product-2021-10-09`
+When using a `page` object you have access to the following attributes.
 
 # page.host
 
-The request host
+The site's domain.
 
 `=> example.com`
 
 # page.path
 
-The relative path of the request
+The relative path of the request.
 
-`=> /shop/my-product-2021-10-09`
+`=> /products/my-product-2021-10-09`
+
+# page.type
+
+Will always return `"page"`. This is useful when an object is returned from [`menu_item.linked_resource`]({% link docs/reference/objects/menu/menu_item.md %}#itemlinked_resource) and you need to determine if it is a `page` object.
+
+# page.url
+
+The full url of the page.
+
+`=> https://example.com/products/my-product-2021-10-09`

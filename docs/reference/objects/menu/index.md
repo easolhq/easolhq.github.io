@@ -5,39 +5,32 @@ parent: Objects
 has_children: true
 ---
 
-Additional logos can be found within [Company]({% link docs/reference/objects/company.md %})
+Menu templates define their own schema, in a similar way to blocks. All of the attributes defined on a menu's schema are made available via the `menu` object.
 
-The `menu` object has the following attributes:
+For example, consider the following menu schema:
 
-# menu.background_colour
+```
+---
+max_item_levels: 1
+supports_open_new_tab: true
+attributes:
+  fixed:
+    type: boolean
+    label: Fixed when scrolling
+    group: design
+    default: false
+  background_colour:
+    type: color
+    label: Background colour
+    group: design
+    default: { palette: body-bg }
+---
+```
 
-Returns the background colour selected within My Site > Menu
+Within the menu template, `menu.fixed` and `menu.background_colour` will be available. In this scenario, `menu.fixed` will return a boolean and `menu.background_colour` will return a [color]({% link docs/reference/objects/color.md %}) object.
 
-# menu.text_colour
-
-Returns the text colour selected within My Site > Menu
-
-# menu.fixed
-
-Returns true if the menu is toggled to 'Fixed when scrolling' 
-
-# menu.cta_enabled
-
-Returns true if 'Show CTA' is toggled on
-
-# menu.cta_text
-
-Returns the text for the CTA
-
-# menu.cta_target
-
-Returns the target url for the CTA
-
-# menu.brand_override
-
-Returns the brand override logo as an [image]({% link docs/reference/objects/image.md %}). 
+As well as the attributes that are available from the schema, the `menu` object has the following attributes:
 
 # menu.items
 
-Returns an array of the menu [items]({% link docs/reference/objects/menu/menu_item.md %})
-
+Returns an array of the [menu items]({% link docs/reference/objects/menu/menu_item.md %})

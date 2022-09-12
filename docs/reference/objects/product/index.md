@@ -9,7 +9,7 @@ When using a `product` object you have access to the following attributes.
 
 # product.accommodations
 
-Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation.md %})
+Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation_merchandise.md %})
 
 # product.address
 
@@ -74,7 +74,7 @@ Returns an array of the products [faqs]({% link docs/reference/objects/product/f
 
 # product.featured_accommodations
 
-Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation.md %}) which are flagged as featured
+Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation_merchandise.md %}) which are flagged as featured
 
 # product.featured_variant
 

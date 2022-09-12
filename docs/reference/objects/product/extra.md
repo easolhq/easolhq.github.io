@@ -49,6 +49,10 @@ Returns the extras [image]({% link docs/reference/objects/image.md %}) if it has
 
 Returns the initial stock for the extra, if the extra has unlimited inventory this will return `nil`.
 
+# extra.modifier_groups
+
+Returns a list of [modifier groups](({% link docs/reference/objects/product/modifier_group.md %})) associated with this extra.
+
 # extra.name
 
 Returns the extras name.
@@ -56,10 +60,6 @@ Returns the extras name.
 # extra.overview_image
 
 Returns the overview [image]({% link docs/reference/objects/image.md %}) of the [product]({% link docs/reference/objects/product/index.md %}) this extra belongs to.
-
-# extra.product
-
-Returns the [product]({% link docs/reference/objects/product/index.md %}) this extra belongs to.
 
 # extra.price
 
@@ -100,9 +100,9 @@ Returns an array containing the single [price]({% link docs/reference/objects/pr
 ```
 {% endraw %}
 
-# extra.modifier_groups
+# extra.product
 
-Returns a list of [modifier groups](({% link docs/reference/objects/product/modifier_group.md %})) associated with this extra.
+Returns the [product]({% link docs/reference/objects/product/index.md %}) this extra belongs to.
 
 # extra.promotion
 

@@ -10,17 +10,17 @@ When using a `promotion` object you have access to the following attributes
 
 Returns true if the promotion is currently active
 
+# promotion.category
+
+Returns the category of the promotion
+
 # promotion.dates
 
 Returns the dates the promotion is active for as a humanized string e.g. `7 - 14 August 2019`
 
 # promotion.discount_amount
 
-Returns the discount the promotion will apply, if the promotion represents a percentage discount this will be formatted as `25%` if it is a monetary discount this will be as `$25.00` 
-
-# promotion.category
-
-Returns the category of the promotion
+Returns the discount the promotion will apply, if the promotion represents a percentage discount this will be formatted as `25%` if it is a monetary discount this will be as `$25.00`
 
 # promotion.ends_on
 

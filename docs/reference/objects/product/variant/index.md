@@ -2,10 +2,13 @@
 layout: default
 title: Variant
 parent: Product
+has_children: true
 ---
 
-When using a `variant` object you have access to the following attributes
-Can be accessed on a product like below
+When using a `variant` object you have access to the following attributes:<br>
+*Note:* this defines a common interface shared between
+[Experience Variant]({% link docs/reference/objects/product/variant/experience_variant/index.md %}) and
+[Accommodation Variant]({% link docs/reference/objects/product/variant/accommodation_variant/index.md %}).
 
 # variant.deposit_amount
 
@@ -27,9 +30,13 @@ Returns the variants [image]({% link docs/reference/objects/image.md %}) it it h
 
 Returns the initial stock for the variant, if the variant has infinite inventory this will return `nil`
 
-# variant.minimum_nights
+# variant.max_occupancy
 
-If the variant is for an accommodation this will return the minimum number of nights the variant can be booked for
+Returns the maximum number of guests for this variant.
+
+# variant.min_occupancy
+
+Returns the minimum number of guests for this variant.
 
 # variant.name
 
@@ -62,3 +69,6 @@ Returns the variants tagline
 # variant.type
 
 Returns the type of this variant, one of `"experience_variant"` or `"accommodation_variant"`.
+Check what other methods you can call on this drop according to their type,
+[Experience Variant]({% link docs/reference/objects/product/variant/experience_variant/index.md %}),
+[Accommodation Variant]({% link docs/reference/objects/product/variant/accommodation_variant/index.md %}).

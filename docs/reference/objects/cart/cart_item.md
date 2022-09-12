@@ -64,7 +64,7 @@ The total of all the modifier selections made on the cart item. This is returned
 
 # item.variant
 
-The [variant]({% link docs/reference/objects/product/variant.md %}) associated with the cart item.
+The [variant]({% link docs/reference/objects/product/variant/index.md %}) associated with the cart item.
 
 # item.variant_name
 

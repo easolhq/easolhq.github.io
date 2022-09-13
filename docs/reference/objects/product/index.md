@@ -9,7 +9,7 @@ When using a `product` object you have access to the following attributes.
 
 # product.accommodations
 
-Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation.md %})
+Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation_merchandise.md %})
 
 # product.address
 
@@ -74,11 +74,11 @@ Returns an array of the products [faqs]({% link docs/reference/objects/product/f
 
 # product.featured_accommodations
 
-Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation.md %}) which are flagged as featured
+Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation_merchandise.md %}) which are flagged as featured
 
 # product.featured_variant
 
-Returns the "featured" [variant]({% link docs/reference/objects/product/variant.md %}). This will be the display variant for this product, otherwise the variant with the cheapest per-person price, factoring in any promotions.
+Returns the "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product, otherwise the variant with the cheapest per-person price, factoring in any promotions.
 
 # product.gallery
 
@@ -94,7 +94,7 @@ Returns the products hero [image]({% link docs/reference/objects/image.md %}
 
 # product.has_active_promotion
 
-Returns true if one of the [variants]({% link docs/reference/objects/product/variant.md %}) in the product has an active [promotion]{% link docs/reference/objects/product/promotion.md %})
+Returns true if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]{% link docs/reference/objects/product/promotion.md %})
 
 # product.highlights
 
@@ -212,7 +212,7 @@ Returns the product's [useful info]({% link docs/reference/objects/product/usefu
 
 # product.variants
 
-Returns an array of the product's [variants]({% link docs/reference/objects/product/variant.md %}).
+Returns an array of the product's [variants]({% link docs/reference/objects/product/variant/index.md %}).
 
 # product.variant_modifiers
 

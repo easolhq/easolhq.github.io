@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Availability Day
-parent: Accommodation
+parent: Accommodation Variant
 ---
 
 When using an `availability_day` object you have access to the following attributes.

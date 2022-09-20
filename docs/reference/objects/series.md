@@ -15,6 +15,10 @@ Returns an array of the countries of all upcoming products in the series
 
 Returns an array of the departure months of all upcoming products in the series
 
+# series.featured_variant
+
+Returns the display [variant]({% link docs/reference/objects/product/variant/index.md %}) if set or defaults to the cheapest in the series.
+
 # series.first_upcoming
 
 Returns the first upcoming [product]({% link docs/reference/objects/product/index.md %}) in the series
@@ -46,4 +50,8 @@ Returns an array of published [products]({% link docs/reference/objects/product/
 # series.upcoming_products_including_ongoing
 
 Returns an array of published [products]({% link docs/reference/objects/product/index.md %}) in the series which are taking place currently or are upcoming.
+
+# series.featured_variant
+
+Returns the cheapest [variant]({% link docs/reference/objects/product/variant/index.md %}) in the series, factoring in display variants and promotions.
 

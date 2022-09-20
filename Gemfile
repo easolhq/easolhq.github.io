@@ -5,7 +5,7 @@ gem "just-the-docs", github: "pdmosses/just-the-docs", branch: "rec-nav-2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "github-pages", "~> 227"
+  gem "github-pages"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

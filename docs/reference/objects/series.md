@@ -27,6 +27,20 @@ Returns the first upcoming [product]({% link docs/reference/objects/product/inde
 
 Returns the first upcoming [product]({% link docs/reference/objects/product/index.md %}) in the series, including any product that is taking place currently.
 
+# series.humanized_display_amount _(deprecated)_
+
+Returns a humanized display amount e.g. `$120.00`.
+
+> ** Deprecated **
+>
+> This method is deprecated in favour of retrieving the value from the variant price instead.
+>
+> {% raw %}
+> ```liquid
+> {{variant.price | money}}
+> ```
+> {% endraw %}
+
 # series.id
 
 Returns a unique identifier for the series
@@ -50,8 +64,4 @@ Returns an array of published [products]({% link docs/reference/objects/product/
 # series.upcoming_products_including_ongoing
 
 Returns an array of published [products]({% link docs/reference/objects/product/index.md %}) in the series which are taking place currently or are upcoming.
-
-# series.featured_variant
-
-Returns the cheapest [variant]({% link docs/reference/objects/product/variant/index.md %}) in the series, factoring in display variants and promotions.
 

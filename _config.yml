@@ -1,5 +1,5 @@
 title: Easol Site Docs
-email: kyle@easol.com
+email: developers@easol.com
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation for bulding sites on Easol
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -32,5 +32,5 @@ logo: "/assets/images/easol-logo.svg"
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub."
 gh_edit_repository: "https://github.com/easolhq/easolhq.github.io"
-gh_edit_branch: "gh-pages"
+gh_edit_branch: "main"
 gh_edit_view_mode: "tree"

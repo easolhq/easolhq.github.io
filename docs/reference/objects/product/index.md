@@ -17,7 +17,7 @@ Returns the product [address]({% link docs/reference/objects/product/address.md 
 
 # product.blog_post_section
 
-Returns the blog post section]({% link docs/reference/objects/product/blog_post_section.md %})
+Returns the [blog post section]({% link docs/reference/objects/product/blog_post_section.md %}).
 
 # product.category
 

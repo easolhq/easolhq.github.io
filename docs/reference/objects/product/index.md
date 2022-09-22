@@ -189,7 +189,7 @@ Returns the tagline of the product
 
 # product.testimonials
 
-Returns an array of the product's [testimonials]({% link docs/reference/objects/product/testimonial.md %})
+Returns an array of the product's [testimonials]({% link docs/reference/objects/product/testimonial.md %}).
 
 # product.transfers
 

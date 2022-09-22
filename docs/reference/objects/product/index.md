@@ -220,7 +220,7 @@ Returns an array of all the [modifiers]({% link docs/reference/objects/product/m
 
 # product.venue
 
-Returns the products [venue]({% link docs/reference/objects/product/venue.md %})
+Returns the product's [venue]({% link docs/reference/objects/product/venue.md %}).
 
 # product.whats_included
 

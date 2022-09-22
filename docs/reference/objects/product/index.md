@@ -98,7 +98,7 @@ Returns true if one of the [variants]({% link docs/reference/objects/product/var
 
 # product.highlights
 
-Returns an array of the products [highlights]({% link docs/reference/objects/product/highlight.md %})
+Returns an array of the product's [highlights]({% link docs/reference/objects/product/highlight.md %}).
 
 # product.host _(deprecated)_
 

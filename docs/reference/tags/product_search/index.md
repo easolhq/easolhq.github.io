@@ -83,6 +83,8 @@ It's possible to use any of the following attributes in the search tag itself, t
 * `subcategory` Will search for products which match the subcategory passed, this must use one of Fixers predefined subcategories, will accept either a single Subcategory or an array.
 * `page_size` Will determine how many results are shown per page. If this is not included it will deafult to 12 results per page. e.g. `page_size: 12` 
 * `include_organisation_products` This allows you to include products from other companies which are linked in the same organisation. e.g. `include_organisation_products: true`
+* `sort` The sorting order of results. The available options are: `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` and `departure_date_desc`, where the `_asc` and `_desc` parts represent ascending and descending orders respectively.
+* `series_id` The id of series to filter by.
 
 ## As query params
 
@@ -122,3 +124,20 @@ e.g.
 or
 
 `http://beyondadventures.com/search?search[name]=beyond&search[sort]=name_asc`
+
+## Accessing the query params
+
+Once the search has been executed, it can be helpful to get a reference to the params and values in the search.
+For that we can use the `search` object, which exposes all of the params listed above in the "Passing explicit attributes" section.
+
+*Example*
+
+{% raw %}
+```liquid
+{{search.departure_date}}
+
+or
+
+{{search["departure_date"]}}
+```
+{% endraw %}

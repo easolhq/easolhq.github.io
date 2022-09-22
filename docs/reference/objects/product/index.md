@@ -153,7 +153,7 @@ Returns the sum of remaining stock for a products variants, if any of the produc
 
 # product.schedule _(deprecated)_
 
-Returns an array of the products [schedule elements]({% link docs/reference/objects/product/schedule_element.md %})
+Returns an array of the product's [schedule elements]({% link docs/reference/objects/product/schedule_element.md %}).
 
 > **Deprecated**
 >
@@ -161,7 +161,7 @@ Returns an array of the products [schedule elements]({% link docs/reference/obje
 
 # product.schedule_section
 
-Returns the schedule of the product [schedule section]({% link docs/reference/objects/product/schedule.md %})
+Returns the product's [schedule section]({% link docs/reference/objects/product/schedule_section.md %}).
 
 # product.series
 

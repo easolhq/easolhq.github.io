@@ -4,22 +4,20 @@ title: Highlight
 parent: Product
 ---
 
-When using a `highlight` object you have access to the following attributes
-Can be accessed on a product like below
+When using a `highlight` object you have access to the following attributes:
 
 # highlight.body
 
-Returns the highlights body
+Returns the highlight's body.
 
 # highlight.heading
 
-Returns the highlights heading
+Returns the highlight's heading.
 
 # highlight.id
 
-Returns a unique id for the highlight
+Returns a unique id for the highlight.
 
 # highlight.image
 
-Returns the highlights [image]({% link docs/reference/objects/image.md %})
-
+Returns the highlight's [image]({% link docs/reference/objects/image.md %}).

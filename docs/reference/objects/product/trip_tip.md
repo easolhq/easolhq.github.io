@@ -4,22 +4,20 @@ title: Trip Tip
 parent: Product
 ---
 
-When using a `Trip tip` object you have access to the following attributes
-Can be accessed on a product like below
+When using a `trip_tip` object you have access to the following attributes:
 
 # trip_tip.body
 
-Returns the trip tips body
+Returns the trip tip's body.
 
 # trip_tip.heading
 
-Returns the trip tips heading
+Returns the trip tip's heading.
 
 # trip_tip.id
 
-Returns a unique id for the trip tip
+Returns a unique id for the trip tip.
 
 # trip_tip.image
 
-Returns the trip tips [image]({% link docs/reference/objects/image.md %})
-
+Returns the trip tip's [image]({% link docs/reference/objects/image.md %}).

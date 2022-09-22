@@ -102,8 +102,7 @@ Returns an array of the product's [highlights]({% link docs/reference/objects/pr
 
 # product.host _(deprecated)_
 
-Returns the products [host](https://app.gitbook.com/@fixers/s/canvas-developer/~/edit/drafts/-Lqg456H1ILVvLu_Ti3G/objects/product/host)
-Deprecated please use [`hosts`](https://app.gitbook.com/@fixers/s/canvas-developer/~/drafts/-Lqg456H1ILVvLu_Ti3G/primary/objects/product#product-hosts)
+Returns the first product [host]({% link docs/reference/objects/product/host.md %}).
 
 > **Deprecated**
 >
@@ -111,7 +110,7 @@ Deprecated please use [`hosts`](https://app.gitbook.com/@fixers/s/canvas-develop
 
 # product.host_section
 
-Returns the product [host section]({% link docs/reference/objects/product/host.md %})
+Returns the product [host section]({% link docs/reference/objects/product/host_section.md %}).
 
 # product.id
 

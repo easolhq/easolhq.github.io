@@ -197,7 +197,8 @@ Returns an array of the product's [transfers]({% link docs/reference/objects/pro
 
 # product.trip_tips
 
-Returns an array of the product's [trip tips]({% link docs/reference/objects/product/trip_tip.md %})
+Returns an array of the product's [trip tips]({% link docs/reference/objects/product/trip_tip.md %}).
+
 # product.type
 
 Returns the type of this product, one of `"experience"` or `"accommodation"`.

@@ -1,16 +1,15 @@
 ---
 layout: default
-title: Whats Included
+title: What's Included
 parent: Product
 ---
 
-The `whats_included` object have the following attributes
+The `whats_included` object have the following attributes:
 
 # whats_included.included
 
-Return and array of words with included elements
+Returns an array of strings representing what’s included.
 
 # whats_included.not_included
 
-Return an array highlighting not included elements 
-
+Returns an array of strings representing what’s _not_ included.

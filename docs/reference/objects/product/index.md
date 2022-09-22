@@ -224,7 +224,7 @@ Returns the product's [venue]({% link docs/reference/objects/product/venue.md %}
 
 # product.whats_included
 
-Return the product [whats_included]({% link docs/reference/objects/product/whats_included.md %})
+Return the product's [`what's included`]({% link docs/reference/objects/product/whats_included.md %})
 
 
 <!--

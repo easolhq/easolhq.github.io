@@ -152,7 +152,7 @@ Returns the sum of remaining stock for a products variants, if any of the produc
 
 # product.schedule _(deprecated)_
 
-Returns an array of the products [schedule elements]({% link docs/reference/objects/product/schedule_element.md %})
+Returns an array of the product's [schedule elements]({% link docs/reference/objects/product/schedule_element.md %}).
 
 > **Deprecated**
 >
@@ -160,7 +160,7 @@ Returns an array of the products [schedule elements]({% link docs/reference/obje
 
 # product.schedule_section
 
-Returns the schedule of the product [schedule section]({% link docs/reference/objects/product/schedule.md %})
+Returns the product's [schedule section]({% link docs/reference/objects/product/schedule_section.md %}).
 
 # product.series
 
@@ -188,7 +188,7 @@ Returns the tagline of the product
 
 # product.testimonials
 
-Returns an array of the product's [testimonials]({% link docs/reference/objects/product/testimonial.md %})
+Returns an array of the product's [testimonials]({% link docs/reference/objects/product/testimonial.md %}).
 
 # product.transfers
 
@@ -220,11 +220,11 @@ Returns an array of all the [modifiers]({% link docs/reference/objects/product/m
 
 # product.venue
 
-Returns the products [venue]({% link docs/reference/objects/product/venue.md %})
+Returns the product's [venue]({% link docs/reference/objects/product/venue.md %}).
 
 # product.whats_included
 
-Return the product [whats_included]({% link docs/reference/objects/product/whats_included.md %})
+Return the product's [`what's included`]({% link docs/reference/objects/product/whats_included.md %})
 
 
 <!--

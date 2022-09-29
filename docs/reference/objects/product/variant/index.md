@@ -15,6 +15,15 @@ When using a `variant` object you have access to the following attributes:<br>
 Returns the [deposit]({% link docs/reference/objects/product/deposit.md %}) of this variant if paying with deposit is enabled, `nil` otherwise.
 If the variant has an active [promotion]({% link docs/reference/objects/product/promotion.md %}) the deposit rate should be applied to the promotional price.
 
+Example
+{% raw %}
+```liquid
+{% assign promotional_price = variant.price | apply_promotion: variant.promotion %}
+{% assign deposit_price = promotional_price.fractional | times: variant.deposit.rate %}
+{{ deposit_price | money }}
+```
+{% endraw %}
+
 # variant.deposit_amount _(deprecated)_
 
 Returns a humanized price for the variant's deposit amount, if deposits are not set on the variant this will just return `extra.price` e.g. `$250 Per Person`.

@@ -13,7 +13,7 @@ When using a `variant` object you have access to the following attributes:<br>
 # variant.deposit
 
 Returns the [deposit]({% link docs/reference/objects/product/deposit.md %}) of this variant if paying with deposit is enabled, `nil` otherwise.
-If the variant has an active [promotion]({% link docs/reference/objects/product/promotion.md %}) the deposit rate is applied to the promotional price.
+If the variant has an active [promotion]({% link docs/reference/objects/product/promotion.md %}) the deposit rate should be applied to the promotional price.
 
 # variant.deposit_amount _(deprecated)_
 

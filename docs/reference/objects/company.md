@@ -16,7 +16,7 @@ The company's logo as an [image]({% link docs/reference/objects/image.md %}). Th
 
 # company.biographies
 
-A list of all the company's [biographies]({% link docs/reference/objects/biography.md %}).
+A list of all the company's [biographies]({% link docs/reference/objects/content_library.md %}).
 
 # company.countries
 

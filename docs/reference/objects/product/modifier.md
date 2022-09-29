@@ -25,7 +25,7 @@ Returns a string of HTML attributes to be used on a checkbox for the modifier.
 
 # modifier.contents
 
-A list of [biographies]({% link docs/reference/objects/biography.md %}) that are associated with the modifier.
+A list of [biographies]({% link docs/reference/objects/content_library.md %}) that are associated with the modifier.
 
 # modifier.custom_fields
 

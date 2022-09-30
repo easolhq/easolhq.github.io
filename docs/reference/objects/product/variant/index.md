@@ -148,3 +148,9 @@ Returns the type of this variant, one of `"experience_variant"` or `"accommodati
 Check what other methods you can call on this drop according to their type,
 [Experience Variant]({% link docs/reference/objects/product/variant/experience_variant/index.md %}),
 [Accommodation Variant]({% link docs/reference/objects/product/variant/accommodation_variant/index.md %}).
+
+# variant.payment_plan
+
+If the product this variant belongs to has a payment plan associated with it, this will return that [payment plan]({% link docs/reference/objects/product/payment_plan.md %}).
+The payment plan won't be returned if the last payment date is after the start date of the experience.
+A payment plan will still be returned if the price is less than the initial payment, so this may return a payment plan that cannot be used for this variant.

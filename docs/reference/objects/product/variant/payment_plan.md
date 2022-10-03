@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PaymentPlan
-parent: Product
+parent: Variant
 has_children: false
 ---
 

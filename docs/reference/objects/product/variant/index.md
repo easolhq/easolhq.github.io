@@ -75,7 +75,11 @@ Returns true whether this variant is priced per-person.
 
 # variant.modifier_groups
 
-Returns a list of [modifier groups](({% link docs/reference/objects/product/modifier_group.md %})) associated with this variant.
+Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant.
+
+Note that the resulting list will encompass both pre- and post-checkout modifier groups, and therefore the use of this method in pre-checkout pages is not supported.
+
+For pre-checkout pages, [pre_checkout_modifier_groups]({% link docs/reference/objects/product/variant/index.md %}#variantpre_checkout_modifier_groups) should be used instead.
 
 # variant.max_occupancy
 
@@ -94,6 +98,10 @@ Returns the variants name
 If the product this variant belongs to has a payment plan associated with it, this will return that [payment plan]({% link docs/reference/objects/product/variant/payment_plan.md %}).
 The payment plan won't be returned if the last payment date is after the start date of the experience.
 A payment plan will still be returned if the price is less than the initial payment, so this may return a payment plan that cannot be used for this variant.
+
+# variant.pre_checkout_modifier_groups
+
+Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant that the user must choose before checking out.
 
 # variant.price
 

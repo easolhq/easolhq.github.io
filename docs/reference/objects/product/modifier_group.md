@@ -20,7 +20,7 @@ The minimum number of modifiers that need to be selected in this group.
 
 # modifier_group.modifiers
 
-A list of the [modifiers](({% link docs/reference/objects/product/modifier.md %})) in this group.
+A list of the [modifiers]({% link docs/reference/objects/product/modifier.md %}) in this group.
 
 # modifier_group.name
 

@@ -75,7 +75,7 @@ Returns true whether this variant is priced per-person.
 
 # variant.modifier_groups
 
-Returns a list of [modifier groups](({% link docs/reference/objects/product/modifier_group.md %})) associated with this variant.
+Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant.
 
 Note that the resulting list will encompass both pre- and post-checkout modifier groups, and therefore the use of this method in pre-checkout pages is not supported.
 
@@ -101,7 +101,7 @@ A payment plan will still be returned if the price is less than the initial paym
 
 # variant.pre_checkout_modifier_groups
 
-Returns a list of [modifier groups](({% link docs/reference/objects/product/modifier_group.md %})) associated with this variant that the user must choose before checking out.
+Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant that the user must choose before checking out.
 
 # variant.price
 

@@ -51,7 +51,7 @@ Returns the initial stock for the extra, if the extra has unlimited inventory th
 
 # extra.modifier_groups
 
-Returns a list of [modifier groups](({% link docs/reference/objects/product/modifier_group.md %})) associated with this extra.
+Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this extra.
 
 Note that the resulting list will encompass both pre- and post-checkout modifier groups, and therefore the use of this method in pre-checkout pages is not supported.
 
@@ -95,7 +95,7 @@ Returns the [price]({% link docs/reference/objects/product/price.md %}) of this 
 
 # extra.pre_checkout_modifier_groups
 
-Returns a list of [modifier groups](({% link docs/reference/objects/product/modifier_group.md %})) associated with this extra that the user must choose before checking out.
+Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this extra that the user must choose before checking out.
 
 # extra.prices
 

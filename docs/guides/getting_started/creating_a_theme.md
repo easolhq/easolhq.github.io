@@ -29,6 +29,6 @@ A few things to keep in mind while you develop your theme:
 
 From the moment a theme is chosen for a site, a copy of all the theme code is added to that site. If you make changes to your theme code, the newer version does not replace the theme code in existing sites. This has a few effects worth thinking about: 
 - As you develop and test your theme, all other theme files (e.g. theme css, js) needs to be updated manually in the Easol company admin under **Site > Theme**.
-- Updates to the [block library](https://www.notion.so/Theme-documentation-346ad080eaa6401d9c9778537decb620) will only affect the blocks available for adding to pages. Existing blocks already added to site pages will not be updated.
+- Updates to the block library will only affect the blocks available for adding to pages. Existing blocks already added to site pages will not be updated.
 - When updating the theme via Github, go to **Actions > Workflows** to check that there are no issues deploying the theme. There are two workflows to look out for: **Canvas Lint** and **Theme Deploy**. 
 - Updates can take up to 15mins to be available to sites.

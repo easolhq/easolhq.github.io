@@ -36,6 +36,6 @@ A few things to keep in mind while you develop your theme:
 
 From the moment a theme is chosen for a site, a copy of all the theme code is added to that site. If you make changes to your theme code, the newer version does not replace the theme code in existing sites. This has a few effects worth thinking about: 
 - As you develop and test your theme, all other theme files (e.g. theme css, js) need to be updated manually in the Easol company admin under **Site > Theme**.
-- Updates to the block library will not update any blocks which have already been added to site pages. However, the updated block library is available for any future edits. This can lead to having multiple versions of the same block present in the same site. 
+- Updates to [blocks]({% link docs/guides/getting_started/creating_a_theme.md %}) will not update any blocks which have already been added to site pages. However, changes will appear in the block library, which is presented when editing pages. This can lead to having multiple versions of the same block present in the same site. 
 - When updating the theme via Github, go to **Actions > Workflows** to check that there are no issues deploying the theme. There are two workflows to look out for: **Canvas Lint** and **Theme Deploy**. 
 - Updates can take up to 15mins to be available to sites.

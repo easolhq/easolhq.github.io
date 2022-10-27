@@ -1,3 +1,10 @@
+---
+layout: default
+title: Creating a Theme
+parent: Getting Started
+---
+
+
 ## Step 1: Get the base theme code
 
 There are two options for getting the base theme code. Both require Easol authorisation —
@@ -8,7 +15,7 @@ This option is ideal if you’re looking to make custom modifications to an Easo
 
 ### Option 2: Start with skeleton theme
 
-This option is ideal if you’re developing a fully custom site on Easol. The skeleton theme includes all the basic requirements for Easol themes in terms of structure, files and workflows. Easol cna grant you access to fork the skeleton theme.
+This option is ideal if you’re developing a fully custom site on Easol. The skeleton theme includes all the basic requirements for Easol themes in terms of structure, files and workflows. Easol can grant you access to fork the skeleton theme.
 
 
 ---
@@ -28,7 +35,7 @@ This option is ideal if you’re developing a fully custom site on Easol. The sk
 A few things to keep in mind while you develop your theme:
 
 From the moment a theme is chosen for a site, a copy of all the theme code is added to that site. If you make changes to your theme code, the newer version does not replace the theme code in existing sites. This has a few effects worth thinking about: 
-- As you develop and test your theme, all other theme files (e.g. theme css, js) needs to be updated manually in the Easol company admin under **Site > Theme**.
-- Updates to the block library will only affect the blocks available for adding to pages. Existing blocks already added to site pages will not be updated.
+- As you develop and test your theme, all other theme files (e.g. theme css, js) need to be updated manually in the Easol company admin under **Site > Theme**.
+- Updates to the block library will not update any blocks which have already been added to site pages. However, the updated block library is available for any future edits. This can lead to having multiple versions of the same block present in the same site. 
 - When updating the theme via Github, go to **Actions > Workflows** to check that there are no issues deploying the theme. There are two workflows to look out for: **Canvas Lint** and **Theme Deploy**. 
 - Updates can take up to 15mins to be available to sites.

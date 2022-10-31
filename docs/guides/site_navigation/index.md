@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Site Navigation
 has_children: true
 parent: Guides
 ---

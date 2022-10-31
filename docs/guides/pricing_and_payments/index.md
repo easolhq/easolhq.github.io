@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Pricing & Payments
 has_children: true
 parent: Guides
 ---

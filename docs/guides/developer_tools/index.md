@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Developer Tools
 has_children: true
 parent: Guides
 ---

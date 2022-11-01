@@ -1,5 +1,5 @@
 ---
 layout: default
 title: Templates
-parent: Theme Architecture
+parent: Theme architecture
 ---

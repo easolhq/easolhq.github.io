@@ -1,5 +1,5 @@
 ---
 layout: default
 title: Partials
-parent: Theme Architecture
+parent: Theme architecture
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Theme architecture
 has_children: true
 parent: Guides
 nav_order: 4

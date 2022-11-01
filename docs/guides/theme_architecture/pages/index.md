@@ -1,5 +1,6 @@
 ---
 layout: default
-title: Page Layouts
+title: Pages
 parent: Theme architecture
+nav_order: 3
 ---

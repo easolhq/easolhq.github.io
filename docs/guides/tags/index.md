@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Theme Architecture
+title: Tags
 has_children: true
 parent: Guides
-nav_order: 4
+nav_order: 9
 ---

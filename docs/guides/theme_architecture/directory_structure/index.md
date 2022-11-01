@@ -51,4 +51,4 @@ theme
     └── example.json
 ```
 
-To see an example of a complete theme directory structure, refer to the [skeleton-theme](% link https://github.com/easolhq/skeleton-theme %) repository.
+To see an example of a complete theme directory structure, refer to the [skeleton-theme](https://github.com/easolhq/skeleton-theme) repository.

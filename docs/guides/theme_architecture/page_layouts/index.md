@@ -10,7 +10,7 @@ Page Layouts are predefined collections of blocks to help Creators quickly get g
 - a collection of blocks 
 
 ## Name 
-The page name is shown when choosing a page and also determines the name and link of the page that is created. If the link is already in use the new page's link will be suffixed with the next available number, however if the name is already in use, there will simply be multiple pages with the same name.
+The page name is shown when choosing a page and also determines the name and slug of the page that is created. As slugs must be unique, if the slug is already in use it will be suffixed with a number (or the next available number), however sites can have pages with the same name.
 
 ## Category 
 The page category is used to group your page layouts, making it easier for Creators to browse and choose appropriate layouts. Categories will be shown in alphabetical order.

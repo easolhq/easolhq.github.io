@@ -90,11 +90,11 @@ Returns true if the product has infinite stock
 
 # product.hero_image
 
-Returns the products hero [image]({% link docs/reference/objects/image.md %}
+Returns the products hero [image]({% link docs/reference/objects/image.md %})
 
 # product.has_active_promotion
 
-Returns true if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]{% link docs/reference/objects/product/promotion.md %})
+Returns true if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]({% link docs/reference/objects/product/promotion.md %})
 
 # product.highlights
 

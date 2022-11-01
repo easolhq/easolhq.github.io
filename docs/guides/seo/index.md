@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Layout
+title: SEO
 has_children: true
 parent: Guides
 ---

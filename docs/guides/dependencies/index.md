@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Dependencies
 has_children: true
 parent: Guides
 ---

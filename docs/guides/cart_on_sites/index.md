@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Cart on Sites
 has_children: true
 parent: Guides
 ---

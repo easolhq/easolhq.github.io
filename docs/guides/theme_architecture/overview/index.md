@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Blocks
+title: Overview
 parent: Theme Architecture
-has_children: true
 ---

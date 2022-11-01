@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Blocks
+title: Assets
 parent: Theme Architecture
-has_children: true
 ---

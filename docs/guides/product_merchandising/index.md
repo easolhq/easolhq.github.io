@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Product Merchandising
 has_children: true
 parent: Guides
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Troubleshooting
 has_children: true
 parent: Guides
 ---

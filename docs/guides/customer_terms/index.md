@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Architecture
+title: Customer Terms
 has_children: true
 parent: Guides
 ---

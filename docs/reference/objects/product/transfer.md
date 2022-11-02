@@ -2,6 +2,7 @@
 layout: default
 title: Transfer
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `transfer` object you have access to the following attributes:

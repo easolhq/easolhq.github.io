@@ -2,6 +2,7 @@
 layout: default
 title: Trip Tip
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `trip_tip` object you have access to the following attributes:

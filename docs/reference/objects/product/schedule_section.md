@@ -2,6 +2,7 @@
 layout: default
 title: Schedule Section
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `schedule_section` object you have access to the following attributes:

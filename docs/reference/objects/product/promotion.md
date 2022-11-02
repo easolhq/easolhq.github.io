@@ -2,6 +2,7 @@
 layout: default
 title: Promotion
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `promotion` object you have access to the following attributes

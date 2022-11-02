@@ -2,6 +2,7 @@
 layout: default
 title: Venue
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `venue` object you have access to the following attributes:

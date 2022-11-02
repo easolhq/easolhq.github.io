@@ -2,6 +2,7 @@
 layout: default
 title: Useful Info
 parent: Product
+grand_parent: Objects
 ---
 
 The `useful_info` object has the following attributes

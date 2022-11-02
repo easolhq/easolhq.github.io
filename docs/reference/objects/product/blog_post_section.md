@@ -2,6 +2,7 @@
 layout: default
 title: Blog Post Section
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `blog_post_section` object you have access to the following attributes:

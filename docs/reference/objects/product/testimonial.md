@@ -2,6 +2,7 @@
 layout: default
 title: Testimonial
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `testimonial` object you have access to the following attributes:

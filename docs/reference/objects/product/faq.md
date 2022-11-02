@@ -2,6 +2,7 @@
 layout: default
 title: FAQ
 parent: Product
+grand_parent: Objects
 ---
 
 When using an `faq` object you have access to the following attributes:

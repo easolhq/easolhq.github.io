@@ -2,6 +2,7 @@
 layout: default
 title: Address
 parent: Product
+grand_parent: Objects
 ---
 The `address` object has the following attributes:
 

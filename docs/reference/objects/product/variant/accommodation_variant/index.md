@@ -2,6 +2,7 @@
 layout: default
 title: Accommodation Variant
 parent: Variant
+grand_parent: Product
 has_children: true
 ---
 

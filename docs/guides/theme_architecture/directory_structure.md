@@ -13,7 +13,7 @@ Themes must use the following directory structure:
 theme
 ├── .github
 │   └── workflows
-│		├── main.yml
+│       ├── main.yml
 │       └── lint.yml
 ├── assets
 │   ├── index.css

@@ -2,7 +2,7 @@
 layout: default
 title: Partials
 parent: Theme architecture
-nav_order: 4
+nav_order: 7
 ---
 
 # Partials
@@ -37,4 +37,4 @@ You can render a snippet for every item in an array using the `for` parameter. Y
 {% endraw %}
 
 
-There are also two special partials, [menu]({% link docs/guides/site_navigation %}) and [footer]({% link docs/guides/site_navigation %}), which are defined in folders. These define the menu and footer templates.
+There are also two special partials, [menu]({% link docs/guides/site_navigation/index.md %}) and [footer]({% link docs/guides/site_navigation/index.md %}), which are defined in folders. These define the menu and footer templates.

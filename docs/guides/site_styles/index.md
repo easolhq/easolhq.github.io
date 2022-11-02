@@ -6,10 +6,10 @@ parent: Guides
 nav_order: 3
 ---
 
-Site Styles is where creators and developers can define colours, fonts and custom CSS.
+**My Site > Style** is where creators and developers can define colours, fonts and custom CSS.
 
 ## Colours 
-The default colours can be defined in this section through a colour picker and later in a dropdown throughout the pages' blocks. These colours are:
+Four palette colours are defined here. These colours are used as default throughout the theme, and will also be available as 'Palette colours' in any colour picker when editing the site.
 - Primary colour - main design colour, predominantly used across the website and applied by default to main actions
 - Secondary colour - secondary colour, used in background in some elements and for buttons with secondary actions
 - Site background colour - the site's (body) background colour

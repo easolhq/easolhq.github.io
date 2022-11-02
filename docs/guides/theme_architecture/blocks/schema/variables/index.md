@@ -55,4 +55,24 @@ If a [layout]({% link docs/guides/theme_architecture/blocks/schema/layout/index.
 Defines additional copy to be included with a variable to provide additional context or guidance to Creators. Accepts markdown text.
 
 #### Array
-Defines whether a single variable is rendered, or if the Creator can add multiple instances of a variable. Accepts `true` or `false`.
+Defines whether a single variable is rendered, or if the Creator can add multiple instances of a variable. Accepts `true` or `false`. Multiple defaults can be defined on an array variable.
+
+##### Syntax
+{% raw %}
+```
+---
+gallery:
+    type: image
+    array: true
+    default:
+        - asset: images/sky.png
+        - asset: images/sky.png
+---
+
+{% for image in gallery %}
+    <img src="{{image.url}}"> 
+{% endfor %}
+```
+{% endraw %}
+
+The length of the array can be checked by using the [size](https://shopify.dev/api/liquid/filters/array-filters#size) method.

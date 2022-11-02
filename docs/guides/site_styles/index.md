@@ -11,7 +11,7 @@ nav_order: 3
 ## Colours 
 Four palette colours are defined here. These colours are used as default throughout the theme, and will also be available as 'Palette colours' in any colour picker when editing the site.
 - Primary colour - main design colour, predominantly used across the website and applied by default to main actions
-- Secondary colour - secondary colour, used in background in some elements and for buttons with secondary actions
+- Secondary colour - secondary brand colour
 - Site background colour - the site's (body) background colour
 - Site text colour - the colour used for most text and links
 
@@ -41,4 +41,4 @@ The fonts will be used as root variables on runtime:
 More than two fonts can be uploaded but will not be used in root variables, will need to be referred to by CSS
 
 ## Custom CSS
-Custom CSS can be added here that will override the default compiled CSS file (/style.css). Ideally this should only be used for small fixes while structural changes should be done in the Theme.
+Custom CSS can be added here that will override the default compiled CSS file (/style.css). This is available to all creators with or without developer access.

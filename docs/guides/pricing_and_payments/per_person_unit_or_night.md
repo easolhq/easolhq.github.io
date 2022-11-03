@@ -43,10 +43,11 @@ Per unit variants can have [pricing tiers]({% link docs/guides/pricing_and_payme
 ## Accommodation Products
 
 ### Per night
-For per night pricing the Creator sets a per night price, along with a minimum and maximum occupancy. With just this basic configuration, the standard full price for a night is;
+For per night pricing the Creator sets a per night price, along with a minimum and maximum occupancy. With just this basic configuration, price per night is:
 {% raw %}
 ```liquid
 {% assign full_price = variant.price.fractional | money %}
+{% assign per_person_price = variant.price.per_person_fractional | money %}
 ```
 {% endraw %}
 

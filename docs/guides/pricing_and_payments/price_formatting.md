@@ -8,7 +8,7 @@ If no method is called on a price object, it will default to showing with the cu
 
 e.g. {% raw %}`{{variant.price}}`{% endraw %} might render as €200.00/pp 
 
-This is great for basic use cases. However, if a price object has had a method called on it, e.g. when applying promotions [promotions]({% link docs/guides/pricing_and_payments/promotions.md %}) the return value is another drop.
+This is great for basic use cases. However, if a price object has had a method called on it, e.g. when applying [promotions]({% link docs/guides/pricing_and_payments/promotions.md %}) the return value is another drop.
 
 e.g {% raw %}`{{ variant.price | apply_promotion: variant.promotion }}`{% endraw %} might render VariantPriceDrop. 
 

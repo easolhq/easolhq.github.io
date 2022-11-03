@@ -2,6 +2,7 @@
 layout: default
 title: Tab
 parent: Layout types
+nav_order: 1
 ---
 
 # Tab

@@ -2,6 +2,7 @@
 layout: default
 title: Accordion
 parent: Layout types
+nav_order: 2
 ---
 
 # Accordion

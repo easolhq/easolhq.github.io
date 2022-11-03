@@ -4,7 +4,7 @@ title: Currency Switcher
 parent: Pricing & Payments
 ---
 
-For quick reference please see [Currency Switcher Tag]({% link docs/reference/tags/currency_switcher_tag %}).
+For quick reference please see [Currency Switcher Tag]({% link docs/reference/tags/currency_switcher_tag/index.md %}).
 
 A Creator sets all their prices in their own currency. However, their customers can see and buy in any preferred currency, amongst Easol's growing list of supported currencies.
 

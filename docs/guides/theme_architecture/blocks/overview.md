@@ -16,7 +16,7 @@ Blocks are comprised of a [block schema]({% link docs/guides/theme_architecture/
 ```
 ---
 heading:
-	type: string
+    type: string
     label: Block Heading
     group: content
 text:

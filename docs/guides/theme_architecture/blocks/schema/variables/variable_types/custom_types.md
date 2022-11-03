@@ -57,7 +57,7 @@ my_variable:
 {% endraw %}
 
 ## Setting defaults
-Defaults can be set on custom types as a key, value pair. Any defaults set within the block schema will overide the defaults set in the [custom type json file]({% link docs/guides/theme_architecture/custom_types.md %}).
+Defaults can be set on custom types as a key-value pair. Any defaults set within the block schema will override the defaults set in the [custom type json file]({% link docs/guides/theme_architecture/custom_types.md %}).
 
 ##### syntax
 {% raw %}

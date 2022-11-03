@@ -23,7 +23,7 @@ Inside snippets you can't directly access variables that are created outside of 
 ##### syntax
 {% raw %}
 ```liquid
-{% render 'partial', variable: value %}
+{% render 'partial', variable: value, variable_2: value_2 %}
 ```
 {% endraw %}
 

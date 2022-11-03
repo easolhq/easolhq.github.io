@@ -16,7 +16,7 @@ The blog overview template consists of a `index.html` and a `index.css` file.
 
 Blog posts are passed via a `posts` array of [Post]({% link docs/reference/objects/blog_post.md %}) objects.
 
-The blog overview page automatically implements pagination, displaying 12 posts per page. A [Pagination]({% link docs/reference/objects/pagination.md %}) object can accessed via `paginate` in the `index.html` code in order to generate links to other pages, display page counts etc.
+The blog overview page automatically implements pagination, displaying 12 posts per page. A [Pagination]({% link docs/reference/objects/pagination.md %}) object can be accessed via `paginate` in the `index.html` code in order to generate links to other pages, display page counts etc.
 
 The blog overview page is automatically generated at `site.com/blog`.
 
@@ -26,8 +26,6 @@ Displays a single blog post.
 The blog post template consists of a `index.html` and a `index.css` file.
 
 The blog post is passed via a single `post` [Post]({% link docs/reference/objects/blog_post.md %}) object.
-
-The blog overview page automatically implements pagination, displaying 12 posts per page. A [Pagination]({% link docs/reference/objects/pagination.md %}) object can accessed via `paginate` in the html template in order to generate links to other pages, display page counts etc.
 
 Each blog post is automatically generated at `site.com/blog/post-slug`.
 
@@ -47,7 +45,7 @@ The product template consists of a `index.html` and a `index.css` file.
 
 The product is passed via a single `product` [Product]({% link docs/reference/objects/product/index.md %}) object.
 
-Each product page is automatically generated at `site.com/products/product-slug`.
+Each product page is automatically generated at `site.com/products/product-slug`. If the product is part of a series, the product page will also be available at `site.com/products/*series-slug*/*product-departure-date*`.
 
 ## Selections
 `Optional`

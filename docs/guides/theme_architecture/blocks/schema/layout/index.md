@@ -12,7 +12,7 @@ A block schema can include an optional `layout` section, which defines how the [
 <br><br>
 [Layout types]({% link docs/guides/theme_architecture/blocks/schema/layout/layout_types/index.md %}) can be nested in order to organise block variables further.
 <br><br>
-Note: If a layout is defined this will replace the default site builder tabs and any [groups]({% link docs/guides/theme_architecture/blocks/schema/variables/index.md %}) defined for variables will be ignored.
+> Note: If a layout is defined this will replace the default site builder tabs and any [groups]({% link docs/guides/theme_architecture/blocks/schema/variables/index.md %}) defined for variables will be ignored.
 
 ##### Example
 {% raw %}

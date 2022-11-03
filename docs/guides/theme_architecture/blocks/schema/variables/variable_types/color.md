@@ -6,7 +6,7 @@ parent: Variable types
 
 # Color
 
-Renders a colour picker, from which a Creator can choose a colour from the theme palette defined in [Site Styles]({% link docs/guides/site_styles/index.md %}), or a custom hex colour.
+Renders a colour picker, from which a Creator can choose a colour from the theme palette defined in [Site Styles]({% link docs/guides/site_styles/index.md %}), or a custom rgba colour.
 Returns a [Color]({% link docs/reference/objects/color.md %}) object.
 
 ##### syntax
@@ -23,6 +23,8 @@ my_variable:
 
 ```
 {% endraw %}
+
+> When possible, use `color.rgba` over `color.hex`. The site builder's color picker allows Creators to select an opacity. RGBA values in CSS will include a colour's opacity, whereas hex values will ignore it.
 
 ## Setting defaults
 Defaults can be defined as colours from the Creator's theme palette or or as a `rgba` colour.

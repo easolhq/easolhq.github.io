@@ -15,20 +15,21 @@ Blocks are comprised of a [block schema]({% link docs/guides/theme_architecture/
 {% raw %}
 ```
 ---
-heading:
-    type: string
-    label: Block Heading
-    group: content
-text:
-    type: text
-    default: Enter some nice copy about your experience
-image:
-    type: image
-    default:
-        asset: images/sky.png
-    label: Background Image
-    group: design
-    hint: Recommended image size 1920px by 600px
+attributes:
+    heading:
+        type: string
+        label: Block Heading
+        group: content
+    text:
+        type: text
+        default: Enter some nice copy about your experience
+    image:
+        type: image
+        default:
+            asset: images/sky.png
+        label: Background Image
+        group: design
+        hint: Recommended image size 1920px by 600px
 ---
 <h1>{{heading}}</h1>
 {{text}}

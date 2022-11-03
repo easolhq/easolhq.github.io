@@ -14,6 +14,6 @@ e.g {% raw %}`{{ variant.price | apply_promotion: variant.promotion }}`{% endraw
 
 To format prices consistently across a site, we therefore recommend always using the `fractional` or `per_person_fractional` prices, applying the [money filter]({%link docs/reference/filters/money.md%}), and adding a suffix of per _something_ where needed. You can further format prices with the money filter attribute `no_cents_if_whole`
 
-e.g. {% raw %}`{{variant.price | money: no_cents_if_whole: true}}`{% endraw %} might render as €200<br>
+e.g. {% raw %}`{{variant.price | money }}`{% endraw %} might render as €200.00<br>
 so   {% raw %}`{{variant.price.fractional | money: no_cents_if_whole: true}}`{% endraw %} would render as €200<br>
 and  {% raw %}`{{variant.price.per_person_fractional | money: no_cents_if_whole: true }}`{% endraw %} might render as €100

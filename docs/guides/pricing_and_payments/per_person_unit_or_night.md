@@ -55,21 +55,7 @@ The Creator can make two further configurations to per night pricing.
 ### Price Override
 The standard price per night may have an override applied to any particular date. 
 
-### Per guest discount
-A per guest discount is a discount for customers booking accommodation where they will not be making full use of the maximum occupancy. 
-It is cumulative for each missing occupant i.e. a 5 person room, priced at $300 per night, with a $20 per guest discount would cost;
-
-| Adult count | Price per night |
-|:------------|:----------------|
-| 5           | $300            |
-| 4           | $280            |
-| 3           | $260            |
-| 2           | $240            |
-| 1           | $220            |
-
-
-
-In order to access the prices with any overrides or discounts on the frontend, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
+In order to access the prices with any overrides on the frontend, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
 
 E.g.
 {% raw %}
@@ -85,7 +71,7 @@ E.g.
 ```
 {% endraw %}
 
-If the standard price was $300 per night, there was a price override on the 6th November, and a per guest discount on 7th November, this would render:
+If the standard price was $300 per night and there was a price override of $500 on the 6th November this would render:
 
 {% raw %}
 ```html
@@ -101,11 +87,5 @@ If the standard price was $300 per night, there was a price override on the 6th 
 <p>The price for 3 adult(s) is $500.00</p>
 <p>The price for 4 adult(s) is $500.00</p>
 <p>The price for 5 adult(s) is $500.00</p>
-<p>On Nov 07, 23</p>
-<p>The price for 1 adult(s) is $220.00</p>
-<p>The price for 2 adult(s) is $240.00</p>
-<p>The price for 3 adult(s) is $260.00</p>
-<p>The price for 4 adult(s) is $280.00</p>
-<p>The price for 5 adult(s) is $300.00</p>
 ```
 {% endraw %}

@@ -18,18 +18,22 @@ In order to display the deposit amount in Sites, note;
 - If the due date has passed (or is today), the method `deposit.enabled` will return false, you don't need to check for this.
 
 Check for the deposit at the product level:
-```
+
+{% raw %}
+```liquid
 {% if product.deposit.enabled and product.type != 'accommodation' %}
     {% assign deposit_active = true %}
     {% assign deposit_rate = product.deposit.rate %}
 {% endif %}
 ```
+{% endraw %}
 
-`cheapest_price` in the following examples is the price with any promotions applied, this may be the full price or the promotional price in it's fractional form.
+`cheapest_price` in the following examples is the price with any promotions applied, this may be the full price or the promotional price in its fractional form.
 See [promotions]({% link docs/guides/pricing_and_payments/promotions.md%}) for more information on calculating this.
 
 Display the deposit at the product level (i.e. only the featured variant):
-```
+{% raw %}
+```liquid
 <!-- calculate cheapest_price -->
 {% assign deposit_price = cheapest_price | times: deposit_rate | money %}
 {% if deposit_active == true and cheapest_price != 0 %}
@@ -39,9 +43,11 @@ Display the deposit at the product level (i.e. only the featured variant):
 
 {% endif %}
 ```
+{% endraw %}
 
 When displaying a series summary, the approach is similar (i.e. only the featured variant of the series):
-```
+{% raw %}
+```liquid
 {% if series.featured_variant.product.deposit.enabled %}
     {% assign deposit_active = true %}
     {% assign deposit_rate = series.featured_variant.product.deposit.rate %}
@@ -54,9 +60,11 @@ When displaying a series summary, the approach is similar (i.e. only the feature
 
 {% endif %}
 ```
+{% endraw %}
 
 You may wish to display the deposit amount for each variant or extra when looping through them:
-```
+{% raw %}
+```liquid
 {% for variant in product.variants %}
     <!-- calculate cheapest_price -->
     {% if deposit_active == true and cheapest_price != 0 %}
@@ -67,7 +75,8 @@ You may wish to display the deposit amount for each variant or extra when loopin
     {% endif %}
 {% endfor %}
 ```
+{% endraw %}
 
-By using the `series.featured_variant`, the resulting deposit_price may not be the cheapest deposit, however it is the deposit for the cheapest variant.
+By using the `series.featured_variant`, the resulting `deposit_price` may not be the cheapest deposit, however it is the deposit for the cheapest variant.
 
-Reminder: reset with `{% assign deposit_active = false %}` when looping through products.
+Reminder: reset with {% raw %}`{% assign deposit_active = false %}`{% endraw %} when looping through products.

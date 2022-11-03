@@ -2,6 +2,7 @@
 layout: default
 title: Highlight
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `highlight` object you have access to the following attributes:

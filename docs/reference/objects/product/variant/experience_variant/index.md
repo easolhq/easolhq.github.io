@@ -2,6 +2,7 @@
 layout: default
 title: Experience Variant
 parent: Variant
+grand_parent: Product
 ---
 
 The `experience_variant` object will inherit all attributes that are defined on

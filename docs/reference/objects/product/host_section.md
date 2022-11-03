@@ -2,6 +2,7 @@
 layout: default
 title: Host Section
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `host_section` object you have access to the following attributes.

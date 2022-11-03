@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Page Layouts
-parent: Theme Architecture
+title: Page layouts
+parent: Theme architecture
 ---
+
+# Page layouts
 
 Page Layouts are predefined collections of blocks to help Creators quickly get going with a sensible layout. Each layout is defined in its own json file in the /pages folder of your theme and should have:
 - a name

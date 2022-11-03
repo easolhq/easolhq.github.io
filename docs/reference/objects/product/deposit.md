@@ -2,6 +2,7 @@
 layout: default
 title: Deposit
 parent: Product
+grand_parent: Objects
 ---
 
 This object represents a deposit of a variant or extra.<br>

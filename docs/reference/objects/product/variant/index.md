@@ -2,6 +2,7 @@
 layout: default
 title: Variant
 parent: Product
+grand_parent: Objects
 has_children: true
 ---
 

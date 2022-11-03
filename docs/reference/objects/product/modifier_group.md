@@ -2,6 +2,7 @@
 layout: default
 title: Modifier Group
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `modifier_group` object you have access to the following attributes:

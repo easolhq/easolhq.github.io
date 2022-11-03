@@ -2,6 +2,7 @@
 layout: default
 title: Schedule Element
 parent: Product
+grand_parent: Objects
 ---
 
 When using a `schedule element` object you have access to the following attributes

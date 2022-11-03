@@ -2,6 +2,7 @@
 layout: default
 title: Price
 parent: Product
+grand_parent: Objects
 ---
 
 This object represents a price of a variant or extra. When using a `price` object you have access to the following attributes:

@@ -2,6 +2,7 @@
 layout: default
 title: What's Included
 parent: Product
+grand_parent: Objects
 ---
 
 The `whats_included` object have the following attributes:

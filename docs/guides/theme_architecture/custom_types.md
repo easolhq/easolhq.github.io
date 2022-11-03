@@ -56,3 +56,11 @@ An array of [variable]({% link docs/guides/theme_architecture/blocks/schema/vari
 }
 ```
 {% endraw %}
+
+## Updating custom types
+After a custom type has been created, existing attributes cannot be removed and an attribute's `name` and `type` cannot be changed. Additional attributes can be added to existing custom types.
+
+## Deleting custom types
+A custom type can only be deleted if it is not referenced in any theme [blocks]({% link docs/guides/theme_architecture/blocks/index.md %}) or blocks added to Creator websites.
+
+The above restrictions are in place to ensure that changes are not made to custom types on which existing blocks depend.

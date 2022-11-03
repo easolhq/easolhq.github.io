@@ -12,7 +12,7 @@ You can check which type a product or variant is with either `product.type` whic
 
 ## Experience Products
 
-If `variant.is_priced_per_person` returns true if it is a per person variant, and false if it is a per unit variant. 
+If `variant.is_priced_per_person` returns true it is a per person variant, and false if it is a per unit variant. 
 
 ### Per person
 Per person pricing is very straight forward to display;

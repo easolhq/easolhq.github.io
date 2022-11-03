@@ -19,19 +19,26 @@ Per person pricing is very straight forward to display;
 {% raw %}
 ```liquid
 {% assign full_price = variant.price.fractional | money %}
+{% assign per_person_price = variant.price.per_person_fractional | money %}
 ```
 {% endraw %}
 
 ### Per unit
 Per unit pricing is still approached from a 'per person' perspective. 
-The creator sets a per person price, along with a minimum and maximum occupancy, so the full price of the unit is;
+The creator sets a per person price, along with a minimum and maximum occupancy, so the full price of the unit is:
 {% raw %}
 ```liquid
 {% assign full_price = variant.max_occupancy | times: variant.price.fractional | money %}
 ```
 {% endraw %}
+The customer will always pay for the full unit however you may still wish to display this as per person:
+{% raw %}
+```liquid
+{% assign per_person_price = variant.price.fractional | money %}
+```
+{% endraw %}
 
-Per unit variants can have [pricing tiers]({% link docs/guides/pricing_and_payments/price_tiers_and_occupancy.md %}).
+Per unit variants can have [pricing tiers]({% link docs/guides/pricing_and_payments/price_tiers_and_occupancy.md %}) based on the occupancy.
 
 ## Accommodation Products
 
@@ -45,46 +52,12 @@ For per night pricing the Creator sets a per night price, along with a minimum a
 
 The Creator can make two further configurations to per night pricing.
 
-#### Price Override
+### Price Override
 The standard price per night may have an override applied to any particular date. 
 
-In order to access these prices on the frontend, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
-
-E.g.
-{% raw %}
-```liquid
- {% accommodation_availability variant %}
-    {% for day in result.days %}
-        <p>On {{day.date | date:"%b %d, %y"}}</p>
-        {% for price in day.prices %}
-            <p>The price for {{ price.occupancy }} adult(s) is {{ price.fractional | money }}</p>
-        {% endfor %}
-    {% endfor %}
-{% endaccommodation_availability %}
-```
-{% endraw %}
-
-If there was a price override on 7th November, this might render something like:
-
-{% raw %}
-```html
-<p>On Nov 06, 23</p>
-<p>The price for 1 adult(s) is $300.00</p>
-<p>The price for 2 adult(s) is $300.00</p>
-<p>The price for 3 adult(s) is $300.00</p>
-<p>The price for 4 adult(s) is $300.00</p>
-<p>The price for 5 adult(s) is $300.00</p>
-<p>On Nov 07, 23</p>
-<p>The price for 1 adult(s) is $500.00</p>
-<p>The price for 2 adult(s) is $500.00</p>
-<p>The price for 3 adult(s) is $500.00</p>
-<p>The price for 4 adult(s) is $500.00</p>
-<p>The price for 5 adult(s) is $500.00</p>
-```
-{% endraw %}
-
-#### Per guest discount
-A per guest discount is a discount for customers booking accommodation where they will not be making full use of the maximum occupancy. It is cumulative for each missing occupant i.e. a 5 person room, priced at $300 per night, with a $20 per guest discount would cost;
+### Per guest discount
+A per guest discount is a discount for customers booking accommodation where they will not be making full use of the maximum occupancy. 
+It is cumulative for each missing occupant i.e. a 5 person room, priced at $300 per night, with a $20 per guest discount would cost;
 
 | Adult count | Price per night |
 |:------------|:----------------|
@@ -94,7 +67,9 @@ A per guest discount is a discount for customers booking accommodation where the
 | 2           | $240            |
 | 1           | $220            |
 
-In order to access these prices on the frontend, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
+
+
+In order to access the prices with any overrides or discounts on the frontend, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
 
 E.g.
 {% raw %}
@@ -110,16 +85,22 @@ E.g.
 ```
 {% endraw %}
 
-If there was a per guest discount on 7th November, this might render something like:
+If the standard price was $300 per night, there was a price override on the 6th November, and a per guest discount on 7th November, this would render:
 
 {% raw %}
 ```html
-<p>On Nov 06, 23</p>
+<p>On Nov 05, 23</p>
 <p>The price for 1 adult(s) is $300.00</p>
 <p>The price for 2 adult(s) is $300.00</p>
 <p>The price for 3 adult(s) is $300.00</p>
 <p>The price for 4 adult(s) is $300.00</p>
 <p>The price for 5 adult(s) is $300.00</p>
+<p>On Nov 06, 23</p>
+<p>The price for 1 adult(s) is $500.00</p>
+<p>The price for 2 adult(s) is $500.00</p>
+<p>The price for 3 adult(s) is $500.00</p>
+<p>The price for 4 adult(s) is $500.00</p>
+<p>The price for 5 adult(s) is $500.00</p>
 <p>On Nov 07, 23</p>
 <p>The price for 1 adult(s) is $220.00</p>
 <p>The price for 2 adult(s) is $240.00</p>

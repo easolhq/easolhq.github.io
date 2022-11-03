@@ -30,7 +30,7 @@ attributes:
         default:
             asset: images/sky.png
         label: Background Image
-        hint: Reccommended image size 1920px by 600px
+        hint: Recommended image size 1920px by 600px
     cta_enabled:
         type: boolean
         label: Display a button

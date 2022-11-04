@@ -18,7 +18,7 @@ A `tab` expects the following attributes:
 Defines the label for the tab shown to the Creator in the site builder. Accepts a string and must be a unique value.
 
 #### elements
-The attributes to be included within the tab. [Accordion toggles]({% link docs/guides/theme_architecture/blocks/schema/layout/layout_types/accordion_toggle.md %}) and [accordions]({% link docs/guides/theme_architecture/blocks/schema/layout/layout_types/accordion.md %}) can be nested within `tabs`.
+The attributes to be included within the tab. [Accordion toggles]({% link docs/theme_architecture/blocks/schema/layout/layout_types/accordion_toggle.md %}) and [accordions]({% link docs/theme_architecture/blocks/schema/layout/layout_types/accordion.md %}) can be nested within `tabs`.
 
 ##### Example
 {% raw %}

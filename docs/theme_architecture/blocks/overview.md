@@ -7,9 +7,9 @@ nav_order: 1
 
 # Blocks
 
-Blocks are the main building components of sites, allowing Creators to easily build their own site pages. These are defined as liquid in a `block.html` file within a folder per block and are all listed in an [index.json]({% link docs/guides/theme_architecture/blocks/index_json.md %}) file.
+Blocks are the main building components of sites, allowing Creators to easily build their own site pages. These are defined as liquid in a `block.html` file within a folder per block and are all listed in an [index.json]({% link docs/theme_architecture/blocks/index_json.md %}) file.
 
-Blocks are comprised of a [block schema]({% link docs/guides/theme_architecture/blocks/schema/index.md %}) and the block html. You can also include styles and scripts within the block, as required.
+Blocks are comprised of a [block schema]({% link docs/theme_architecture/blocks/schema/index.md %}) and the block html. You can also include styles and scripts within the block, as required.
 
 ##### Example
 {% raw %}

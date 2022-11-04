@@ -38,7 +38,7 @@ The customer will always pay for the full unit however you may still wish to dis
 ```
 {% endraw %}
 
-Per unit variants can have [pricing tiers]({% link docs/guides/pricing_and_payments/price_tiers_and_occupancy.md %}) based on the occupancy.
+Per unit variants can have [pricing tiers]({% link docs/pricing_and_payments/price_tiers_and_occupancy.md %}) based on the occupancy.
 
 ## Accommodation Products
 

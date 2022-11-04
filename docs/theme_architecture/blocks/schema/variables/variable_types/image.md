@@ -24,7 +24,7 @@ my_variable:
 {% endraw %}
 
 ## Setting defaults
-Defaults can be defined as an image url or as an image uploaded in the theme [assets](% link docs/guides/theme_architecture/assets.md %) folder.
+Defaults can be defined as an image url or as an image uploaded in the theme [assets](% link docs/theme_architecture/assets.md %) folder.
 
 ### Url
 

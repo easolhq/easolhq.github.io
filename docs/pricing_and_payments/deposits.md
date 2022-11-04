@@ -29,7 +29,7 @@ Check for the deposit at the product level:
 {% endraw %}
 
 `cheapest_price` in the following examples is the price with any promotions applied, this may be the full price or the promotional price in its fractional form.
-See [promotions]({% link docs/guides/pricing_and_payments/promotions.md%}) for more information on calculating this.
+See [promotions]({% link docs/pricing_and_payments/promotions.md%}) for more information on calculating this.
 
 Display the deposit at the product level (i.e. only the featured variant):
 {% raw %}

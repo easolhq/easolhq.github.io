@@ -6,7 +6,7 @@ parent: Variable types
 
 # Color
 
-Renders a colour picker, from which a Creator can choose a colour from the theme palette defined in [Site Styles]({% link docs/guides/site_styles/index.md %}), or a custom rgba colour.
+Renders a colour picker, from which a Creator can choose a colour from the theme palette defined in [Site Styles]({% link docs/site_styles/index.md %}), or a custom rgba colour.
 Returns a [Color]({% link docs/reference/objects/color.md %}) object.
 
 ##### syntax

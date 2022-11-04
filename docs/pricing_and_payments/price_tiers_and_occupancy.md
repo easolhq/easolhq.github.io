@@ -7,7 +7,7 @@ parent: Pricing & Payments
 
 ## Price tiers
 
-[Per unit variants]({% link docs/guides/pricing_and_payments/per_person_unit_or_night.md%}) may have pricing tiers applied. 
+[Per unit variants]({% link docs/pricing_and_payments/per_person_unit_or_night.md%}) may have pricing tiers applied. 
 
 The variant method `.prices` will return an array containing the prices of each tier. So to display all pricing tiers you would loop through these;
 
@@ -34,7 +34,7 @@ This might render:
 
 ## Occupancy
 
-[Per night variants]({% link docs/guides/pricing_and_payments/per_person_unit_or_night.md%}) may have price reductions applied based on occupancy, sometimes called a per guest discount.
+[Per night variants]({% link docs/pricing_and_payments/per_person_unit_or_night.md%}) may have price reductions applied based on occupancy, sometimes called a per guest discount.
 
 It is cumulative for each missing occupant i.e. a 5 person room, priced at $300 per night, with a $20 per guest discount would cost;
 

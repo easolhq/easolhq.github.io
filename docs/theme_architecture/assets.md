@@ -12,7 +12,7 @@ The assets directory contains the global assets used in a theme, including image
 The global styles applied to the entire site.
 
 ## index.js
-The global JavaScript applied to the entire site, excluding the [cart shop]({% link docs/cart_shop/index.md %}).
+The global JavaScript applied to the entire site, excluding the [cart shop]({% link docs/carts/cart_shop.md %}).
 
 ## recommendation.css
 The recommendation.css is used to add additional custom styling to the Easol [recommendations](https://support.easol.com/hc/en-gb/articles/4403663446929-Create-and-send-recommendations) feature.

@@ -13,7 +13,7 @@ To add an item to a customer's cart you must include a [create_line_item tag]({%
 ```liquid
 {% for item in product.variants %}
     {% form "create_line_item" %}
-        <input type="hidden" name="items[][variant_id]" value="{{item.id}}"/>
+        <input type="hidden" name="items[][variant_id]" value="{{item.id}}" />
         <input type="submit" value="Add to cart" />
     {% endform %}
 {% endfor %}
@@ -29,7 +29,7 @@ To add more than one unit to a customer's cart you must include a quantity input
 {% raw %}
 ```liquid
 {% form "create_line_item" %}
-    <input type="hidden" name="items[][variant_id]" value="*<variant or extra id>*"/>
+    <input type="hidden" name="items[][variant_id]" value="*<variant or extra id>*" />
     <input type="hidden" name="items[][quantity]" value="*<quantity>*" />
     <input type="submit" value="Add to cart" />
 {% endform %}
@@ -43,7 +43,7 @@ Creators may choose to provide customers with additional modification options, s
 {% raw %}
 ```liquid
 {% form "create_line_item" %}
-    <input type="hidden" name="items[][variant_id]" value="*<variant or extra id>*"/>
+    <input type="hidden" name="items[][variant_id]" value="*<variant or extra id>*" />
     <input type="hidden" name="items[][modifier_ids][]" value="*<modifier id>*" />
     <input type="submit" value="Add to cart" />
 {% endform %}
@@ -58,6 +58,6 @@ To specify the adult count an additional input field is required, if no adult co
 
 {% raw %}
 ```liquid
-  <input type="hidden" name="items[][adult_count]" value="**<adult count>**" />
+  <input type="hidden" name="items[][adult_count]" value="*<adult count>*" />
 ```
 {% endraw %}

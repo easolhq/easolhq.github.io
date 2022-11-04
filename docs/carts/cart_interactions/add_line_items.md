@@ -43,7 +43,7 @@ Creators may choose to provide customers with additional modification options, s
 {% raw %}
 ```liquid
 {% form "create_line_item" %}
-    <input type="hidden" name="items[][variant_id]" value="*<variant or extra id>*"/>
+    <input type="hidden" name="items[][variant_id]" value="*<variant or extra id>*" />
     <input type="hidden" name="items[][modifier_ids][]" value="*<modifier id>*" />
     <input type="submit" value="Add to cart" />
 {% endform %}

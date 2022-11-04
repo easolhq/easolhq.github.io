@@ -58,6 +58,6 @@ To specify the adult count an additional input field is required, if no adult co
 
 {% raw %}
 ```liquid
-  <input type="hidden" name="items[][adult_count]" value="**<adult count>**" />
+  <input type="hidden" name="items[][adult_count]" value="*<adult count>*" />
 ```
 {% endraw %}

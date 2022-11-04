@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Cart Shop
+title: Carts
 has_children: true
-nav_order: 11
+nav_order: 12
 ---
+
+# Carts

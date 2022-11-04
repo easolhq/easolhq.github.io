@@ -16,4 +16,4 @@ Liquid tags define blocks of logic within a template. Opening and closing tags w
 
 For documentation on Liquid's built-in tags, see [Liquid Tags](https://shopify.dev/api/liquid/tags)
 
-For reference to key tags, see below.
+For reference to key tags, see [tags]({% link docs/reference/tags/index.md %}).

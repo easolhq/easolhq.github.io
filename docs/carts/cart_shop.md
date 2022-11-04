@@ -13,4 +13,6 @@ This page includes key details of the experience including the name, country, da
 ## Shop page customisation
 The Creator's [brand colours]({% link docs/site_styles/index.md %}) set under My Site > Styles are applied to some elements of the shop page by default. 
 
-You are not able to amend the html or add additional javascript to shop pages. However, further customisations can be applied to the shop page by adding additional styles into the [index.css]({% link docs/theme_architecture/assets.md %}) file of a theme, using selector `.cart-shop`.
+You are not able to amend the html or add additional javascript to shop pages. However, further customisations can be applied to the shop page by adding additional styles into the [index.css]({% link docs/theme_architecture/assets.md %}) file of a theme, using selector `.cart-shop` to scope them to the shop pages.
+
+> Styles added to the [index.css]({% link docs/theme_architecture/assets.md %}) of a theme are also applied to the shop pages. We recommend testing shop pages for a variety of [product configurations]({% link docs/product_management_and_merchandising/accommodation_and_experience_products.md %}) after updating global styles to ensure the shop page still functions correctly.

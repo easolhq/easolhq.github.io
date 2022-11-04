@@ -29,7 +29,7 @@ To add more than one unit to a customer's cart you must include a quantity input
 {% raw %}
 ```liquid
 {% form "create_line_item" %}
-    <input type="hidden" name="items[][variant_id]" value="*<variant or extra id>*"/>
+    <input type="hidden" name="items[][variant_id]" value="*<variant or extra id>*" />
     <input type="hidden" name="items[][quantity]" value="*<quantity>*" />
     <input type="submit" value="Add to cart" />
 {% endform %}

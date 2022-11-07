@@ -2,6 +2,7 @@
 layout: default
 title: Accommodation Availability
 parent: Tags
+grand_parent: Reference
 has_children: false
 ---
 

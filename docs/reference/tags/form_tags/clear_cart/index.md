@@ -2,6 +2,7 @@
 layout: default
 title: Clear Cart
 parent: Tags
+grand_parent: Reference
 has_children: false
 ---
 

@@ -2,6 +2,7 @@
 layout: default
 title: Product Search
 parent: Tags
+grand_parent: Reference
 has_children: false
 ---
 

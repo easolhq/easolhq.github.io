@@ -2,6 +2,7 @@
 layout: default
 title: Pagination
 parent: Filters
+grand_parent: Reference
 ---
 
 # default_pagination

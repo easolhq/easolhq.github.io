@@ -2,6 +2,7 @@
 layout: default
 title: Parameterize
 parent: Filters
+grand_parent: Reference
 ---
 
 # parameterize

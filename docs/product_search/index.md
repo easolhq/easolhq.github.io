@@ -13,7 +13,7 @@ Product search enables you to filter a Creator's experiences and accommodations,
 - Return products for a specific date range or year
 - Sort the results by departure date
 
-The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [pagination]({% link docs/reference/objects/pagination.md %}) object and  a `search` search object. 
+The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [pagination]({% link docs/reference/objects/pagination.md %}) object and  a `search` [Search]({% link docs/reference/objects/search_query.md %}) object. 
 
 The product search will only return products will only return public, published products i.e. experiences and accommodations which are published and have not been marked as private under 'Manage product availability' in the product settings.
 
@@ -64,7 +64,7 @@ You can enable customers to move between the results pages using the `paginate` 
 
 
 ## Accessing query params
-Once the search has been executed, it can be helpful to get a reference to the params and values in the search. For that we can use the `search` object.
+Once the search has been executed, it can be helpful to get a reference to the params and values in the search. For that we can use the `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
 
 ##### syntax
 {% raw %}

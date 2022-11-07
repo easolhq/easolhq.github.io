@@ -216,6 +216,8 @@ https://mysite.com/search?search[subcategory]=wellness
 Accepts a number.<br>
 Will determine how many results are shown per page. If this is not included it will default to 12 results per page.
 
+Page size cannot be passed as a query parameter.
+
 ##### as a search tag attribute
 {% raw %}
 ```
@@ -223,11 +225,6 @@ Will determine how many results are shown per page. If this is not included it w
 {% endproduct_search %}
 ```
 {% endraw %}
-
-##### as a query paramameter
-```
-https://mysite.com/search?search[page_size]=8
-```
 
 ### sort
 Accepts `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` and `departure_date_desc`, where the `_asc` and `_desc` parts represent ascending and descending orders respectively.<br>

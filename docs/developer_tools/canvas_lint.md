@@ -10,12 +10,32 @@ Easol has developed and maintains a gem called easol-canvas, which is used for v
 The `canvas lint` command will run the following validation checks:
 
 1. RequiredFilesCheck
-    1. Checks that the required files exist (e.g. `templates/product/index.html`).
+    1. Checks that the required files exist and is not empty:
+        1. templates/product/index
+        2. templates/blog_overview/index
+        3. templates/blog_post/index
+        4. partials/footer/index
+        5. partials/menu/index
+        6. assets/index.css
 2. ValidHtmlCheck
     1. Validates all `.html` files contain valid HTML.
 3. ValidLiquidCheck
-    1. Validates all `.html` files contain valid Liquid.
-4. COMING SOON: Validate the schemas in blocks, headers and footers.
+    1. Validates all `.html` and `.liquid` files contain valid Liquid.
+4. ValidJsonCheck
+    1. Validates all `.json` files contain valid JSON.
+5. ValidSassCheck
+    1. Validates all `.css`, `.scss` and `.sass` files contain valid SASS.
+6. ValidBlockSchemasCheck
+    1. Validates the schema defined in the front matter within each block template
+        1. Correctly formatted
+        2. For each attribute, required key (type) is present
+        3. All keys are valid, and types exist
+7. ValidMenuSchemaCheck
+    1. Validates the schema in partials/menu/index.html
+8. ValidFooterSchemaCheck
+    1. Validates the schema in partials/footer/index.html
+9. ValidCustomTypesCheck
+    1. Validates all custom types is valid with valid attribute definitions
 
 ## Usage
 

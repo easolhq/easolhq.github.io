@@ -7,14 +7,15 @@ has_toc: false
 ---
 
 # Product Search
-Product search is based on query parameters that determine which products are returned and in which order. In addition to the search query itself, there are parameters that allow you to customize the search further, for example you could:
-
-- Choose whether unavailable products are returned
+Product search enables you to filter a Creator's experiences and accommodations, for example you could:
+- Choose whether sold out products are returned
 - Return only products with active promotions
 - Return products for a specific date range or year
 - Sort the results by departure date
 
 The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [pagination]({% link docs/reference/objects/pagination.md %}) object and  a `search` search object. 
+
+The product search will only return products will only return public, published products i.e. experiences and accommodations which are published and have not been marked as private under 'Manage product availability' in the product settings.
 
 {% raw %}
 ```liquid

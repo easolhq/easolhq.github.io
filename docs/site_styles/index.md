@@ -9,12 +9,12 @@ nav_order: 3
 
 ## Colours 
 Four palette colours are defined here. These colours are used as default throughout the theme, and will also be available as 'Palette colours' in any colour picker when editing the site.
-- Primary colour - main design colour, predominantly used across the website and applied by default to main actions
+- Primary colour - main design colour. Applied to anchor tags by default
 - Secondary colour - secondary brand colour
 - Site background colour - the site's (body) background colour
-- Site text colour - the colour used for most text and links
+- Site text colour - the colour used for most text
 
-The colours will be used as root variables on runtime:
+The colours will be declared as root variables on runtime:
 ```
 :root {
     --primary: #bbcfcf;
@@ -26,10 +26,10 @@ The colours will be used as root variables on runtime:
 
 ## Fonts
 Fonts can be uploaded and defined here:
-- Headings font family - Used by default in all titles and buttons
+- Headings font family - Used by default in all `h1` - `h6` tags
 - Body font family - Used by default in paragraphs, links and remaining elements
 
-The fonts will be used as root variables on runtime:
+The fonts will be declared as root variables on runtime:
 ```
 :root {
     --font-family-base: "Open Sans";
@@ -37,7 +37,7 @@ The fonts will be used as root variables on runtime:
 }
 ```
 
-More than two fonts can be uploaded but will not be used in root variables, will need to be referred to by CSS
+More than two fonts can be uploaded however they will not automatically be declared as root variables.
 
 ## Custom CSS
 Custom CSS can be added here that will override the default compiled CSS file (/style.css). This is available to all creators with or without developer access.

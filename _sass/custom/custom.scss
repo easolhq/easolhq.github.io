@@ -26,6 +26,14 @@ blockquote {
   width: 80%;
 }
 
+.breadcrumb-nav-list {
+  margin-bottom: 2rem;
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  margin-bottom: 0.5em;
+}
+
 @media (min-width: 66.5rem) {
   .side-bar {
     width: 248px;

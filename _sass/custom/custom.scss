@@ -25,3 +25,15 @@ blockquote {
 .site-logo {
   width: 80%;
 }
+
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: 248px;
+    min-width: 264px
+  }
+
+  .main {
+    margin-left: 268px;
+    max-width: 1000px;
+  }
+}

@@ -10,7 +10,7 @@ permalink: /
 ### CREATE THE MOMENTS YOU WISH TO SEE IN THE WORLD
 At Easol, we believe creating and selling experiences is the opportunity of a lifetime.
 
-Easol is the all-in-one platform for managing entire experience businesses, on Creators' own terms. They can sell directly on their own website with smart booking, payment, and marketing tools that all work together, brilliantly.
+Easol is the all-in-one platform for managing entire experience businesses, on Creators' own terms. Creators can sell directly to their customers on their own website with smart booking, payment, and marketing tools that all work together, brilliantly.
 
 The backbone of every website on Easol is a theme. Themes are website templates specially designed to sell any experience, anywhere – whether it’s in wellness, sports, festivals, adventure, or food and drink.
 

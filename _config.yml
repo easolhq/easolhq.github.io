@@ -1,7 +1,7 @@
-title: Easol Site Docs
+title: Easol Theme Docs
 email: developers@easol.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Documentation for bulding sites on Easol
+  Documentation for bulding themes on Easol
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 color_scheme: easol

@@ -61,3 +61,14 @@ To specify the adult count an additional input field is required, if no adult co
   <input type="hidden" name="items[][adult_count]" value="*<adult count>*" />
 ```
 {% endraw %}
+
+### Start on / End on
+Accommodation variants require a check in and check out date to be defined on the form. These are defined using start date and end date input fields.
+Dates should be formatted as `YYYY-MM-DD`.
+
+{% raw %}
+```liquid
+  <input type="hidden" name="items[][start_on]" value="*<YYYY-MM-DD>*">
+  <input type="hidden" name="items[][end_on]" value="*<YYYY-MM-DD>*">
+```
+{% endraw %}

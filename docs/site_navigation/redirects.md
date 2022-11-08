@@ -7,4 +7,27 @@ nav_order: 3
 
 # Redirects
 
-The URL redirects are managed in **My Site > Redirects**. For and up-to-date full reference please consult [Set up 301 redirects for your website](https://support.easol.com/hc/en-gb/articles/4404999175953-Set-up-301-redirects-for-your-website) at the [Easol Help Centre](https://support.easol.com/hc/en-gb).
+The URL redirects are managed in **My Site > Redirects**, both Creators and Developers have access.
+
+## URLs that can't be redirected
+
+Redirects can't be set up **to** or **from** URL paths that start with:
+- admin
+- b
+- blog
+- bookings
+- cart
+- checkout
+- common
+- log-in
+- log-out
+- p
+- products
+- robots
+- script
+- shop
+- shop-style
+- sign-up
+- style
+- t
+- terms

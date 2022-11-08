@@ -27,7 +27,7 @@ supports_open_new_tab: true
 ```
 ```liquid
 {% for item in menu.items %}
-    <a href="{% if item.url != null and item.url != '' %}{{item.url}}{% else %}javascript:void(0);{% endif %}"
+    <a href="{% if item.url != '' %}{{item.url}}{% else %}javascript:void(0);{% endif %}"
     {% if item.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
         {{item.label}}
     </a>
@@ -35,7 +35,7 @@ supports_open_new_tab: true
         <ul>
         {% for nested_item in item.items %}
             <li>
-                <a href="{% if nested_item.url != null and nested_item.url != '' %}{{nested_item.url}}{% else %}javascript:void(0);{% endif %}" 
+                <a href="{% if nested_item.url != '' %}{{nested_item.url}}{% else %}javascript:void(0);{% endif %}" 
                 {% if nested_item.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
                     {{nested_item.label}}
                 </a>

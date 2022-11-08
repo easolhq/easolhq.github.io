@@ -7,7 +7,7 @@ nav_order: 2
 
 # Footer
 
-Apart from the [main site navigation]({% link docs/site_navigation/header/index.md %}) the **footer template** (partials/footer/index.html) can have a secondary navigation.
+Apart from the [main site navigation]({% link docs/site_navigation/header/index.md %}) the site can have a secondary navigation in the **footer template** (partials/footer/index.html). One can't be accessed from the other.
 
 ## Footer template
 The [footer]({% link docs/objects/footer/index.md %}) is a special kind of [partial]({% link docs/guides/theme_architecture/partials/index.md %}) which is rendered in all site pages, always at the end of the `body` tag. It contains a [schema]({% link docs/guides/theme_architecture/blocks/schema/index.md %}) where [variables]({% link docs/guides/theme_architecture/blocks/schema/variables/index.md %}) can be added, removed or edited.
@@ -26,24 +26,26 @@ supports_open_new_tab: true
 ---
 ```
 ```liquid
-{% for item in footer.items %}
-    <a href="{% if item.url != null and item.url != '' %}{{item.url}}{% else %}javascript:void(0);{% endif %}"
-    {% if item.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
-        {{item.label}}
-    </a>
-    {% if item.items.size > 0 %}
-        <ul>
-        {% for nested_item in item.items %}
-            <li>
-                <a href="{% if nested_item.url != null and nested_item.url != '' %}{{nested_item.url}}{% else %}javascript:void(0);{% endif %}" 
-                {% if nested_item.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
-                    {{nested_item.label}}
-                </a>
-            </li>
-        {% endfor %}
-        </ul>
-    {% endif %}
-{% endfor %}
+{% unless footer.items == blank %}
+    {% for item in footer.items %}
+        <a href="{% if item.url != '' %}{{item.url}}{% else %}javascript:void(0);{% endif %}"
+        {% if item.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            {{item.label}}
+        </a>
+        {% if item.items.size > 0 %}
+            <ul>
+            {% for nested_item in item.items %}
+                <li>
+                    <a href="{% if nested_item.url != '' %}{{nested_item.url}}{% else %}javascript:void(0);{% endif %}" 
+                    {% if nested_item.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                        {{nested_item.label}}
+                    </a>
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endfor %}
+{% endunless %}
 ```
 {% endraw %}
 

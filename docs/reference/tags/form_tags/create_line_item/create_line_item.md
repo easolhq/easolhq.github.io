@@ -6,7 +6,7 @@ grand_parent: Reference
 has_children: false
 ---
 
-The Create Line Item Tag renders a form which acts as a wrapper for a single item, an item can be a [variant]({% link docs/reference/product/variant/index.md %}) or an [extra]({% link docs/reference/product/extra.md %}).
+The Create Line Item Tag renders a form which acts as a wrapper for a single item, an item can be a [variant]({% link docs/reference/objects/product/variant/index.md %}) or an [extra]({% link docs/reference/objects/product/extra.md %}).
 Extra HTML input tags can be used to add item quantity, modifiers, adult count or start and end date.
 
 ##### input
@@ -40,7 +40,7 @@ Specify quantity
 ```
 {% endraw %}
 
-Include a modifier by referencing the [modifier.id]({% link docs/reference/product/modifier.md %})
+Include a modifier by referencing the [modifier.id]({% link docs/reference/objects/product/modifier.md %})
 {% raw %}
 ```html
   <input type="hidden" name="items[][modifier_ids][]" value="**<modifier.id>**" />

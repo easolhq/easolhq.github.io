@@ -62,6 +62,13 @@ Specify check in and check out dates for accommodation items
 ```
 {% endraw %}
 
+Clear all existing items out of a customer's cart before adding new items.
+{% raw %}
+```html
+  <input type="hidden" name="clear_cart">
+```
+{% endraw %}
+
 
 ##### Extra Params
 * `return_to:` To specify the redirect location, pass a URL as the value of the return_to: param.

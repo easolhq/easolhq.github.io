@@ -72,3 +72,12 @@ Dates should be formatted as `YYYY-MM-DD`.
   <input type="hidden" name="items[][end_on]" value="*<YYYY-MM-DD>*">
 ```
 {% endraw %}
+
+### Clear cart
+In some instances you may want to clear all existing items out of a customer's cart before adding new items, this can be done by adding an additional `clear_cart` input field.
+
+{% raw %}
+```liquid
+  <input type="hidden" name="clear_cart">
+```
+{% endraw %}

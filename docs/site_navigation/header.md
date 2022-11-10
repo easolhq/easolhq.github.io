@@ -1,16 +1,15 @@
 ---
 layout: default
-title: Header
+title: Header Template
 parent: Site Navigation
 nav_order: 1
 ---
 
 # Header
-
-The main site navigation can be defined by Creators in **My Site > Header** or any site page. Its template can be edited in the **menu template** (partials/menu/index.html). Please note that the terms "Header" and "Menu" might be used interchangeably.
+The main site navigation can be defined by Creators in **My Site > Header** or any site page. Its template can be edited in the **menu template** `(partials/menu/index.html)`. Please note that the terms "Header" and "Menu" might be used interchangeably.
 
 ## Menu template
-The [menu]({% link docs/objects/menu/index.md %}) is a special kind of [partial]({% link docs/guides/theme_architecture/partials/index.md %}) which is rendered in all site pages, always at the start of the `body` tag. It contains a [schema]({% link docs/guides/theme_architecture/blocks/schema/index.md %}) where [variables]({% link docs/guides/theme_architecture/blocks/schema/variables/index.md %}) can be added, removed or edited. The site navigation and all its attributes can be accessed through the [menu]({% link docs/reference/objects/menu/index.md %}) object. Refer to it for a full reference and examples.
+The [menu]({% link docs/reference/objects/menu/index.md %}) is a special kind of [partial]({% link docs/theme_architecture/partials.md %}) which is rendered in all site pages, always at the start of the `body` tag. It contains a [schema]({% link docs/theme_architecture/blocks/schema/index.md %}) where [variables]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) can be added, removed or edited. The site navigation and all its attributes can be accessed through the [menu]({% link docs/reference/objects/menu/index.md %}) object. Refer to it for a full reference and examples.
 
 ## Common examples
 
@@ -48,7 +47,7 @@ supports_open_new_tab: true
 {% endraw %}
 
 ### Custom variables
-All [variables]({% link docs/guides/theme_architecture/blocks/schema/variables/index.md %}) defined in the menu's [schema]({% link docs/guides/theme_architecture/blocks/schema/index.md %}) need to be accessed with `menu` and dot notation:
+All [variables]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) defined in the menu's [schema]({% link docs/theme_architecture/blocks/schema/index.md %}) need to be accessed with `menu` and dot notation:
 
 {% raw %}
 ```yaml

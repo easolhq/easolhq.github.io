@@ -28,9 +28,6 @@ Extra HTML input tags can be used to add item quantity, modifiers, adult count o
 ```
 {% endraw %}
 
-##### HTML Input
-The HTML input requires 
-
 ##### Extra HTML input tags
 
 Specify quantity

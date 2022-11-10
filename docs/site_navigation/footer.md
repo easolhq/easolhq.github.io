@@ -3,8 +3,6 @@ layout: default
 title: Footer Template
 parent: Site Navigation
 nav_order: 2
-has_children: false
-has_toc: false
 ---
 
 # Footer Template

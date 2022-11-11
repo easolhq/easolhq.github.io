@@ -74,7 +74,7 @@ Dates should be formatted as `YYYY-MM-DD`.
 {% endraw %}
 
 ### Clear cart
-In some instances you may want to clear all existing items out of a customer's cart before adding new items, this can be done by adding an additional `clear_cart` input field.
+In some instances you may want to clear all existing items out of a customer's cart before adding new items, this can be done by adding a `clear_cart` input field.
 
 {% raw %}
 ```liquid

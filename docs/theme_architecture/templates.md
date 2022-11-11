@@ -54,6 +54,6 @@ Selections is a way for a customer to come back after booking and make selection
 
 The selections template consists of an `index.html` file.
 
-The selection is passed via a single `item` [Modifier Selection]({% link docs/reference/objects/modifier_selection_session.md %}) object. It combines the data for a particular line item with the guest information for the user currently logged in.
+The selection is passed via a single `item` [Modifier Selection]({% link docs/reference/objects/modifier_selection_session.md %}) object. It combines the data for a particular line item with the guest information for the customer currently logged in.
 
-Each selection page is automatically generated at `site.com/items/*booking-id*/selections` and can only be accessed by the user to whose booking the selection applies.
+Each selection page is automatically generated at `site.com/items/*booking-id*/selections` and can only be accessed by the customer to whose booking the selection applies.

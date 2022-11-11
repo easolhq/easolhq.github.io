@@ -6,7 +6,7 @@ grand_parent: Reference
 has_children: false
 ---
 
-The Clear Cart Tag renders a button that clears the user's cart. 
+The Clear Cart Tag renders a button that clears the customer's cart. 
 
 ##### input
 {% raw %}
@@ -29,7 +29,7 @@ The Clear Cart Tag renders a button that clears the user's cart.
 {% endraw %}
 
 ##### redirect
-The Clear Cart Tag will redirect to the user's current page by default.
+The Clear Cart Tag will redirect to the customer's current page by default.
 See the `return_to:` param to customise.
 
 ##### Extra Params

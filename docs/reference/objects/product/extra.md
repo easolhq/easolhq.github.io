@@ -68,7 +68,7 @@ Returns the overview [image]({% link docs/reference/objects/image.md %}) of the 
 
 # extra.price
 
-Returns the [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current user's currency.
+Returns the [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current customer's currency.
 
 {% raw %}
 ```liquid
@@ -96,11 +96,11 @@ Returns the [price]({% link docs/reference/objects/product/price.md %}) of this 
 
 # extra.pre_checkout_modifier_groups
 
-Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this extra that the user must choose before checking out.
+Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this extra that the customer must choose before checking out.
 
 # extra.prices
 
-Returns an array containing the single [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current user's currency.
+Returns an array containing the single [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current customer's currency.
 
 {% raw %}
 ```liquid

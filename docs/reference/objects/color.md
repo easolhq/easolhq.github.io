@@ -22,7 +22,7 @@ The green component of the colour; a number between 0 and 255.
 
 The Hex value of the colour. e.g. `#005ce6`
 
-> When possible, prefer using `color.rgba` over `color.hex`. The site builder's colour picker allows users to select an opacity. RGBA values in CSS will include a colour's opacity, whereas Hex values will ignore it.
+> When possible, prefer using `color.rgba` over `color.hex`. The site builder's colour picker allows Creators to select an opacity. RGBA values in CSS will include a colour's opacity, whereas Hex values will ignore it.
 
 # color.red
 

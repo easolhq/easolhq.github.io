@@ -25,7 +25,7 @@ This option is ideal if you’re developing a fully custom site on Easol. The sk
 1. Speak to Easol to obtain 3 things; your unique theme key, your Easol key, and Easol secret.
 2. In your theme repo, go to **Workflows > main.yml**. Update the **THEME_KEY** to your unique theme key. These are usually of the form: **[name of creator]-theme** (e.g. “bayou-theme”).
 3. In your repo's Github, go to **Settings > Secrets > Actions > Repository Secrets** and set your easol key and secret **EASOL_KEY** and **EASOL_SECRET**
-4. Once your theme has been successfully deployed once, any user with Developer access can add the theme to an Easol Site, by entering the unique theme key when choosing a theme.
+4. Once your theme has been successfully deployed once, any Creator with Developer access can add the theme to an Easol Site, by entering the unique theme key when choosing a theme.
 
 
 ---

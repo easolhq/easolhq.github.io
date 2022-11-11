@@ -102,11 +102,11 @@ A payment plan will still be returned if the price is less than the initial paym
 
 # variant.pre_checkout_modifier_groups
 
-Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant that the user must choose before checking out.
+Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant that the customer must choose before checking out.
 
 # variant.price
 
-Returns the [price]({% link docs/reference/objects/product/price.md %}) of this variant in the current user's currency.
+Returns the [price]({% link docs/reference/objects/product/price.md %}) of this variant in the current customer's currency.
 
 {% raw %}
 ```liquid
@@ -134,7 +134,7 @@ Returns the [price]({% link docs/reference/objects/product/price.md %}) of this 
 
 # variant.prices
 
-Returns an array containing the [prices]({% link docs/reference/objects/product/price.md %}) of each tier of this variant in the current user's currency.
+Returns an array containing the [prices]({% link docs/reference/objects/product/price.md %}) of each tier of this variant in the current customer's currency.
 
 {% raw %}
 ```liquid

@@ -24,7 +24,7 @@ The quantity selected on the cart item as an integer.
 
 # item.price
 
-The price of the cart item _not_ including any modifier selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current user's currency.
+The price of the cart item _not_ including any modifier selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current customer's currency.
 
 # item.product
 
@@ -40,19 +40,19 @@ The start date of the product associated with the cart item.
 
 # item.subtotal
 
-The price of the cart item, including the total price of all modifier selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current user's currency.
+The price of the cart item, including the total price of all modifier selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current customer's currency.
 
 # item.total
 
-The total cost of the item, including the total price of all modifier selections and after all price reductions and fees have been applied. This is returned as a fractional in the sub-unit of the current user's currency.
+The total cost of the item, including the total price of all modifier selections and after all price reductions and fees have been applied. This is returned as a fractional in the sub-unit of the current customer's currency.
 
 # item.total_deposit
 
-The minimum amount to be paid for the item at checkout. If no deposit is enabled this will return the `total`, otherwise it will return the `total` multiplied by the deposit rate. This is returned as a fractional in the sub-unit of the current user's currency.
+The minimum amount to be paid for the item at checkout. If no deposit is enabled this will return the `total`, otherwise it will return the `total` multiplied by the deposit rate. This is returned as a fractional in the sub-unit of the current customer's currency.
 
 # item.total_fee
 
-The booking fee amount for the item returned as a fractional in the sub-unit of the current user's currency.
+The booking fee amount for the item returned as a fractional in the sub-unit of the current customer's currency.
 
 # item.total_guests
 
@@ -60,7 +60,7 @@ The total number of guests on the cart item, i.e. `quantity` multiplied by `adul
 
 # item.total_modifications_amount
 
-The total of all the modifier selections made on the cart item. This is returned as a fractional in the sub-unit of the current user's currency.
+The total of all the modifier selections made on the cart item. This is returned as a fractional in the sub-unit of the current customer's currency.
 
 # item.variant
 

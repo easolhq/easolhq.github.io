@@ -15,7 +15,7 @@ Returns a unique ID for the modifier.
 
 Returns a string of HTML attributes to be used on a checkbox for the modifier.
 
-- The `checked` attribute is included if this modifier has been selected by the user. Currently used on the selections page.
+- The `checked` attribute is included if this modifier has been selected by the customer. Currently used on the selections page.
 - The `disabled` attribute is included if the modifier is sold out and not already selected.
 
 {% raw %}
@@ -120,7 +120,7 @@ The name of the modifier.
 
 # modifier.price
 
-The price of the modifier as a fractional in the sub-unit of the current user's currency.
+The price of the modifier as a fractional in the sub-unit of the current customer's currency.
 e.g. considering the amount $19.50, it will return 1950.
 
 # modifier.remaining_stock
@@ -129,7 +129,7 @@ The remaining stock for the modifier. If the modifier has unlimited inventory th
 
 # modifier.selected
 
-Returns true if this modifier has been selected by the user. Currently used on the selections page.
+Returns true if this modifier has been selected by the customer. Currently used on the selections page.
 
 # modifier.sold_out
 

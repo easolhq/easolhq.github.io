@@ -6,7 +6,7 @@ parent: Objects
 
 This drop is available on the post-checkout selection page as `item`.
 It combines the data for a particular line item with the guest information for
-the user currently logged in.
+the customer currently logged in.
 
 # item.id
 

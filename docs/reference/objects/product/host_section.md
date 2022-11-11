@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `host_section` object you have access to the following attributes.
+When using a `Host_section` object you have access to the following attributes.
 
 # host_section.elements
 

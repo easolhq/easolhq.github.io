@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using an `faq` object you have access to the following attributes:
+When using an `Faq` object you have access to the following attributes:
 
 # faq.answer
 

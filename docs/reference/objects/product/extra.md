@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using an `extra` object you have access to the following attributes.
+When using an `Extra` object you have access to the following attributes.
 
 # extra.address
 
@@ -76,7 +76,7 @@ Returns the [price]({% link docs/reference/objects/product/price.md %}) of this 
 ```
 {% endraw %}
 
-> This method has some deprecated behaviour. If no methods are called on the [price]({% link docs/reference/objects/product/price.md %}) object that is returned from this method, then it will fallback to the legacy behaviour, which will return a string of the price, e.g. `$124 Per Person`.
+> This method has some deprecated behaviour. If no methods are called on the [Price]({% link docs/reference/objects/product/price.md %}) object that is returned from this method, then it will fallback to the legacy behaviour, which will return a string of the price, e.g. `$124 Per Person`.
 >
 > We have changed this behaviour because it is difficult to apply any math filters to this price string. It is more useful to have access to the numerical value of the price.
 >
@@ -135,4 +135,4 @@ Returns the extras tagline.
 
 # extra.type
 
-Will always return `"extra"`. This is useful when you have a list of `variant` and `extra` objects and you need to distinguish between them.
+Will always return `"extra"`. This is useful when you have a list of `Variant` and `Extra` objects and you need to distinguish between them.

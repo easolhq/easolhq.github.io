@@ -5,7 +5,7 @@ parent: Accommodation Variant
 grand_parent: Variant
 ---
 
-When using an `availability_day` object you have access to the following attributes.
+When using an `Availability_day` object you have access to the following attributes.
 
 # availability_day.available
 
@@ -17,4 +17,4 @@ The date as a timestamp. This can then be used in conjunction with Liquid's [ bu
 
 # availability_day.prices
 
-An array of [price]({% link docs/reference/objects/product/price.md %}) objects for the date.
+An array of [Price]({% link docs/reference/objects/product/price.md %}) objects for the date.

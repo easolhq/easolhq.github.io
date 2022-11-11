@@ -6,7 +6,7 @@ grand_parent: Objects
 ---
 
 This object represents a deposit of a variant or extra.<br>
-When using a `deposit` object you have access to the following attributes:
+When using a `Deposit` object you have access to the following attributes:
 
 # deposit.enabled
 

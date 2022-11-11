@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `schedule_section` object you have access to the following attributes:
+When using a `Schedule_section` object you have access to the following attributes:
 
 # schedule_section.elements
 

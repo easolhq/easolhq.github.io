@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `blog_post_section` object you have access to the following attributes:
+When using a `Blog_post_section` object you have access to the following attributes:
 
 # blog_post_section.posts
 

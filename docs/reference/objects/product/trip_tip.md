@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `trip_tip` object you have access to the following attributes:
+When using a `Trip_tip` object you have access to the following attributes:
 
 # trip_tip.body
 

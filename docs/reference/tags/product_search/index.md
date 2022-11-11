@@ -60,7 +60,7 @@ The Product Search Tag executes a search on the company's products, it then pagi
 ```
 {% endraw %}
 
-The tag returns an `items` array and a `paginate` pagination object to the block passed in, the items array represents 1 page of the results from the search.
+The tag returns an `items` array and a `Paginate` pagination object to the block passed in, the items array represents 1 page of the results from the search.
 
 
 # Pagination
@@ -129,7 +129,7 @@ or
 ## Accessing the query params
 
 Once the search has been executed, it can be helpful to get a reference to the params and values in the search.
-For that, we can use the `search` object, which exposes all of the params listed above in the "Passing explicit attributes" section.
+For that, we can use the `Search` object, which exposes all of the params listed above in the "Passing explicit attributes" section.
 
 *Example*
 

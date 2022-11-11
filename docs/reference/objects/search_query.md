@@ -4,7 +4,7 @@ title: Search query
 parent: Objects
 ---
 
-When using a `search` object each product search query parameter is available as an attribute.
+When using a `Search` object each product search query parameter is available as an attribute.
 
 # search.active_promotion
 Returns `true` or `false`.

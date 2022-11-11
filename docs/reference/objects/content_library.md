@@ -4,7 +4,7 @@ title: Content
 parent: Objects
 ---
 
-The `content` object has the following attributes.
+The `Content` object has the following attributes.
 
 # content.business
 

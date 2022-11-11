@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `promotion` object you have access to the following attributes
+When using a `Promotion` object you have access to the following attributes
 
 # promotion.active
 

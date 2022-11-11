@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `highlight` object you have access to the following attributes:
+When using a `Highlight` object you have access to the following attributes:
 
 # highlight.body
 

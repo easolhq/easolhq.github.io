@@ -4,7 +4,7 @@ title: Blog Post
 parent: Objects
 ---
 
-When using a `blog_post` object you have access to the following attributes.
+When using a `Blog_post` object you have access to the following attributes.
 
 # blog_post.author
 
@@ -20,11 +20,11 @@ The blog post's hero [image]({% link docs/reference/objects/image.md %}).
 
 # blog_post.next_post
 
-A `blog_post` object for the next post for the blog.
+A `Blog_post` object for the next post for the blog.
 
 # blog_post.previous_post
 
-A `blog_post` object for the previous post for the blog.
+A `Blog_post` object for the previous post for the blog.
 
 # blog_post.published_at
 

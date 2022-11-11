@@ -4,7 +4,7 @@ title: Modifier Selection
 parent: Cart
 ---
 
-The `selection` object has the following attributes.
+The `Selection` object has the following attributes.
 
 # selection.modifier
 

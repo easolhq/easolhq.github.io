@@ -4,11 +4,11 @@ title: Author
 parent: Objects
 ---
 
-When using an `author` object you have access to the following attributes.
+When using an `Author` object you have access to the following attributes.
 
 # author.avatar
 
-An [image]({% link docs/reference/objects/image.md %}) object for the author's avatar if they have one.
+An [Image]({% link docs/reference/objects/image.md %}) object for the author's avatar if they have one.
 
 # author.biography
 

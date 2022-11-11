@@ -4,7 +4,7 @@ title: Accommodation Merchandise
 parent: Product
 grand_parent: Objects
 ---
-When using an `accommodation` merchandise field object you have access to the following attributes.<br>
+When using an `Accommodation` merchandise field object you have access to the following attributes.<br>
 *Note:* Not to be mistaken with the product type `accommodation`.
 
 # accommodation.country

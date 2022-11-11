@@ -4,7 +4,7 @@ title: Item
 parent: Menu
 ---
 
-The `item` object can be accessed on the menu object as below.
+The `Item` object can be accessed on the `Menu` object as below.
 
 {% raw %}
 ```liquid
@@ -14,7 +14,7 @@ The `item` object can be accessed on the menu object as below.
 ```
 {% endraw %}
 
-When using an `item` object you have access to the following attributes.
+When using an `Item` object you have access to the following attributes.
 
 # item.label
 

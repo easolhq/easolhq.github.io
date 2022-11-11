@@ -4,7 +4,7 @@ title: Link
 parent: Objects
 ---
 
-The `link` object has the following attributes.
+The `Link` object has the following attributes.
 
 # link.host _(deprecated)_
 

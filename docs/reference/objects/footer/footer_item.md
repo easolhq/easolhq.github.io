@@ -4,7 +4,7 @@ title: Item
 parent: Footer
 ---
 
-The `item` object can be accessed on the footer object as below.
+The `Item` object can be accessed on the `Footer` object as below.
 
 {% raw %}
 ```liquid
@@ -14,7 +14,7 @@ The `item` object can be accessed on the footer object as below.
 ```
 {% endraw %}
 
-When using a `item` object you have access to the following attributes.
+When using a `Item` object you have access to the following attributes.
 
 # item.label
 

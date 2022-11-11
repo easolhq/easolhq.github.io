@@ -4,7 +4,7 @@ title: Color
 parent: Objects
 ---
 
-The `color` object has the following attributes. More information about how RGB and Hex colors are used in CSS can be seen here - [CSS Colors](https://www.w3schools.com/css/css_colors.asp).
+The `Color` object has the following attributes. More information about how RGB and Hex colors are used in CSS can be seen here - [CSS Colors](https://www.w3schools.com/css/css_colors.asp).
 
 # color.alpha
 

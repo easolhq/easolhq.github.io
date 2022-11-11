@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-The `useful_info` object has the following attributes
+The `Useful_info` object has the following attributes
 
 # useful_info.check_in
 

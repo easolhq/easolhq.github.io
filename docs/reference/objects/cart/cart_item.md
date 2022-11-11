@@ -4,7 +4,7 @@ title: Cart Item
 parent: Cart
 ---
 
-The `item` object has the following attributes.
+The `Item` object has the following attributes.
 
 # item.adult_count
 

@@ -5,7 +5,7 @@ parent: Objects
 has_children: true
 ---
 
-Footer templates define their own schema, in a similar way to blocks. All of the attributes defined on a footer's schema are made available via the `footer` object.
+Footer templates define their own schema, in a similar way to blocks. All of the attributes defined on a footer's schema are made available via the `Footer` object.
 
 For example, consider the following footer schema:
 
@@ -26,9 +26,9 @@ attributes:
 ---
 ```
 
-Within the footer template, `footer.image` and `footer.background_colour` will be available. In this scenario, `footer.image` will return an [image]({% link docs/reference/objects/image.md %}) object and `footer.background_colour` will return a [color]({% link docs/reference/objects/color.md %}) object.
+Within the footer template, `footer.image` and `footer.background_colour` will be available. In this scenario, `footer.image` will return an [Image]({% link docs/reference/objects/image.md %}) object and `footer.background_colour` will return a [Color]({% link docs/reference/objects/color.md %}) object.
 
-As well as the attributes that are available from the schema, the `footer` object has the following attributes:
+As well as the attributes that are available from the schema, the `Footer` object has the following attributes:
 
 # footer.items
 

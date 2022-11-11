@@ -20,7 +20,7 @@ The custom type's unique key, used in the block schema to reference the custom t
 The name of the custom type shown to the Creator in the site builder.
 
 #### Attributes
-An array of [variable]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) objects, defining the individual variable fields to be included in the custom type.
+An array of [Variable]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) objects, defining the individual variable fields to be included in the custom type.
 
 
 ##### e.g. For a file my-theme/types/my_custom_type.json

@@ -4,9 +4,9 @@ title: Series
 parent: Objects
 ---
 
-When using a `series` object you have access to the following attributes, which delegate to the associated
-[product]({% link docs/reference/objects/product/index.md %}) and
-[variant]({% link docs/reference/objects/product/variant/index.md %}) objects as needed.
+When using a `Series` object you have access to the following attributes, which delegate to the associated
+[Product]({% link docs/reference/objects/product/index.md %}) and
+[Variant]({% link docs/reference/objects/product/variant/index.md %}) objects as needed.
 
 # series.countries
 

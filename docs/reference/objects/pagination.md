@@ -4,7 +4,7 @@ title: Pagination
 parent: Objects
 ---
 
-When using a `pagination` object you will have access to the following methods to manage the layout and UI.
+When using a `Pagination` object you will have access to the following methods to manage the layout and UI.
 
 # pagination.collection_size
 

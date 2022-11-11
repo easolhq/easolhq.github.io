@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `host` object you have access to the following attributes:
+When using a `Host` object you have access to the following attributes:
 
 # host.body
 

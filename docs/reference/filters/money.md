@@ -27,7 +27,7 @@ Assuming the customer's currency is GBP
 
 # apply_promotion
 
-This filter will return the discounted version of a given [price]({% link docs/reference/objects/product/price.md %}) when a [promotion]({% link docs/reference/objects/product/promotion.md %}) is applied. It will return a [price]({% link docs/reference/objects/product/price.md %}) object.
+This filter will return the discounted version of a given [price]({% link docs/reference/objects/product/price.md %}) when a [promotion]({% link docs/reference/objects/product/promotion.md %}) is applied. It will return a [Price]({% link docs/reference/objects/product/price.md %}) object.
 
 ##### input
 {% raw %}

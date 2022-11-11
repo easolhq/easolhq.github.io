@@ -4,7 +4,7 @@ title: Cart
 parent: Objects
 ---
 
-The `cart` object has the following attributes.
+The `Cart` object has the following attributes.
 
 # cart.items
 

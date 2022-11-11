@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `schedule element` object you have access to the following attributes
+When using a `Schedule element` object you have access to the following attributes
 
 # element.body
 

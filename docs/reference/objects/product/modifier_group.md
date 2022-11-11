@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `modifier_group` object you have access to the following attributes:
+When using a `Modifier_group` object you have access to the following attributes:
 
 # modifier_group.id
 

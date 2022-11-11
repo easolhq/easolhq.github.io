@@ -6,7 +6,7 @@ grand_parent: Objects
 has_children: true
 ---
 
-When using a `variant` object you have access to the following attributes:<br>
+When using a `Variant` object you have access to the following attributes:<br>
 *Note:* this defines a common interface shared between
 [Experience Variant]({% link docs/reference/objects/product/variant/experience_variant/index.md %}) and
 [Accommodation Variant]({% link docs/reference/objects/product/variant/accommodation_variant/index.md %}).
@@ -114,7 +114,7 @@ Returns the [price]({% link docs/reference/objects/product/price.md %}) of this 
 ```
 {% endraw %}
 
-> This method has some deprecated behaviour. If no methods are called on the [price]({% link docs/reference/objects/product/price.md %}) object that is returned from this method, then it will fallback to the legacy behaviour, which will return a string of the price, e.g. `$124 Per Person`.
+> This method has some deprecated behaviour. If no methods are called on the [Price]({% link docs/reference/objects/product/price.md %}) object that is returned from this method, then it will fallback to the legacy behaviour, which will return a string of the price, e.g. `$124 Per Person`.
 >
 > We have changed this behaviour because it is difficult to apply any math filters to this price string. It is more useful to have access to the numerical value of the price.
 >

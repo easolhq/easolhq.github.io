@@ -5,7 +5,7 @@ parent: Objects
 has_children: true
 ---
 
-When using a `product` object you have access to the following attributes.
+When using a `Product` object you have access to the following attributes.
 
 # product.accommodations
 
@@ -82,7 +82,7 @@ Returns the "featured" [variant]({% link docs/reference/objects/product/variant/
 
 # product.gallery
 
-Returns an array of [image objects]({% link docs/reference/objects/image.md %}) for the products gallery
+Returns an array of [Image]({% link docs/reference/objects/image.md %}) objects for the products gallery
 
 # product.has_infinite_stock
 
@@ -164,7 +164,7 @@ Returns the product's [schedule section]({% link docs/reference/objects/product/
 
 # product.series
 
-If the product is in a series this will return a [series object]({% link docs/reference/objects/series.md %})
+If the product is in a series this will return a [Series]({% link docs/reference/objects/series.md %}) object.
 
 # product.shop_path
 

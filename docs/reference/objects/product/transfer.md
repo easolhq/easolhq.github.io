@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `transfer` object you have access to the following attributes:
+When using a `Transfer` object you have access to the following attributes:
 
 # transfer.departs_on
 

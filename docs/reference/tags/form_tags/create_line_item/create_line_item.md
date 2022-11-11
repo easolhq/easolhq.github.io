@@ -28,9 +28,6 @@ Extra HTML input tags can be used to add item quantity, modifiers, adult count o
 ```
 {% endraw %}
 
-##### HTML Input
-The HTML input requires 
-
 ##### Extra HTML input tags
 
 Specify quantity
@@ -59,6 +56,13 @@ Specify check in and check out dates for accommodation items
 ```html
   <input type="hidden" name="items[][start_on]" value="**<YYYY-MM-DD>**">
   <input type="hidden" name="items[][end_on]" value="**<YYYY-MM-DD>**">
+```
+{% endraw %}
+
+Clear all existing items out of a customer's cart before adding new items.
+{% raw %}
+```html
+  <input type="hidden" name="clear_cart">
 ```
 {% endraw %}
 

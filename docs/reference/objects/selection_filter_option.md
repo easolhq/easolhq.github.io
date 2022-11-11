@@ -17,5 +17,4 @@ The name of the filter this belongs to (matches the name of the parent [Selectio
 
 # selection_filter_option.attributes
 
-The data attributes needed to be included on a filter option in order for it to
-filter correctly.
+The data attributes needed to be included on a filter option for it to filter correctly.

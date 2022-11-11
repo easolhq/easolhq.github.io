@@ -10,7 +10,7 @@ Easol has developed and maintains a gem called easol-canvas, which is used for v
 The `canvas lint` command will run the following validation checks:
 
 1. RequiredFilesCheck
-    1. Checks that the required files exist and is not empty:
+    1. Checks that the required files exist and are not empty:
         1. templates/product/index
         2. templates/blog_overview/index
         3. templates/blog_post/index
@@ -28,14 +28,14 @@ The `canvas lint` command will run the following validation checks:
 6. ValidBlockSchemasCheck
     1. Validates the schema defined in the front matter within each block template
         1. Correctly formatted
-        2. For each attribute, required key (type) is present
+        2. For each attribute, the required key (type) is present
         3. All keys are valid, and types exist
 7. ValidMenuSchemaCheck
     1. Validates the schema in partials/menu/index.html
 8. ValidFooterSchemaCheck
     1. Validates the schema in partials/footer/index.html
 9. ValidCustomTypesCheck
-    1. Validates all custom types is valid with valid attribute definitions
+    1. Validates all custom types are valid with valid attribute definitions
 
 ## Usage
 

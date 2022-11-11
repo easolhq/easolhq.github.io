@@ -31,4 +31,4 @@ The Item Selections Tag returns an object which can be used as a wrapper to disp
 The item param is required
 
 ##### Extra Params
-* `guest::` A guest ID is required when the modifiers has a guest
+* `guest::` A guest ID is required when the modifier has a guest

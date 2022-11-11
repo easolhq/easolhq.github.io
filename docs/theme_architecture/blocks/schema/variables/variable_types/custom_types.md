@@ -8,7 +8,7 @@ grand_parent: Variables
 # Custom types
 
 Custom types allow you to define reusable objects which include multiple variable fields.
-They are defined in a theme in the [/types]({% link docs/theme_architecture/custom_types.md %}) directory as a json file, which can then be refered to in any block using the custom type `key`. Custom types return an object.
+They are defined in a theme in the [/types]({% link docs/theme_architecture/custom_types.md %}) directory as a json file, which can then be referred to in any block using the custom type `key`. Custom types return an object.
 
 ##### Example custom type defined in the [/types]({% link docs/theme_architecture/custom_types.md %}) directory
 {% raw %}
@@ -75,7 +75,7 @@ my_variable:
 {% endraw %}
 
 ## Arrays
-You can also define arrays of custom types to build more complex UI’s, for example to allow a Creator to add an array of buttons.
+You can also define arrays of custom types to build more complex UI’s, for example, to allow a Creator to add an array of buttons.
 
 ##### syntax
 {% raw %}

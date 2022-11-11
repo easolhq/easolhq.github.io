@@ -6,7 +6,7 @@ grand_parent: Product
 has_children: true
 ---
 
-The `accommodation_variant` object will inherit all attributes that are defined on
+The `accommodation_variant` object will inherit all attributes defined on
 the [variant]({% link docs/reference/objects/product/variant/index.md %}) object, plus
 it has access to the following attributes:
 
@@ -16,4 +16,4 @@ Returns the minimum number of nights the variant can be booked for.
 
 # accommodation_variant.type
 
-This will return `accommodation_variant`.
+Will return `accommodation_variant`.

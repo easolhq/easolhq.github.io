@@ -47,7 +47,7 @@ It is cumulative for each missing occupant i.e. a 5 person room, priced at $300 
 | 1           | $220            |
 
 
-In order to display occupancy based pricing, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
+To display occupancy-based pricing, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
 
 E.g.
 {% raw %}

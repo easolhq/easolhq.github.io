@@ -16,7 +16,7 @@ Returns the description of the content.
 
 # content.facebook
 
-Returns the facebook username of the content.
+Returns the Facebook username of the content.
 
 # content.id
 
@@ -28,7 +28,7 @@ Returns the content's [image]({% link docs/reference/objects/image.md %}).
 
 # content.instagram
 
-Returns the instagram username of the content.
+Returns the Instagram username of the content.
 
 # content.link
 
@@ -44,8 +44,8 @@ Returns the name of the content.
 
 # content.twitter
 
-Returns the twitter username of the content.
+Returns the Twitter username of the content.
 
 # content.url
 
-Returns the url for the content's page in the site.
+Returns the url for the content's page on the site.

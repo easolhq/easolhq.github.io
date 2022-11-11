@@ -8,12 +8,12 @@ For quick reference please see [Payment Plans]({% link docs/reference/objects/pr
 
 Setting a payment plan on a product allows customers to choose to pay in instalments. Creators must choose a number of monthly instalments to spread payment over. The initial payment is made at the time of booking and monthly due dates are set for the remaining instalments. The Creator may optionally set a fixed amount for the initial payment. 
 
-In order to display the payment plan in Sites, note;
+To display the payment plan in Sites, note;
 
 - Payment Plans are configured at a Product level, but you can check for payment plan details directly on Variant objects. 
 - Payment Plans can be set on both Experience and Accommodation product types.
 - If the price is 0 or if a promotion is applied and a fixed initial payment is set which is greater than the promotional price, `variant.payment_plan` may return true, but it doesn't make sense to present a payment plan option as being available. 
-- If the last scheduled date of the payment plan would be after the product's start date,`variant.payment_plan` will return false, you don't need to check for this.
+- If the last scheduled date of the payment plan would be after the product's start date, `variant.payment_plan` will return false, you don't need to check for this.
 
 {% raw %}
 ```liquid

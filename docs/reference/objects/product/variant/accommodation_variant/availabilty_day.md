@@ -13,7 +13,7 @@ If the accommodation is marked as available for the date.
 
 # availability_day.date
 
-The date as a timestamp. This can then be used in conjunction with Liquid's [ built in filters ](https://shopify.github.io/liquid/filters/date/).
+The date as a timestamp. This can then be used in conjunction with Liquid's [ built-in filters ](https://shopify.github.io/liquid/filters/date/).
 
 # availability_day.prices
 

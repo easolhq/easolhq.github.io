@@ -14,7 +14,7 @@ The `item` object can be accessed on the menu object as below.
 ```
 {% endraw %}
 
-When using a `item` object you have access to the following attributes.
+When using an `item` object you have access to the following attributes.
 
 # item.label
 
@@ -57,7 +57,7 @@ The target url for the menu item.
 
 > **Deprecated**
 >
-> This is deprecated as it will actually return a full URL. Please use `item.url` instead.
+> This is deprecated as it will return a full URL. Please use `item.url` instead.
 
 # item.url
 

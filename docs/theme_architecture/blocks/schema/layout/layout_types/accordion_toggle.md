@@ -6,7 +6,7 @@ nav_order: 3
 ---
 
 # Accordion toggle
-A layout `accordion_toggle` groups variables within an accordion in the Easol site builder. The accordion state is controled by a `boolean` variable and additional elements are shown or hidden depending on the value of the `boolean`. An `accordion_toggle` can be nested inside a `tab`, but not within another `accordion` or `accordion_toggle`. 
+A layout `accordion_toggle` groups variables within an accordion in the Easol site builder. The accordion state is controlled by a `boolean` variable and additional elements are shown or hidden depending on the value of the `boolean`. An `accordion_toggle` can be nested inside a `tab`, but not within another `accordion` or `accordion_toggle`. 
 
 ## Attributes
 An `accordion_toggle` expects the following attributes:

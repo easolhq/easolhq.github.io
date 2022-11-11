@@ -15,7 +15,7 @@ Returns a unique ID for the modifier.
 
 Returns a string of HTML attributes to be used on a checkbox for the modifier.
 
-- The `checked` attribute is included if this modifer has been selected by the user. Currently used on the selections page.
+- The `checked` attribute is included if this modifier has been selected by the user. Currently used on the selections page.
 - The `disabled` attribute is included if the modifier is sold out and not already selected.
 
 {% raw %}
@@ -90,7 +90,7 @@ For example, a modifier with filterable custom fields and values "Category" and 
 
 The first attribute, `data-filter-target="filterable"` identifies the element to the filter controller and is always present.
 
-This is useful for handling filtering of modifiers via Javascript.
+This is useful for handling the filtering of modifiers via Javascript.
 
 # modifier.has_infinite_stock
 
@@ -129,7 +129,7 @@ The remaining stock for the modifier. If the modifier has unlimited inventory th
 
 # modifier.selected
 
-Returns true if this modifer has been selected by the user. Currently used on the selections page.
+Returns true if this modifier has been selected by the user. Currently used on the selections page.
 
 # modifier.sold_out
 

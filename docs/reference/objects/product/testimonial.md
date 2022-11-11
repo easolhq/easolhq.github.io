@@ -29,4 +29,4 @@ Returns the url the testimonial has been attributed to.
 
 # testimonial.source_name
 
-Returns the name for the source of the testimonial.
+Returns the name of the source of the testimonial.

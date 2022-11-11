@@ -29,12 +29,12 @@ Returns the name of the country the product is based in
 
 # product.dates
 
-Returns the products dates as a formatted string based on whether the event is multi day or not.
+Returns the dates of the product as a formatted string based on whether the event is multi-day or not.
 e.g `15 - 20 November 2019` or `15 November 2019`
 
 # product.depart_on
 
-If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with liquids[ built in filters ](https://shopify.github.io/liquid/filters/date/)
+If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with liquids[ built-in filters ](https://shopify.github.io/liquid/filters/date/)
 
 # product.deposit.rate
 
@@ -54,7 +54,7 @@ Returns the duration of the product including duration unit e.g. `5 nights`
 
 # product.enquire_only
 
-Returns true if the product has been marked as Enquiry Only within the product payment settings
+Returns `true` if the product has been marked as Enquiry Only within the product payment settings
 
 # product.extras
 
@@ -62,7 +62,7 @@ Returns an array of the products [extras]({% link docs/reference/objects/product
 
 # product.facilities _(deprecated)_
 
-Returns an array of the products facilities
+Returns an array of the product's facilities
 
 > **Deprecated**
 >
@@ -78,7 +78,7 @@ Returns an array of the products [accommodations]({% link docs/reference/objects
 
 # product.featured_variant
 
-Returns the "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product, otherwise the variant with the cheapest per-person price, factoring in any promotions.
+Returns the "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
 
 # product.gallery
 
@@ -122,7 +122,7 @@ Returns a boolean indicating whether or not the product includes accommodation o
 
 # product.min_price _(deprecated)_
 
-Returns a humanized price for the products cheapest configuration e.g. `$1,027 Per Person` or `$150 Per Night`
+Returns a humanized price for the product's cheapest configuration e.g. `$1,027 Per Person` or `$150 Per Night`
 This excludes Sold Out and Hidden variants.
  If the display variant is changed within the product this will be used instead of the cheapest variant
 
@@ -132,15 +132,15 @@ This excludes Sold Out and Hidden variants.
 
 # product.minimum_nights
 
-If the product is an accommodation this will return the minimum number of nights the product can be booked for
+If the product is an accommodation this will return the minimum number of nights the product can be booked for.
 
 # product.name
 
-Returns the name of the product
+Returns the name of the product.
 
 # product.overview
 
-Returns the overview of the product
+Returns the overview of the product.
 
 # product.overview_image
 
@@ -148,7 +148,7 @@ Returns the products overview [image]({% link docs/reference/objects/image.md %}
 
 # product.remaining_stock
 
-Returns the sum of remaining stock for a products variants, if any of the products has infinite inventory this will return `nil`
+Returns the sum of remaining stock for a product's variants, if any of the variants have infinite inventory this will return `nil`.
 
 # product.schedule _(deprecated)_
 
@@ -176,7 +176,7 @@ Returns the url for the product's cart shop page.
 
 # product.sold_out
 
-Returns true if the product is sold out
+Returns `true` if the product is sold out
 
 # product.subcategory
 
@@ -204,7 +204,7 @@ Returns the type of this product, one of `"experience"` or `"accommodation"`.
 
 # product.url
 
-Returns the url for the product's page in the site
+Returns the url for the product's page on the site.
 
 # product.useful_info
 

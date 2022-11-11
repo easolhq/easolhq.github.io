@@ -9,7 +9,7 @@ When using a `promotion` object you have access to the following attributes
 
 # promotion.active
 
-Returns true if the promotion is currently active.
+Returns `true` if a promotion is currently active.
 
 # promotion.category
 
@@ -34,7 +34,7 @@ It will return `nil` if the promotion is a percentage discount.
 
 # promotion.discount_is_percentage
 
-Returns true if this promotion is a percentage discount.
+Returns `true` if this promotion is a percentage discount.
 
 # promotion.discount_percentage
 
@@ -43,7 +43,7 @@ It will return `nil` if the promotion is a monetary amount.
 
 # promotion.ends_on
 
-Returns the date the promotion will end on as a timestamp, this can then be used in conjunction with liquids[ built in filters ](https://shopify.github.io/liquid/filters/date/).
+Returns the date the promotion will end as a timestamp, this can then be used in conjunction with liquids[ built-in filters ](https://shopify.github.io/liquid/filters/date/).
 It will return `nil` if the promotion doesn't have an end date.
 
 # promotion.name
@@ -52,7 +52,7 @@ Returns the name of the promotion.
 
 # promotion.starts_on
 
-Returns the date the promotion will start on as a timestamp, this can then be used in conjunction with liquids[ built in filters ](https://shopify.github.io/liquid/filters/date/).
+Returns the date the promotion will start as a timestamp, this can then be used in conjunction with liquids[ built-in filters ](https://shopify.github.io/liquid/filters/date/).
 
 # promotion.tagline
 

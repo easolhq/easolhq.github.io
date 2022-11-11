@@ -51,7 +51,7 @@ Specify adult count for a per-unit item or accommodation
 ```
 {% endraw %}
 
-Specify check in and check out dates for accommodation items
+Specify check-in and check-out dates for accommodation items
 {% raw %}
 ```html
   <input type="hidden" name="items[][start_on]" value="**<YYYY-MM-DD>**">

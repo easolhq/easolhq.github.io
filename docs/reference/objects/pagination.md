@@ -17,7 +17,7 @@ If our collection was `[1,2,3,4]` and the offset was 2 then our result would be 
 
 # pagination.current_page
 
-The page number currently being displayed, this is driven by a query param e.g. `url.com/?page=3` 
+The page number currently being displayed. This is driven by a query param e.g. `url.com/?page=3` 
 
 # pagination.next
 
@@ -33,7 +33,7 @@ The maximum number of items displayed on each page
 
 # pagination.parts
 
-This returns an array of pagination links which represents links to specific page numbers of the collection, this handles abbreviation to an ellipsis if the number of pages is too high.
+This returns an array of pagination links which represent links to specific page numbers of the collection, this handles abbreviation to an ellipsis if the number of pages is too high.
 
 # pagination.previous
 

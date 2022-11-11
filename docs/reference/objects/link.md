@@ -51,7 +51,7 @@ The path of the URL for this link.
 
 > **Deprecated**
 >
-> This is deprecated as it will actually return a full URL. Please use `link.url` instead.
+> This is deprecated as it will return a full URL. Please use `link.url` instead.
 
 # link.url
 

@@ -65,7 +65,7 @@ The tag returns an `items` array and a `paginate` pagination object to the block
 
 # Pagination
 
-The results of this search are paginated for performance reasons, with this you can pass a number of results to display per page as the `page_size` attribute, this defaults to 12.
+The results of this search are paginated for performance reasons, with this you can define the number of results to display per page as the `page_size` attribute, which defaults to 12.
 
 # Search Params
 
@@ -75,23 +75,23 @@ Search params can be handled in one of two ways:
 
 It's possible to use any of the following attributes in the search tag itself, this is useful for building a page responsible for a specific type of product:
 * `active_promotion` Passing `true` to this will mean all items returned will have a currently active promotion.
-* `category` Will search for products which match the category passed, this must use one of Fixers predefined categories, will accept either a single Category or an array.
-* `country` This attribute accepts either Country Codes or Country Names, can be passed as a single attribute or as an array, e.g. `country: ['FR', 'DE']`
+* `category` Will search for products which match the category passed, this must use one of Easol's predefined categories and will accept either a single Category or an array.
+* `country` This attribute accepts either Country Codes or Country Names and can be passed as a single attribute or as an array, e.g. `country: ['FR', 'DE']`
 * `departure_date` This attribute takes an object which specifies how to handle the search, through `equal_to` `greater_than` `greater_or_equal_than` or `less_than` each taking a date in SQL format `YYYY-MM-DD` e.g. `departure_date: {greater_than: 'now', less_than: '2019-12-28' }`
 * `departure_month` This allows you to specify which month the trips should depart in, e.g. passing `departure_date: 'Apr'` would return any trips departing in april 2020, april 2021 ..., You can also pass the number of the month i.e. `departure_month: 4` would return the same results.
 * `duration` This attribute takes an object which specifies how to handle the search, through `equal_to` `greater_than` or `less_than` each taking a number of days e.g. `duration: {greater_than: 3, less_than: 8 }`
 * `name` This executes a partial search on the string passed in and will return any products whose name matches the argument.
-* `subcategory` Will search for products which match the subcategory passed, this must use one of Fixers predefined subcategories, will accept either a single Subcategory or an array.
-* `page_size` Will determine how many results are shown per page. If this is not included it will deafult to 12 results per page. e.g. `page_size: 12`
+* `subcategory` Will search for products which match the subcategory passed, this must use one of Easol's predefined subcategories and will accept either a single Subcategory or an array.
+* `page_size` Will determine how many results are shown per page. If this is not included it will default to 12 results per page. e.g. `page_size: 12`
 * `include_organisation_products` This allows you to include products from other companies which are linked in the same organisation. e.g. `include_organisation_products: true`
 * `sort` The sorting order of results. The available options are: `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` and `departure_date_desc`, where the `_asc` and `_desc` parts represent ascending and descending orders respectively.
-* `series_id` The id of series to filter by.
+* `series_id` The id of the series to filter by.
 
 ## As query params
 
-It's also possible to pass search params as query params, this is useful for when building dynamic search pages.
+It's also possible to pass search params as query params, this is useful when building dynamic search pages.
 
-Any of the above attributes can be used as a query param and should all be namespacd to search
+Any of the above attributes can be used as a query param and should all be namespaced to search
 
 e.g.
 `http://beyondadventures.com/search?search[name]=beyond&search[departure_date][greater_than]=2021-11-22`
@@ -129,7 +129,7 @@ or
 ## Accessing the query params
 
 Once the search has been executed, it can be helpful to get a reference to the params and values in the search.
-For that we can use the `search` object, which exposes all of the params listed above in the "Passing explicit attributes" section.
+For that, we can use the `search` object, which exposes all of the params listed above in the "Passing explicit attributes" section.
 
 *Example*
 

@@ -63,7 +63,7 @@ To specify the adult count an additional input field is required, if no adult co
 {% endraw %}
 
 ### Start on / End on
-Accommodation variants require a check in and check out date to be defined on the form. These are defined using start date and end date input fields.
+Accommodation variants require a check-in and check-out date to be defined on the form. These are defined using start date and end date input fields.
 Dates should be formatted as `YYYY-MM-DD`.
 
 {% raw %}

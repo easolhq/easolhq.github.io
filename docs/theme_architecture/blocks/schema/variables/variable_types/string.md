@@ -6,7 +6,7 @@ parent: Variable types
 
 # String
 
-Renders an string input field and returns a string.
+Renders a string input field and returns a string.
 
 ##### syntax
 {% raw %}

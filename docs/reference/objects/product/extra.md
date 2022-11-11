@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `extra` object you have access to the following attributes.
+When using an `extra` object you have access to the following attributes.
 
 # extra.address
 
@@ -17,7 +17,7 @@ Returns the name of the country for the product that this extra is part of.
 
 # extra.deposit_amount _(deprecated)_
 
-Returns a humanized price for the extras deposit amount, if deposit's are not set on the extra this will just return `extra.price` e.g. `$250 Per Person`.
+Returns a humanized price for the extras deposit amount, if deposits are not set on the extra this will just return `extra.price` e.g. `$250 Per Person`.
 
 > **Deprecated**
 >
@@ -36,7 +36,7 @@ Returns true if the extra has unlimited stock.
 
 # extra.hero_image
 
-Returns the hero [image]({% link docs/reference/objects/image.md %}) of the [product]({% link docs/reference/objects/product/index.md %}) this extra is belongs to.
+Returns the hero [image]({% link docs/reference/objects/image.md %}) of the [product]({% link docs/reference/objects/product/index.md %}) the extra belongs to.
 
 # extra.id
 
@@ -115,7 +115,7 @@ Returns the [product]({% link docs/reference/objects/product/index.md %}) this e
 
 # extra.promotion
 
-Returns the extras current active [promotion]({% link docs/reference/objects/product/promotion.md %}) if there is one.
+Returns the extra's current active [promotion]({% link docs/reference/objects/product/promotion.md %}) if there is one.
 
 # extra.remaining_stock
 

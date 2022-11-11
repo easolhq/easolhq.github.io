@@ -30,7 +30,7 @@ The Cache tag assigns a unique key to avoid conflicts between blocks with identi
 The cache clears every 30 minutes by default and refreshes on the next page load.
 A custom expiry time can be set by passing in an `expires_in` argument and the time in seconds. 
 
-The following example pased two variant keys sets an expiry time of 5 minutes: `expires_in: 300`
+The following example sets an expiry time of 5 minutes: `expires_in: 300`
 
 ##### input
 {% raw %}

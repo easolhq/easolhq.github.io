@@ -8,7 +8,7 @@ nav_order: 1
 # Easol shop pages
 In addition to a [product page]({% link docs/theme_architecture/templates.md %}), each experience has an automatically generated 'shop' page, which can be found at `site.com/shop/product-slug`. 
 
-This page includes key details of the experience including the name, country, dates, tagline and the hero image. On this page customers are able to add items to their cart, remove items from their cart, update item quantities and see a breakdown of the contents of their cart before proceeding to checkout.
+This page includes key details of the experience including the name, country, dates, tagline and hero image. On this page customers can add items to their cart, remove items from their cart, update item quantities and see a breakdown of the contents of their cart before proceeding to checkout.
 
 ## Shop page customisation
 The Creator's [brand colours]({% link docs/site_styles/index.md %}) set under My Site > Styles are applied to some elements of the shop page by default. 

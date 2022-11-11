@@ -50,7 +50,7 @@ Returns a humanized display amount e.g. `$120.00`
 
 > **Deprecated**
 >
-> The display amount should be obtained, using the `variant.price` with the `money` filter.
+> The display amount should be obtained using the `variant.price` with the `money` filter.
 >
 > {% raw %}
 > ```liquid
@@ -64,7 +64,7 @@ Returns a unique id for the variant.
 
 # variant.image
 
-Returns the variant's [image]({% link docs/reference/objects/image.md %}) it it has one.
+Returns the variant's [image]({% link docs/reference/objects/image.md %}) if it has one.
 
 # variant.initial_stock
 
@@ -72,7 +72,7 @@ Returns the initial stock for the variant, if the variant has unlimited inventor
 
 # variant.is_priced_per_person
 
-Returns true whether this variant is priced per-person.
+Returns true whether this variant is priced per person.
 
 # variant.modifier_groups
 

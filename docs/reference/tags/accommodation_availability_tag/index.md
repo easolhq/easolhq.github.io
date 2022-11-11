@@ -45,4 +45,4 @@ The tag returns a `days` array to the block passed in, the `days` array represen
 ## Passing explicit attributes
 
 It's possible to use any of the following attributes in the accommodation availability tag itself, this is useful for building a page responsible for a specific type of product:
-* `number_of_months` Passing a number will result on the number of consecutive months that will be fetched. This defaults to 1.
+* `number_of_months` Passing a number will define the number of consecutive months that will be fetched. This defaults to 1.

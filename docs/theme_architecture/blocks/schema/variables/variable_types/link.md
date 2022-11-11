@@ -6,7 +6,7 @@ parent: Variable types
 
 # Link
 
-Renders an link field from which a Creator can select a page, product, blog post or enter a custom url.
+Renders a link field from which a Creator can select a page, product, blog post or enter a custom url.
 Returns a [Link]({% link docs/reference/objects/link.md %}) object.
 
 ##### syntax

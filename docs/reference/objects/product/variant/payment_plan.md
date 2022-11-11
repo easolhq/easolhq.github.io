@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PaymentPlan
+title: Payment Plan
 parent: Variant
 grand_parent: Product
 has_children: false
@@ -10,8 +10,8 @@ A `payment_plan` has the following attributes:
 
 # payment_plan.initial_payment_amount_fractional
 
-The up front payment for this payment plan, in the quantity of the
-smallest unit for this currenct. (e.g. cents for USD, pence for GBP, yen
+The upfront payment for this payment plan, in the quantity of the
+smallest unit for this currency. (e.g. cents for USD, pence for GBP, yen
 for JPY etc.)
 
 This will be nil if there is no custom initial payment amount set.
@@ -24,4 +24,4 @@ Whether or not a custom initial payment amount has been set.
 
 # payment_plan.number_of_instalments
 
-The number of payments needed to pay off this plan.
+The number of instalments needed to pay off this plan.

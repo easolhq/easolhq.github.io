@@ -21,7 +21,7 @@ Returns the [image]({% link docs/reference/objects/image.md %}) of the host.
 
 # host.instagram_username
 
-Returns the instagram username for the host if set.
+Returns the Instagram username for the host if set.
 
 # host.name
 

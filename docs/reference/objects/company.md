@@ -24,15 +24,15 @@ A list of the names of countries with products. e.g. `["Canada", "United Kingdom
 
 # company.facebook_username
 
-The facebook username set within **My Site** > **Social**.
+The Facebook username set within **My Site** > **Social**.
 
 # company.instagram_username
 
-The instagram username set within **My Site** > **Social**.
+The Instagram username set within **My Site** > **Social**.
 
 # company.logo
 
-The company's workmark logo as an [image]({% link docs/reference/objects/image.md %}). The logo is set within **Settings** > **Your Brand**.
+The company's wordmark logo as an [image]({% link docs/reference/objects/image.md %}). The logo is set within **Settings** > **Your Brand**.
 # company.name
 
 The name of the company.
@@ -65,4 +65,4 @@ The subdomain of the company.
 
 # company.twitter_username
 
-The twitter username set within **My Site** > **Social**.
+The Twitter username set within **My Site** > **Social**.

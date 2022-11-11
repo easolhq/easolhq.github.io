@@ -40,15 +40,15 @@ The start date of the product associated with the cart item.
 
 # item.subtotal
 
-The price of the cart item, including the total price of all modififer selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current user's currency.
+The price of the cart item, including the total price of all modifier selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current user's currency.
 
 # item.total
 
-The total cost of the item, including the total price of all modififer selections and after all price reductions and fees have been applied. This is returned as a fractional in the sub-unit of the current user's currency.
+The total cost of the item, including the total price of all modifier selections and after all price reductions and fees have been applied. This is returned as a fractional in the sub-unit of the current user's currency.
 
 # item.total_deposit
 
-The minimum amount which must be paid for the item at checkout. If no deposit is enabled this will return the `total`, otherwise it will return the `total` multiplied by the deposit rate. This is returned as a fractional in the sub-unit of the current user's currency.
+The minimum amount to be paid for the item at checkout. If no deposit is enabled this will return the `total`, otherwise it will return the `total` multiplied by the deposit rate. This is returned as a fractional in the sub-unit of the current user's currency.
 
 # item.total_fee
 

@@ -8,26 +8,26 @@ The `color` object has the following attributes. More information about how RGB 
 
 # color.alpha
 
-The alpha component of the color, which is a decimal number between 0.0 and 1.0.
+The alpha component of the colour; a decimal number between 0.0 and 1.0.
 
 # color.blue
 
-The blue component of the color, which is a number between 0 and 255.
+The blue component of the colour; a number between 0 and 255.
 
 # color.green
 
-The green component of the color, which is a number between 0 and 255.
+The green component of the colour; a number between 0 and 255.
 
 # color.hex
 
-The Hex value of the color. e.g. `#005ce6`
+The Hex value of the colour. e.g. `#005ce6`
 
-> When possible, prefer using `color.rgba` over `color.hex`. The site builder's color picker allows users to select an opacity. RGBA values in CSS will include a color's opacity, whereas Hex values will ignore it.
+> When possible, prefer using `color.rgba` over `color.hex`. The site builder's colour picker allows users to select an opacity. RGBA values in CSS will include a colour's opacity, whereas Hex values will ignore it.
 
 # color.red
 
-The red component of the color, which is a number between 0 and 255.
+The red component of the colour; a number between 0 and 255.
 
 # color.rgba
 
-The RGBA value of the color as a string that can be used directly in CSS. e.g. `rgba(187, 207, 207, 1)`
+The RGBA value of the colour as a string that can be used directly in CSS. e.g. `rgba(187, 207, 207, 1)`

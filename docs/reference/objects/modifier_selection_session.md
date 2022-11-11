@@ -4,7 +4,7 @@ title: Modifier Selection Session
 parent: Objects
 ---
 
-This drop is available on the post checkout selection page as `item`.
+This drop is available on the post-checkout selection page as `item`.
 It combines the data for a particular line item with the guest information for
 the user currently logged in.
 
@@ -30,7 +30,7 @@ The guest id.
 
 # item.description
 
-The title concatenated with the guest name, if there is a guest
+The title concatenated with the guest's name, if there is a guest
 
 # item.guest_name
 
@@ -38,8 +38,7 @@ The name of the guest (or guest [some number] if no name is set yet).
 
 # item.product
 
-If the line item product has a parent, then return that, otherwise the produc
-itself (as a liquid drop)
+The line item's parent product or the product itself (as a liquid drop)
 
 # item.variant
 

@@ -8,9 +8,9 @@ For quick reference please see [Promotions]({% link docs/reference/objects/produ
 
 Promotions are discounts which are configured on a variant level.
 
-Promotions must have a start date, they may have expiry date and/or have been expired manually. `promotion.active` will return true only if today's date is on or after the start date, the end date is after today and the promotion has not been manually expired.
+Promotions must have a start date, they may have an expiry date and/or have been expired manually. `promotion.active` will return true only if today's date is on or after the start date, the end date is after today and the promotion has not been manually expired.
 
-Creators want to advertise promotions as often as possible in Sites and there are many ways you may wish to do this for them.
+Creators want to advertise promotions as often as possible on their websites and there are many ways you may wish to do this for them.
 
 ### Show the promotion category, tagline, expiry date, or discount amount
 

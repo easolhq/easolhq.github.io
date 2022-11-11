@@ -24,10 +24,10 @@ my_variable:
 ```
 {% endraw %}
 
-> When possible, use `color.rgba` over `color.hex`. The site builder's color picker allows Creators to select an opacity. RGBA values in CSS will include a colour's opacity, whereas hex values will ignore it.
+> When possible, use `color.rgba` over `color.hex`. The site-builder's colour picker allows Creators to select an opacity. RGBA values in CSS will include a colour's opacity, whereas hex values will ignore it.
 
 ## Setting defaults
-Defaults can be defined as colours from the Creator's theme palette or or as a `rgba` colour.
+Defaults can be defined as colours from the Creator's theme palette or as a `rgba` colour.
 
 ### Theme palette
 

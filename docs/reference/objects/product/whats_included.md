@@ -5,7 +5,7 @@ parent: Product
 grand_parent: Objects
 ---
 
-The `whats_included` object have the following attributes:
+The `whats_included` object has the following attributes:
 
 # whats_included.included
 

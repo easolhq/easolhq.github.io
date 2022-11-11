@@ -5,226 +5,378 @@ parent: Objects
 has_children: true
 ---
 
-When using a `Product` object you have access to the following attributes.
+# Product
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# product.accommodations
+#### Attributes
 
-Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation_merchandise.md %})
+## `product.accommodations`
+{: .d-inline-block }
+array of [accommodation merchandise]({% link docs/reference/objects/product/accommodation_merchandise.md %})
+{: .label .fs-1 }
 
-# product.address
+An array of the products [accommodation merchandise fields]({% link docs/reference/objects/product/accommodation_merchandise.md %}).
 
-Returns the product [address]({% link docs/reference/objects/product/address.md %})
+## `product.address`
+{: .d-inline-block }
+[address]({% link docs/reference/objects/product/address.md %})
+{: .label .fs-1 }
 
-# product.blog_post_section
+The product [address]({% link docs/reference/objects/product/address.md %}).
 
-Returns the [blog post section]({% link docs/reference/objects/product/blog_post_section.md %}).
+## `product.blog_post_section`
+{: .d-inline-block }
+[blog post section]({% link docs/reference/objects/product/blog_post_section.md %})
+{: .label .fs-1 }
 
-# product.category
+The [blog post section]({% link docs/reference/objects/product/blog_post_section.md %}).
 
-Returns the category the product belongs to
+## `product.category`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# product.country
+The category the product belongs to.
 
-Returns the name of the country the product is based in
+## `product.country`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# product.dates
+The name of the country the product is based in.
 
-Returns the dates of the product as a formatted string based on whether the event is multi-day or not.
-e.g `15 - 20 November 2019` or `15 November 2019`
+## `product.dates`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# product.depart_on
+The dates of the product as a formatted string based on whether the event is multi-day or not.
+e.g `15 - 20 November 2019` or `15 November 2019`.
 
-If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with liquids[ built-in filters ](https://shopify.github.io/liquid/filters/date/)
+## `product.depart_on`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
-# product.deposit.rate
+If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with liquids [built-in filters](https://shopify.github.io/liquid/filters/date/).
 
-Returns the deposit rate for the product
+## `product.deposit`
+{: .d-inline-block }
+[deposit]({% link docs/reference/objects/product/deposit.md %})
+{: .label .fs-1 }
 
-# product.deposit.enabled
+The product [deposit]({% link docs/reference/objects/product/deposit.md %}).
 
-Returns true if deposits are enabled for the product
+## `product.display_variant`
+{: .d-inline-block }
+[Variant]({% link docs/reference/objects/product/variant/index.md %})
+{: .label .fs-1 }
 
-# product.display_variant
+The products display variant if set in the admin.
 
-Returns the products display variant if set in the admin
+## `product.duration`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# product.duration
+The duration of the product including duration unit e.g. `5 nights`.
 
-Returns the duration of the product including duration unit e.g. `5 nights`
-
-# product.enquire_only
+## `product.enquire_only`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
 Returns `true` if the product has been marked as Enquiry Only within the product payment settings
 
-# product.extras
+## `product.extras`
+{: .d-inline-block }
+array of [Extra]({% link docs/reference/objects/product/extra.md %})s
+{: .label .fs-1 }
 
-Returns an array of the products [extras]({% link docs/reference/objects/product/extra.md %})
+An array of the product's [extras]({% link docs/reference/objects/product/extra.md %})
 
-# product.facilities _(deprecated)_
+## `product.facilities`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-Returns an array of the product's facilities
+An array of the product's facilities.
 
-> **Deprecated**
->
-> Please use [`product.whats_included.included`]({% link docs/reference/objects/product/whats_included.md %}#whats_includedincluded)
+Deprecated, replaced with [`product.whats_included.included`]({% link docs/reference/objects/product/whats_included.md %}#whats_includedincluded).
 
-# product.faqs
+## `product.faqs`
+{: .d-inline-block }
+array of [Faq]({% link docs/reference/objects/product/faq.md %})s
+{: .label .fs-1 }
 
-Returns an array of the product's [faqs]({% link docs/reference/objects/product/faq.md %}).
+An array of the product's [faqs]({% link docs/reference/objects/product/faq.md %}).
 
-# product.featured_accommodations
+## `product.featured_accommodations`
+{: .d-inline-block }
+array of [accommodation merchandise]({% link docs/reference/objects/product/accommodation_merchandise.md %})
+{: .label .fs-1 }
 
-Returns an array of the products [accommodations]({% link docs/reference/objects/product/accommodation_merchandise.md %}) which are flagged as featured
+An array of the products [accommodations]({% link docs/reference/objects/product/accommodation_merchandise.md %}) which are flagged as featured.
 
-# product.featured_variant
+## `product.featured_variant`
+{: .d-inline-block }
+[Variant]({% link docs/reference/objects/product/variant/index.md %})
+{: .label .fs-1 }
 
-Returns the "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
+The "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
 
-# product.gallery
+## `product.gallery`
+{: .d-inline-block }
+array of [Image]({% link docs/reference/objects/image.md %})s
+{: .label .fs-1 }
 
-Returns an array of [Image]({% link docs/reference/objects/image.md %}) objects for the products gallery
+An array of [Image]({% link docs/reference/objects/image.md %}) objects for the products gallery.
 
-# product.has_infinite_stock
+## `product.has_infinite_stock`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns true if the product has infinite stock
+Returns `true` if the product has infinite stock.
 
-# product.hero_image
+## `product.hero_image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-Returns the products hero [image]({% link docs/reference/objects/image.md %})
+The products hero [image]({% link docs/reference/objects/image.md %}).
 
-# product.has_active_promotion
+## `product.has_active_promotion`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns true if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]({% link docs/reference/objects/product/promotion.md %})
+Returns `true` if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]({% link docs/reference/objects/product/promotion.md %}).
 
-# product.highlights
+## `product.highlights`
+{: .d-inline-block }
+array of [highlight]({% link docs/reference/objects/product/highlight.md %})s
+{: .label .fs-1 }
 
-Returns an array of the product's [highlights]({% link docs/reference/objects/product/highlight.md %}).
+An array of the product's [highlights]({% link docs/reference/objects/product/highlight.md %}).
 
-# product.host _(deprecated)_
+## `product.host`
+{: .d-inline-block }
+[Host]({% link docs/reference/objects/product/host.md %})
+{: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-Returns the first product [host]({% link docs/reference/objects/product/host.md %}).
+The first product [host]({% link docs/reference/objects/product/host.md %}).
 
-> **Deprecated**
->
-> Use [`product.host_section`]({% link docs/reference/objects/product/index.md %}#producthost_section) instead.
+Deprecated, use [`product.host_section`]({% link docs/reference/objects/product/index.md %}#producthost_section) instead.
 
-# product.host_section
+## `product.host_section`
+{: .d-inline-block }
+[Host section]({% link docs/reference/objects/product/host_section.md %})
+{: .label .fs-1 }
 
-Returns the product [host section]({% link docs/reference/objects/product/host_section.md %}).
+The product [host section]({% link docs/reference/objects/product/host_section.md %}).
 
-# product.id
+## `product.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the product id
+The product id.
 
-# product.includes_accommodation
+## `product.includes_accommodation`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns a boolean indicating whether or not the product includes accommodation or is just a ticket
+Returns a boolean indicating whether or not the product includes accommodation or is just a ticket.
 
-# product.min_price _(deprecated)_
+## `product.min_price`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-Returns a humanized price for the product's cheapest configuration e.g. `$1,027 Per Person` or `$150 Per Night`
+Returns a humanized price for the product's cheapest configuration e.g. `$1,027 Per Person` or `$150 Per Night`.
 This excludes Sold Out and Hidden variants.
- If the display variant is changed within the product this will be used instead of the cheapest variant
+If the display variant is changed within the product this will be used instead of the cheapest variant.
 
-> **Deprecated**
->
-> Prices should be retrieved from the product's variants instead. `product.featured_variant` can be used to get the "featured" variant.
+Deprecated, prices should be retrieved from the product's variants instead. `product.featured_variant` can be used to get the "featured" variant.
 
-# product.minimum_nights
+## `product.minimum_nights`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 If the product is an accommodation this will return the minimum number of nights the product can be booked for.
 
-# product.name
+## `product.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the name of the product.
+The name of the product.
 
-# product.overview
+## `product.overview`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the overview of the product.
+The overview of the product.
 
-# product.overview_image
+## `product.overview_image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-Returns the products overview [image]({% link docs/reference/objects/image.md %})
+The products overview [image]({% link docs/reference/objects/image.md %}).
 
-# product.remaining_stock
+## `product.remaining_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-Returns the sum of remaining stock for a product's variants, if any of the variants have infinite inventory this will return `nil`.
+The sum of remaining stock for a product's variants, if any of the variants have infinite inventory this will return `nil`.
 
-# product.schedule _(deprecated)_
+## `product.schedule`
+{: .d-inline-block }
+array of [Schedule element]({% link docs/reference/objects/product/schedule_element.md %})s
+{: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-Returns an array of the product's [schedule elements]({% link docs/reference/objects/product/schedule_element.md %}).
+An array of the product's [schedule elements]({% link docs/reference/objects/product/schedule_element.md %}).
 
-> **Deprecated**
->
-> Use [`product.schedule_section`]({% link docs/reference/objects/product/index.md %}#productschedule_section) instead.
+Deprecated, use [`product.schedule_section`]({% link docs/reference/objects/product/index.md %}#productschedule_section) instead.
 
-# product.schedule_section
+## `product.schedule_section`
+{: .d-inline-block }
+[Schedule section]({% link docs/reference/objects/product/schedule_section.md %})
+{: .label .fs-1 }
 
-Returns the product's [schedule section]({% link docs/reference/objects/product/schedule_section.md %}).
+The product's [schedule section]({% link docs/reference/objects/product/schedule_section.md %}).
 
-# product.series
+## `product.series`
+{: .d-inline-block }
+[Series]({% link docs/reference/objects/series.md %})
+{: .label .fs-1 }
 
 If the product is in a series this will return a [Series]({% link docs/reference/objects/series.md %}) object.
 
-# product.shop_path
+## `product.shop_path`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the path for the product's cart shop page.
+The path for the product's cart shop page.
 
-# product.shop_url
+## `product.shop_url`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the url for the product's cart shop page.
+The url for the product's cart shop page.
 
-# product.sold_out
+## `product.sold_out`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns `true` if the product is sold out
+Returns `true` if the product is sold out.
 
-# product.subcategory
+## `product.subcategory`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the subcategory the product belongs to
+The subcategory the product belongs to.
 
-# product.tagline
+## `product.tagline`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the tagline of the product
+The tagline of the product.
 
-# product.testimonials
+## `product.testimonials`
+{: .d-inline-block }
+array of [Testimonial]({% link docs/reference/objects/product/testimonial.md %})s
+{: .label .fs-1 }
 
-Returns an array of the product's [testimonials]({% link docs/reference/objects/product/testimonial.md %}).
+An array of the product's [testimonials]({% link docs/reference/objects/product/testimonial.md %}).
 
-# product.transfers
+## `product.transfers`
+{: .d-inline-block }
+array of [transfer]({% link docs/reference/objects/product/transfer.md %})s
+{: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-Returns an array of the product's [transfers]({% link docs/reference/objects/product/transfer.md %})
+An array of the product's [transfers]({% link docs/reference/objects/product/transfer.md %}).
 
-# product.trip_tips
+Deprecated, the product admin no longer contains transfer settings. Extras should be used instead.
 
-Returns an array of the product's [trip tips]({% link docs/reference/objects/product/trip_tip.md %}).
+## `product.trip_tips`
+{: .d-inline-block }
+array of [Trip tip]({% link docs/reference/objects/product/trip_tip.md %})s
+{: .label .fs-1 }
 
-# product.type
+An array of the product's [trip tips]({% link docs/reference/objects/product/trip_tip.md %}).
 
-Returns the type of this product, one of `"experience"` or `"accommodation"`.
+## `product.type`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# product.url
+The type of this product, one of `"experience"` or `"accommodation"`.
 
-Returns the url for the product's page on the site.
+## `product.url`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# product.useful_info
+The url for the product's page on the site.
 
-Returns the product's [useful info]({% link docs/reference/objects/product/useful_info.md %})
+## `product.useful_info`
+{: .d-inline-block }
+[Useful info]({% link docs/reference/objects/product/useful_info.md %})
+{: .label .fs-1 }
 
-# product.variants
+The product's [useful info]({% link docs/reference/objects/product/useful_info.md %}).
 
-Returns an array of the product's [variants]({% link docs/reference/objects/product/variant/index.md %}).
+## `product.variants`
+{: .d-inline-block }
+array of [variant]({% link docs/reference/objects/product/variant/index.md %})s
+{: .label .fs-1 }
 
-# product.variant_modifiers
+An array of the product's [variants]({% link docs/reference/objects/product/variant/index.md %}).
 
-Returns an array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product through its variants.
+## `product.variant_modifiers`
+{: .d-inline-block }
+array of [modifier]({% link docs/reference/objects/product/modifier.md %})s
+{: .label .fs-1 }
 
-# product.venue
+An array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product through its variants.
 
-Returns the product's [venue]({% link docs/reference/objects/product/venue.md %}).
+## `product.venue`
+{: .d-inline-block }
+[Venue]({% link docs/reference/objects/product/venue.md %})
+{: .label .fs-1 }
 
-# product.whats_included
+The product's [venue]({% link docs/reference/objects/product/venue.md %}).
 
-Return the product's [`what's included`]({% link docs/reference/objects/product/whats_included.md %})
+## `product.whats_included`
+{: .d-inline-block }
+[what's included]({% link docs/reference/objects/product/whats_included.md %})
+{: .label .fs-1 }
+
+The product's [`what's included`]({% link docs/reference/objects/product/whats_included.md %}).
 
 
 <!--

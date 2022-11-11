@@ -5,28 +5,44 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `Host` object you have access to the following attributes:
+# Host
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# host.body
+#### Attributes
 
-Returns the body of the host, this is a rich text field and so will return html.
+## `host.body`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-# host.id
+The body of the host.
 
-Returns a unique id for this host.
+## `host.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# host.image
+The unique id of this host.
 
-Returns the [image]({% link docs/reference/objects/image.md %}) of the host.
+## `host.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# host.instagram_username
+The [image]({% link docs/reference/objects/image.md %}) of the host.
 
-Returns the Instagram username for the host if set.
+## `host.instagram_username`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# host.name
+The Instagram username for the host if set.
 
-Returns the name of the host.
+## `host.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# host_section.overview
-
-Returns the overview of the host section.
+The name of the host.

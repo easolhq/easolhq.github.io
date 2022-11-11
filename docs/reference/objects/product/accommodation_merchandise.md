@@ -1,36 +1,66 @@
 ---
 layout: default
-title: Accommodation Merchandise
+title: Accommodation merchandise
 parent: Product
 grand_parent: Objects
 ---
-When using an `Accommodation` merchandise field object you have access to the following attributes.<br>
+
+# Accommodation merchandise
+{: .d-inline-block }
+object
+{: .label .fs-1 }
+
 *Note:* Not to be mistaken with the product type `accommodation`.
 
-# accommodation.country
+<br>
 
-Returns the name of the country the accommodation is set to.
+#### Attributes
 
-# accommodation.featured
+## `accommodation.country`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns true if the accommodation is marked as featured.
+The name of the country the accommodation is set to.
 
-# accommodation.id
+## `accommodation.featured`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns a unique id for the accommodation.
+Returns `true` if the accommodation is marked as featured.
 
-# accommodation.image
+## `accommodation.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the accommodation [image]({% link docs/reference/objects/image.md %}).
+The unique id of the accommodation.
 
-# accommodation.locale
+## `accommodation.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-Returns the accommodations locale.
+The accommodation's [image]({% link docs/reference/objects/image.md %}).
 
-# accommodation.name
+## `accommodation.locale`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the name of the accommodation.
+The accommodation's locale.
 
-# accommodation.overview
+## `accommodation.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the overview of the accommodation.
+The name of the accommodation.
+
+## `accommodation.overview`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
+
+The overview of the accommodation.

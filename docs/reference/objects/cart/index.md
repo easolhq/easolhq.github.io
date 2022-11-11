@@ -4,44 +4,79 @@ title: Cart
 parent: Objects
 ---
 
-The `Cart` object has the following attributes.
+# Cart
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# cart.items
+#### Attributes
 
-A list of [cart items]({% link docs/reference/objects/cart/cart_item.md %}) associated with the cart.
+## `cart.items`
+{: .d-inline-block }
+array of [Cart item]({% link docs/reference/objects/cart/cart_item.md %})s
+{: .label .fs-1 }
 
-# cart.currency
+An array of [cart items]({% link docs/reference/objects/cart/cart_item.md %}) associated with the cart.
+
+## `cart.currency`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The currency code associated with the cart.
 
-# cart.subtotal
+## `cart.subtotal`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The amount of the cart _before_ any price reductions have been applied. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# cart.total
+## `cart.total`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The amount of the cart after all price reductions have been applied. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# cart.total_fee
+## `cart.total_fee`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The booking fee amount returned as a fractional in the sub-unit of the current customer's currency.
 
-# cart.total_price_reduction
+## `cart.total_price_reduction`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The total amount of all price reductions from promotions or vouchers. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# cart.total_deposit
+## `cart.total_deposit`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The minimum payment possible at checkout if choosing to pay with a deposit. This will be zero if a deposit is not enabled for any of the products in the cart. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# cart.start_on
+## `cart.start_on`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
 The earliest start on from all the cart's line items. Returns `nil` if the cart doesn't have any line items.
 
-# cart.end_on
+## `cart.end_on`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
 The latest end on from all the cart's line items. Returns `nil` if the cart doesn't have any line items.
 
-# cart.first_instalment_amount
+## `cart.first_instalment_amount`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The amount due for the cart on a payment plan. Returns zero if no payment plan is enabled. This is returned as a fractional in the sub-unit of the current customer's currency.

@@ -5,70 +5,110 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using an `Extra` object you have access to the following attributes.
+# Extra
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# extra.address
+#### Attributes
 
-Returns the [address]({% link docs/reference/objects/product/address.md %}) associated with this extra.
+## `extra.address`
+{: .d-inline-block }
+[address]({% link docs/reference/objects/product/address.md %})
+{: .label .fs-1 }
 
-# extra.country
+The [address]({% link docs/reference/objects/product/address.md %}) associated with this extra.
 
-Returns the name of the country for the product that this extra is part of.
+## `extra.country`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# extra.deposit_amount _(deprecated)_
+The name of the country for the product that this extra is part of.
 
-Returns a humanized price for the extras deposit amount, if deposits are not set on the extra this will just return `extra.price` e.g. `$250 Per Person`.
+## `extra.deposit_amount`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-> **Deprecated**
->
-> The deposit should be calculated in Liquid, using a mixture of the `extra.price` and `extra.product.deposit.rate`.
->
-> {% raw %}
-> ```liquid
-> {% assign deposit_price = extra.price.fractional | times: extra.product.deposit.rate %}
-> {{deposit_price | money}}
-> ```
-> {% endraw %}
+A humanized price for the extras deposit amount, if deposits are not set on the extra this will just return `extra.price` e.g. `$250 Per Person`.
 
-# extra.has_infinite_stock
+Deprecated, the deposit should be calculated in Liquid, using a mixture of the `extra.price` and `extra.product.deposit.rate`.
 
-Returns true if the extra has unlimited stock.
+{% raw %}
+```liquid
+{% assign deposit_price = extra.price.fractional | times: extra.product.deposit.rate %}
+{{deposit_price | money}}
+```
+{% endraw %}
 
-# extra.hero_image
+## `extra.has_infinite_stock`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns the hero [image]({% link docs/reference/objects/image.md %}) of the [product]({% link docs/reference/objects/product/index.md %}) the extra belongs to.
+Returns `true` if the extra has unlimited stock.
 
-# extra.id
+## `extra.hero_image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-Returns a unique id for the extra.
+The hero [image]({% link docs/reference/objects/image.md %}) of the [product]({% link docs/reference/objects/product/index.md %}) the extra belongs to.
 
-# extra.image
+## `extra.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+The unique id of the extra.
 
-Returns the extras [image]({% link docs/reference/objects/image.md %}) if it has one associated.
+## `extra.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# extra.initial_stock
+The extra's [image]({% link docs/reference/objects/image.md %}) if it has one associated.
 
-Returns the initial stock for the extra, if the extra has unlimited inventory this will return `nil`.
+## `extra.initial_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-# extra.modifier_groups
+The initial stock for the extra, if the extra has unlimited inventory this will return `nil`.
 
-Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this extra.
+## `extra.modifier_groups`
+{: .d-inline-block }
+array of [modifier group]({% link docs/reference/objects/product/modifier_group.md %})s
+{: .label .fs-1 }
 
-Note that the resulting list will encompass both pre- and post-checkout modifier groups, and therefore the use of this method in pre-checkout pages is not supported.
+An array of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this extra.
+
+Note that the resulting list will encompass both pre- and post-checkout modifier groups, and therefore the use of this method in pre-checkout pages is not recommended.
 
 For pre-checkout pages, [pre_checkout_modifier_groups]({% link docs/reference/objects/product/extra.md %}#extrapre_checkout_modifier_groups) should be used instead.
 
-# extra.name
+## `extra.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the extras name.
+The extras name.
 
-# extra.overview_image
+## `extra.overview_image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-Returns the overview [image]({% link docs/reference/objects/image.md %}) of the [product]({% link docs/reference/objects/product/index.md %}) this extra belongs to.
+The overview [image]({% link docs/reference/objects/image.md %}) of the [product]({% link docs/reference/objects/product/index.md %}) the extra belongs to.
 
-# extra.price
+## `extra.price`
+{: .d-inline-block }
+[Price]({% link docs/reference/objects/product/price.md %})
+{: .label .fs-1 }
 
-Returns the [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current customer's currency.
+The [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current customer's currency.
 
 {% raw %}
 ```liquid
@@ -76,31 +116,38 @@ Returns the [price]({% link docs/reference/objects/product/price.md %}) of this 
 ```
 {% endraw %}
 
-> This method has some deprecated behaviour. If no methods are called on the [Price]({% link docs/reference/objects/product/price.md %}) object that is returned from this method, then it will fallback to the legacy behaviour, which will return a string of the price, e.g. `$124 Per Person`.
->
-> We have changed this behaviour because it is difficult to apply any math filters to this price string. It is more useful to have access to the numerical value of the price.
->
-> **Good**
->{% raw %}
-> ```
-> <p>{{extra.price | money}} Per Person</p>
-> ```
-> {% endraw %}
->
-> **Bad**
-> {% raw %}
-> ```
-> <p>{{extra.price}}</p>
-> ```
-> {% endraw %}
+This method has some deprecated behaviour. If no methods are called on the [Price]({% link docs/reference/objects/product/price.md %}) object that is returned from this method, then it will fallback to the legacy behaviour, which will return a string of the price, e.g. `$124 Per Person`. It is difficult to apply any math filters to this price string.
 
-# extra.pre_checkout_modifier_groups
+The behaviour of `extra.price` has been changed to enable math filters to be applied.  It is more useful to have access to the numerical value of the price.
 
-Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this extra that the customer must choose before checking out.
+**Deprecated method**
+{% raw %}
+```
+<p>{{extra.price}}</p>
+```
+{% endraw %}
 
-# extra.prices
+**Updated method**
+{% raw %}
+```
+<p>{{extra.price | money}} Per Person</p>
+```
+{% endraw %}
 
-Returns an array containing the single [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current customer's currency.
+
+## `extra.pre_checkout_modifier_groups`
+{: .d-inline-block }
+array of [modifier group]({% link docs/reference/objects/product/modifier_group.md %})s
+{: .label .fs-1 }
+
+An array of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this extra that the customer must choose before checking out.
+
+## `extra.prices`
+{: .d-inline-block }
+array of [price]({% link docs/reference/objects/product/price.md %})s
+{: .label .fs-1 }
+
+An array containing the single [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current customer's currency.
 
 {% raw %}
 ```liquid
@@ -109,30 +156,51 @@ Returns an array containing the single [price]({% link docs/reference/objects/pr
 ```
 {% endraw %}
 
-# extra.product
+## `extra.product`
+{: .d-inline-block }
+[Product]({% link docs/reference/objects/product/index.md %})
+{: .label .fs-1 }
 
-Returns the [product]({% link docs/reference/objects/product/index.md %}) this extra belongs to.
+The [product]({% link docs/reference/objects/product/index.md %}) this extra belongs to.
 
-# extra.promotion
+## `extra.promotion`
+{: .d-inline-block }
+[Promotion]({% link docs/reference/objects/product/promotion.md %})
+{: .label .fs-1 }
 
-Returns the extra's current active [promotion]({% link docs/reference/objects/product/promotion.md %}) if there is one.
+The extra's current active [promotion]({% link docs/reference/objects/product/promotion.md %}) if there is one.
 
-# extra.remaining_stock
+## `extra.remaining_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-Returns the remaining stock for the extra, if the extra has unlimited inventory this will return `nil`.
+The remaining stock for the extra, if the extra has unlimited inventory this will return `nil`.
 
-# extra.segment_name
+## `extra.segment_name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 If the extra belongs to a segment this will return the segment name.
 
-# extra.sold_out
+## `extra.sold_out`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns true if the extra is sold out.
+Returns `true` if the extra is sold out.
 
-# extra.tagline
+## `extra.tagline`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the extras tagline.
+The extra's tagline.
 
-# extra.type
+## `extra.type`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Will always return `"extra"`. This is useful when you have a list of `Variant` and `Extra` objects and you need to distinguish between them.
+Will always return "`extra`". This is useful when you have a list of `Variant` and `Extra` objects and you need to distinguish between them.

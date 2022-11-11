@@ -4,16 +4,30 @@ title: Author
 parent: Objects
 ---
 
-When using an `Author` object you have access to the following attributes.
+# Author 
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# author.avatar
+#### Attributes
 
-An [Image]({% link docs/reference/objects/image.md %}) object for the author's avatar if they have one.
+## `author.avatar`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# author.biography
+The author's avatar if they have one.
 
-The biography of the author as a string wrapped in a HTML paragraph element.
+## `author.biography`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-# author.name
+The biography of the author.
+ 
+## `author.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-The name of the author as a string.
+The name of the author.

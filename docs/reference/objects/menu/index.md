@@ -3,7 +3,13 @@ layout: default
 title: Menu
 parent: Objects
 has_children: true
+has_toc: false
 ---
+
+# Menu
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
 Menu templates define their own schema, in a similar way to blocks. All of the attributes defined on a menu's schema are made available via the `Menu` object.
 
@@ -31,6 +37,13 @@ Within the menu template, `menu.fixed` and `menu.background_colour` will be avai
 
 As well as the attributes that are available from the schema, the `Menu` object has the following attributes:
 
-# menu.items
+<br>
 
-Returns an array of the [menu items]({% link docs/reference/objects/menu/menu_item.md %})
+#### Attributes
+
+## `menu.items`
+{: .d-inline-block }
+array of [menu item]({% link docs/reference/objects/menu/menu_item.md %})s
+{: .label .fs-1 }
+
+An array of the [menu items]({% link docs/reference/objects/menu/menu_item.md %})

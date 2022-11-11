@@ -5,16 +5,30 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using an `Faq` object you have access to the following attributes:
+# FAQ
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# faq.answer
+#### Attributes
 
-Returns the answer to the question, this is a rich text field and so will return html as in the example above.
+## `faq.answer`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-# faq.id
+The answer to the question.
 
-Returns a unique id for the faq.
+## `faq.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# faq.question
+The unique id of the faq.
 
-Returns the question related to the faq.
+## `faq.question`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The question related to the faq.

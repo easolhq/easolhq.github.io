@@ -4,65 +4,98 @@ title: Series
 parent: Objects
 ---
 
-When using a `Series` object you have access to the following attributes, which delegate to the associated
-[Product]({% link docs/reference/objects/product/index.md %}) and
-[Variant]({% link docs/reference/objects/product/variant/index.md %}) objects as needed.
+# Series
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# series.countries
+#### Attributes
 
-Returns an array of the countries of all upcoming products in the series.
+## `series.countries`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
 
-# series.departure_months
+An array of the countries of all upcoming products in the series.
 
-Returns an array of the departure months of all upcoming products in the series.
+## `series.departure_months`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
 
-# series.featured_variant
+An array of the departure months of all upcoming products in the series.
 
-Returns the display [variant]({% link docs/reference/objects/product/variant/index.md %}) if set or defaults to the cheapest in the series.
+## `series.featured_variant`
+{: .d-inline-block }
+[Variant]({% link docs/reference/objects/product/variant/index.md %})
+{: .label .fs-1 }
 
-# series.first_upcoming
+The display [variant]({% link docs/reference/objects/product/variant/index.md %}) if set or the cheapest variant in the series.
 
-Returns the first upcoming [product]({% link docs/reference/objects/product/index.md %}) in the series.
+## `series.first_upcoming`
+{: .d-inline-block }
+[Product]({% link docs/reference/objects/product/index.md %})
+{: .label .fs-1 }
 
-# series.first_upcoming_including_ongoing
+The first upcoming [product]({% link docs/reference/objects/product/index.md %}) in the series.
 
-Returns the first upcoming [product]({% link docs/reference/objects/product/index.md %}) in the series, including any product that is taking place currently.
+## `series.first_upcoming_including_ongoing`
+{: .d-inline-block }
+[Product]({% link docs/reference/objects/product/index.md %})
+{: .label .fs-1 }
 
-# series.humanized_display_amount _(deprecated)_
+The first upcoming [product]({% link docs/reference/objects/product/index.md %}) in the series, including any product that is taking place currently.
 
-Returns a humanized display amount e.g. `$120.00`.
+## `series.humanized_display_amount`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-> ** Deprecated **
->
-> This method is deprecated in favour of retrieving the value from the variant price instead.
->
-> {% raw %}
-> ```liquid
-> {{variant.price | money}}
-> ```
-> {% endraw %}
+A humanized display amount e.g. `$120.00`.
 
-# series.id
+This method is deprecated in favour of retrieving the value from the [variant price]({% link docs/reference/objects/product/variant/index.md %}#variantprice) instead.
 
-Returns a unique identifier for the series.
+## `series.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# series.name
+The unique identifier for the series.
 
-Returns the name of the series.
+## `series.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# series.products
+The name of the series.
 
-Returns an array of published [products]({% link docs/reference/objects/product/index.md %}) in the series, both past and future.
+## `series.products`
+{: .d-inline-block }
+array of [Product]({% link docs/reference/objects/product/index.md %})s
+{: .label .fs-1 }
 
-# series.slug
+An array of published [products]({% link docs/reference/objects/product/index.md %}) in the series, both past and future.
 
-Returns the unique slug used in a series url i.e. `domain.com/experiences/:series_slug/:date`.
+## `series.slug`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# series.upcoming_products
+The unique slug used in a series url i.e. `domain.com/experiences/:series_slug/:date`.
 
-Returns an array of published [products]({% link docs/reference/objects/product/index.md %}) in the series which are upcoming.
+## `series.upcoming_products`
+{: .d-inline-block }
+array of [Product]({% link docs/reference/objects/product/index.md %})s
+{: .label .fs-1 }
 
-# series.upcoming_products_including_ongoing
+An array of published [products]({% link docs/reference/objects/product/index.md %}) in the series which are upcoming.
 
-Returns an array of published [products]({% link docs/reference/objects/product/index.md %}) in the series which are taking place currently or are upcoming.
+## `series.upcoming_products_including_ongoing`
+{: .d-inline-block }
+array of [Product]({% link docs/reference/objects/product/index.md %})s
+{: .label .fs-1 }
+
+An array of published [products]({% link docs/reference/objects/product/index.md %}) in the series which are taking place currently or are upcoming.
 

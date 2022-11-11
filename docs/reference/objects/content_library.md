@@ -4,48 +4,86 @@ title: Content
 parent: Objects
 ---
 
-The `Content` object has the following attributes.
+# Content
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# content.business
+#### Attributes
 
-Returns the business of the content.
+## `content.business`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.description
+The business of the content.
 
-Returns the description of the content.
+## `content.description`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.facebook
+The description of the content.
 
-Returns the Facebook username of the content.
+## `content.facebook`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.id
+The Facebook username of the content.
 
-Returns a unique id for the content.
+## `content.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.image
+The unique id of the content.
 
-Returns the content's [image]({% link docs/reference/objects/image.md %}).
+## `content.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# content.instagram
+The content's [image]({% link docs/reference/objects/image.md %}).
 
-Returns the Instagram username of the content.
+## `content.instagram`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.link
+The Instagram username of the content.
 
-Returns the link of the content.
+## `content.link`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.location
+The link of the content.
 
-Returns the location of the content.
+## `content.location`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.name
+The location of the content.
 
-Returns the name of the content.
+## `content.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.twitter
+The name of the content.
 
-Returns the Twitter username of the content.
+## `content.twitter`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# content.url
+The Twitter username of the content.
 
-Returns the url for the content's page on the site.
+## `content.url`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The url for the content's page on the site.

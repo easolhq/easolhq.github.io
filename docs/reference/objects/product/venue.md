@@ -5,24 +5,44 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `venue` object you have access to the following attributes:
+# Venue
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# venue.body
+#### Attributes
 
-Returns the venue body, this is a rich text field and so will return html.
+## `venue.body`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-# venue.heading
+The venue body.
 
-Returns the venue's heading.
+## `venue.heading`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# venue.id
+The venue's heading.
 
-Returns a unique id for the venue.
+## `venue.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# venue.image
+The unique id of the venue.
 
-Returns the venue's [image]({% link docs/reference/objects/image.md %}).
+## `venue.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# venue.tagline
+The venue's [image]({% link docs/reference/objects/image.md %}).
 
-Returns the tagline for the venue.
+## `venue.tagline`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The tagline for the venue.

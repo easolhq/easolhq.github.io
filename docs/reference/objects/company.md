@@ -4,46 +4,88 @@ title: Company
 parent: Objects
 ---
 
-Company is a _global_ variable, meaning it will always be accessible on any Liquid template.
+# Company
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# company.authors
+Company is a _global_ object, meaning it will always be accessible on any Liquid template.
 
-A list of all the company's [authors]({% link docs/reference/objects/author.md %}).
+<br>
 
-# company.avatar_logo
+#### Attributes
 
-The company's logo as an [image]({% link docs/reference/objects/image.md %}). The logo is set within **Settings** > **Your Brand**.
+## `company.authors`
+{: .d-inline-block }
+array of [Author]({% link docs/reference/objects/author.md %})s
+{: .label .fs-1 }
 
-# company.biographies
+An array of the company's [authors]({% link docs/reference/objects/author.md %}).
 
-A list of all the company's [biographies]({% link docs/reference/objects/content_library.md %}).
+## `company.avatar_logo`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# company.countries
+The company's logo as an [image]({% link docs/reference/objects/image.md %}). 
+The logo is set within **Settings** > **Your Brand**.
 
-A list of the names of countries with products. e.g. `["Canada", "United Kingdom"]`
+## `company.biographies`
+{: .d-inline-block }
+array of [Content]({% link docs/reference/objects/content_library.md %})s
+{: .label .fs-1 }
 
-# company.facebook_username
+An array of the company's [biographies]({% link docs/reference/objects/content_library.md %}).
+
+## `company.countries`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
+
+An array of the names of countries with products. e.g. `["Canada", "United Kingdom"]`
+
+## `company.facebook_username`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The Facebook username set within **My Site** > **Social**.
 
-# company.instagram_username
+## `company.instagram_username`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The Instagram username set within **My Site** > **Social**.
 
-# company.logo
+## `company.logo`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-The company's wordmark logo as an [image]({% link docs/reference/objects/image.md %}). The logo is set within **Settings** > **Your Brand**.
-# company.name
+The company's wordmark logo as an [image]({% link docs/reference/objects/image.md %}). 
+The logo is set within **Settings** > **Your Brand**.
+
+## `company.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The name of the company.
 
-# company.posts
+## `company.posts`
+{: .d-inline-block }
+array of [Blog post]({% link docs/reference/objects/blog_post.md %})s
+{: .label .fs-1 }
 
-A list of all the company's published [blog posts]({% link docs/reference/objects/blog_post.md %}), ordered by the most recently published first.
+An array of the company's published [blog posts]({% link docs/reference/objects/blog_post.md %}), ordered by the most recently published first.
 
-# company.products
+## `company.products`
+{: .d-inline-block }
+array of [Product]({% link docs/reference/objects/product/index.md %})s
+{: .label .fs-1 }
 
-A list of the company's published [products]({% link docs/reference/objects/product/index.md %}) excluding any private products.
+An array of the company's published [products]({% link docs/reference/objects/product/index.md %}) excluding any private products.
 e.g.
 
 {% raw %}
@@ -54,15 +96,23 @@ e.g.
 ```
 {% endraw %}
 
+## `company.series`
+{: .d-inline-block }
+array of [Series]({% link docs/reference/objects/series.md %})
+{: .label .fs-1 }
 
-# company.series
+An array of all the company's [series]({% link docs/reference/objects/series.md %}).
 
-A list of all the company's [series]({% link docs/reference/objects/series.md %}).
-
-# company.subdomain
+## `company.subdomain`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The subdomain of the company.
 
-# company.twitter_username
+## `company.twitter_username`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The Twitter username set within **My Site** > **Social**.

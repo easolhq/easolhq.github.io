@@ -1,20 +1,34 @@
 ---
 layout: default
-title: Selection Filter Option
+title: Selection filter option
 parent: Objects
 ---
 
-This item is returned as an array from the options of a [Selection Filter]({% link docs/reference/objects/selection_filter.md %}).
+# Selection filter option
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# selection_filter_option.name
+#### Attributes
+
+## `selection_filter_option.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The name of the option that will be chosen if selected.
 
-# selection_filter_option.filter_name
+## `selection_filter_option.filter_name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The name of the filter this belongs to (matches the name of the parent [Selection Filter]({% link docs/reference/objects/selection_filter.md %})).
 
 
-# selection_filter_option.attributes
+## `selection_filter_option.attributes`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The data attributes needed to be included on a filter option for it to filter correctly.

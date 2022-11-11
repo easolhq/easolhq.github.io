@@ -1,16 +1,27 @@
 ---
 layout: default
-title: What's Included
+title: What's included
 parent: Product
 grand_parent: Objects
 ---
 
-The `Whats_included` object has the following attributes:
+# What's included
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# whats_included.included
+#### Attributes
 
-Returns an array of strings representing what’s included.
+## `whats_included.included`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
 
-# whats_included.not_included
+An array of strings representing what’s included.
 
-Returns an array of strings representing what’s _not_ included.
+## `whats_included.not_included`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
+
+An array of strings representing what’s _not_ included.

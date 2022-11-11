@@ -5,20 +5,37 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `Highlight` object you have access to the following attributes:
+# Highlight
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# highlight.body
+#### Attributes
 
-Returns the highlight's body.
+## `highlight.body`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# highlight.heading
+The highlight's body.
 
-Returns the highlight's heading.
+## `highlight.heading`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# highlight.id
+The highlight's heading.
 
-Returns a unique id for the highlight.
+## `highlight.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# highlight.image
+The unique id of the highlight.
 
-Returns the highlight's [image]({% link docs/reference/objects/image.md %}).
+## `highlight.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
+
+The highlight's [image]({% link docs/reference/objects/image.md %}).

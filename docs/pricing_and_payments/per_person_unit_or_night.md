@@ -25,7 +25,7 @@ Per person pricing is very straightforward to display;
 
 ### Per unit
 Per unit pricing is still approached from a 'per person' perspective. 
-The creator sets a per person price, along with a minimum and maximum occupancy. But the full unit price is returned with the `.fractional` method:
+The Creator sets a per person price, along with a minimum and maximum occupancy. But the full unit price is returned with the `.fractional` method:
 {% raw %}
 ```liquid
 {% assign full_price = variant.price.fractional | money %}

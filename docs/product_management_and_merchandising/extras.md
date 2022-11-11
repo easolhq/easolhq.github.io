@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Extras
-parent: Product Management and Merchandising
+parent: Product management and merchandising
 nav_order: 6
 ---
+
+# Extras
 
 For quick reference, see [Extras]({% link docs/reference/objects/product/extra.md %})
 

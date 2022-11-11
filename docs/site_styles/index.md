@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Site Styles
-has_children: true
+title: Site styles
 nav_order: 3
 ---
+
+# Site styles
 
 **My Site > Style** is where Creators and developers can define colours, fonts and custom CSS.
 

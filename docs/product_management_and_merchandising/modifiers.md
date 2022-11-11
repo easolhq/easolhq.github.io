@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Modifiers
-parent: Product Management and Merchandising
+parent: Product management and merchandising
 nav_order: 7
 ---
+
+# Modifiers
 
 For quick reference, see [Modifer]({% link docs/reference/objects/product/modifier.md %}) and [Modifier Group]({% link docs/reference/objects/product/modifier_group.md %}).
 

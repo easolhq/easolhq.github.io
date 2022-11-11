@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Canvas Lint
-parent: Developer Tools
+title: Canvas lint
+parent: Developer tools
 nav_order: 2
 ---
+
+# Canvas lint
 
 Easol has developed and maintains a gem called easol-canvas, which is used for validating Easol themes (See [RubyGems](https://rubygems.org/gems/easol-canvas) or [GitHub](https://github.com/easolhq/canvas)).
 

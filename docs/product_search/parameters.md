@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Product Search Parameters
-parent: Product Search
+title: Product search parameters
+parent: Product search
 ---
 
-# Product Search Parameters
+# Product search parameters
 Product search is based on parameters that determine which products are returned and in which order.
 
 ### active_promotion

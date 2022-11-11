@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Product Search
+title: Product search
 has_children: true
 nav_order: 8
 has_toc: false
 ---
 
-# Product Search
+# Product search
+
 Product search enables you to filter a Creator's experiences and accommodations, for example, you could:
 - Choose whether sold out products are returned
 - Return only products with active promotions

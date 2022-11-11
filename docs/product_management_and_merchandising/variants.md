@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Variants
-parent: Product Management and Merchandising
+parent: Product management and merchandising
 nav_order: 5
 ---
+
+# Variants
 
 Variants are the varieties of what is being sold. Creators must have at least one variant of an experience e.g. "Ticket", but often have several e.g. "VIP Ticket", "Standard Adult Ticket", "Child Ticket", etc.
 

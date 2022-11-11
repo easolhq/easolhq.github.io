@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Easol Palette
-parent: Developer Tools
+parent: Developer tools
 nav_order: 1
 ---
+
+# Easol Palette
 
 Easol Palette is the Easol platform website builder, available to Creators. 
 

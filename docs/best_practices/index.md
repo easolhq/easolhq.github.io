@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Best Practices
+title: Best practices
 has_children: true
 nav_order: 17
 ---
 
-# Best Practices
+# Best practices
 To optimise the site builder experience for Creators, we recommend the following best practices.
 
 ## Image sizing

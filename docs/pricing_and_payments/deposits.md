@@ -1,8 +1,10 @@
 ---
 layout: default
 title: Deposits
-parent: Pricing & Payments
+parent: Pricing & payments
 ---
+
+# Deposits
 
 For quick reference please see [Deposit]({% link docs/reference/objects/product/deposit.md %}).
 

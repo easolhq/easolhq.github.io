@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Customer Terms
+title: Customer terms
 has_children: true
 nav_order: 14
 ---

@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Price Tiers and Occupancy
-parent: Pricing & Payments
+title: Price tiers and occupancy
+parent: Pricing & payments
 ---
 
+# Price tiers and occupancy
 
 ## Price tiers
 

@@ -1,8 +1,10 @@
 ---
 layout: default
 title: Promotions
-parent: Pricing & Payments
+parent: Pricing & payments
 ---
+
+# Promotions
 
 For quick reference please see [Promotions]({% link docs/reference/objects/product/promotion.md %}).
 

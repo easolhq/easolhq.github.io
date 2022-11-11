@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Creating a Theme
-parent: Getting Started
+title: Creating a theme
+parent: Getting started
 ---
 
+# Creating a theme
 
 ## Step 1: Get the base theme code
 
@@ -11,7 +12,7 @@ There are two options for getting the base theme code. Both require Easol author
 
 ### Option 1: Start with an existing Easol theme
 
-This option is ideal if you’re looking to make custom modifications to an Easol theme. Easol can grant you access to fork a theme repository
+This option is ideal if you’re looking to make custom modifications to an Easol theme. Easol can grant you access to fork a theme repository.
 
 ### Option 2: Start with the skeleton theme
 

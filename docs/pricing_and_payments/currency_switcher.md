@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Currency Switcher
-parent: Pricing & Payments
+title: Currency switcher
+parent: Pricing & payments
 ---
+
+# Currency switcher
 
 For quick reference please see [Currency Switcher Tag]({% link docs/reference/tags/currency_switcher_tag/index.md %}).
 

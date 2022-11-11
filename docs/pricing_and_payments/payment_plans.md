@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Payment Plans
-parent: Pricing & Payments
+title: Payment plans
+parent: Pricing & payments
 ---
+
+# Payment plans
 
 For quick reference please see [Payment Plans]({% link docs/reference/objects/product/variant/payment_plan.md %}).
 

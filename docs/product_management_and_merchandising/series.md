@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Series
-parent: Product Management and Merchandising
+parent: Product management and merchandising
 nav_order: 9
 ---
+
+# Series
 
 Products can have a series name defined in **Settings > Series**.
 

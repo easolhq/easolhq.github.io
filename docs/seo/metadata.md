@@ -4,6 +4,8 @@ title: Metadata
 parent: SEO
 ---
 
+# Metadata
+
 Creators can add metadata to their site pages.
 
 If this isn't added, the title is constructed from the page name and Company, the description tag is empty and no image tag exists, e.g.

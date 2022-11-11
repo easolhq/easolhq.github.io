@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Price Formatting
-parent: Pricing & Payments
+title: Price formatting
+parent: Pricing & payments
 ---
+
+# Price formatting
 
 If no method is called on a [Price]({% link docs/reference/objects/product/price.md %}) object, it will default to showing with the currency symbol and either /pp or /night depending on the [per person, unit, or night pricing]({% link docs/pricing_and_payments/per_person_unit_or_night.md %}).
 

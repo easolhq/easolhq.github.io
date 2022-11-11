@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Product Overview
-parent: Product Management and Merchandising
+title: Product overview
+parent: Product management and merchandising
 nav_order: 4
 ---
+
+# Product overview
 
 When a Creator configures their experiences, there are serveral required Overview fields that they must fill out.
 

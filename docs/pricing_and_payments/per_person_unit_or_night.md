@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Per Person, Per Unit, Per Night
-parent: Pricing & Payments
+title: Per person, per unit, per night
+parent: Pricing & payments
 ---
+
+# Per person, per unit, per night
 
 For quick reference please see [Variant]({% link docs/reference/objects/product/variant/index.md %}).
 

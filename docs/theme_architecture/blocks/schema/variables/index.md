@@ -47,9 +47,7 @@ Defines the label for the variable shown to the Creator in the site builder. Acc
 Defines a default value to be shown within the block preview. The variable will be prefilled with the default value when a Creator adds the block to a page. Accepted defaults depend on the variable [type]({% link docs/theme_architecture/blocks/schema/variables/variable_types/index.md %}).
 
 #### Group
-Defines which tab the variable will be added to in site builder. Accepted groups are `content`, `layout`, `design` and `mobile`. 
-If no group is defined the variable will be added to the `content` tab.
-If a [layout]({% link docs/theme_architecture/blocks/schema/layout/index.md %}) is defined in the block schema this will replace the default tabs and any defined `group`s will be ignored.
+Defines which tab the variable will be added to in site builder. Default groups are `content`, `layout`, `design` and `mobile`. For custom groups, a [layout]({% link docs/theme_architecture/blocks/schema/layout/index.md %}) must be defined in the block schema, which will replace the default tabs and any defined `group` will be ignored. If no group or layout is defined the variable will be added to the `content` tab.
 
 #### Hint
 Defines additional copy to be included with a variable to provide additional context or guidance to Creators. Accepts markdown text.

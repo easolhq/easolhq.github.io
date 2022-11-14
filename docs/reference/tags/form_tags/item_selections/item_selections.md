@@ -1,19 +1,20 @@
 ---
 layout: default
-title: Item Selections
+title: Item selections
 parent: Tags
 grand_parent: Reference
 has_children: false
 ---
 
-The Item Selections Tag returns an object which can be used as a wrapper to display modifiers for a given item.
+# Item selections
 
+The `item_selections` tag returns an object which can be used as a wrapper to display modifiers for a given item.
 
 ##### input
 {% raw %}
 ```liquid
-    {% form 'item_selections', item %}
-    {% endform %}
+{% form 'item_selections', item %}
+{% endform %}
 ```
 {% endraw %}
 
@@ -27,8 +28,7 @@ The Item Selections Tag returns an object which can be used as a wrapper to disp
 ```
 {% endraw %}
 
-##### Item param
-The item param is required
+## Extra parameters
 
-##### Extra Params
-* `guest::` A guest ID is required when the modifier has a guest
+### Guest
+A guest ID is required when the modifier has a guest

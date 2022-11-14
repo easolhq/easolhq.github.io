@@ -1,12 +1,14 @@
 ---
 layout: default
-title: Currency Switcher
+title: Currency switcher
 parent: Tags
 grand_parent: Reference
 has_children: false
 ---
 
-The Currency Switcher Tag returns a HTML form with a drop-down menu of currency options. 
+# Currency switcher
+
+The `currency_switcher` tag returns an HTML form with a drop-down menu of currency options. 
 When a currency is selected, the form emits a submit event which updates the currency site-wide and reloads the page.
 
 ##### input

@@ -3,11 +3,11 @@ layout: default
 title: Cache
 parent: Tags
 grand_parent: Reference
-has_children: false
 ---
 
-The Cache tag caches its content and renders the result using the currency provided by the template register. 
-The Cache tag assigns a unique key to avoid conflicts between blocks with identical params.
+# Cache
+
+The `cache_tag` accepts an array of drops or keys as an argument which will be used to cache the entire contents of the tag. The cache tag assigns a unique key to avoid conflicts between blocks with identical params.
 
 ##### input
 {% raw %}
@@ -25,12 +25,12 @@ The Cache tag assigns a unique key to avoid conflicts between blocks with identi
 ```
 {% endraw %}
 
-##### expiry
+## Expiry
 
 The cache clears every 30 minutes by default and refreshes on the next page load.
 A custom expiry time can be set by passing in an `expires_in` argument and the time in seconds. 
 
-The following example sets an expiry time of 5 minutes: `expires_in: 300`
+The following example sets an expiry time of 5 minutes: `expires_in: 300`.
 
 ##### input
 {% raw %}
@@ -42,7 +42,5 @@ The following example sets an expiry time of 5 minutes: `expires_in: 300`
 ```
 {% endraw %}
 
-# Extra Params
-
-* `expires_in:` Passing an integer of seconds before the cache expires. 
-* `cache keys` Any number of variables can be passed into the cache as keys.
+## Cache keys
+Any number of variables can be passed into the cache as keys. A change to one of these keys will invalidate the cache regardless of when the next expiry is due.

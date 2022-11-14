@@ -2,6 +2,7 @@
 layout: default
 title: Product search parameters
 parent: Product search
+grand_parent: Docs
 ---
 
 # Product search parameters

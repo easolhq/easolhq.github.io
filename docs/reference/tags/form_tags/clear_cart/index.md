@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Clear Cart
+title: Clear cart
 parent: Tags
 grand_parent: Reference
-has_children: false
 ---
 
-The Clear Cart Tag renders a button that clears the customer's cart. 
+# Clear cart
+
+The `clear_cart` tag renders a button that clears the customer's cart. 
 
 ##### input
 {% raw %}
@@ -28,18 +29,20 @@ The Clear Cart Tag renders a button that clears the customer's cart.
 ```
 {% endraw %}
 
-##### redirect
-The Clear Cart Tag will redirect to the customer's current page by default.
-See the `return_to:` param to customise.
 
-##### Extra Params
-* `return_to:` To specify the redirect location, pass a URL as the value of the return_to: param.
+## Extra parameters
+
+### return_to
+
+The `clear_cart` tag will reload the customer's current page by default on form submit.
+To direct a customer to a different page you can pass a URL as the value of the `return_to:` param.
+
 The following example redirects to the homepage.
 
 ##### input
 {% raw %}
 ```liquid
-{% form "clear_cart", return_to: '/home' %}
+{% form "clear_cart", return_to: '/' %}
 	 <input type="submit" value="clear" />
  {% endform %}
 ```

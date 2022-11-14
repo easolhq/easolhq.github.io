@@ -1,12 +1,14 @@
 ---
 layout: default
-title: Easol Badge
+title: Easol badge
 parent: Tags
 grand_parent: Reference
 has_children: false
 ---
 
-The Easol Badge Tag returns a HTML `<a>` Tag linking to easol.com
+# Easol badge
+
+The `easol_badge` tag returns an HTML anchor tag linking to easol.com. The tag includes UTM parameters to track referrals from Creator sites.
 
 ##### input
 {% raw %}

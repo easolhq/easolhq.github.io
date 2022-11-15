@@ -5,6 +5,6 @@ has_children: true
 nav_order: 5
 ---
 
-The main site navigation can be defined in **My Site > Header**. A different, independent navigation can be created in **My Site > Footer**. One can't be accessed from the other. Both can also be edited in any site page.
+The main site navigation can be managed in **My Site > Header**. A different, independent navigation can be created in **My Site > Footer**. One can't be accessed from the other. Both can also be edited in any site page.
 
 Redirects are managed in **My Site > Redirects**.

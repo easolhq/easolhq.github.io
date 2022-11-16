@@ -5,7 +5,7 @@ has_children: true
 nav_order: 9
 ---
 
-Liquid tags define blocks of logic within a template. Opening and closing tags wrap the logic, and may accept parameters.
+Liquid tags define blocks of logic within a template. Opening and closing tags wrap the logic and may accept parameters.
 {% raw %}
 ```liquid
 {% tag name: "Tag", useful: true %}

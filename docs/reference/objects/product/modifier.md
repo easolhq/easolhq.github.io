@@ -5,17 +5,28 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `modifier` object you have access to the following attributes:
+# Modifier
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# modifier.id
+#### Attributes
 
-Returns a unique ID for the modifier.
+## `modifier.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# modifier.checkbox_attributes
+The unique ID for the modifier.
 
-Returns a string of HTML attributes to be used on a checkbox for the modifier.
+## `modifier.checkbox_attributes`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-- The `checked` attribute is included if this modifer has been selected by the user. Currently used on the selections page.
+A string of HTML attributes to be used on a checkbox for the modifier.
+
+- The `checked` attribute is included if this modifier has been selected by the customer. Currently used on the selections page.
 - The `disabled` attribute is included if the modifier is sold out and not already selected.
 
 {% raw %}
@@ -24,13 +35,19 @@ Returns a string of HTML attributes to be used on a checkbox for the modifier.
 ```
 {% endraw %}
 
-# modifier.contents
+## `modifier.contents`
+{: .d-inline-block }
+array of [biographies]({% link docs/reference/objects/content_library.md %})
+{: .label .fs-1 }
 
-A list of [biographies]({% link docs/reference/objects/content_library.md %}) that are associated with the modifier.
+An array of [biographies]({% link docs/reference/objects/content_library.md %}) that are associated with the modifier.
 
-# modifier.custom_fields
+## `modifier.custom_fields`
+{: .d-inline-block }
+array of key-value pairs
+{: .label .fs-1 }
 
-A list of custom properties defined on this modifier. Each custom field has two methods: `key` and `value`.
+An array of custom properties defined on this modifier. Each custom field has two methods: `key` and `value`.
 
 {% raw %}
 ```liquid
@@ -42,9 +59,12 @@ A list of custom properties defined on this modifier. Each custom field has two 
 ```
 {% endraw %}
 
-# modifier.custom_fields_data
+## `modifier.custom_fields_data`
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-Returns an object containing the custom properties for the modifier.
+An object containing the custom properties for the modifier.
 
 {% raw %}
 ```
@@ -52,9 +72,12 @@ Returns an object containing the custom properties for the modifier.
 ```
 {% endraw %}
 
-# modifier.data_attributes
+## `modifier.data_attributes`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-Returns a string of HTML data attributes for the modifier, including `id`, `name` and if present, `start-at` and `end-at`. e.g.
+A string of HTML data attributes for the modifier, including `id`, `name` and if present, `start-at` and `end-at`. e.g.
 ```
 [
   "data-modifier-id='076f47e9-7061-4c01-90a5-a36b1970ffe3'",
@@ -72,7 +95,10 @@ It can be used in the Liquid markup like this:
 ```
 {% endraw %}
 
-# modifier.end_at
+## `modifier.end_at`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
 The end time for this modifier.
 
@@ -82,31 +108,46 @@ The end time for this modifier.
 ```
 {% endraw %}
 
-# modifier.filter_attributes
+## `modifier.filter_attributes`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-Returns a string of HTML data attributes representing the custom field key-value pairs that have been specified as filterable.
+A string of HTML data attributes representing the custom field key-value pairs that have been specified as filterable.
 
 For example, a modifier with filterable custom fields and values "Category" and "Yoga", and "Difficulty" and "Hard" would end up with data attributes `data-category="Yoga"` and `data-difficulty="Hard"`.
 
 The first attribute, `data-filter-target="filterable"` identifies the element to the filter controller and is always present.
 
-This is useful for handling filtering of modifiers via Javascript.
+This is useful for handling the filtering of modifiers via Javascript.
 
-# modifier.has_infinite_stock
+## `modifier.has_infinite_stock`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns true if the modifier has unlimited stock.
+Returns `true` if the modifier has unlimited stock.
 
-# modifier.image
+## `modifier.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
 The modifier's [image]({% link docs/reference/objects/image.md %}).
 
-# modifier.initial_stock
+## `modifier.initial_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The initial stock for the modifier. If the modifier has unlimited inventory this will return `nil`.
 
-# modifier.label_attributes
+## `modifier.label_attributes`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-Returns a string of HTML attributes to be used on an input label for the modifier.
+A string of HTML attributes to be used on an input label for the modifier.
 
 {% raw %}
 ```
@@ -114,28 +155,46 @@ Returns a string of HTML attributes to be used on an input label for the modifie
 ```
 {% endraw %}
 
-# modifier.name
+## `modifier.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The name of the modifier.
 
-# modifier.price
+## `modifier.price`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-The price of the modifier as a fractional in the sub-unit of the current user's currency.
+The price of the modifier as a fractional in the sub-unit of the current customer's currency.
 e.g. considering the amount $19.50, it will return 1950.
 
-# modifier.remaining_stock
+## `modifier.remaining_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The remaining stock for the modifier. If the modifier has unlimited inventory this will return `nil`.
 
-# modifier.selected
+## `modifier.selected`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns true if this modifer has been selected by the user. Currently used on the selections page.
+Returns `true` if this modifier has been selected by the customer. Currently used on the selections page.
 
-# modifier.sold_out
+## `modifier.sold_out`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns true if the modifier is sold out.
+Returns `true` if the modifier is sold out.
 
-# modifier.start_at
+## `modifier.start_at`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
 The start time for this modifier.
 
@@ -145,6 +204,9 @@ The start time for this modifier.
 ```
 {% endraw %}
 
-# modifier.tagline
+## `modifier.tagline`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The tagline of the modifier.

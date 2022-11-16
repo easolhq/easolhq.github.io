@@ -4,8 +4,16 @@ title: Block
 parent: Objects
 ---
 
-The `block` object has the following attributes.
+# Block 
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# block.id
+#### Attributes
 
-Returns a unique ID for the block.
+## `block.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The unique ID for the block.

@@ -1,16 +1,18 @@
 ---
 layout: default
 title: Extras
-parent: Product Management and Merchandising
+parent: Product management and merchandising
 nav_order: 6
 ---
+
+# Extras
 
 For quick reference, see [Extras]({% link docs/reference/objects/product/extra.md %})
 
 Extras are add-on items that can be sold with experiences, such as spa treatments, equipment hire or airport transfers. 
 
 Some things to consider when displaying a product's extras;
-- Extras have a stock level which is independent of any variants stock levels, and can be purchased independently of the variants as well.
+- Extras have a stock level which is independent of any variant stock levels and can be purchased independently of the variants.
 - You may wish to show the stock remaining on a variant with {% raw %}`extra.remaining_stock`{% endraw %}.
 - Extras can be grouped into Segments. To display these, it's advisable to use the [group_by filter]({% link docs/reference/filters/group_by.md %}), e.g.
 {% raw %}

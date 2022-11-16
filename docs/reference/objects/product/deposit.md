@@ -5,16 +5,26 @@ parent: Product
 grand_parent: Objects
 ---
 
-This object represents a deposit of a variant or extra.<br>
-When using a `deposit` object you have access to the following attributes:
+# Deposit
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# deposit.enabled
+#### Attributes
 
-Returns true if this variant can be paid with a deposit.
+## `deposit.enabled`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-# price.rate
+Returns `true` if this variant or extra can be paid with a deposit.
 
-The rate of this deposit as a value between `0` and `1`. For example, if the deposit is 50% this will return `0.5`.
+## `deposit.rate`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The deposit rate as a value between `0` and `1`. For example, if the deposit is 50% this will return `0.5`.
 If the variant has an active [promotion]({% link docs/reference/objects/product/promotion.md %}) the deposit rate should be applied to the promotional price.
 
 Example

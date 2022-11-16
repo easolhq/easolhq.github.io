@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Site Styles
-has_children: true
+title: Site styles
 nav_order: 3
 ---
 
-**My Site > Style** is where creators and developers can define colours, fonts and custom CSS.
+# Site styles
+
+**My Site > Style** is where Creators and developers can define colours, fonts and custom CSS.
 
 ## Colours 
 Four palette colours are defined here. These colours are used as default throughout the theme, and will also be available as 'Palette colours' in any colour picker when editing the site.
@@ -40,4 +41,4 @@ The fonts will be declared as root variables on runtime:
 More than two fonts can be uploaded however they will not automatically be declared as root variables.
 
 ## Custom CSS
-Custom CSS can be added here that will override the default compiled CSS file (/style.css). This is available to all creators with or without developer access.
+Custom CSS can be added here that will override the default compiled CSS file (/style.css). This is available to all Creators with or without developer access.

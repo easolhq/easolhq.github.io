@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Product Search Parameters
-parent: Product Search
+title: Product search parameters
+parent: Product search
+grand_parent: Docs
 ---
 
-# Product Search Parameters
+# Product search parameters
 Product search is based on parameters that determine which products are returned and in which order.
 
 ### active_promotion
@@ -19,14 +20,14 @@ Passing `true` will return items with a currently active [promotion]({% link doc
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[active_promotion]=true
 ```
 
 ### category
 Accepts a string and is case-sensitive.<br>
-Currently the available Easol categories are: "Festival", "Wellness", "Adventure", "Food and Drink", "Active".<br>
+Currently, the available Easol categories are: "Festival", "Wellness", "Adventure", "Food and Drink", "Active".<br>
 Will accept either a single category or an array.<br>
 Will return products which match the [category]({% link docs/reference/objects/product/index.md %}#productcategory) passed.
 
@@ -41,7 +42,7 @@ Will return products which match the [category]({% link docs/reference/objects/p
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[category]=active
 ```
@@ -62,7 +63,7 @@ Will return products which match the country passed.
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[country]=DE
 ```
@@ -79,13 +80,13 @@ Will return experiences which depart within the [departure date]({% link docs/re
 ```
 {% endraw %}
 
-##### as query paramameters
+##### as a query parameter
 ```
 https://mysite.com/search?search[departure_date][greater_or_equal_than]=2022-11-19&search[departure_date][less_than]=2023-12-28
 ```
 
 ### departure_month
-Accepts a month as either a 3 letter abreviation, or the month number i.e. `Apr` or `4`.<br>
+Accepts a month as either a 3-letter abbreviation, or the month number i.e. `Apr` or `4`.<br>
 Will return experiences which [depart]({% link docs/reference/objects/product/index.md %}#productdepart_on) within the specified month, this may be across multiple years e.g. Apr 2023 and Apr 2024.
 
 ##### as a search tag attribute
@@ -99,7 +100,7 @@ Will return experiences which [depart]({% link docs/reference/objects/product/in
 ```
 {% endraw %}
 
-##### as query paramameters
+##### as a query parameter
 ```
 https://mysite.com/search?search[departure_month]=Apr
 https://mysite.com/search?search[departure_month]=4
@@ -118,7 +119,7 @@ Note: Experience [durations]({% link docs/reference/objects/product/index.md %}#
 ```
 {% endraw %}
 
-##### as query paramameters
+##### as a query parameter
 ```
 https://mysite.com/search?search[duration][greater_than]=3&search[duration][less_than]=8
 ```
@@ -135,7 +136,7 @@ Passing `true` will exclude [sold out]({% link docs/reference/objects/product/in
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[exclude_sold_out_products]=true
 ```
@@ -152,7 +153,7 @@ Passing `true` will include products from other companies which are linked in th
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[include_organisation_products]=true
 ```
@@ -169,7 +170,7 @@ Will return any products whose [name]({% link docs/reference/objects/product/ind
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[name]=my+experience
 ```
@@ -186,7 +187,7 @@ Will return products which match the [series id]({% link docs/reference/objects/
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[series_id]=abcd1234-1234-abcd-1234-abcd1234abcd
 ```
@@ -207,7 +208,7 @@ Will return products which match the [subcategory]({% link docs/reference/object
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[subcategory]=wellness
 ```
@@ -238,7 +239,7 @@ Will determine the order of the returned products.
 ```
 {% endraw %}
 
-##### as a query paramameter
+##### as a query parameter
 ```
 https://mysite.com/search?search[sort]=departure_date_asc
 ```

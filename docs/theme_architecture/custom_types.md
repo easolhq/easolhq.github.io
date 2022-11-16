@@ -8,7 +8,7 @@ nav_order: 8
 # Custom types
 
 Custom types allow you to define reusable objects which include multiple [variable]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) fields.
-They are defined in a theme in the types directory as individual json files, which can then be refered to in any [block schema]({% link docs/theme_architecture/blocks/schema/index.md %}) using the custom type's `key`. 
+They are defined in a theme in the types directory as individual json files, which can then be referred to in any [block schema]({% link docs/theme_architecture/blocks/schema/index.md %}) using the custom type's `key`. 
 
 ## Custom type structure
 All custom types expect the following key-value pairs:
@@ -20,7 +20,7 @@ The custom type's unique key, used in the block schema to reference the custom t
 The name of the custom type shown to the Creator in the site builder.
 
 #### Attributes
-An array of [variable]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) objects, defining the individual variable fields to be included in the custom type.
+An array of [Variable]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) objects, defining the individual variable fields to be included in the custom type.
 
 
 ##### e.g. For a file my-theme/types/my_custom_type.json

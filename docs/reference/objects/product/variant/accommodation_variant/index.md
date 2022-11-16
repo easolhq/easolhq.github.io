@@ -1,19 +1,34 @@
 ---
 layout: default
-title: Accommodation Variant
+title: Accommodation variant
 parent: Variant
 grand_parent: Product
 has_children: true
 ---
 
-The `accommodation_variant` object will inherit all attributes that are defined on
-the [variant]({% link docs/reference/objects/product/variant/index.md %}) object, plus
-it has access to the following attributes:
+# Accommodation variant
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# accommodation_variant.minimum_nights
+The `accommodation_variant` object will inherit all attributes defined on
+the [Variant]({% link docs/reference/objects/product/variant/index.md %}) object, plus
+it has access to the following attributes.
+
+<br>
+
+#### Attributes
+
+## `accommodation_variant.minimum_nights`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 Returns the minimum number of nights the variant can be booked for.
 
-# accommodation_variant.type
+## `accommodation_variant.type`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-This will return `accommodation_variant`.
+Will return `accommodation_variant`.

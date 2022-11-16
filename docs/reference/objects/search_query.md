@@ -4,39 +4,88 @@ title: Search query
 parent: Objects
 ---
 
-When using a `search` object each product search query parameter is available as an attribute.
+# Search
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# search.active_promotion
+#### Attributes
+
+## `search.active_promotion`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
 Returns `true` or `false`.
 
-# search.category
-Returns the category as a string.
+## `search.category`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# search.country
-Returns the country as a string.
+Returns the category searched.
 
-# search.departure_date
+## `search.country`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+Returns the country searched.
+
+## `search.departure_date`
+{: .d-inline-block }
+object
+{: .label .fs-1 }
+
 Returns the departure_date as an object i.e. `{"greater_than"=>"2022-11-19", "less_than"=>"2023-12-28"}`.
 Specific values can be accessed via: `search.departure_date.equal_to`, `search.departure_date.greater_than` and `search.departure_date.less_than` as relevant.
 
-# search.departure_month
+## `search.departure_month`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
 Returns the departure_month as a string in the form it was passed in i.e. `Jan` or `1`.
 
-# search.duration
+## `search.duration`
+{: .d-inline-block }
+object
+{: .label .fs-1 }
+
 Returns the duration as an object i.e. `{"greater_than"=>"3", "less_than"=>"8"}`. 
 Specific values can be accessed via: `search.duration.equal_to`, `search.duration.greater_than` and `search.duration.less_than` as relevant.
 
-# search.exclude_sold_out_products
+## `search.exclude_sold_out_products`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
 Returns `true` or `false`.
 
-# search.include_organisation_products
+## `search.include_organisation_products`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
 Returns `true` or `false`.
 
-# search.series_id
-Returns the series_id as a string.
+## `search.series_id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# search.subcategory
-Returns the subcategory as a string.
+Returns the series_id searched.
 
-# search.sort
+## `search.subcategory`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+Returns the subcategory searched.
+
+## `search.sort`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
 Returns `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` or `departure_date_desc`.

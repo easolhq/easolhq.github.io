@@ -5,28 +5,51 @@ parent: Product
 grand_parent: Objects
 ---
 
-When using a `testimonial` object you have access to the following attributes:
+# Testimonial
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# testimonial.body
+#### Attributes
 
-Returns the body of the testimonial.
+## `testimonial.body`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# testimonial.id
+The body of the testimonial.
 
-Returns a unique id for the testimonial.
+## `testimonial.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# testimonial.image
+The unique id of the testimonial.
 
-Returns the [image]({% link docs/reference/objects/image.md %}) for the testimonial if present.
+## `testimonial.image`
+{: .d-inline-block }
+[image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# testimonial.source_image
+The [image]({% link docs/reference/objects/image.md %}) for the testimonial if present.
 
-Returns the [image]({% link docs/reference/objects/image.md %}) for the testimonial's source if present.
+## `testimonial.source_image`
+{: .d-inline-block }
+[image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# testimonial.source_link
+The [image]({% link docs/reference/objects/image.md %}) for the testimonial's source if present.
 
-Returns the url the testimonial has been attributed to.
+## `testimonial.source_link`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# testimonial.source_name
+The url the testimonial has been attributed to.
 
-Returns the name for the source of the testimonial.
+## `testimonial.source_name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The name of the source of the testimonial.

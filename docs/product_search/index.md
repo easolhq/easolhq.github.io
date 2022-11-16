@@ -1,19 +1,20 @@
 ---
 layout: default
-title: Product Search
+title: Product search
 has_children: true
 nav_order: 8
 has_toc: false
 ---
 
-# Product Search
-Product search enables you to filter a Creator's experiences and accommodations, for example you could:
+# Product search
+
+Product search enables you to filter a Creator's experiences and accommodations, for example, you could:
 - Choose whether sold out products are returned
 - Return only products with active promotions
 - Return products for a specific date range or year
 - Sort the results by departure date
 
-The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [pagination]({% link docs/reference/objects/pagination.md %}) object and  a `search` [Search]({% link docs/reference/objects/search_query.md %}) object. 
+The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object and a `search` [Search]({% link docs/reference/objects/search_query.md %}) object. 
 
 The product search will only return products will only return public, published products i.e. experiences and accommodations which are published and have not been marked as private under 'Manage product availability' in the product settings.
 
@@ -42,9 +43,9 @@ http://beyondadventures.com/search?search[name]=beyond&search[departure_date][gr
 > Note: Parameters passed through query params will overwrite any of those specified as an attribute on the product_search tag.
 
 ## Pagination
-The results of the search are paginated in order to speed page load, you can define the number of results displayed per page using the [page_size]({% link docs/product_search/parameters.md %}#page_size)parameter.
+The results of the search are paginated to speed up page load, you can define the number of results displayed per page using the [page_size]({% link docs/product_search/parameters.md %}#page_size)parameter.
 
-You can enable customers to move between the results pages using the `paginate` [pagination]({% link docs/reference/objects/pagination.md %}) object. The [default_pagination]({% link docs/reference/filters/pagination.md %}) filter can be used to return a complete pagination UI.
+You can enable customers to move between the results pages using the `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object. The [default_pagination]({% link docs/reference/filters/pagination.md %}) filter can be used to return a complete pagination UI.
 
 
 ## Parameters
@@ -64,7 +65,7 @@ You can enable customers to move between the results pages using the `paginate` 
 
 
 ## Accessing query params
-Once the search has been executed, it can be helpful to get a reference to the params and values in the search. For that we can use the `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
+Once the search has been executed, it can be helpful to get a reference to the params and values in the search. For that, we can use the `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
 
 ##### syntax
 {% raw %}
@@ -74,7 +75,7 @@ Once the search has been executed, it can be helpful to get a reference to the p
 {% endraw %}
 
 ## Sorting
-Results can be sorted asceding or descending by name, departure date or duration using the [sort]({% link docs/product_search/parameters.md %}#sort) parameter.
+Results can be sorted ascending or descending by name, departure date or duration using the [sort]({% link docs/product_search/parameters.md %}#sort) parameter.
 
 ##### syntax
 {% raw %}

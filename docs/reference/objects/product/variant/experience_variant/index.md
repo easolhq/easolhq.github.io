@@ -1,14 +1,26 @@
 ---
 layout: default
-title: Experience Variant
+title: Experience variant
 parent: Variant
 grand_parent: Product
 ---
 
-The `experience_variant` object will inherit all attributes that are defined on
-the [variant]({% link docs/reference/objects/product/variant/index.md %}) object, plus
-it has access to the following attributes:
+# Experience variant
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# experience_variant.type
+The `experience_variant` object will inherit all attributes defined on
+the [Variant]({% link docs/reference/objects/product/variant/index.md %}) object, plus
+it has access to the following attributes.
 
-This will return `experience_variant`.
+<br>
+
+#### Attributes
+
+## `experience_variant.type`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+Will return `experience_variant`.

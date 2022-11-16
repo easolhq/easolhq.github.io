@@ -7,7 +7,7 @@ grand_parent: Reference
 
 # money
 
-This filter will return a formatted price in the user's currency. It expects an integer of the price as a fractional in the sub-unit of the currency. e.g. `7500` for the price of `£75`
+This filter will return a formatted price in the customer's currency. It expects an integer of the price as a fractional in the sub-unit of the currency. e.g. `7500` for the price of `£75`
 
 ##### input
 {% raw %}
@@ -17,7 +17,7 @@ This filter will return a formatted price in the user's currency. It expects an 
 {% endraw %}
 
 ##### output
-Assuming the user's currency is GBP
+Assuming the customer's currency is GBP
 
 {% raw %}
 ```html
@@ -27,7 +27,7 @@ Assuming the user's currency is GBP
 
 # apply_promotion
 
-This filter will return the discounted version of a given [price]({% link docs/reference/objects/product/price.md %}) when a [promotion]({% link docs/reference/objects/product/promotion.md %}) is applied. It will return a [price]({% link docs/reference/objects/product/price.md %}) object.
+This filter will return the discounted version of a given [price]({% link docs/reference/objects/product/price.md %}) when a [promotion]({% link docs/reference/objects/product/promotion.md %}) is applied. It will return a [Price]({% link docs/reference/objects/product/price.md %}) object.
 
 ##### input
 {% raw %}

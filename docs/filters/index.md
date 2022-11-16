@@ -5,7 +5,9 @@ has_children: true
 nav_order: 10
 ---
 
-Liquid filters modify Liquid output. They can be applied to any liquid output, and may accept parameters.
+# Filters
+
+Liquid filters modify Liquid output. They can be applied to any liquid output and may accept parameters.
 
 {% raw %}
 ```liquid

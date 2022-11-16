@@ -1,47 +1,82 @@
 ---
 layout: default
-title: Blog Post
+title: Blog post
 parent: Objects
 ---
 
-When using a `blog_post` object you have access to the following attributes.
+# Blog post 
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# blog_post.author
+#### Attributes
 
-The blog post's [author]({% link docs/reference/objects/author.md %}).
+## `blog_post.author`
+{: .d-inline-block }
+[Author]({% link docs/reference/objects/author.md %})
+{: .label .fs-1 }
 
-# blog_post.body
+The blog post's author.
 
-The blog post's body as a string.
+## `blog_post.body`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-# blog_post.hero_image
+The blog post's body.
 
-The blog post's hero [image]({% link docs/reference/objects/image.md %}).
+## `blog_post.hero_image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# blog_post.next_post
+The blog post's hero image.
 
-A `blog_post` object for the next post for the blog.
+## `blog_post.next_post`
+{: .d-inline-block }
+[Blog post]({% link docs/reference/objects/blog_post.md %})
+{: .label .fs-1 }
 
-# blog_post.previous_post
+The next blog post.
 
-A `blog_post` object for the previous post for the blog.
+## `blog_post.previous_post`
+{: .d-inline-block }
+[Blog post]({% link docs/reference/objects/blog_post.md %})
+{: .label .fs-1 }
 
-# blog_post.published_at
+The previous blog post.
 
-The date the blog post was published as a timestamp. This can then be used in conjunction with Liquid's [ built in filters ](https://shopify.github.io/liquid/filters/date/).
+## `blog_post.published_at`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
-# blog_post.tagline
+The date the blog post was published. This can then be used in conjunction with Liquid's [ built-in filters ](https://shopify.github.io/liquid/filters/date/).
 
-The blog post's tagline as a string.
+## `blog_post.tagline`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# blog_post.title
+The blog post's tagline.
 
-The blog post's title as a string.
+## `blog_post.title`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# blog_post.type
+The blog post's title.
 
-The string `"blog_post"`.
+## `blog_post.type`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# blog_post.url
+Will always return "`blog_post`".
 
-The URL of the blog post as a string.
+## `blog_post.url`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The URL of the blog post.

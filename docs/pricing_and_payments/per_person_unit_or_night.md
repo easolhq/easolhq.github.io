@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Per Person, Per Unit, Per Night
-parent: Pricing & Payments
+title: Per person, per unit, per night
+parent: Pricing & payments
 ---
+
+# Per person, per unit, per night
 
 For quick reference please see [Variant]({% link docs/reference/objects/product/variant/index.md %}).
 
@@ -15,7 +17,7 @@ You can check which type a product or variant is with either `product.type` whic
 If `variant.is_priced_per_person` returns true it is a per person variant, and false if it is a per unit variant. 
 
 ### Per person
-Per person pricing is very straight forward to display;
+Per person pricing is very straightforward to display;
 {% raw %}
 ```liquid
 {% assign full_price = variant.price.fractional | money %}
@@ -25,7 +27,7 @@ Per person pricing is very straight forward to display;
 
 ### Per unit
 Per unit pricing is still approached from a 'per person' perspective. 
-The creator sets a per person price, along with a minimum and maximum occupancy. But the full unit price is returned with the `.fractional` method:
+The Creator sets a per person price, along with a minimum and maximum occupancy. But the full unit price is returned with the `.fractional` method:
 {% raw %}
 ```liquid
 {% assign full_price = variant.price.fractional | money %}
@@ -56,7 +58,7 @@ The Creator can make two further configurations to per night pricing.
 ### Price Override
 The standard price per night may have an override applied to any particular date. 
 
-In order to access the prices with any overrides on the frontend, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
+To access the prices with any overrides on the frontend, you need to use the [accommodation availability tag]({% link docs/reference/tags/accommodation_availability_tag/index.md %}).
 
 E.g.
 {% raw %}
@@ -72,7 +74,7 @@ E.g.
 ```
 {% endraw %}
 
-If the standard price was $300 per night and there was a price override of $500 on the 6th November this would render:
+If the standard price was $300 per night and there was a price override of $500 on the 6th of November this would render:
 
 {% raw %}
 ```html

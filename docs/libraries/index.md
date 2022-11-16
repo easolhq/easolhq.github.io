@@ -14,6 +14,6 @@ The below libraries are included on all Easol sites by default:
 - fixers_base - An additional stylesheet used for Easol [cart shops]({% link docs/carts/cart_shop.md %}).
 
 ## Including additional libraries
-Additional libraries can be included in the [header]({% link docs/site_navigation/index.md %}) or [footer]({% link docs/site_navigation/index.md %}) code on your theme. We recommend including these as fixed versions of cdn's.
+Additional libraries can be included in the [header]({% link docs/site_navigation/index.md %}) or [footer]({% link docs/site_navigation/index.md %}) code on your theme. We recommend including these as fixed versions of cdns.
 
 > The Easol [cart shop]({% link docs/carts/cart_shop.md %}) relies heavily on Bootstrap and core functionality may be affected if a later version of Bootstrap is included on a theme.

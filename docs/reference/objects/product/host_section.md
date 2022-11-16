@@ -1,16 +1,27 @@
 ---
 layout: default
-title: Host Section
+title: Host section
 parent: Product
 grand_parent: Objects
 ---
 
-When using a `host_section` object you have access to the following attributes.
+# Host section
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# host_section.elements
+#### Attributes
 
-Returns an array of the [host elements]({% link docs/reference/objects/product/host.md %}).
+## `host_section.elements`
+{: .d-inline-block }
+array of [Host]({% link docs/reference/objects/product/host.md %})s
+{: .label .fs-1 }
 
-# host_section.overview
+An array of the [host elements]({% link docs/reference/objects/product/host.md %}).
 
-Returns the overview for the host section.
+## `host_section.overview`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The overview for the host section.

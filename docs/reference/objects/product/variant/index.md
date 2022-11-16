@@ -6,14 +6,25 @@ grand_parent: Objects
 has_children: true
 ---
 
-When using a `variant` object you have access to the following attributes:<br>
+# Variant
+{: .d-inline-block }
+object
+{: .label .fs-1 }
+
 *Note:* this defines a common interface shared between
 [Experience Variant]({% link docs/reference/objects/product/variant/experience_variant/index.md %}) and
 [Accommodation Variant]({% link docs/reference/objects/product/variant/accommodation_variant/index.md %}).
 
-# variant.deposit
+<br>
 
-Returns the [deposit]({% link docs/reference/objects/product/deposit.md %}) of this variant if paying with deposit is enabled, `nil` otherwise.
+#### Attributes
+
+## `variant.deposit`
+{: .d-inline-block }
+[deposit]({% link docs/reference/objects/product/deposit.md %})
+{: .label .fs-1 }
+
+The [deposit]({% link docs/reference/objects/product/deposit.md %}) of this variant if paying with deposit is enabled, `nil` otherwise.
 If the variant has an active [promotion]({% link docs/reference/objects/product/promotion.md %}) the deposit rate should be applied to the promotional price.
 
 Example
@@ -25,88 +36,128 @@ Example
 ```
 {% endraw %}
 
-# variant.deposit_amount _(deprecated)_
+## `variant.deposit_amount`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 Returns a humanized price for the variant's deposit amount, if deposits are not set on the variant this will just return `extra.price` e.g. `$250 Per Person`.
 
-> **Deprecated**
->
-> The deposit should be calculated in Liquid, using a mixture of the `variant.price` and `variant.product.deposit.rate`.
->
-> {% raw %}
-> ```liquid
-> {% assign deposit_price = variant.price.fractional | times: variant.product.deposit.rate %}
-> {{deposit_price | money}}
-> ```
-> {% endraw %}
+Deprecated, the deposit should be calculated in Liquid, using a mixture of the `variant.price` and `variant.product.deposit.rate`.
 
-# variant.has_infinite_stock
+{% raw %}
+```liquid
+{% assign deposit_price = variant.price.fractional | times: variant.product.deposit.rate %}
+{{deposit_price | money}}
+```
+{% endraw %}
 
-Returns true if the variant has unlimited stock.
+## `variant.has_infinite_stock`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-# variant.humanized_display_amount
+Returns `true` if the variant has unlimited stock.
 
-Returns a humanized display amount e.g. `$120.00`
+## `variant.humanized_display_amount`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-> **Deprecated**
->
-> The display amount should be obtained, using the `variant.price` with the `money` filter.
->
-> {% raw %}
-> ```liquid
-> {{variant.price | money}}
-> ```
-> {% endraw %}
+A humanized price e.g. `$120.00`
 
-# variant.id
+Deprecated, the display amount should be obtained using the `variant.price` with the `money` filter.
 
-Returns a unique id for the variant.
+{% raw %}
+```liquid
+{{variant.price | money}}
+```
+{% endraw %}
 
-# variant.image
+## `variant.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the variant's [image]({% link docs/reference/objects/image.md %}) it it has one.
+The unique id of the variant.
 
-# variant.initial_stock
+## `variant.image`
+{: .d-inline-block }
+[image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-Returns the initial stock for the variant, if the variant has unlimited inventory this will return `nil`.
+The variant's [image]({% link docs/reference/objects/image.md %}) if it has one.
 
-# variant.is_priced_per_person
+## `variant.initial_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-Returns true whether this variant is priced per-person.
+The initial stock for the variant, if the variant has unlimited inventory this will return `nil`.
 
-# variant.modifier_groups
+## `variant.is_priced_per_person`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant.
+Returns `true` if the variant is priced per person.
 
-Note that the resulting list will encompass both pre- and post-checkout modifier groups, and therefore the use of this method in pre-checkout pages is not supported.
+## `variant.modifier_groups`
+{: .d-inline-block }
+array of [modifier group]({% link docs/reference/objects/product/modifier_group.md %})s
+{: .label .fs-1 }
+
+An array [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant.
+
+Note that the resulting list will encompass both pre- and post-checkout modifier groups, and therefore the use of this method in pre-checkout pages is not recommended.
 
 For pre-checkout pages, [pre_checkout_modifier_groups]({% link docs/reference/objects/product/variant/index.md %}#variantpre_checkout_modifier_groups) should be used instead.
 
-# variant.max_occupancy
+## `variant.max_occupancy`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-Returns the maximum number of guests for this variant.
+The maximum number of guests for this variant.
 
-# variant.min_occupancy
+## `variant.min_occupancy`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-Returns the minimum number of guests for this variant.
+The minimum number of guests for this variant.
 
-# variant.name
+## `variant.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the variants name
+The variant's name.
 
-# variant.payment_plan
+## `variant.payment_plan`
+{: .d-inline-block }
+[payment plan]({% link docs/reference/objects/product/variant/payment_plan.md %})
+{: .label .fs-1 }
 
 If the product this variant belongs to has a payment plan associated with it, this will return that [payment plan]({% link docs/reference/objects/product/variant/payment_plan.md %}).
 The payment plan won't be returned if the last payment date is after the start date of the experience.
 A payment plan will still be returned if the price is less than the initial payment, so this may return a payment plan that cannot be used for this variant.
 
-# variant.pre_checkout_modifier_groups
+## `variant.pre_checkout_modifier_groups`
+{: .d-inline-block }
+array of [modifier group]({% link docs/reference/objects/product/modifier_group.md %})s
+{: .label .fs-1 }
 
-Returns a list of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) associated with this variant that the user must choose before checking out.
+An array of [modifier groups]({% link docs/reference/objects/product/modifier_group.md %}) that the customer must choose before checking out.
 
-# variant.price
+## `variant.price`
+{: .d-inline-block }
+[price]({% link docs/reference/objects/product/price.md %})
+{: .label .fs-1 }
 
-Returns the [price]({% link docs/reference/objects/product/price.md %}) of this variant in the current user's currency.
+The [price]({% link docs/reference/objects/product/price.md %}) of this variant in the current customer's currency.
 
 {% raw %}
 ```liquid
@@ -114,27 +165,30 @@ Returns the [price]({% link docs/reference/objects/product/price.md %}) of this 
 ```
 {% endraw %}
 
-> This method has some deprecated behaviour. If no methods are called on the [price]({% link docs/reference/objects/product/price.md %}) object that is returned from this method, then it will fallback to the legacy behaviour, which will return a string of the price, e.g. `$124 Per Person`.
->
-> We have changed this behaviour because it is difficult to apply any math filters to this price string. It is more useful to have access to the numerical value of the price.
->
-> **Good**
->{% raw %}
-> ```
-> <p>{{variant.price | money}} Per Person</p>
-> ```
-> {% endraw %}
->
-> **Bad**
-> {% raw %}
-> ```
-> <p>{{variant.price}}</p>
-> ```
-> {% endraw %}
+This method has some deprecated behaviour. If no methods are called on the [Price]({% link docs/reference/objects/product/price.md %}) object that is returned from this method, then it will fallback to the legacy behaviour, which will return a string of the price, e.g. `$124 Per Person`. It is difficult to apply any math filters to this price string.
 
-# variant.prices
+The behaviour of `variant.price` has been changed to enable math filters to be applied.  It is more useful to have access to the numerical value of the price.
 
-Returns an array containing the [prices]({% link docs/reference/objects/product/price.md %}) of each tier of this variant in the current user's currency.
+**Deprecated method**
+{% raw %}
+```
+<p>{{variant.price}}</p>
+```
+{% endraw %}
+
+**Updated method**
+{% raw %}
+```
+<p>{{variant.price | money}} Per Person</p>
+```
+{% endraw %}
+
+## `variant.prices`
+{: .d-inline-block }
+array of [price]({% link docs/reference/objects/product/price.md %})s
+{: .label .fs-1 }
+
+An array containing the [prices]({% link docs/reference/objects/product/price.md %}) of each tier of this variant in the current customer's currency.
 
 {% raw %}
 ```liquid
@@ -143,33 +197,54 @@ Returns an array containing the [prices]({% link docs/reference/objects/product/
 ```
 {% endraw %}
 
-# variant.product
+## `variant.product`
+{: .d-inline-block }
+[product]({% link docs/reference/objects/product/index.md %})
+{: .label .fs-1 }
 
-Returns the [product]({% link docs/reference/objects/product/index.md %}) this variant belongs to.
+The [product]({% link docs/reference/objects/product/index.md %}) this variant belongs to.
 
-# variant.promotion
+## `variant.promotion`
+{: .d-inline-block }
+[promotion]({% link docs/reference/objects/product/promotion.md %})
+{: .label .fs-1 }
 
-Returns the variant's current active [promotion]({% link docs/reference/objects/product/promotion.md %}) if there is one.
+The variant's current active [promotion]({% link docs/reference/objects/product/promotion.md %}) if there is one.
 
-# variant.remaining_stock
+## `variant.remaining_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-Returns the remaining stock for the variant, if the variant has infinite inventory this will return `nil`.
+The remaining stock for the variant, if the variant has infinite inventory this will return `nil`.
 
-# variant.segment_name
+## `variant.segment_name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 If the variant belongs to a segment this will return the segment name.
 
-# variant.sold_out
+## `variant.sold_out`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
 
-Returns true if the variant is sold out.
+Returns `true` if the variant is sold out.
 
-# variant.tagline
+## `variant.tagline`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the variants tagline.
+The variant's tagline.
 
-# variant.type
+## `variant.type`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns the type of this variant, one of `"experience_variant"` or `"accommodation_variant"`.
+The type of the variant, one of `experience_variant` or `accommodation_variant`.
 Check what other methods you can call on this drop according to their type,
 [Experience Variant]({% link docs/reference/objects/product/variant/experience_variant/index.md %}),
 [Accommodation Variant]({% link docs/reference/objects/product/variant/accommodation_variant/index.md %}).

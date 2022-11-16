@@ -6,7 +6,7 @@ parent: Variable types
 
 # Number
 
-Renders an number input and returns a number.
+Renders a number input and returns a number.
 
 ##### syntax
 {% raw %}

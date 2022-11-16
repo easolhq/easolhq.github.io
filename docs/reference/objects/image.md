@@ -4,7 +4,10 @@ title: Image
 parent: Objects
 ---
 
-All images used in canvas themes have the following attributes
+# Image
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
 > By using the most suitable url method you can help ensure faster load times on pages using the theme
 
@@ -14,14 +17,24 @@ All images used in canvas themes have the following attributes
 ```
 {% endraw %}
 
-# image.name
+<br>
+
+#### Attributes
+
+## `image.name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The filename of the original image, useful for adding alt texts to the images.
 
-# image.url
+## `image.url`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-The original unedited url for the image
-This has alternatives for resizing the image as below
+The original unedited url for the image.
+This has alternatives for resizing the image as below.
 
 
 | Attribute             | Maximum width (px)|
@@ -33,8 +46,9 @@ This has alternatives for resizing the image as below
 | `image.xlarge_url`    | 1140              |
 | `image.xxlarge_url`   | 1920              |
 
-# image.signature
+## `image.signature`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-A unique id for the image
-
-
+The unique id of the image.

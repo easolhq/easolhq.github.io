@@ -1,12 +1,20 @@
 ---
 layout: default
-title: Blog Post Section
+title: Blog post section
 parent: Product
 grand_parent: Objects
 ---
 
-When using a `blog_post_section` object you have access to the following attributes:
+# Blog post section
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# blog_post_section.posts
+#### Attributes
 
-Returns an array of [blog posts]({% link docs/reference/objects/blog_post.md %}).
+## `blog_post_section.posts`
+{: .d-inline-block }
+array of [blog post]({% link docs/reference/objects/blog_post.md %})s
+{: .label .fs-1 }
+
+An array of [blog posts]({% link docs/reference/objects/blog_post.md %}).

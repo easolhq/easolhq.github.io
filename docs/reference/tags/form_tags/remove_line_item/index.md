@@ -1,19 +1,20 @@
 ---
 layout: default
-title: Remove Line Item 
+title: Remove line item 
 parent: Tags
 grand_parent: Reference
-has_children: false
 ---
 
-The Remove Line Item Form Tag renders a button to remove an item from a cart.
+# Remove line item
+
+The `remove_line_item` tag renders a button to remove an item from a cart.
 The tag can be used with a single line item or when iterating over a collection of items. 
 
 ##### input
 {% raw %}
 ```liquid
 {% form 'remove_line_item' %}
-   <input name="items[]" value="{{item.id}}" type="hidden" />
+   <input name="items[]" value="**<variant.id or extra.id>**" type="hidden" />
    <input type="submit" value="Remove" />
 {% endform %}
 ```
@@ -29,5 +30,21 @@ The tag can be used with a single line item or when iterating over a collection 
 ```
 {% endraw %}
 
-##### item ID
-The HTML input tag requires the id of the item it is intended to remove.
+## Extra parameters
+
+### return_to
+
+The `remove_line_item` tag will reload the customer's current page by default on form submit.
+To direct a customer to a different page you can pass a URL as the value of the `return_to:` param.
+
+The following example redirects to the homepage.
+
+##### input
+{% raw %}
+```
+{% form 'remove_line_item', return_to: '/' %}
+   <input name="items[]" value="**<variant.id or extra.id>**" type="hidden" />
+   <input type="submit" value="Remove" />
+{% endform %}
+```
+{% endraw %}

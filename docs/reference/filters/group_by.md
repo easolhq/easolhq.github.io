@@ -45,7 +45,7 @@ This filter will group an array of items (such as events) by an attribute on the
 
 # group_by_expression
 
-This filter will group an array of items, in the same was as [group_by]({% link docs/reference/filters/group_by.md %}#group_by), but will also format the attribute using the provided expression.
+This filter will group an array of items, in the same way as [group_by]({% link docs/reference/filters/group_by.md %}#group_by), but will also format the attribute using the provided expression.
 
 ##### input
 {% raw %}

@@ -1,24 +1,41 @@
 ---
 layout: default
-title: Trip Tip
+title: Trip tip
 parent: Product
 grand_parent: Objects
 ---
 
-When using a `trip_tip` object you have access to the following attributes:
+# Trip tip
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# trip_tip.body
+#### Attributes
 
-Returns the trip tip's body.
+## `trip_tip.body`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# trip_tip.heading
+The trip tip's body.
 
-Returns the trip tip's heading.
+## `trip_tip.heading`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# trip_tip.id
+The trip tip's heading.
 
-Returns a unique id for the trip tip.
+## `trip_tip.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# trip_tip.image
+The unique id of the trip tip.
 
-Returns the trip tip's [image]({% link docs/reference/objects/image.md %}).
+## `trip_tip.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})]
+{: .label .fs-1 }
+
+The trip tip's [image]({% link docs/reference/objects/image.md %}).

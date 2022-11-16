@@ -4,41 +4,73 @@ title: Address
 parent: Product
 grand_parent: Objects
 ---
-The `address` object has the following attributes:
 
-# address.city
+# Address
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-Return the city for the address.
+#### Attributes
 
-# address.country
+## `address.city`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-It returns the country name for the corresponding `address.country_code`.
+The city for the address.
 
-# address.country_code
+## `address.country`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-It returns the official country code for the address. According to the [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166).
+The country name for the corresponding `address.country_code`.
 
-# address.full_address
+## `address.country_code`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-A commodity method that return the address formatted using the attributes.
-Used on the example above.
+The official country code for the address. According to the [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166).
 
-# address.id
+## `address.full_address`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Returns a unique id for this address.
+A commodity method that returns the full address formatted using the attributes.
 
-# address.line_one
+## `address.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Return the first line of the address in plain text.
+The unique id of this address.
 
-# address.line_two
+## `address.line_one`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Return the second line of the address in plain text.
+The first line of the address in plain text.
 
-# address.post_code
+## `address.line_two`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-Return the post code for the address.
+The second line of the address in plain text.
 
-# address.region
+## `address.post_code`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-It returns the region name for the corresponding `address.country_code`.
+The post code for the address.
+
+## `address.region`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The region name for the corresponding `address.country_code`.

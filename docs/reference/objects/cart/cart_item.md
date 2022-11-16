@@ -1,71 +1,124 @@
 ---
 layout: default
-title: Cart Item
+title: Cart item
 parent: Cart
 ---
 
-The `item` object has the following attributes.
+# Cart item
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# item.adult_count
+#### Attributes
 
-The number of guests selected for the variant as an integer.
+## `item.adult_count`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-# item.end_on
+The number of guests selected for the variant.
+
+## `item.end_on`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
 The end date of the product associated with the cart item.
 
-# item.id
+## `item.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 A unique ID for the cart item.
 
-# item.quantity
+## `item.quantity`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-The quantity selected on the cart item as an integer.
+The quantity selected on the cart item.
 
-# item.price
+## `item.price`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-The price of the cart item _not_ including any modifier selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current user's currency.
+The price of the cart item _not_ including any modifier selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# item.product
+## `item.product`
+{: .d-inline-block }
+[Product]({% link docs/reference/objects/product/index.md %})
+{: .label .fs-1 }
 
 The [product]({% link docs/reference/objects/product/index.md %}) associated with the cart item.
 
-# item.selections
+## `item.selections`
+{: .d-inline-block }
+array of [Modifier selection]({% link docs/reference/objects/cart/modifier_selection.md %})s
+{: .label .fs-1 }
 
-A list of [modifier selections]({% link docs/reference/objects/cart/modifier_selection.md %}) made on the cart item.
+The [modifier selections]({% link docs/reference/objects/cart/modifier_selection.md %}) made on the cart item.
 
-# item.start_on
+## `item.start_on`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
 The start date of the product associated with the cart item.
 
-# item.subtotal
+## `item.subtotal`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-The price of the cart item, including the total price of all modififer selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current user's currency.
+The price of the cart item, including the total price of all modifier selections and _not_ including any price reductions. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# item.total
+## `item.total`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-The total cost of the item, including the total price of all modififer selections and after all price reductions and fees have been applied. This is returned as a fractional in the sub-unit of the current user's currency.
+The total cost of the item, including the total price of all modifier selections and after all price reductions and fees have been applied. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# item.total_deposit
+## `item.total_deposit`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-The minimum amount which must be paid for the item at checkout. If no deposit is enabled this will return the `total`, otherwise it will return the `total` multiplied by the deposit rate. This is returned as a fractional in the sub-unit of the current user's currency.
+The minimum amount to be paid for the item at checkout. If no deposit is enabled this will return the `total`, otherwise it will return the `total` multiplied by the deposit rate. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# item.total_fee
+## `item.total_fee`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-The booking fee amount for the item returned as a fractional in the sub-unit of the current user's currency.
+The booking fee amount for the item returned as a fractional in the sub-unit of the current customer's currency.
 
-# item.total_guests
+## `item.total_guests`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
 The total number of guests on the cart item, i.e. `quantity` multiplied by `adult_count`.
 
-# item.total_modifications_amount
+## `item.total_modifications_amount`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
 
-The total of all the modifier selections made on the cart item. This is returned as a fractional in the sub-unit of the current user's currency.
+The total of all the modifier selections made on the cart item. This is returned as a fractional in the sub-unit of the current customer's currency.
 
-# item.variant
+## `item.variant`
+{: .d-inline-block }
+[Variant]({% link docs/reference/objects/product/variant/index.md %})
+{: .label .fs-1 }
 
 The [variant]({% link docs/reference/objects/product/variant/index.md %}) associated with the cart item.
 
-# item.variant_name
+## `item.variant_name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
 The name of the variant associated with the cart item.

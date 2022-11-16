@@ -8,7 +8,7 @@ nav_order: 2
 # Displaying a customer's cart
 
 ## The Cart object
-A [Cart]({% link docs/reference/objects/cart/index.md %}) object represents the experience that a customer intends to book, and the costs associated with the cart.
+A [Cart]({% link docs/reference/objects/cart/index.md %}) object represents the experience that a customer intends to book and the costs associated with the cart.
 
 The prices can be formatted in the customer's currency by applying the [money filter]({% link docs/reference/filters/money.md %}) to the price.
 
@@ -27,7 +27,7 @@ Pay with a deposit of {{cart.total_deposit | money}} or with a first instalment 
 {% endraw %}
 
 ## Cart line items
-A [cart item]({% link docs/reference/objects/cart/cart_item.md %}) is a single line in a customers cart that records which variant of an experience was added, the associated quantity, dates, adult count and modifications.
+A [cart item]({% link docs/reference/objects/cart/cart_item.md %}) is a single line in a customer's cart that records which variant of an experience was added, the associated quantity, dates, adult count and modifications.
 
 > If two of the same item are added to the cart, but have unique line item properties, then they’ll be split into separate line items.
 

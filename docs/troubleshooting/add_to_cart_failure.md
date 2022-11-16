@@ -12,10 +12,10 @@ When adding an item to a cart, all relevant information needs to be included in 
 
 If your form is failing to add items to a customer's cart, below are some initial troubleshooting steps.
 
-- Which product shape is failing to add to the cart. Is it all experiences and accommodations, or just a subset?
-- Are all required input fields included. If only some experiences or accommodations are failing to be added to the cart, are there some fields missing?
+- Which product shape is failing to add to the cart? Is it all experiences and accommodations, or just a subset?
+- Are all required input fields included? If only some experiences or accommodations are failing to be added to the cart, are there some fields missing?
 - Do the failing items have modifier groups assigned to them, and if so, have these been included in the form?
-- Is the item sold out, or is the specified modification option sold out? If so, add support to display items as [sold out]({% link docs/reference/objects/product/index.md %}#productsold_out) and hide the add to cart form.
+- Is the item sold out or is the specified modification option sold out? If so, add support to display items as [sold out]({% link docs/reference/objects/product/index.md %}#productsold_out) and hide the add to cart form.
 
 
 ### Breakdown of form fields

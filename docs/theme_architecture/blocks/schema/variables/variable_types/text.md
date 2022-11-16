@@ -6,7 +6,7 @@ parent: Variable types
 
 # Text
 
-Renders an wysiwyg input field and returns html.
+Renders a wysiwyg input field and returns html.
 
 ##### syntax
 {% raw %}

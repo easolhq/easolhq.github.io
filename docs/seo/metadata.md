@@ -4,7 +4,9 @@ title: Metadata
 parent: SEO
 ---
 
-Creators are able to add metadata to their site pages.
+# Metadata
+
+Creators can add metadata to their site pages.
 
 If this isn't added, the title is constructed from the page name and Company, the description tag is empty and no image tag exists, e.g.
 
@@ -25,4 +27,4 @@ Once this has been configured this might instead be:
 ```
 {% endraw %}
 
-For Product/Merchandising Pages, the image is the hero image and description is the tagline.
+For Product/Merchandising Pages, the image is the hero image and the description is the tagline.

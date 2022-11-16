@@ -1,25 +1,42 @@
 ---
 layout: default
-title: Useful Info
+title: Useful info
 parent: Product
 grand_parent: Objects
 ---
 
-The `useful_info` object has the following attributes
+# Useful info
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# useful_info.check_in
+#### Attributes
 
-Returns the check in time of the event as a timestamp, this can then be used in conjunction with liquids[ built in filters ](https://shopify.github.io/liquid/filters/date/)
+## `useful_info.check_in`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
-# useful_info.check_out
+The check-in time of the event as a timestamp, this can then be used in conjunction with liquids[ built-in filters ](https://shopify.github.io/liquid/filters/date/)
 
-Returns the check out time of the event as a timestamp, this can then be used in conjunction with liquids[ built in filters ](https://shopify.github.io/liquid/filters/date/)
+## `useful_info.check_out`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
 
-# useful_info.other_information
+The check-out time of the event as a timestamp, this can then be used in conjunction with liquids[ built-in filters ](https://shopify.github.io/liquid/filters/date/)
 
-Returns the other information text
+## `useful_info.other_information`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-# useful_info.how_to_get_there
+The 'other information' text
 
-Returns the how to get there text
+## `useful_info.how_to_get_there`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
+
+The 'how to get there' text.
 

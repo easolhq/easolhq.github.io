@@ -1,41 +1,70 @@
 ---
 layout: default
-title: Schedule Element
+title: Schedule element
 parent: Product
 grand_parent: Objects
 ---
 
-When using a `schedule element` object you have access to the following attributes
+# Schedule element
+{: .d-inline-block }
+object
+{: .label .fs-1 }
 
-# element.body
+#### Attributes
 
-Returns the body of the host, this is a rich text field and so will return html as in the example above.
+## `element.body`
+{: .d-inline-block }
+html
+{: .label .fs-1 }
 
-# element.heading
+The body of the schedule element.
 
-Returns the heading for the schedule element
+## `element.heading`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# element.id
+The heading for the schedule element
 
-Returns a unique id for the schedule element
+## `element.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# element.image
+The unique id of the schedule element
 
-Returns the [image]({% link docs/reference/objects/image.md %}) for the schedule element if present
+## `element.image`
+{: .d-inline-block }
+[Image]({% link docs/reference/objects/image.md %})
+{: .label .fs-1 }
 
-# element.type
+The [image]({% link docs/reference/objects/image.md %}) for the schedule element if present
 
-Schedule elements can be one of two types `title` or `section` , a title will only have the heading set whereas a section could have all attributes set. 
+## `element.type`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
 
-# element.included
+Schedule elements can be one of two types `title` or `section`, a title will only have the heading set whereas a section could have all attributes set. 
 
-Returns an `Array` of `Strings`  with what's included on this schedule element.
+## `element.included`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
 
-# element.not_included
+An array of strings with what's included on this schedule element.
 
-Returns an `Array` of `Strings`  with what's not included on this schedule element.
+## `element.not_included`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
 
-# element.locale
+An array of strings with what's not included on this schedule element.
 
-Returns the locale for the schedule element
+## `element.locale`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The locale for the schedule element
 

@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Create Line Item
+title: Create line item
 parent: Tags
 grand_parent: Reference
-has_children: false
 ---
 
-The Create Line Item Tag renders a form which acts as a wrapper for a single item, an item can be a [variant]({% link docs/reference/objects/product/variant/index.md %}) or an [extra]({% link docs/reference/objects/product/extra.md %}).
+# Create line item
+
+The `create_line_item` tag renders a form which acts as a wrapper for a single item, an item can be a [variant]({% link docs/reference/objects/product/variant/index.md %}) or an [extra]({% link docs/reference/objects/product/extra.md %}).
 Extra HTML input tags can be used to add item quantity, modifiers, adult count or start and end date.
 
 ##### input
@@ -28,14 +29,17 @@ Extra HTML input tags can be used to add item quantity, modifiers, adult count o
 ```
 {% endraw %}
 
-##### Extra HTML input tags
+## Extra HTML input tags
 
-Specify quantity
+### Quantity
+
 {% raw %}
 ```html
   <input type="hidden" name="items[][quantity]" value="**<quantity>**" />
 ```
 {% endraw %}
+
+### Modification
 
 Include a modifier by referencing the [modifier.id]({% link docs/reference/objects/product/modifier.md %})
 {% raw %}
@@ -44,6 +48,8 @@ Include a modifier by referencing the [modifier.id]({% link docs/reference/objec
 ```
 {% endraw %}
 
+### Adult count
+
 Specify adult count for a per-unit item or accommodation
 {% raw %}
 ```html
@@ -51,13 +57,17 @@ Specify adult count for a per-unit item or accommodation
 ```
 {% endraw %}
 
-Specify check in and check out dates for accommodation items
+### Check-in/Check-out
+
+Specify check-in and check-out dates for accommodation items
 {% raw %}
 ```html
   <input type="hidden" name="items[][start_on]" value="**<YYYY-MM-DD>**">
   <input type="hidden" name="items[][end_on]" value="**<YYYY-MM-DD>**">
 ```
 {% endraw %}
+
+### Clear cart
 
 Clear all existing items out of a customer's cart before adding new items.
 {% raw %}
@@ -66,16 +76,20 @@ Clear all existing items out of a customer's cart before adding new items.
 ```
 {% endraw %}
 
+## Extra parameters
 
-##### Extra Params
-* `return_to:` To specify the redirect location, pass a URL as the value of the return_to: param.
-The following example redirects to the homepage. 
+### return_to
+
+The `create_line_item` tag will reload the customer's current page by default on form submit.
+To direct a customer to a different page you can pass a URL as the value of the `return_to:` param.
+
+The following example redirects to the homepage.
 
 ##### input
 {% raw %}
 ```liquid
-{% form "create_line_item", return_to: '/home' %}
-      <input type="hidden" name="items[][variant_id]" value="{{item_id}}"/>
- {% endform %}
+{% form "create_line_item", return_to: '/' %}
+  <input type="hidden" name="items[][variant_id]" value="**<variant.id or extra.id>**"/>
+{% endform %}
 ```
 {% endraw %}

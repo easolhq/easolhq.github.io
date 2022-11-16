@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Merchandising Fields
-parent: Product Management and Merchandising
+title: Merchandising fields
+parent: Product management and merchandising
 nav_order: 8
 ---
+
+# Merchandising fields
 
 All merchandising content is optional. If Creators have added merchandising content, this should be included at a minimum in the [product template]({% link docs/theme_architecture/templates.md %}) but can also be shown elsewhere in Sites. 
 

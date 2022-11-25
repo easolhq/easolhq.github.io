@@ -64,3 +64,6 @@ After a custom type has been created, existing attributes cannot be removed and 
 A custom type can only be deleted if it is not referenced in any theme [blocks]({% link docs/theme_architecture/blocks/index.md %}) or blocks added to Creator websites.
 
 The above restrictions are in place to ensure that changes are not made to custom types on which existing blocks depend.
+
+## Backwards compatibility of custom types
+A custom type can be added to a theme repository after a Creator has chosen that theme for their Site. Once added, blocks or templates can be added or updated to use the new custom type. However, the custom type will not appear in the Theme > Custom Types tab of the [Palette]({% link docs/developer_tools/easol_palette.md %}).

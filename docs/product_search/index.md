@@ -18,6 +18,8 @@ The product search is executed using the [product_search tag]({% link docs/refer
 
 The product search will only return products will only return public, published products i.e. experiences and accommodations which are published and have not been marked as private under 'Manage product availability' in the product settings.
 
+> Note: Only one product_search tag should be used on a page to ensure expected results.
+
 {% raw %}
 ```liquid
 {% product_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: 12, sort: 'departure_date_asc' %}

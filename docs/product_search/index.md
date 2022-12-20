@@ -23,13 +23,13 @@ The product search will only return products will only return public, published 
 {% raw %}
 ```liquid
 {% product_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: 12, sort: 'departure_date_asc' %}
-    {% for item in result.items %}
-        <p>{{ item.name }}</p>
-    {% endfor %}
-    <div>
-        {{ paginate.collection_size }} Results
-        {{ paginate | default_pagination }}
-    </div>
+  {% for item in result.items %}
+    <p>{{ item.name }}</p>
+  {% endfor %}
+  <div>
+    {{ paginate.collection_size }} Results
+    {{ paginate | default_pagination }}
+  </div>
 {% endproduct_search %}
 ```
 {% endraw %}
@@ -55,13 +55,13 @@ You can assign the value of a liquid variable to `page_size`. You should update 
 ```liquid
 {% assign page_size = opt_selected_by_user %}
 {% product_search page_size: page_size, sort: 'departure_date_asc' %}
-    {% for item in result.items %}
-        <p>{{ item.name }}</p>
-    {% endfor %}
-    <div>
-        {{ paginate.page_size }} Results <!-- Updated results number -->
-        {{ paginate | default_pagination }}
-    </div>
+  {% for item in result.items %}
+    <p>{{ item.name }}</p>
+  {% endfor %}
+  <div>
+    {{ paginate.page_size }} Results <!-- Updated results number -->
+    {{ paginate | default_pagination }}
+  </div>
 {% endproduct_search %}
 ```
 {% endraw %}

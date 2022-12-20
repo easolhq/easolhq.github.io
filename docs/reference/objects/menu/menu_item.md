@@ -14,7 +14,7 @@ The `Item` object can be accessed on the [`Menu`]({% link docs/reference/objects
 {% raw %}
 ```liquid
 {% for item in menu.items %}
-    <a href="{{item.path}}">{{item.label}}</a>
+    <a href="{{ item.path }}">{{ item.label }}</a>
 {% endfor %}
 ```
 {% endraw %}

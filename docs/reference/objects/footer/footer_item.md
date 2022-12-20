@@ -14,7 +14,7 @@ The `Item` object can be accessed on the [`Footer`]({% link docs/reference/objec
 {% raw %}
 ```liquid
 {% for item in footer.items %}
-    <a href="{{item.path}}">{{item.label}}</a>
+    <a href="{{ item.path }}">{{ item.label }}</a>
 {% endfor %}
 ```
 {% endraw %}

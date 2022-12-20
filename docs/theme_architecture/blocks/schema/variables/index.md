@@ -68,7 +68,7 @@ gallery:
 ---
 
 {% for image in gallery %}
-    <img src="{{image.url}}"> 
+    <img src="{{ image.url }}"> 
 {% endfor %}
 ```
 {% endraw %}

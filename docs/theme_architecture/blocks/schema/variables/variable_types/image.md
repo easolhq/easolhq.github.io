@@ -18,7 +18,7 @@ my_variable:
         url: https://my-image.jpg
 ---
 
-<img src="{{my_variable.url}}">
+<img src="{{ my_variable.url }}">
 
 ```
 {% endraw %}

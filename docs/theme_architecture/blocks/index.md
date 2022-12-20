@@ -32,8 +32,8 @@ attributes:
         group: design
         hint: Recommended image size 1920px by 600px
 ---
-<h1>{{heading}}</h1>
-{{text}}
-<img src="{{image.xxlarge_url}}">
+<h1>{{ heading }}</h1>
+{{ text }}
+<img src="{{ image.xxlarge_url }}">
 ```
 {% endraw %}

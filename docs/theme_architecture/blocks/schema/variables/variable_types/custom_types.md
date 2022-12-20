@@ -52,7 +52,7 @@ my_variable:
     type: my_custom_type
 ---
 
-<a class="{{my_variable.style}}" href="{{my_variable.link.url}}">{{my_variable.label}}</a>
+<a class="{{ my_variable.style }}" href="{{ my_variable.link.url }}">{{ my_variable.label }}</a>
 ```
 {% endraw %}
 
@@ -70,7 +70,7 @@ my_variable:
         style: btn-primary
 ---
 
-<a class="{{my_variable.style}}" href="{{my_variable.link.url}}">{{my_variable.label}}</a>
+<a class="{{ my_variable.style }}" href="{{ my_variable.link.url }}">{{ my_variable.label }}</a>
 ```
 {% endraw %}
 
@@ -91,7 +91,7 @@ buttons:
           style: btn-secondary
 ---
 {% for button in buttons %}
-    <a class="{{button.style}}" href="{{button.link.url}}">{{button.label}}</a>
+    <a class="{{ button.style }}" href="{{ button.link.url }}">{{ button.label }}</a>
 {% endfor %}    
 ```
 {% endraw %}

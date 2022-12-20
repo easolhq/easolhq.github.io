@@ -36,8 +36,8 @@ The following example sets an expiry time of 5 minutes: `expires_in: 300`.
 {% raw %}
 ```liquid
 {% cache variant, variant.product, expires_in: 300 %}
-   {{product.name}}
-   {{variant.min_price}}
+   {{ product.name }}
+   {{ variant.min_price }}
  {% endcache %}
 ```
 {% endraw %}

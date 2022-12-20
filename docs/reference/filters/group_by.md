@@ -15,10 +15,10 @@ This filter will group an array of items (such as events) by an attribute on the
   {% assign grouped_events = events | group_by: 'time' %}
   {% for group in grouped_events %}
     <article>
-      <h2>{{group.name}}</h2>
+      <h2>{{ group.name }}</h2>
 
       {% for event in group.items %}
-        <p>{{event.name}}</p>
+        <p>{{ event.name }}</p>
       {% endfor %}
     </article>
   {% endfor %}
@@ -53,10 +53,10 @@ This filter will group an array of items, in the same way as [group_by]({% link 
   {% assign grouped_events = events | group_by_exp: "event", "event.start_at | date: '%Y-%m-%d'" %}
   {% for group in grouped_events %}
     <article>
-      <h2>{{group.name}}</h2>
+      <h2>{{ group.name }}</h2>
 
       {% for event in group.items %}
-        <p>{{event.name}}</p>
+        <p>{{ event.name }}</p>
       {% endfor %}
     </article>
   {% endfor %}

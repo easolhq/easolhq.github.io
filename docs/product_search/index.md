@@ -24,11 +24,11 @@ The product search will only return products will only return public, published 
 ```liquid
 {% product_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: 12, sort: 'departure_date_asc' %}
     {% for item in result.items %}
-        <p>{{item.name}}</p>
+        <p>{{ item.name }}</p>
     {% endfor %}
     <div>
-        {{paginate.collection_size}} Results
-        {{paginate | default_pagination}}
+        {{ paginate.collection_size }} Results
+        {{ paginate | default_pagination }}
     </div>
 {% endproduct_search %}
 ```
@@ -56,11 +56,11 @@ You can assign the value of a liquid variable to `page_size`. You should update 
 {% assign page_size = opt_selected_by_user %}
 {% product_search page_size: page_size, sort: 'departure_date_asc' %}
     {% for item in result.items %}
-        <p>{{item.name}}</p>
+        <p>{{ item.name }}</p>
     {% endfor %}
     <div>
-        {{paginate.page_size}} Results <!-- Updated results number -->
-        {{paginate | default_pagination}}
+        {{ paginate.page_size }} Results <!-- Updated results number -->
+        {{ paginate | default_pagination }}
     </div>
 {% endproduct_search %}
 ```
@@ -89,7 +89,7 @@ Once the search has been executed, it can be helpful to get a reference to the p
 ##### syntax
 {% raw %}
 ```
-{{search.departure_date}}
+{{ search.departure_date }}
 ```
 {% endraw %}
 

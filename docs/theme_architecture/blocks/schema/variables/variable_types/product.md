@@ -19,6 +19,6 @@ my_variable:
     default: random
 ---
 
-{{my_variable.name}}
+{{ my_variable.name }}
 ```
 {% endraw %}

@@ -31,7 +31,7 @@ A string of HTML attributes to be used on a checkbox for the modifier.
 
 {% raw %}
 ```
-<input {{modifier.checkbox_attributes}}>
+<input {{ modifier.checkbox_attributes }}>
 ```
 {% endraw %}
 
@@ -53,7 +53,7 @@ An array of custom properties defined on this modifier. Each custom field has tw
 ```liquid
 <ul>
   {% for field in modifier.custom_fields %}
-    <li>{{field.key}}: {{field.value}}</li>
+    <li>{{ field.key }}: {{ field.value }}</li>
   {% endfor %}
 </ul>
 ```
@@ -68,7 +68,7 @@ An object containing the custom properties for the modifier.
 
 {% raw %}
 ```
-{{modifier.custom_fields_data.category}}
+{{ modifier.custom_fields_data.category }}
 ```
 {% endraw %}
 
@@ -91,7 +91,7 @@ It can be used in the Liquid markup like this:
 
 {% raw %}
 ```
-<input {{modifier.checkbox_attributes}} {{modifier.data_attributes}}>
+<input {{ modifier.checkbox_attributes }} {{ modifier.data_attributes }}>
 ```
 {% endraw %}
 
@@ -151,7 +151,7 @@ A string of HTML attributes to be used on an input label for the modifier.
 
 {% raw %}
 ```
-<label {{modifier.label_attributes}}>{{modifier.name}}</label>
+<label {{ modifier.label_attributes }}>{{ modifier.name }}</label>
 ```
 {% endraw %}
 

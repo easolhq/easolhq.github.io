@@ -16,11 +16,11 @@ The Product Search Tag executes a search on the company's products, it then pagi
 ```liquid
 {% product_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: 12, sort: 'departure_date_asc' %}
     {% for item in result.items %}
-        <p>{{item.name}}</p>
+        <p>{{ item.name }}</p>
     {% endfor %}
     <div>
-        {{paginate.collection_size}} Results
-        {{paginate | default_pagination}}
+        {{ paginate.collection_size }} Results
+        {{ paginate | default_pagination }}
     </div>
 {% endproduct_search %}
 ```
@@ -137,11 +137,11 @@ These should be passed as a string describing the dimension to sort on and the d
 ```liquid
 {% product_search name: 'Beyond', sort: 'name_asc' %}
     {% for item in result.items %}
-        <p>{{item.name}}</p>
+        <p>{{ item.name }}</p>
     {% endfor %}
     <div>
-        {{paginate.collection_size}} Results
-        {{paginate | default_pagination}}
+        {{ paginate.collection_size }} Results
+        {{ paginate | default_pagination }}
     </div>
 {% endproduct_search %}
 ```
@@ -158,10 +158,10 @@ For that, we can use the `Search` object, which exposes all of the params listed
 
 {% raw %}
 ```liquid
-{{search.departure_date}}
+{{ search.departure_date }}
 
 or
 
-{{search["departure_date"]}}
+{{ search["departure_date"] }}
 ```
 {% endraw %}

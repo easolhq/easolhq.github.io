@@ -23,6 +23,6 @@ my_variable:
           value: opt_2
 ---
 
-{{my_variable}}
+{{ my_variable }}
 ```
 {% endraw %}

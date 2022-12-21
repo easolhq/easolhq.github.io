@@ -19,6 +19,13 @@ object
 
 #### Attributes
 
+## `variant.booking_fee_rate`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The variant's booking fee rate as a decimal between 0 and 1.
+
 ## `variant.deposit`
 {: .d-inline-block }
 [deposit]({% link docs/reference/objects/product/deposit.md %})

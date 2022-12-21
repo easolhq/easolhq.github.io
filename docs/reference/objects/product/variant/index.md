@@ -50,7 +50,7 @@ Deprecated, the deposit should be calculated in Liquid, using a mixture of the `
 {% raw %}
 ```liquid
 {% assign deposit_price = variant.price.fractional | times: variant.product.deposit.rate %}
-{{deposit_price | money}}
+{{ deposit_price | money }}
 ```
 {% endraw %}
 
@@ -72,7 +72,7 @@ Deprecated, the display amount should be obtained using the `variant.price` with
 
 {% raw %}
 ```liquid
-{{variant.price | money}}
+{{ variant.price | money }}
 ```
 {% endraw %}
 
@@ -161,7 +161,7 @@ The [price]({% link docs/reference/objects/product/price.md %}) of this variant 
 
 {% raw %}
 ```liquid
-{{variant.price.fractional | money}}
+{{ variant.price.fractional | money }}
 ```
 {% endraw %}
 
@@ -172,14 +172,14 @@ The behaviour of `variant.price` has been changed to enable math filters to be a
 **Deprecated method**
 {% raw %}
 ```
-<p>{{variant.price}}</p>
+<p>{{ variant.price }}</p>
 ```
 {% endraw %}
 
 **Updated method**
 {% raw %}
 ```
-<p>{{variant.price | money}} Per Person</p>
+<p>{{ variant.price | money }} Per Person</p>
 ```
 {% endraw %}
 
@@ -192,8 +192,8 @@ An array containing the [prices]({% link docs/reference/objects/product/price.md
 
 {% raw %}
 ```liquid
-{{assign price = variant.prices | first}}
-{{price.fractional | money}}
+{{ assign price = variant.prices | first }}
+{{ price.fractional | money }}
 ```
 {% endraw %}
 

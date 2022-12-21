@@ -14,7 +14,7 @@ You can give customers the option to remove a line item from their cart. This is
 {% for item in cart.items %}
     {% form 'remove_line_item' %}
         <!-- line item info -->
-        <input name="items[]" value="{{item.id}}" type="hidden" />
+        <input name="items[]" value="{{ item.id }}" type="hidden" />
         <input type="submit" value="Remove" />
     {% endform %}
 {% endfor %}

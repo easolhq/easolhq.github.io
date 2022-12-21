@@ -19,7 +19,7 @@ my_variable:
         url: https://easol.com
 ---
 
-<a href="{{my_variable.url}}"
+<a href="{{ my_variable.url }}"
     {% if my_variable.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
     Click here
 </a>

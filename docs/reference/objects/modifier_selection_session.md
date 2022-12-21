@@ -91,10 +91,10 @@ Example usage:
 {% raw %}
 ```liquid
 {% for filter in item.selection_filters %}
-  <h3>{{filter.name}}</h3>
+  <h3>{{ filter.name }}</h3>
   <ul>
     {% for option in filter.options %}
-      <li {{option.attributes}}>{{option.name}}</li>
+      <li {{ option.attributes }}>{{ option.name }}</li>
     {% endfor %}
   </ul>
 {% endfor %}

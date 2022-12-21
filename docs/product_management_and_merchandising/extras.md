@@ -19,10 +19,10 @@ Some things to consider when displaying a product's extras;
 ```liquid
 {% assign extra_groups = product.extras | group_by: "segment_name" | sort: "segment_name" %}
 {% for group in extra_groups %}
-    <h2>{{group.name}}</h2>
+    <h2>{{ group.name }}</h2>
     <ul>
         {% for extra in group.items %}
-             <li>{{extra.name}}</li>
+             <li>{{ extra.name }}</li>
         {% endfor %}
     </ul>
 {% endfor %}

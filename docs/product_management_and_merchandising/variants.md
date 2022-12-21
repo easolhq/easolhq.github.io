@@ -18,10 +18,10 @@ Some things to consider when displaying a product's variants:
 ```liquid
 {% assign variant_groups = product.variants | group_by: "segment_name" | sort: "segment_name" %}
 {% for group in variant_groups %}
-    <h2>{{group.name}}</h2>
+    <h2>{{ group.name }}</h2>
     <ul>
         {% for variant in group.items %}
-             <li>{{variant.name}}</li>
+             <li>{{ variant.name }}</li>
         {% endfor %}
     </ul>
 {% endfor %}

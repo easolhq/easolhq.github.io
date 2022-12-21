@@ -13,7 +13,7 @@ To add an item to a customer's cart you must include a [create_line_item tag]({%
 ```liquid
 {% for item in product.variants %}
     {% form "create_line_item" %}
-        <input type="hidden" name="items[][variant_id]" value="{{item.id}}" />
+        <input type="hidden" name="items[][variant_id]" value="{{ item.id }}" />
         <input type="submit" value="Add to cart" />
     {% endform %}
 {% endfor %}

@@ -31,7 +31,7 @@ To display the payment plan in Sites, note;
         {% assign initial_payment = lowest_price | divided_by: variant.payment_plan.number_of_instalments | money %}
     {% endif %}
 
-    <p>Pay just {{initial_payment}} today, and spread the remaining cost over {{variant.payment_plan.number_of_instalments | minus: 1 }} months</p>
+    <p>Pay just {{ initial_payment }} today, and spread the remaining cost over {{ variant.payment_plan.number_of_instalments | minus: 1 }} months</p>
 {% endif %}
 ```
 {% endraw %}

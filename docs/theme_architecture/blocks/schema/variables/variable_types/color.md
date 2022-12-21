@@ -19,7 +19,7 @@ my_variable:
         palette: body-color
 ---
 
-{{my_variable.rgba}}
+{{ my_variable.rgba }}
 
 ```
 {% endraw %}

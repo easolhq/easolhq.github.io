@@ -26,17 +26,17 @@ supports_open_new_tab: true
 ```
 ```liquid
 {% for item in menu.items %}
-    <a href="{% if item.url != '' %}{{item.url}}{% else %}javascript:void(0);{% endif %}"
+    <a href="{% if item.url != '' %}{{ item.url }}{% else %}javascript:void(0);{% endif %}"
     {% if item.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
-        {{item.label}}
+        {{ item.label }}
     </a>
     {% if item.items.size > 0 %}
         <ul>
         {% for nested_item in item.items %}
             <li>
-                <a href="{% if nested_item.url != '' %}{{nested_item.url}}{% else %}javascript:void(0);{% endif %}" 
+                <a href="{% if nested_item.url != '' %}{{ nested_item.url }}{% else %}javascript:void(0);{% endif %}" 
                 {% if nested_item.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
-                    {{nested_item.label}}
+                    {{ nested_item.label }}
                 </a>
             </li>
         {% endfor %}
@@ -63,7 +63,7 @@ attributes:
 ```liquid
 <header>
     {% if menu.festival_announcement %}
-        <h6>{{menu.festival_announcement}}</h6>
+        <h6>{{ menu.festival_announcement }}</h6>
     {% endif %}
 </header>
 ```

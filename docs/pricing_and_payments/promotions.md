@@ -33,11 +33,11 @@ Creators want to advertise promotions as often as possible on their websites and
     {% endif %}
 
     <div>
-        <p>{{variant.name}}</p> 
+        <p>{{ variant.name }}</p> 
         {% if has_promotion %}
-        <p> Save {{promo_discount_amount}} with our <span class="promo-label">{{promo_category}} offer</span></p>
-        {% if promo_tagline != "" %}<p>{{promo_tagline}}</p>{% endif %}
-        {% if promo_expiry %}<p>Offer ends {{promo_expiry | date: "%d %B %Y"}}</p>{% endif %}
+        <p> Save {{ promo_discount_amount }} with our <span class="promo-label">{{ promo_category }} offer</span></p>
+        {% if promo_tagline != "" %}<p>{{ promo_tagline }}</p>{% endif %}
+        {% if promo_expiry %}<p>Offer ends {{ promo_expiry | date: "%d %B %Y" }}</p>{% endif %}
         {% endif %}
     </div>
 
@@ -73,11 +73,11 @@ This might render:
         {% assign promo_price = promo_price_drop.fractional | money %}
     {% endif %}
         
-    <p>{{variant.name}}</p> 
+    <p>{{ variant.name }}</p> 
     {% if has_promotion %}
-        <p>Price reduced from {{full_price}} to {{promo_price}}</p>
+        <p>Price reduced from {{ full_price }} to {{ promo_price }}</p>
     {% else %}
-        <p>Price is {{full_price}} </p>
+        <p>Price is {{ full_price }} </p>
     {% endif %}
 
 {% endfor %}

@@ -15,14 +15,14 @@ The prices can be formatted in the customer's currency by applying the [money fi
 ##### syntax
 {% raw %}
 ```
-SUBTOTAL: {{cart.subtotal | money}}
+SUBTOTAL: {{ cart.subtotal | money }}
 
-DISCOUNT: {{cart.total_price_reduction | money}}
-BOOKING FEE: {{cart.total_fee | money}}
+DISCOUNT: {{ cart.total_price_reduction | money }}
+BOOKING FEE: {{ cart.total_fee | money }}
 
-TOTAL: {{cart.total | money}}
+TOTAL: {{ cart.total | money }}
 
-Pay with a deposit of {{cart.total_deposit | money}} or with a first instalment of {{cart.first_instalment_amount | money}}.
+Pay with a deposit of {{ cart.total_deposit | money }} or with a first instalment of {{ cart.first_instalment_amount | money }}.
 ```
 {% endraw %}
 
@@ -37,9 +37,9 @@ A breakdown of the items in a customer's cart can be displayed by looping throug
 {% raw %}
 ```
 {% for item in cart.items %}
-    {{item.quantity}}x {{item.variant_name}}
+    {{ item.quantity }}x {{ item.variant_name }}
     {% if item.adult_count %}
-        {{item.adult_count}} {% if item.adult_count == 1 %}person{% else %}people{% endif %}
+        {{ item.adult_count }} {% if item.adult_count == 1 %}person{% else %}people{% endif %}
     {% endif %}
 {% endfor %}
 ```
@@ -51,13 +51,13 @@ Creators may choose to provide customers with additional modification options, s
 {% raw %}
 ```
 {% for item in cart.items %}
-    {{item.quantity}}x {{item.variant_name}}
+    {{ item.quantity }}x {{ item.variant_name }}
     {% if item.adult_count %}
-        {{item.adult_count}} {% if item.adult_count == 1 %}person{% else %}people{% endif %}
+        {{ item.adult_count }} {% if item.adult_count == 1 %}person{% else %}people{% endif %}
     {% endif %}
     {% for selection in item.selections %}
-        {{selection.modifier_name}}
-        {{selection.price | money}}
+        {{ selection.modifier_name }}
+        {{ selection.price | money }}
     {% endfor %}
 {% endfor %}
 ```

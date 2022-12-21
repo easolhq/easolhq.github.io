@@ -65,7 +65,7 @@ E.g.
 ```liquid
  {% accommodation_availability variant %}
     {% for day in result.days %}
-        <p>On {{day.date | date:"%b %d, %y"}}</p>
+        <p>On {{ day.date | date:"%b %d, %y" }}</p>
         {% for price in day.prices %}
             <p>The price for {{ price.occupancy }} adult(s) is {{ price.fractional | money }}</p>
         {% endfor %}

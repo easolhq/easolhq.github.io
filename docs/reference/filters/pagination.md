@@ -11,6 +11,6 @@ Provides complete pagination HTML for a supplied [Pagination]({%link docs/refere
 
 {% raw %}
 ```liquid
-{{paginate | default_pagination}}
+{{ paginate | default_pagination }}
 ```
 {% endraw %}

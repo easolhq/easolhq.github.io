@@ -40,7 +40,7 @@ Deprecated, the deposit should be calculated in Liquid, using a mixture of the `
 {% raw %}
 ```liquid
 {% assign deposit_price = extra.price.fractional | times: extra.product.deposit.rate %}
-{{deposit_price | money}}
+{{ deposit_price | money }}
 ```
 {% endraw %}
 
@@ -112,7 +112,7 @@ The [price]({% link docs/reference/objects/product/price.md %}) of this extra in
 
 {% raw %}
 ```liquid
-{{extra.price.fractional | money}}
+{{ extra.price.fractional | money }}
 ```
 {% endraw %}
 
@@ -123,14 +123,14 @@ The behaviour of `extra.price` has been changed to enable math filters to be app
 **Deprecated method**
 {% raw %}
 ```
-<p>{{extra.price}}</p>
+<p>{{ extra.price }}</p>
 ```
 {% endraw %}
 
 **Updated method**
 {% raw %}
 ```
-<p>{{extra.price | money}} Per Person</p>
+<p>{{ extra.price | money }} Per Person</p>
 ```
 {% endraw %}
 
@@ -151,8 +151,8 @@ An array containing the single [price]({% link docs/reference/objects/product/pr
 
 {% raw %}
 ```liquid
-{{assign price = extra.prices | first}}
-{{price.fractional | money}}
+{{ assign price = extra.prices | first }}
+{{ price.fractional | money }}
 ```
 {% endraw %}
 

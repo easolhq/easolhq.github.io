@@ -17,6 +17,6 @@ my_variable:
     default: hello world
 ---
 
-{{my_variable}}
+{{ my_variable }}
 ```
 {% endraw %}

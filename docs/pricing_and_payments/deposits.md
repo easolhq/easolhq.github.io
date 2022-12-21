@@ -41,7 +41,7 @@ Display the deposit at the product level (i.e. only the featured variant):
 {% if deposit_active == true and cheapest_price != 0 %}
     {% assign deposit_price = cheapest_price | times: deposit_rate | money %}
 
-    <p>PAY ONLY {{deposit_price}} DEPOSIT</p>
+    <p>PAY ONLY {{ deposit_price }} DEPOSIT</p>
 
 {% endif %}
 ```
@@ -58,7 +58,7 @@ When displaying a series summary, the approach is similar (i.e. only the feature
 {% if deposit_active == true and cheapest_price != 0 %}
     {% assign deposit_price = cheapest_price | times: deposit_rate | money %}
 
-    <p>PAY ONLY {{deposit_price}} DEPOSIT</p>
+    <p>PAY ONLY {{ deposit_price }} DEPOSIT</p>
 
 {% endif %}
 ```
@@ -72,7 +72,7 @@ You may wish to display the deposit amount for each variant or extra when loopin
     {% if deposit_active == true and cheapest_price != 0 %}
         {% assign deposit_price = cheapest_price | times: deposit_rate | money %}
 
-        <p>PAY ONLY {{deposit_price}} DEPOSIT</p>
+        <p>PAY ONLY {{ deposit_price }} DEPOSIT</p>
 
     {% endif %}
 {% endfor %}

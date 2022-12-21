@@ -15,7 +15,7 @@ The `accommodation_availability` tag returns an array of [Availability Day]({% l
 ```liquid
 {% accommodation_availability variant %}
   {% for day in result.days %}
-       <time data-available="{{day.available}}" datetime="{{day.date}}">{{day.date | date:"%b %d, %y"}}</time>
+       <time data-available="{{ day.available }}" datetime="{{ day.date }}">{{ day.date | date:"%b %d, %y" }}</time>
   {% endfor %}
 {% endaccommodation_availability %}
 ```

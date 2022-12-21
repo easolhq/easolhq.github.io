@@ -18,6 +18,6 @@ my_variable:
     default: true
 ---
 
-{{my_variable}}
+{{ my_variable }}
 ```
 {% endraw %}

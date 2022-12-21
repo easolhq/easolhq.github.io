@@ -49,22 +49,7 @@ The results of the search are paginated to speed up page load, you can define th
 
 You can enable customers to move between the results pages using the `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object. The [default_pagination]({% link docs/reference/filters/pagination.md %}) filter can be used to return a complete pagination UI.
 
-You can assign the value of a liquid variable to `page_size`. You should update the `paginate.collection_size` to match.
-
-{% raw %}
-```liquid
-{% assign page_size = opt_selected_by_user %}
-{% product_search page_size: page_size, sort: 'departure_date_asc' %}
-  {% for item in result.items %}
-    <p>{{ item.name }}</p>
-  {% endfor %}
-  <div>
-    {{ paginate.page_size }} Results <!-- Updated results number -->
-    {{ paginate | default_pagination }}
-  </div>
-{% endproduct_search %}
-```
-{% endraw %}
+You can assign the value of a liquid variable to `page_size`.
 
 
 ## Parameters

@@ -16,6 +16,6 @@ Liquid filters modify Liquid output. They can be applied to any liquid output an
 {% endraw %}
 
 
-For documentation on Liquid's built-in filters, see [Liquid Filters](https://shopify.dev/api/liquid/filters)
+For documentation on Liquid's built-in filters, see [Liquid Filters](https://shopify.github.io/liquid/basics/introduction/#filters).
 
 For reference to key filters, see [filters]({% link docs/reference/filters/index.md %}).

@@ -12,6 +12,7 @@ All merchandising content is optional. If Creators have added merchandising cont
 * Gallery (maximum 10 images)
 * Highlights
 * Hosts
+* Blog Posts
 * Schedule
 * What's Included
 * Venue

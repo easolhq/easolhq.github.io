@@ -38,8 +38,8 @@ Redirects can't be set up **from** URL paths that start with:
 
 Redirecting the homepage requires a different approach. To do this, follow these steps:
 1. Create a new blank page 
-2. Add a custom Liquid/CSS block to the page
-3. Add the following code into the new block
+1. Add a custom Liquid/CSS block to the page
+1. Add the following code into the new block
 ```
 <script>
     window.location.replace("NEWLOCATION");
@@ -52,6 +52,7 @@ For example:
     window.location.replace("https://www.coolcompany.com/products/very-cool-experience");
 </script>
 ```
-4. Set the new page as the site homepage
+{:style="counter-reset:none"}
+1. Set the new page as the site homepage
 
 You can redirect the homepage to a product or site page as long as it's published. Make sure you use the full published URL of the product or site page in your redirect code.

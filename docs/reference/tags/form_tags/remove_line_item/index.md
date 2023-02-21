@@ -23,9 +23,10 @@ The tag can be used with a single line item or when iterating over a collection 
 ##### output
 {% raw %}
 ```html
-<form action="/sites/line-items" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete" autocomplete="off">
-    <input name="items[]" value="1354af560050dec9a1611f7ac473d2e4" type="hidden">
-    <input type="submit" value="Remove">
+<form action="/sites/line-items" data-form-action="remove_line_item" accept-charset="UTF-8" method="post">
+  <input type="hidden" name="_method" value="delete" autocomplete="off">
+  <input name="items[]" value="1354af560050dec9a1611f7ac473d2e4" type="hidden">
+  <input type="submit" value="Remove">
 </form>
 ```
 {% endraw %}

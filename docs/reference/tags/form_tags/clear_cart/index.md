@@ -21,7 +21,7 @@ The `clear_cart` tag renders a button that clears the customer's cart.
 ##### output
 {% raw %}
 ```html
-<form action="/sites/cart" accept-charset="UTF-8" method="post">
+<form action="/sites/cart" data-form-action="clear_cart" accept-charset="UTF-8" method="post">
     <input type="hidden" name="_method" value="delete" autocomplete="off">
     <input type="hidden" name="return_to" id="return_to" value="https://www.creator-website.com/book-tickets" autocomplete="off">
     <input type="submit" value="Clear">

@@ -21,7 +21,7 @@ The `item_selections` tag returns an object which can be used as a wrapper to di
 ##### output
 {% raw %}
 ```html
-<form action="/items/example/path/selections" accept-charset="UTF-8" method="post">
+<form action="/items/example/path/selections" data-form-action="item_selections" accept-charset="UTF-8" method="post">
     <input type="hidden" name="_method" value="put" autocomplete="off">
     <input type="submit" id="save" value="Confirm my selections" disabled="">
 </form>

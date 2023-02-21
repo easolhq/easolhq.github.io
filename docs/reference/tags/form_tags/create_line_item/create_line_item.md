@@ -22,7 +22,7 @@ Extra HTML input tags can be used to add item quantity, modifiers, adult count o
 ##### output
 {% raw %}
 ```html
-<form action="/sites/line-items" accept-charset="UTF-8" method="post">
+<form action="/sites/line-items" data-form-action="create_line_item" accept-charset="UTF-8" method="post">
     <input type="hidden" name="return_to" id="return_to" value="/admin/site_builder/sites/c94b650e/previews/book-tickets" autocomplete="off">
     <input type="hidden" name="items[][variant_id]" value="BAh7CEkiCGdpZAY6Bk....">
 </form>

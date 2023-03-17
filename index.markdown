@@ -14,7 +14,7 @@ Easol is the all-in-one platform for managing entire experience businesses, on C
 
 The backbone of every website on Easol is a theme. Themes are website templates specially designed to sell any experience, anywhere – whether it’s in wellness, sports, festivals, adventure, or food and drink.
 
-Easol themes are powered by Liquid templating language, HTML, CSS, JavaScript, and JSON. [Get started now.]({% link docs/getting_started/index.md %})
+Easol themes are powered by the [Liquid templating language](https://shopify.github.io/liquid/), HTML, CSS, JavaScript, and JSON. [Get started now]({% link docs/getting_started/index.md %}).
 
 ---
 

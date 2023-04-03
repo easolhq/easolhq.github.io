@@ -7,7 +7,7 @@ nav_order: 10
 
 # Filters
 
-Liquid filters modify Liquid output. They can be applied to any liquid output and may accept parameters.
+Liquid filters modify Liquid output. They can be applied to any Liquid output and may accept parameters.
 
 {% raw %}
 ```liquid

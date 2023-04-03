@@ -10,7 +10,7 @@ nav_order: 1
 
 Variables define the fields a Creator can use to customise the content and layout of a block. Variables are defined within the blocks using YAML front matter.
 
-Variables consist of a `key`, which is used to access the variable within the block liquid code, and attributes which define the variable.
+Variables consist of a `key`, which is used to access the variable within the block Liquid code, and attributes which define the variable.
 
 ##### Example
 {% raw %}

@@ -8,7 +8,7 @@ parent: Product search
 Product search is based on parameters that determine which products are returned and in which order.
 
 ### active_promotion
-Accepts: `true` or `false`. This can be passed as a liquid variable or explicitly.
+Accepts: `true` or `false`. This can be passed as a Liquid variable or explicitly.
 
 Passing `true` will only return items with a currently active [promotion]({% link docs/reference/objects/product/promotion.md %}#promotionactive).
 
@@ -26,11 +26,11 @@ https://mysite.com/search?search[active_promotion]=true
 ```
 
 ### category
-Accepts a string and is case-sensitive. This can be passed as a liquid variable or explicitly.
+Accepts a string and is case-sensitive. This can be passed as a Liquid variable or explicitly.
 
 Currently, the available Easol categories are: "Festival", "Wellness", "Adventure", "Food and Drink", "Active".
 
-Will accept either a single category or an array. An array must be passed explicitly (not as a liquid variable).
+Will accept either a single category or an array. An array must be passed explicitly (not as a Liquid variable).
 
 Will return products which match the [category]({% link docs/reference/objects/product/index.md %}#productcategory) passed.
 
@@ -51,9 +51,9 @@ https://mysite.com/search?search[category]=active
 ```
 
 ### country
-Accepts any of the Easol predefined [countries]({% link docs/reference/objects/product/index.md %}#productcountry) as either Country Codes or Country Names. This can be passed as a liquid variable or explicitly.
+Accepts any of the Easol predefined [countries]({% link docs/reference/objects/product/index.md %}#productcountry) as either Country Codes or Country Names. This can be passed as a Liquid variable or explicitly.
 
-Will accept either a single country or an array. An array must be passed explicitly (not as a liquid variable).
+Will accept either a single country or an array. An array must be passed explicitly (not as a Liquid variable).
 
 Will return products which match the country passed.
 
@@ -74,7 +74,7 @@ https://mysite.com/search?search[country]=DE
 ```
 
 ### departure_date
-Accepts an object which specifies how to handle the search through `equal_to` `greater_than` `greater_or_equal_than` or `less_than` each taking a date in SQL format `YYYY-MM-DD`. The date(s) can be passed as a liquid variable or explicitly.
+Accepts an object which specifies how to handle the search through `equal_to` `greater_than` `greater_or_equal_than` or `less_than` each taking a date in SQL format `YYYY-MM-DD`. The date(s) can be passed as a Liquid variable or explicitly.
 
 Will return experiences which depart within the [departure date]({% link docs/reference/objects/product/index.md %}#productdepart_on) range.
 
@@ -86,7 +86,7 @@ Will return experiences which depart within the [departure date]({% link docs/re
 ```
 {% endraw %}
 
-##### passing a liquid variable
+##### passing a Liquid variable
 {% raw %}
 ```
 {% assign latest_date = opt_selected_by_user %}
@@ -102,7 +102,7 @@ https://mysite.com/search?search[departure_date][greater_or_equal_than]=2022-11-
 ```
 
 ### departure_month
-Accepts a month as either a 3-letter abbreviation, or the month number i.e. `Apr` or `4`. This can be passed as a liquid variable or explicitly.
+Accepts a month as either a 3-letter abbreviation, or the month number i.e. `Apr` or `4`. This can be passed as a Liquid variable or explicitly.
 
 Will return experiences which [depart]({% link docs/reference/objects/product/index.md %}#productdepart_on) within the specified month, this may be across multiple years e.g. Apr 2023 and Apr 2024.
 
@@ -124,7 +124,7 @@ https://mysite.com/search?search[departure_month]=4
 ```
 
 ### duration
-Accepts an object which specifies how to handle the search, through `equal_to` `greater_than` or `less_than` each taking a number of days. The value(s) can be passed as a liquid variable or explicitly.
+Accepts an object which specifies how to handle the search, through `equal_to` `greater_than` or `less_than` each taking a number of days. The value(s) can be passed as a Liquid variable or explicitly.
 
 Will return experiences which have a [duration]({% link docs/reference/objects/product/index.md %}#productduration) within the defined range.
 
@@ -144,7 +144,7 @@ https://mysite.com/search?search[duration][greater_than]=3&search[duration][less
 ```
 
 ### exclude_sold_out_products
-Accepts: `true` or `false`. This can be passed as a liquid variable or explicitly.
+Accepts: `true` or `false`. This can be passed as a Liquid variable or explicitly.
 
 Passing `true` will exclude [sold out]({% link docs/reference/objects/product/index.md %}#productsold_out) products from the products returned.
 
@@ -162,7 +162,7 @@ https://mysite.com/search?search[exclude_sold_out_products]=true
 ```
 
 ### include_organisation_products
-Accepts: `true` or `false`. This can be passed as a liquid variable or explicitly.
+Accepts: `true` or `false`. This can be passed as a Liquid variable or explicitly.
 
 Passing `true` will include products from other companies which are linked in the same organisation.
 
@@ -180,7 +180,7 @@ https://mysite.com/search?search[include_organisation_products]=true
 ```
 
 ### name
-Executes a partial search on the string passed in. Case insensitive. This can be passed as a liquid variable or explicitly.
+Executes a partial search on the string passed in. Case insensitive. This can be passed as a Liquid variable or explicitly.
 
 Will return any products whose [name]({% link docs/reference/objects/product/index.md %}#productname) matches the argument.
 
@@ -198,7 +198,7 @@ https://mysite.com/search?search[name]=my+experience
 ```
 
 ### series_id
-Accepts a series id. This can be passed as a liquid variable or explicitly.
+Accepts a series id. This can be passed as a Liquid variable or explicitly.
 
 Will return products which match the [series id]({% link docs/reference/objects/series.md %}#seriesid) passed.
 
@@ -216,9 +216,9 @@ https://mysite.com/search?search[series_id]=abcd1234-1234-abcd-1234-abcd1234abcd
 ```
 
 ### subcategory
-Accepts a string and is case-sensitive. This can be passed as a liquid variable or explicitly.
+Accepts a string and is case-sensitive. This can be passed as a Liquid variable or explicitly.
 
-Will accept either a single subcategory or an array. An array must be passed explicitly (not as a liquid variable).
+Will accept either a single subcategory or an array. An array must be passed explicitly (not as a Liquid variable).
 
 Will return products which match the [subcategory]({% link docs/reference/objects/product/index.md %}#productsubcategory) passed.
 
@@ -239,7 +239,7 @@ https://mysite.com/search?search[subcategory]=wellness
 ```
 
 ### page_size
-Accepts a number. This can be passed as a liquid variable or explicitly.
+Accepts a number. This can be passed as a Liquid variable or explicitly.
 
 Will determine how many results are shown per page. If this is not included it will default to 12 results per page.
 
@@ -254,7 +254,7 @@ Page size cannot be passed as a query parameter.
 {% endraw %}
 
 ### sort
-Accepts `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` and `departure_date_desc`, where the `_asc` and `_desc` parts represent ascending and descending orders respectively. This can be passed as a liquid variable or explicitly.
+Accepts `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` and `departure_date_desc`, where the `_asc` and `_desc` parts represent ascending and descending orders respectively. This can be passed as a Liquid variable or explicitly.
 
 Will determine the order of the returned products.
 

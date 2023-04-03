@@ -60,7 +60,7 @@ e.g `15 - 20 November 2019` or `15 November 2019`.
 timestamp
 {: .label .fs-1 }
 
-If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with liquids [built-in filters](https://shopify.github.io/liquid/filters/date/).
+If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
 
 ## `product.deposit`
 {: .d-inline-block }

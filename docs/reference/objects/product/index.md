@@ -141,7 +141,7 @@ An array of [Image]({% link docs/reference/objects/image.md %}) objects for the 
 boolean
 {: .label .fs-1 }
 
-Returns `true` if the product has infinite stock.
+Returns `true` if any variant on the product has infinite stock.
 
 ## `product.hero_image`
 {: .d-inline-block }

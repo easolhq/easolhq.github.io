@@ -270,3 +270,19 @@ Will determine the order of the returned products.
 ```
 https://mysite.com/search?search[sort]=departure_date_asc
 ```
+
+### product_id
+Will limit the search results to a single product.
+
+##### as a search tag attribute
+{% raw %}
+```
+{% product_dates_search product_id: 'abcd1234-1234-abcd-1234-abcd1234abcd' %}
+{% endproduct_dates_search %}
+```
+{% endraw %}
+
+##### as a query parameter
+```
+https://mysite.com/search?search[product_id]=abcd1234-1234-abcd-1234-abcd1234abcd
+```

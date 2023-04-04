@@ -105,6 +105,9 @@ Will search for products which match the subcategory passed, this must use one o
 #### page_size
 Will determine how many results are shown per page. If this is not included it will default to 12 results per page. e.g. `page_size: 12`
 
+#### product_id
+Will limit the search results to a single product.
+
 #### include_organisation_products
 This allows you to include products from other companies which are linked in the same organisation. e.g. `include_organisation_products: true`
 

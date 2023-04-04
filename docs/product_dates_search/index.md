@@ -63,6 +63,7 @@ You can assign the value of a Liquid variable to `page_size`.
 - [include_organisation_products]({% link docs/product_dates_search/parameters.md %}#include_organisation_products)
 - [name]({% link docs/product_dates_search/parameters.md %}#name)
 - [series_id]({% link docs/product_dates_search/parameters.md %}#series_id)
+- [product_id]({% link docs/product_dates_search/parameters.md %}#product_id)
 - [subcategory]({% link docs/product_dates_search/parameters.md %}#subcategory)
 - [page_size]({% link docs/product_dates_search/parameters.md %}#page_size)
 - [sort]({% link docs/product_dates_search/parameters.md %}#sort)

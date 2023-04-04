@@ -5,16 +5,16 @@ parent: Tags
 grand_parent: Reference
 ---
 
-# Product search
+# Product dates search
 
-For additional examples see [here]({% link docs/product_search/index.md %}).
+For additional examples see [here]({% link docs/product_dates_search/index.md %}).
 
-The Product Search Tag executes a search on the company's products, it then paginates those results.
+The Product Dates Search Tag executes a search on the company's products, it then paginates those results.
 
 ##### input
 {% raw %}
 ```liquid
-{% product_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: 12, sort: 'departure_date_asc' %}
+{% product_date_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: 12, sort: 'departure_date_asc' %}
     {% for item in result.items %}
         <p>{{ item.name }}</p>
     {% endfor %}
@@ -22,7 +22,7 @@ The Product Search Tag executes a search on the company's products, it then pagi
         {{ paginate.collection_size }} Results
         {{ paginate | default_pagination }}
     </div>
-{% endproduct_search %}
+{% endproduct_date_search %}
 ```
 {% endraw %}
 
@@ -135,7 +135,7 @@ These should be passed as a string describing the dimension to sort on and the d
 
 {% raw %}
 ```liquid
-{% product_search name: 'Beyond', sort: 'name_asc' %}
+{% product_dates_search name: 'Beyond', sort: 'name_asc' %}
     {% for item in result.items %}
         <p>{{ item.name }}</p>
     {% endfor %}
@@ -143,7 +143,7 @@ These should be passed as a string describing the dimension to sort on and the d
         {{ paginate.collection_size }} Results
         {{ paginate | default_pagination }}
     </div>
-{% endproduct_search %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 

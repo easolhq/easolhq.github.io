@@ -15,8 +15,8 @@ Passing `true` will only return items with a currently active [promotion]({% lin
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search active_promotion: true %}
-{% endproduct_search %}
+{% product_dates_search active_promotion: true %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -37,11 +37,11 @@ Will return products which match the [category]({% link docs/reference/objects/p
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search category: 'Active' %}
-{% endproduct_search %}
+{% product_dates_search category: 'Active' %}
+{% endproduct_dates_search %}
 
-{% product_search subcategory: ['Active','Adventure'] %}
-{% endproduct_search %}
+{% product_dates_search subcategory: ['Active','Adventure'] %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -60,11 +60,11 @@ Will return products which match the country passed.
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search country: 'FR' %}
-{% endproduct_search %}
+{% product_dates_search country: 'FR' %}
+{% endproduct_dates_search %}
 
-{% product_search country: ['FR','DE'] %}
-{% endproduct_search %}
+{% product_dates_search country: ['FR','DE'] %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -81,8 +81,8 @@ Will return experiences which depart within the [departure date]({% link docs/re
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search departure_date: { greater_or_equal_than: 'now', less_than: '2023-12-28' } %}
-{% endproduct_search %}
+{% product_dates_search departure_date: { greater_or_equal_than: 'now', less_than: '2023-12-28' } %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -91,8 +91,8 @@ Will return experiences which depart within the [departure date]({% link docs/re
 ```
 {% assign latest_date = opt_selected_by_user %}
 
-{% product_search departure_date: { greater_or_equal_than: 'now', less_than: latest_date } %}
-{% endproduct_search %}
+{% product_dates_search departure_date: { greater_or_equal_than: 'now', less_than: latest_date } %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -109,11 +109,11 @@ Will return experiences which [depart]({% link docs/reference/objects/product/in
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search departure_month: 'Apr' %}
-{% endproduct_search %}
+{% product_dates_search departure_month: 'Apr' %}
+{% endproduct_dates_search %}
 
-{% product_search departure_month: 4 %}
-{% endproduct_search %}
+{% product_dates_search departure_month: 4 %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -128,13 +128,13 @@ Accepts an object which specifies how to handle the search, through `equal_to` `
 
 Will return experiences which have a [duration]({% link docs/reference/objects/product/index.md %}#productduration) within the defined range.
 
-Note: Experience [durations]({% link docs/reference/objects/product/index.md %}#duration) can be returned as a number of hours, 1 day or a number of nights, whereas product_search `duration` always takes the duration as a number of days or number of hours. i.e. `duration: {equal_to: 2}` will return experiences that have a duration of 2 hours or 1 night (2 days).
+Note: Experience [durations]({% link docs/reference/objects/product/index.md %}#duration) can be returned as a number of hours, 1 day or a number of nights, whereas product_dates_search `duration` always takes the duration as a number of days or number of hours. i.e. `duration: {equal_to: 2}` will return experiences that have a duration of 2 hours or 1 night (2 days).
 
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search duration: {greater_than: 3, less_than: 8 } %}
-{% endproduct_search %}
+{% product_dates_search duration: {greater_than: 3, less_than: 8 } %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -151,8 +151,8 @@ Passing `true` will exclude [sold out]({% link docs/reference/objects/product/in
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search exclude_sold_out_products: true %}
-{% endproduct_search %}
+{% product_dates_search exclude_sold_out_products: true %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -169,8 +169,8 @@ Passing `true` will include products from other companies which are linked in th
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search include_organisation_products: true %}
-{% endproduct_search %}
+{% product_dates_search include_organisation_products: true %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -187,8 +187,8 @@ Will return any products whose [name]({% link docs/reference/objects/product/ind
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search name: 'my experience' %}
-{% endproduct_search %}
+{% product_dates_search name: 'my experience' %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -205,8 +205,8 @@ Will return products which match the [series id]({% link docs/reference/objects/
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search series_id: 'abcd1234-1234-abcd-1234-abcd1234abcd' %}
-{% endproduct_search %}
+{% product_dates_search series_id: 'abcd1234-1234-abcd-1234-abcd1234abcd' %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -225,11 +225,11 @@ Will return products which match the [subcategory]({% link docs/reference/object
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search subcategory: 'Wellness' %}
-{% endproduct_search %}
+{% product_dates_search subcategory: 'Wellness' %}
+{% endproduct_dates_search %}
 
-{% product_search subcategory: ['4 Star','5 Star'] %}
-{% endproduct_search %}
+{% product_dates_search subcategory: ['4 Star','5 Star'] %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -248,8 +248,8 @@ Page size cannot be passed as a query parameter.
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search page_size: 8 %}
-{% endproduct_search %}
+{% product_dates_search page_size: 8 %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 
@@ -261,8 +261,8 @@ Will determine the order of the returned products.
 ##### as a search tag attribute
 {% raw %}
 ```
-{% product_search sort: `departure_date_asc` %}
-{% endproduct_search %}
+{% product_dates_search sort: `departure_date_asc` %}
+{% endproduct_dates_search %}
 ```
 {% endraw %}
 

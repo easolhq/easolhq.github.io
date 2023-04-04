@@ -51,6 +51,16 @@ string
 
 The name of the country the product is based in.
 
+## `product.all_dates`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The dates of a recurring experience as a formatted string.
+e.g. `November 2019` where all departure dates are in the same month.
+e.g. `April - July 2023` where departure dates are across more than one month.
+Called on any other type of product will return the same value as `.dates`
+
 ## `product.deposit`
 {: .d-inline-block }
 [deposit]({% link docs/reference/objects/product/deposit.md %})

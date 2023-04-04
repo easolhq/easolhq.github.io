@@ -18,7 +18,9 @@ The product search is executed using the [product_search tag]({% link docs/refer
 
 The product search will only return products will only return public, published products i.e. experiences and accommodations which are published and have not been marked as private under 'Manage product availability' in the product settings.
 
-> Note: Only one product_search tag should be used on a page to ensure expected results.
+> Notes: 
+- Only one product_search tag should be used on a page to ensure expected results.
+- To return a separate search result for each date in an experience with multiple dates, use the [experience_date_search tag]({% link docs/reference/tags/experience_date_search_tag/index.md %})
 
 {% raw %}
 ```liquid

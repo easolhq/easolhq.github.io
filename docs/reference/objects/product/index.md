@@ -52,8 +52,9 @@ The name of the country the product is based in.
 string
 {: .label .fs-1 }
 
-The dates of the product as a formatted string based on whether the event is multi-day or not.
-e.g `15 - 20 November 2019` or `15 November 2019`.
+The dates of the product as a formatted string.
+e.g. `15 November 2024` for an experience with a duration of less than or equal to one day.
+e.g. `15 - 20 November 2024` for an experience with a duration of more than one day.
 
 ## `product.depart_on`
 {: .d-inline-block }

@@ -70,7 +70,7 @@ It will return `nil` if the promotion is a monetary amount.
 timestamp
 {: .label .fs-1 }
 
-Returns the date the promotion will end as a timestamp, this can then be used in conjunction with liquids[ built-in filters ](https://shopify.github.io/liquid/filters/date/).
+Returns the date the promotion will end as a timestamp, this can then be used in conjunction with liquids [built-in filters](https://shopify.github.io/liquid/filters/date/).
 It will return `nil` if the promotion doesn't have an end date.
 
 ## `promotion.name`
@@ -85,7 +85,7 @@ Returns the name of the promotion.
 timestamp
 {: .label .fs-1 }
 
-Returns the date the promotion will start as a timestamp, this can then be used in conjunction with liquids[ built-in filters ](https://shopify.github.io/liquid/filters/date/).
+Returns the date the promotion will start as a timestamp, this can then be used in conjunction with liquids [built-in filters](https://shopify.github.io/liquid/filters/date/).
 
 ## `promotion.tagline`
 {: .d-inline-block }

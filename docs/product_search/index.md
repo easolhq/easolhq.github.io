@@ -49,7 +49,7 @@ The results of the search are paginated to speed up page load, you can define th
 
 You can enable customers to move between the results pages using the `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object. The [default_pagination]({% link docs/reference/filters/pagination.md %}) filter can be used to return a complete pagination UI.
 
-You can assign the value of a liquid variable to `page_size`.
+You can assign the value of a Liquid variable to `page_size`.
 
 
 ## Parameters

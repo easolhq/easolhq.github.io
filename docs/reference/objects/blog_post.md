@@ -51,7 +51,7 @@ The previous blog post.
 timestamp
 {: .label .fs-1 }
 
-The date the blog post was published. This can then be used in conjunction with Liquid's [ built-in filters ](https://shopify.github.io/liquid/filters/date/).
+The date the blog post was published. This can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
 
 ## `blog_post.tagline`
 {: .d-inline-block }

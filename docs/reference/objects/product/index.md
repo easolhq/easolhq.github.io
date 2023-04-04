@@ -10,6 +10,8 @@ has_children: true
 object
 {: .label .fs-1 }
 
+For recurring experiences each product drop is for a specific departure date. `product` defaults to the next upcoming date if there is one, or the first date if all dates are in the past.
+
 #### Attributes
 
 ### Global
@@ -309,8 +311,9 @@ The product's [`what's included`]({% link docs/reference/objects/product/whats_i
 string
 {: .label .fs-1 }
 
-The dates of the product as a formatted string based on whether the event is multi-day or not.
-e.g `15 - 20 November 2019` or `15 November 2019`.
+The dates of the product as a formatted string.
+e.g. `15 November 2019` for an experience with a duration of less than or equal to one day.
+e.g. `15 - 20 November 2019` for an experience with a duration of more than one day.
 
 ## `product.depart_on`
 {: .d-inline-block }
@@ -318,6 +321,7 @@ timestamp
 {: .label .fs-1 }
 
 If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
+For an experience that is recurring this is the first upcoming departure date if there are any, or the first departure date if all dates are in the past. 
 
 ## `product.extras`
 {: .d-inline-block }
@@ -325,6 +329,7 @@ array of [Extra]({% link docs/reference/objects/product/extra.md %})s
 {: .label .fs-1 }
 
 An array of the product's [extras]({% link docs/reference/objects/product/extra.md %})
+If the product is a recurring experience this returns the extras from the next upcoming occurrence, or the first date if all dates are in the past.
 
 ## `product.featured_variant`
 {: .d-inline-block }
@@ -332,6 +337,7 @@ An array of the product's [extras]({% link docs/reference/objects/product/extra.
 {: .label .fs-1 }
 
 The "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
+If the product is a recurring experience this is the featured variant of the first upcoming occurrence, or the first date if all dates are in the past.
 
 ## `product.has_infinite_stock`
 {: .d-inline-block }
@@ -339,6 +345,7 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if any variant on the product has infinite stock.
+If the product is a recurring experience this returns  `true` if any variant of the next upcoming occurrence has infinite stock.
 
 ## `product.has_active_promotion`
 {: .d-inline-block }
@@ -346,6 +353,7 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]({% link docs/reference/objects/product/promotion.md %}).
+If the product is a recurring experience this returns  `true` if any variant of the next upcoming occurrence has an active promotion.
 
 ## `product.remaining_stock`
 {: .d-inline-block }
@@ -353,6 +361,7 @@ number
 {: .label .fs-1 }
 
 The sum of remaining stock for a product's variants, if any of the variants have infinite inventory this will return `nil`.
+If the product is a recurring experience this returns the remaining stock of the next upcoming occurrence.
 
 ## `product.shop_url`
 {: .d-inline-block }
@@ -360,6 +369,7 @@ string
 {: .label .fs-1 }
 
 The url for the product's cart shop page.
+If the product is a recurring experience this returns the url of the next upcoming occurrence.
 
 ## `product.sold_out`
 {: .d-inline-block }
@@ -367,6 +377,7 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the product is sold out.
+If the product is a recurring experience this returns `true` if all variants of the next upcoming occurrence are sold out.
 
 ## `product.variants`
 {: .d-inline-block }
@@ -374,6 +385,7 @@ array of [variant]({% link docs/reference/objects/product/variant/index.md %})s
 {: .label .fs-1 }
 
 An array of the product's [variants]({% link docs/reference/objects/product/variant/index.md %}).
+If the product is a recurring experience this returns the variants from the next upcoming occurrence, or the first date if all dates are in the past.
 
 ## `product.variant_modifiers`
 {: .d-inline-block }
@@ -381,6 +393,7 @@ array of [modifier]({% link docs/reference/objects/product/modifier.md %})s
 {: .label .fs-1 }
 
 An array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product through its variants.
+If the product is a recurring experience this returns the modifiers from the next upcoming occurrence, or the first date if all dates are in the past.
 
 <!--
 

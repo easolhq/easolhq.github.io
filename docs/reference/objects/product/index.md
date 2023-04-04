@@ -12,6 +12,8 @@ object
 
 #### Attributes
 
+### Global
+
 ## `product.accommodations`
 {: .d-inline-block }
 array of [accommodation merchandise]({% link docs/reference/objects/product/accommodation_merchandise.md %})
@@ -47,21 +49,6 @@ string
 
 The name of the country the product is based in.
 
-## `product.dates`
-{: .d-inline-block }
-string
-{: .label .fs-1 }
-
-The dates of the product as a formatted string based on whether the event is multi-day or not.
-e.g `15 - 20 November 2019` or `15 November 2019`.
-
-## `product.depart_on`
-{: .d-inline-block }
-timestamp
-{: .label .fs-1 }
-
-If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
-
 ## `product.deposit`
 {: .d-inline-block }
 [deposit]({% link docs/reference/objects/product/deposit.md %})
@@ -90,13 +77,6 @@ boolean
 
 Returns `true` if the product has been marked as Enquiry Only within the product payment settings
 
-## `product.extras`
-{: .d-inline-block }
-array of [Extra]({% link docs/reference/objects/product/extra.md %})s
-{: .label .fs-1 }
-
-An array of the product's [extras]({% link docs/reference/objects/product/extra.md %})
-
 ## `product.facilities`
 {: .d-inline-block }
 array of strings
@@ -122,13 +102,6 @@ array of [accommodation merchandise]({% link docs/reference/objects/product/acco
 
 An array of the products [accommodations]({% link docs/reference/objects/product/accommodation_merchandise.md %}) which are flagged as featured.
 
-## `product.featured_variant`
-{: .d-inline-block }
-[Variant]({% link docs/reference/objects/product/variant/index.md %})
-{: .label .fs-1 }
-
-The "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
-
 ## `product.gallery`
 {: .d-inline-block }
 array of [Image]({% link docs/reference/objects/image.md %})s
@@ -136,26 +109,12 @@ array of [Image]({% link docs/reference/objects/image.md %})s
 
 An array of [Image]({% link docs/reference/objects/image.md %}) objects for the products gallery.
 
-## `product.has_infinite_stock`
-{: .d-inline-block }
-boolean
-{: .label .fs-1 }
-
-Returns `true` if any variant on the product has infinite stock.
-
 ## `product.hero_image`
 {: .d-inline-block }
 [Image]({% link docs/reference/objects/image.md %})
 {: .label .fs-1 }
 
 The products hero [image]({% link docs/reference/objects/image.md %}).
-
-## `product.has_active_promotion`
-{: .d-inline-block }
-boolean
-{: .label .fs-1 }
-
-Returns `true` if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]({% link docs/reference/objects/product/promotion.md %}).
 
 ## `product.highlights`
 {: .d-inline-block }
@@ -237,13 +196,6 @@ The overview of the product.
 
 The products overview [image]({% link docs/reference/objects/image.md %}).
 
-## `product.remaining_stock`
-{: .d-inline-block }
-number
-{: .label .fs-1 }
-
-The sum of remaining stock for a product's variants, if any of the variants have infinite inventory this will return `nil`.
-
 ## `product.schedule`
 {: .d-inline-block }
 array of [Schedule element]({% link docs/reference/objects/product/schedule_element.md %})s
@@ -275,20 +227,6 @@ string
 {: .label .fs-1 }
 
 The path for the product's cart shop page.
-
-## `product.shop_url`
-{: .d-inline-block }
-string
-{: .label .fs-1 }
-
-The url for the product's cart shop page.
-
-## `product.sold_out`
-{: .d-inline-block }
-boolean
-{: .label .fs-1 }
-
-Returns `true` if the product is sold out.
 
 ## `product.subcategory`
 {: .d-inline-block }
@@ -350,20 +288,6 @@ The url for the product's page on the site.
 
 The product's [useful info]({% link docs/reference/objects/product/useful_info.md %}).
 
-## `product.variants`
-{: .d-inline-block }
-array of [variant]({% link docs/reference/objects/product/variant/index.md %})s
-{: .label .fs-1 }
-
-An array of the product's [variants]({% link docs/reference/objects/product/variant/index.md %}).
-
-## `product.variant_modifiers`
-{: .d-inline-block }
-array of [modifier]({% link docs/reference/objects/product/modifier.md %})s
-{: .label .fs-1 }
-
-An array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product through its variants.
-
 ## `product.venue`
 {: .d-inline-block }
 [Venue]({% link docs/reference/objects/product/venue.md %})
@@ -378,6 +302,85 @@ The product's [venue]({% link docs/reference/objects/product/venue.md %}).
 
 The product's [`what's included`]({% link docs/reference/objects/product/whats_included.md %}).
 
+### Date specific
+
+## `product.dates`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The dates of the product as a formatted string based on whether the event is multi-day or not.
+e.g `15 - 20 November 2019` or `15 November 2019`.
+
+## `product.depart_on`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
+
+If the product has fixed dates this returns the start date of the event as a timestamp, this can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
+
+## `product.extras`
+{: .d-inline-block }
+array of [Extra]({% link docs/reference/objects/product/extra.md %})s
+{: .label .fs-1 }
+
+An array of the product's [extras]({% link docs/reference/objects/product/extra.md %})
+
+## `product.featured_variant`
+{: .d-inline-block }
+[Variant]({% link docs/reference/objects/product/variant/index.md %})
+{: .label .fs-1 }
+
+The "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
+
+## `product.has_infinite_stock`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Returns `true` if any variant on the product has infinite stock.
+
+## `product.has_active_promotion`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Returns `true` if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]({% link docs/reference/objects/product/promotion.md %}).
+
+## `product.remaining_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The sum of remaining stock for a product's variants, if any of the variants have infinite inventory this will return `nil`.
+
+## `product.shop_url`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The url for the product's cart shop page.
+
+## `product.sold_out`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Returns `true` if the product is sold out.
+
+## `product.variants`
+{: .d-inline-block }
+array of [variant]({% link docs/reference/objects/product/variant/index.md %})s
+{: .label .fs-1 }
+
+An array of the product's [variants]({% link docs/reference/objects/product/variant/index.md %}).
+
+## `product.variant_modifiers`
+{: .d-inline-block }
+array of [modifier]({% link docs/reference/objects/product/modifier.md %})s
+{: .label .fs-1 }
+
+An array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product through its variants.
 
 <!--
 

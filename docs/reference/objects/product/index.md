@@ -84,6 +84,13 @@ string
 
 The duration of the product including duration unit e.g. `5 nights`.
 
+## `product.experience_dates`
+{: .d-inline-block }
+[ExperienceDate]({% link docs/reference/objects/product/experience_date.md %})
+{: .label .fs-1 }
+
+An array of the product's [experience dates]({% link docs/reference/objects/product/experience_date.md %})
+
 ## `product.enquire_only`
 {: .d-inline-block }
 boolean

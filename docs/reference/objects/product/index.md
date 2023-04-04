@@ -17,7 +17,7 @@ object
 array of [accommodation merchandise]({% link docs/reference/objects/product/accommodation_merchandise.md %})
 {: .label .fs-1 }
 
-An array of the products [accommodation merchandise fields]({% link docs/reference/objects/product/accommodation_merchandise.md %}).
+An array of the product's [accommodation merchandise fields]({% link docs/reference/objects/product/accommodation_merchandise.md %}).
 
 ## `product.address`
 {: .d-inline-block }

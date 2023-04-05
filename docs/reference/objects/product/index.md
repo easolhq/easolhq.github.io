@@ -345,6 +345,14 @@ string
 
 The type of this product, one of `"experience"` or `"accommodation"`.
 
+## `product.upcoming_or_latest_date`
+{: .d-inline-block }
+[Experience date]({% link docs/reference/objects/product/experience_date.md %})
+{: .label .fs-1 }
+
+The product's next upcoming or ongoing [Experience date]({% link docs/reference/objects/product/experience_date.md %}) if there are any.
+If all dates are in the past, this returns the latest date.
+
 ## `product.url`
 {: .d-inline-block }
 string

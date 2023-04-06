@@ -61,7 +61,7 @@ Returns `true` if one of the [variants]({% link docs/reference/objects/product/v
 number
 {: .label .fs-1 }
 
-The sum of remaining stock for a date's variants. If any of the variants have infinite inventory this will return `nil`.
+The sum of remaining stock for a date's variants. If any of the variants have infinite stock this will return `nil`.
 
 ## `experience_date.shop_url`
 {: .d-inline-block }

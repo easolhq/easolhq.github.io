@@ -10,6 +10,9 @@ grand_parent: Objects
 object
 {: .label .fs-1 }
 
+
+The modifier object will behave slightly differently depending on how it is accessed. If it is accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), some methods will return a result that is specific to that given date. If it is access independently or through a product, then those methods will take into account all dates on the product. Please check the method descriptions for more details.
+
 #### Attributes
 
 ## `modifier.id`
@@ -127,6 +130,8 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the modifier has unlimited stock.
+If this modifier is accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return `true` if the modifier has unlimited stock on the given date.
+If this modifier is accessed independently or through a product, then it will return `true` if the modifier has unlimited stock on at least one of the product dates.
 
 ## `modifier.image`
 {: .d-inline-block }
@@ -141,6 +146,8 @@ number
 {: .label .fs-1 }
 
 The initial stock for the modifier. If the modifier has unlimited inventory this will return `nil`.
+If this modifier is accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return the initial stock for the modifier on the given date.
+If this modifier is accessed independently or through a product, then it will return the initial stock for the default modifier, managed in **Experience > Modifiers**.
 
 ## `modifier.label_attributes`
 {: .d-inline-block }
@@ -169,6 +176,9 @@ number
 
 The price of the modifier as a fractional in the sub-unit of the current customer's currency.
 e.g. considering the amount $19.50, it will return 1950.
+If this modifier is accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return the price for the modifier on the given date.
+If this modifier is accessed independently or through a product, then it will return the price for the default varmodifieriant, managed in **Experience > Modifiers**.
+
 
 ## `modifier.remaining_stock`
 {: .d-inline-block }
@@ -176,6 +186,8 @@ number
 {: .label .fs-1 }
 
 The remaining stock for the modifier. If the modifier has unlimited inventory this will return `nil`.
+If this modifier is accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return the remaining stock for the modifier on the given date.
+If this modifier is accessed independently or through a product, then it will return the stock for the default modifier, managed in **Experience > Modifiers**.
 
 ## `modifier.selected`
 {: .d-inline-block }
@@ -190,6 +202,8 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the modifier is sold out.
+If this modifier is accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return `true` if the modifier is sold out on the given date.
+If this modifier is accessed independently or through a product, then it will return `true` if the modifier is sold out across all dates.
 
 ## `modifier.start_at`
 {: .d-inline-block }

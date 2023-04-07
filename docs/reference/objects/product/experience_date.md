@@ -21,7 +21,7 @@ The dates of the product as a formatted string.
 e.g. `15 November 2024` for an experience with a duration of less than or equal to one day.
 e.g. `15 - 20 November 2024` for an experience with a duration of more than one day.
 
-## `experience_date.end_date`
+## `experience_date.end_on`
 {: .d-inline-block }
 timestamp
 {: .label .fs-1 }
@@ -77,7 +77,7 @@ boolean
 
 Returns `true` if all stock for this date is sold out.
 
-## `experience_date.start_date`
+## `experience_date.start_on`
 {: .d-inline-block }
 timestamp
 {: .label .fs-1 }

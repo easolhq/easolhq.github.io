@@ -42,20 +42,6 @@ An array of the date's [extras]({% link docs/reference/objects/product/extra.md 
 
 The "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for the date's product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
 
-## `experience_date.has_infinite_stock`
-{: .d-inline-block }
-boolean
-{: .label .fs-1 }
-
-Returns `true` if any variant on the date has infinite stock.
-
-## `experience_date.has_active_promotion`
-{: .d-inline-block }
-boolean
-{: .label .fs-1 }
-
-Returns `true` if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) on this date has an active [promotion]({% link docs/reference/objects/product/promotion.md %}).
-
 ## `experience_date.remaining_stock`
 {: .d-inline-block }
 number
@@ -90,10 +76,3 @@ array of [variant]({% link docs/reference/objects/product/variant/index.md %})s
 {: .label .fs-1 }
 
 An array of the date's [variants]({% link docs/reference/objects/product/variant/index.md %}).
-
-## `experience_date.variant_modifiers`
-{: .d-inline-block }
-array of [modifier]({% link docs/reference/objects/product/modifier.md %})s
-{: .label .fs-1 }
-
-An array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this date through its variants.

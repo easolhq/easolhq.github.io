@@ -158,24 +158,6 @@ Passing `true` will exclude [sold out]({% link docs/reference/objects/product/in
 https://mysite.com/search?search[exclude_sold_out_products]=true
 ```
 
-### include_organisation_products
-Accepts: `true` or `false`. This can be passed as a Liquid variable or explicitly.
-
-Passing `true` will include products from other companies which are linked in the same organisation.
-
-##### as a search tag attribute
-{% raw %}
-```
-{% experience_date_search include_organisation_products: true %}
-{% endexperience_date_search %}
-```
-{% endraw %}
-
-##### as a query parameter
-```
-https://mysite.com/search?search[include_organisation_products]=true
-```
-
 ### name
 Executes a partial search on the string passed in. Case insensitive. This can be passed as a Liquid variable or explicitly.
 
@@ -206,11 +188,6 @@ https://mysite.com/search?search[name]=my+experience
 ```
 https://mysite.com/search?search[series_id]=abcd1234-1234-abcd-1234-abcd1234abcd
 ```
-
-### product_id
-Accepts a product id. This can be passed as a Liquid variable or explicitly.
-
-Will return dates for only the [product]({% link docs/reference/objects/product/index.md %}#productid) passed.
 
 ### subcategory
 Accepts a string and is case-sensitive. This can be passed as a Liquid variable or explicitly.

@@ -110,12 +110,6 @@ There is a maximum page size of 100. If a larger number is provided results will
 You can set this to `month` to return all results in a month per page (to display in a calendar view).
 `week`???
 
-#### product_id
-The id of the product to filter by.
-
-#### include_organisation_products
-This allows you to include products from other companies which are linked in the same organisation. e.g. `include_organisation_products: true`
-
 #### sort
 The sorting order of results. The available options are: `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` and `departure_date_desc`, where the `_asc` and `_desc` parts represent ascending and descending orders respectively.
 ### As query params

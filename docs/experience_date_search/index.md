@@ -45,10 +45,18 @@ You can enable customers to move between the results pages using the `paginate` 
 
 You can assign the value of a Liquid variable to `page_size`.
 
-
 ## Parameters
-- [link to each]({% link docs/experience_date_search/parameters.md %})
-
+- [active_promotion]({% link docs/experience_date_search/parameters.md %}#active_promotion)
+- [category]({% link docs/experience_date_search/parameters.md %}#category)
+- [country]({% link docs/experience_date_search/parameters.md %}#country)
+- [departure_date]({% link docs/experience_date_search/parameters.md %}#departure_date)
+- [departure_month]({% link docs/experience_date_search/parameters.md %}#departure_month)
+- [duration]({% link docs/experience_date_search/parameters.md %}#duration)
+- [exclude_sold_out_products]({% link docs/experience_date_search/parameters.md %}#exclude_sold_out_products)
+- [name]({% link docs/experience_date_search/parameters.md %}#name)
+- [subcategory]({% link docs/experience_date_search/parameters.md %}#subcategory)
+- [page_size]({% link docs/experience_date_search/parameters.md %}#page_size)
+- [sort]({% link docs/experience_date_search/parameters.md %}#sort)
 
 ## Accessing query params
 Once the search has been executed, it can be helpful to get a reference to the params and values in the search. For that, we can use the `search` [Search]({% link docs/reference/objects/search_query.md %}) object.

@@ -96,7 +96,11 @@ This attribute takes an object which specifies how to handle the search, through
 This allows you to specify which month the trips should depart in, e.g. passing `departure_date: 'Apr'` would return any trips departing in april 2020, april 2021 ..., You can also pass the number of the month i.e. `departure_month: 4` would return the same results.
 
 #### duration
-This attribute takes an object which specifies how to handle the search, through `equal_to` `greater_than` or `less_than` each taking a number of days e.g. `duration: {greater_than: 3, less_than: 8 }`
+This attribute takes an object which specifies how to handle the search,
+through `equal_to` `greater_than` or `less_than` each taking a number of days
+e.g. `duration: {greater_than: 3, less_than: 8 }`.
+The value passed defaults to a `duration_unit` of `day`. There are three possible values, `day`, `hour` and `minute`.
+To define a `duration_unit` just add it to the search params e.g. `duration: {greater_than: 3, less_than: 8 }, duration_unit: 'hour'`.
 
 #### name
 This executes a partial search on the string passed in and will return any products whose name matches the argument.

@@ -124,6 +124,7 @@ https://mysite.com/search?search[departure_month]=4
 Accepts an object which specifies how to handle the search, through `equal_to` `greater_than` or `less_than` each taking a number of days. The value(s) can be passed as a Liquid variable or explicitly.
 
 Will return experiences which have a [duration]({% link docs/reference/objects/product/index.md %}#productduration) within the defined range.
+WIP
 
 Note: Experience [durations]({% link docs/reference/objects/product/index.md %}#duration) can be returned as a number of hours, 1 day or a number of nights, whereas experience_date_search `duration` always takes the duration as a number of days or number of hours. i.e. `duration: {equal_to: 2}` will return experiences that have a duration of 2 hours or 1 night (2 days).
 

@@ -14,7 +14,7 @@ The experience date search tag executes a search on the company's product dates 
 ##### input
 {% raw %}
 ```liquid
-{% experience_date_search product_id: 'abcd1234-1234-abcd-1234-abcd1234abcd', duration: { greater_than: 3, less_than: 8 }, page_size: month, sort: 'departure_date_asc' %}
+{% experience_date_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: month, sort: 'departure_date_asc' %}
     {% for item in result.items %}
         <p>{{ item.name }}</p>
     {% endfor %}

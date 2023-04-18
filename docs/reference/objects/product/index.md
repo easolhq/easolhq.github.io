@@ -140,8 +140,12 @@ An array of [Image]({% link docs/reference/objects/image.md %}) objects for the 
 {: .d-inline-block }
 boolean
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 Returns `true` if any variant on the product has infinite stock.
+
+Deprecated. Not being maintained as it's no longer used in Easol themes.
 
 ## `product.hero_image`
 {: .d-inline-block }

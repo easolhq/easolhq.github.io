@@ -37,6 +37,8 @@ Returns the dates the promotion is active for as a humanized string e.g. `7 - 14
 {: .d-inline-block }
 string
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 Returns the discount the promotion will apply, if the promotion represents a percentage discount this will be formatted as `25%` if it is a monetary discount this will be as `$25.00`.
 

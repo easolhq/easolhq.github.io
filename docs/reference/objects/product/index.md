@@ -273,8 +273,12 @@ If the product is in a series this will return a [Series]({% link docs/reference
 {: .d-inline-block }
 string
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 The path for the product's cart shop page.
+
+Deprecated, please use [shop_url]({% link docs/reference/objects/product/index.md %}#shop_url)instead.
 
 ## `product.shop_url`
 {: .d-inline-block }

@@ -154,8 +154,12 @@ The products hero [image]({% link docs/reference/objects/image.md %}).
 {: .d-inline-block }
 boolean
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 Returns `true` if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]({% link docs/reference/objects/product/promotion.md %}).
+
+Deprecated. Not being maintained as it's no longer used in Easol themes.
 
 ## `product.highlights`
 {: .d-inline-block }

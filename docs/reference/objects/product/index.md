@@ -361,8 +361,11 @@ An array of the product's [variants]({% link docs/reference/objects/product/vari
 {: .d-inline-block }
 array of [modifier]({% link docs/reference/objects/product/modifier.md %})s
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-An array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product through its variants.
+An array of [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product.
+Deprecated, modifiers should be accessed through each [variant modifier group]({% link docs/reference/objects/product/variant/index.md %}#variantmodifier_groups) or [extra modifier group]({% link docs/reference/objects/product/extra.md %}#extramodifier_groups).
 
 ## `product.venue`
 {: .d-inline-block }

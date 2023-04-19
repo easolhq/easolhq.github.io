@@ -72,6 +72,8 @@ Returns `true` if the variant has unlimited stock.
 {: .d-inline-block }
 string
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 A humanized price e.g. `$120.00`
 

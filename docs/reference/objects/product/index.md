@@ -140,8 +140,12 @@ An array of [Image]({% link docs/reference/objects/image.md %}) objects for the 
 {: .d-inline-block }
 boolean
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 Returns `true` if any variant on the product has infinite stock.
+
+Deprecated. Not being maintained as it's no longer used in Easol themes.
 
 ## `product.hero_image`
 {: .d-inline-block }
@@ -154,8 +158,12 @@ The products hero [image]({% link docs/reference/objects/image.md %}).
 {: .d-inline-block }
 boolean
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 Returns `true` if one of the [variants]({% link docs/reference/objects/product/variant/index.md %}) in the product has an active [promotion]({% link docs/reference/objects/product/promotion.md %}).
+
+Deprecated. Not being maintained as it's no longer used in Easol themes.
 
 ## `product.highlights`
 {: .d-inline-block }
@@ -273,8 +281,12 @@ If the product is in a series this will return a [Series]({% link docs/reference
 {: .d-inline-block }
 string
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 The path for the product's cart shop page.
+
+Deprecated, please use [shop_url]({% link docs/reference/objects/product/index.md %}#shop_url)instead.
 
 ## `product.shop_url`
 {: .d-inline-block }
@@ -361,8 +373,11 @@ An array of the product's [variants]({% link docs/reference/objects/product/vari
 {: .d-inline-block }
 array of [modifier]({% link docs/reference/objects/product/modifier.md %})s
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-An array of all the [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product through its variants.
+An array of [modifiers]({% link docs/reference/objects/product/modifier.md %}) associated with this product.
+Deprecated, modifiers should be accessed through each [variant modifier group]({% link docs/reference/objects/product/variant/index.md %}#variantmodifier_groups) or [extra modifier group]({% link docs/reference/objects/product/extra.md %}#extramodifier_groups).
 
 ## `product.venue`
 {: .d-inline-block }

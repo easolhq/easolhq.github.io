@@ -257,7 +257,7 @@ The products overview [image]({% link docs/reference/objects/image.md %}).
 number
 {: .label .fs-1 }
 
-The sum of remaining stock for a product's variants, if any of the variants have infinite inventory this will return `nil`.
+The sum of remaining stock for a product's variants, if any of the variants have infinite stock this will return `nil`.
 
 ## `product.schedule`
 {: .d-inline-block }
@@ -399,7 +399,6 @@ The product's [venue]({% link docs/reference/objects/product/venue.md %}).
 {: .label .fs-1 }
 
 The product's [`what's included`]({% link docs/reference/objects/product/whats_included.md %}).
-
 
 <!--
 

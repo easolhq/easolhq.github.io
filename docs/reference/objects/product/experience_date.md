@@ -24,7 +24,7 @@ This can then be used in conjunction with Liquid's [built-in filters](https://sh
 array of [Extra]({% link docs/reference/objects/product/extra.md %})s
 {: .label .fs-1 }
 
-An array of the date's [extras]({% link docs/reference/objects/product/extra.md %})
+An array of the date's [extras]({% link docs/reference/objects/product/extra.md %}).
 
 ## `experience_date.featured_variant`
 {: .d-inline-block }

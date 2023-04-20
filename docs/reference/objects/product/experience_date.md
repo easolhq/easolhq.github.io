@@ -42,6 +42,12 @@ The dates of the experience date as a formatted string.
 e.g. `15 November 2024` for an experience with a duration of less than or equal to one day.
 e.g. `15 - 20 November 2024` for an experience with a duration of more than one day.
 
+## `experience_date.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The experience date id.
 ## `experience_date.product`
 {: .d-inline-block }
 [Product]({% link docs/reference/objects/product/index.md %})

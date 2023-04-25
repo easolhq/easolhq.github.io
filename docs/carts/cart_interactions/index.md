@@ -12,6 +12,7 @@ Interactions with a customer's cart are enabled by including [form tags]({% link
 - [Add line items to the cart]({% link docs/carts/cart_interactions/add_line_items.md %})
 - [Remove line items from the cart]({% link docs/carts/cart_interactions/remove_line_items.md %})
 - [Clear the cart]({% link docs/carts/cart_interactions/clear_cart.md %})
+- [Add a package to the cart]({% link docs/carts/cart_interactions/add_packages.md %})
 
 
 ## Additional form tag parameters

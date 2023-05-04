@@ -42,6 +42,22 @@ string
 
 Will always return "`package`".
 
+## `package.price_fractional`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The total price for the package represented in the sub-unit of the current
+customer's currency. e.g. considering the amount $19.50, it will return 1950.
+
+## `package.price_per_person_fractional`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The price per person for the package represented in the sub-unit of the current
+customer's currency. e.g. considering the amount $19.50, it will return 1950.
+
 ## `package.image`
 {: .d-inline-block }
 [Image]({% link docs/reference/objects/image.md %})

@@ -43,7 +43,7 @@ The tag returns a [`availability_days`]({% link docs/reference/objects/product/v
 It's possible to use any of the following attributes in the accommodation availability tag itself, this is useful for building a page responsible for a specific type of product.
 
 ### number_of_months
-Passing a number will define the number of consecutive months that will be fetched. This defaults to 1.
+Passing a number will define the number of consecutive months that will be fetched. This defaults to 1, but can be passed a value as a Liquid variable or explicitly.
 
 ##### syntax
 {% raw %}

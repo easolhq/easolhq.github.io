@@ -57,3 +57,16 @@ The selections template consists of an `index.html` file.
 The selection is passed via a single `item` [Modifier Selection]({% link docs/reference/objects/modifier_selection_session.md %}) object. It combines the data for a particular line item with the guest information for the customer currently logged in.
 
 Each selection page is automatically generated at `site.com/items/*booking-id*/selections` and can only be accessed by the customer to whose booking the selection applies.
+
+## Package booking
+`Optional`
+
+Packages allow creators to build their own custom multi-step booking journeys.
+
+Each step will expose a number of creator-selected variants that the customer may choose from to complete their package booking.
+
+On each step of the journey, the customer adds one of the available options and moves on to the next step.
+
+Behind the scenes, the platform is "orchestrating" the booking journey by linking them from step URL to step URL until checkout, and steps are rendered using the Package Booking template.
+
+The details of the current step (name, description, available variants, URL of the next page) are exposed to the template via the `package_step` [Package Step]({% link docs/reference/objects/package/step.md %}) object.

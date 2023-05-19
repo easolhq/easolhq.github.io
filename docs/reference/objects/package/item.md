@@ -27,9 +27,3 @@ The unique id of the item.
 {: .label .fs-1 }
 
 The variant of the item.
-
-
-
-
-
-

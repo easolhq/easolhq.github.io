@@ -38,10 +38,13 @@ The description given to the step.
 
 ## `package_step.product_groups`
 {: .d-inline-block }
-Array of [Product]({% link docs/reference/objects/product/index.md %})s
+Array of [Package Product]({% link docs/reference/objects/package/product.md %})s
 {: .label .fs-1 }
 
-Each product containing variants added to the Package Step by the creator. Use `.variants` to get the variants added to the step for this product.
+Each step contains a creator-selected number of bookable elements. Those selections are exposed to Liquid templates as an array of [Package Product]({% link docs/reference/objects/package/product.md %})s, where each provides:
+
+- the subset of variants that the creator chose to belong to the package
+- and the product which those chosen variants are part of
 
 ## `package_step.required_start_date`
 {: .d-inline-block }

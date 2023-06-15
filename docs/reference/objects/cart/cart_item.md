@@ -117,6 +117,13 @@ number
 
 The total of all the modifier selections made on the cart item. This is returned as a fractional in the sub-unit of the current customer's currency.
 
+## `item.total_package_upgrade_amount`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The total of all the package upgrades associated with the cart item. This is returned as a fractional in the sub-unit of the current customer's currency.
+
 ## `item.variant`
 {: .d-inline-block }
 [Variant]({% link docs/reference/objects/product/variant/index.md %})

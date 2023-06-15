@@ -67,6 +67,14 @@ timestamp
 
 The start date of the product associated with the cart item.
 
+## `item.sub_items`
+{: .d-inline-block }
+array of [Cart item]({% link docs/reference/objects/cart/cart_item.md %})s
+
+{: .label .fs-1 }
+
+The related sub-items for a [Cart item]({% link docs/reference/objects/cart/cart_item.md %}). Currently these are available for cart items that are for a custom-priced package, and the sub-items are all other line items that are part of its package booking.
+
 ## `item.subtotal`
 {: .d-inline-block }
 number

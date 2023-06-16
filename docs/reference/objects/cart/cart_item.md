@@ -67,6 +67,14 @@ timestamp
 
 The start date of the product associated with the cart item.
 
+## `item.sub_items`
+{: .d-inline-block }
+array of [Cart item]({% link docs/reference/objects/cart/cart_item.md %})s
+
+{: .label .fs-1 }
+
+The related sub-items for a [Cart item]({% link docs/reference/objects/cart/cart_item.md %}). Currently these are available for cart items that are for a custom-priced package, and the sub-items are all other line items that are part of its package booking.
+
 ## `item.subtotal`
 {: .d-inline-block }
 number
@@ -108,6 +116,13 @@ number
 {: .label .fs-1 }
 
 The total of all the modifier selections made on the cart item. This is returned as a fractional in the sub-unit of the current customer's currency.
+
+## `item.total_package_upgrade_amount`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The total of all the package upgrades associated with the cart item. This is returned as a fractional in the sub-unit of the current customer's currency.
 
 ## `item.variant`
 {: .d-inline-block }

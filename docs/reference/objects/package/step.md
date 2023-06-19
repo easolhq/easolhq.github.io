@@ -36,6 +36,12 @@ string
 
 The description given to the step.
 
+## `package_step.package`
+{: .d-inline-block }
+[Package]({% link docs/reference/objects/package.md %})
+{: .label .fs-1 }
+The related package.
+
 ## `package_step.product_groups`
 {: .d-inline-block }
 Array of [Package Product]({% link docs/reference/objects/package/product.md %})s

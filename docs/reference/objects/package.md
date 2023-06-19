@@ -96,9 +96,9 @@ The state of the package. Can be one of:
 - selling
 - off_sale
 
+## `package.steps`
+{: .d-inline-block }
+[Package Step]({% link docs/reference/objects/package/step.md %})
+{: .label .fs-1 }
 
-
-
-
-
-
+The booking journey steps available for a package.

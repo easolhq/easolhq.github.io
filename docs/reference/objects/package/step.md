@@ -73,7 +73,7 @@ Date
 
 Creators may specify that customers must book accommodation dates which include a specific date range. This will return the end date of that range.
 
-## `package_step.next_step_path`
+## `package_step.next_page_path`
 {: .d-inline-block }
 URL
 {: .label .fs-1 }

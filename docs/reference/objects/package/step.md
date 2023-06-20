@@ -36,6 +36,13 @@ string
 
 The description given to the step.
 
+## `package_step.path`
+{: .d-inline-block }
+URL
+{: .label .fs-1 }
+
+URL pointing to the step's page in the package booking journey.
+
 ## `package_step.package`
 {: .d-inline-block }
 [Package]({% link docs/reference/objects/package.md %})
@@ -72,6 +79,13 @@ URL
 {: .label .fs-1 }
 
 URL pointing to the next page of the booking journey. Navigating to this URL is only possible if the customer has added enough/the correct elements to the cart to honour the requirements set by the creator for this step.
+
+## `package_step.step_valid?`
+{: .d-inline-block }
+`true` or `false`
+{: .label .fs-1 }
+
+This will return `false` if the customer has not added enough elements to the cart to honour the requirements set by the creator for this step, and `true` if they have.
 
 ## `package_step.validation_errors`
 {: .d-inline-block }

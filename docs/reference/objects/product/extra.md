@@ -10,6 +10,14 @@ grand_parent: Objects
 object
 {: .label .fs-1 }
 
+
+The extra object will behave slightly differently depending on how it is accessed.
+- When accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), some methods will return a result that is specific to that given date.
+- When accessed independently or through a product, those methods will take into account all upcoming dates on the product.
+
+Please check the method descriptions for more details.
+
+
 #### Attributes
 
 ## `extra.address`
@@ -50,6 +58,8 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the extra has unlimited stock.
+- When accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return `true` if the extra has unlimited stock on the given date.
+- When accessed independently or through a product, it will return `true` if the extra has unlimited stock on at least one of the upcoming dates.
 
 ## `extra.hero_image`
 {: .d-inline-block }
@@ -77,6 +87,8 @@ number
 {: .label .fs-1 }
 
 The initial stock for the extra, if the extra has unlimited inventory this will return `nil`.
+- When accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return the initial stock for the extra on the given date.
+- When accessed independently or through a product, it will return the sum of the initial stock for the extra across all upcoming dates.
 
 ## `extra.modifier_groups`
 {: .d-inline-block }
@@ -109,6 +121,8 @@ The overview [image]({% link docs/reference/objects/image.md %}) of the [product
 {: .label .fs-1 }
 
 The [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current customer's currency.
+- When accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return the price for the extra on the given date.
+- When accessed independently or through a product, it will return the default price for the extra, managed in **Experience > Extras**.
 
 {% raw %}
 ```liquid
@@ -148,6 +162,8 @@ array of [price]({% link docs/reference/objects/product/price.md %})s
 {: .label .fs-1 }
 
 An array containing the single [price]({% link docs/reference/objects/product/price.md %}) of this extra in the current customer's currency.
+- When accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return the prices for the extra on the given date.
+- When accessed independently or through a product, it will return the default prices for the extra, managed in **Experience > Extras**.
 
 {% raw %}
 ```liquid
@@ -176,6 +192,8 @@ number
 {: .label .fs-1 }
 
 The remaining stock for the extra, if the extra has unlimited inventory this will return `nil`.
+- When accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return the remaining stock for the extra on the given date.
+- When accessed independently or through a product, it will return the sum total of remaining stock for the extra across all upcoming dates.
 
 ## `extra.segment_name`
 {: .d-inline-block }
@@ -190,6 +208,8 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the extra is sold out.
+- When accessed through an [experience date]({% link docs/reference/objects/product/experience_date.md %}), it will return `true` if the extra is sold out on the given date.
+- When accessed independently or through a product, it will return `true` if the extra is sold out across all upcoming dates.
 
 ## `extra.tagline`
 {: .d-inline-block }

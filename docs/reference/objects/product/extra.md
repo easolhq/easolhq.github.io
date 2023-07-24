@@ -27,6 +27,13 @@ Please check the method descriptions for more details.
 
 The [address]({% link docs/reference/objects/product/address.md %}) associated with this extra.
 
+## `extra.booking_fee_rate`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The extra's booking fee rate as a decimal between 0 and 1.
+
 ## `extra.country`
 {: .d-inline-block }
 string

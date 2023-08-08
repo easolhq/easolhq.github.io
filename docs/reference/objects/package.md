@@ -109,3 +109,11 @@ number
 {: .label .fs-1 }
 
 The package's booking fee rate as a decimal between 0 and 1.
+
+## `package.total_booking_fee`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The package's total booking fee represented in the sub-unit of the current customer’s currency.
+e.g. considering the amount $19.50, it will return 1950.

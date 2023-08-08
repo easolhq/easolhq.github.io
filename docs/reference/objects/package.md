@@ -102,3 +102,10 @@ The state of the package. Can be one of:
 {: .label .fs-1 }
 
 The booking journey steps available for a package.
+
+## `package.booking_fee_rate`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The package's booking fee rate as a decimal between 0 and 1.

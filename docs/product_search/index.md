@@ -16,7 +16,7 @@ Product search enables you to filter a Creator's experiences, for example, you c
 
 The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object and a `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
 
-The product search will only return products will only return public, published products i.e. experiences which are published and have not been marked as private under 'Manage product availability' in the product settings.
+The product search will only return public, published products i.e. experiences which are published and have not been marked as private under 'Manage product availability' in the product settings.
 
 > Notes:
 - Only one product_search tag should be used on a page to ensure expected results.

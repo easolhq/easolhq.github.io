@@ -8,7 +8,7 @@ has_toc: false
 
 # Product search
 
-Product search enables you to filter a Creator's experiences and accommodations, for example, you could:
+Product search enables you to filter a Creator's experiences, for example, you could:
 - Choose whether sold out products are returned
 - Return only products with active promotions
 - Return products for a specific date range or year
@@ -16,7 +16,7 @@ Product search enables you to filter a Creator's experiences and accommodations,
 
 The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object and a `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
 
-The product search will only return products will only return public, published products i.e. experiences and accommodations which are published and have not been marked as private under 'Manage product availability' in the product settings.
+The product search will only return public, published products i.e. experiences which are published and have not been marked as private under 'Manage product availability' in the product settings.
 
 > Notes:
 - Only one product_search tag should be used on a page to ensure expected results.

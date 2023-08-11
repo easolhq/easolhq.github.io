@@ -9,7 +9,7 @@ grand_parent: Reference
 
 For additional examples see [here]({% link docs/product_search/index.md %}).
 
-The Product Search Tag executes a search on the company's products, it then paginates those results.
+The Product Search Tag executes a search on the company's experiences, it then paginates those results.
 
 ##### input
 {% raw %}

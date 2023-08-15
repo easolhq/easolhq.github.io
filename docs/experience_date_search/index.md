@@ -10,7 +10,7 @@ has_toc: false
 
 Experience date search enables you to filter a Creator's experiences with a separate result for each departure date of each experience.
 
-The experience date search is executed using the [experience_date_search tag]({% link docs/reference/tags/experience_date_search_tag/index.md %}). The tag returns an `items` array of [ExperienceDates]({% link docs/reference/objects/product/experience_date.md %}), a `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object and a `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
+The experience date search is executed using the [experience_date_search tag]({% link docs/reference/tags/experience_date_search_tag/index.md %}). The tag returns an `items` array of [ExperienceDates]({% link docs/reference/objects/product/experience_date.md %}), a `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object, a `search` [Search]({% link docs/reference/objects/search_query.md %}) object, and an `available_months` array of Date objects (see [Liquid documentation for Dates](https://shopify.github.io/liquid/filters/date)).
 
 The experience date search will only return public, published dates i.e. where the experience is published and has not been marked as private under 'Manage product availability' in the product settings.
 
@@ -44,6 +44,52 @@ The results of the search are paginated to speed up page load, you can define th
 You can enable customers to move between the results pages using the `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object. The [default_pagination]({% link docs/reference/filters/pagination.md %}) filter can be used to return a complete pagination UI.
 
 You can assign the value of a Liquid variable to `page_size`.
+
+## Available Months
+The experience date search returns `available_months`, an array of `Date` objects, which can be used to construct the month and year filters for searching.
+
+Each `Date` is dated 1st of the month, and there is one for each month in which a product's slots `start_on` dates occur.
+
+E.g. Today is `1st Jan 2024`. You have a product with a 10 day duration, with the following slots (all future or ongoing);
+- `31th Dec 2023`
+- `15th Jan 2024`
+- `20th Jan 2024`
+- `31th Jan 2024`
+- `28th Feb 2024`
+The `available_months` will be `Date`s with the following dates:
+- `1st Dec 2023`
+- `1st Jan 2024`
+- `1st Feb 2024`
+
+You can use these to construct search filters, e.g.
+
+##### input
+{% raw %}
+```liquid
+{% experience_date_search %}
+  ...
+
+  <select name="departure_month">
+    {% for month in available_months %}
+      <option value="{{ month | date: "%m" }}">
+        {{ month | date: "%B" }}
+      </option>
+    {% endfor %}
+  </select>
+{% endexperience_date_search %}
+```
+{% endraw %}
+
+##### output
+{% raw %}
+```html
+  <select name="departure_month">
+    <option value="12">December</option>
+    <option value="01">January</option>
+    <option value="02">February</option>
+  </select>
+```
+{% endraw %}
 
 ## Parameters
 - [active_promotion]({% link docs/experience_date_search/parameters.md %}#active_promotion)

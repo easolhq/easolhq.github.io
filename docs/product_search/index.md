@@ -53,6 +53,52 @@ You can enable customers to move between the results pages using the `paginate` 
 
 You can assign the value of a Liquid variable to `page_size`.
 
+## Available months
+The product search returns `available_months`, an array of `Date` objects, which can be used to construct the month and year filters for searching.
+
+Each `Date` is dated 1st of the month, and there is one for each month in which a product's slot `start_on` date occurs.
+
+E.g. Today is `1st Jan 2024`. You have a product with a 10 day duration, with the following slots (all future or ongoing);
+- `31th Dec 2023`
+- `15th Jan 2024`
+- `20th Jan 2024`
+- `31th Jan 2024`
+- `28th Feb 2024`
+
+The `available_months` will be `Date`s with the following dates:
+- `1st Dec 2023`
+- `1st Jan 2024`
+- `1st Feb 2024`
+
+You can use these to construct search filters, e.g.
+
+##### input
+{% raw %}
+```liquid
+{% product_search %}
+  ...
+
+  <select name="departure_month">
+    {% for month in available_months %}
+      <option value="{{ month | date: "%m" }}">
+        {{ month | date: "%B" }}
+      </option>
+    {% endfor %}
+  </select>
+{% endproduct_search %}
+```
+{% endraw %}
+
+##### output
+{% raw %}
+```html
+  <select name="departure_month">
+    <option value="12">December</option>
+    <option value="01">January</option>
+    <option value="02">February</option>
+  </select>
+```
+{% endraw %}
 
 ## Parameters
 - [active_promotion]({% link docs/product_search/parameters.md %}#active_promotion)

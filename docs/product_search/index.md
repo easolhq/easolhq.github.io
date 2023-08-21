@@ -64,6 +64,7 @@ E.g. Today is `1st Jan 2024`. You have a product with a 10 day duration, with th
 - `20th Jan 2024`
 - `31th Jan 2024`
 - `28th Feb 2024`
+
 The `available_months` will be `Date`s with the following dates:
 - `1st Dec 2023`
 - `1st Jan 2024`

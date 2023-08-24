@@ -9,7 +9,7 @@ grand_parent: Reference
 
 The `create_line_item` tag renders a form which acts as a wrapper for a single item, an item can be a [variant]({% link docs/reference/objects/product/variant/index.md %}) or an [extra]({% link docs/reference/objects/product/extra.md %}).<br>
 Extra HTML input tags can be used to add item quantity, modifiers, adult count or start and end date.<br>
-An [experience date]({% link docs/reference/objects/product/experience_date.md %}) can be referenced to book a specific date.
+An [experience slot]({% link docs/reference/objects/product/experience_slot.md %}) can be referenced to book a specific date.
 
 ##### input
 {% raw %}
@@ -68,12 +68,12 @@ Specify check-in and check-out dates for accommodation items.
 ```
 {% endraw %}
 
-### Experience date
+### Experience slot
 
-Specify the experience date to be booked for experience items by referencing the [experience_date.id]({% link docs/reference/objects/product/experience_date.md %}#experience_dateid).
+Specify the experience slot to be booked for experience items by referencing the [experience_slot.id]({% link docs/reference/objects/product/experience_slot.md %}#experience_slotid).
 {% raw %}
 ```html
-  <input type="hidden" name="items[][experience_slot_id]" value="**<experience_date.id>**" />
+  <input type="hidden" name="items[][experience_slot_id]" value="**<experience_slot.id>**" />
 ```
 {% endraw %}
 

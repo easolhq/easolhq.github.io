@@ -12,8 +12,8 @@ object
 
 
 The modifier object will behave slightly differently depending on how it is accessed.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), some methods will return a result that is specific to that given date.
-- When accessed independently or through a product, those methods will take into account all upcoming dates on the product.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), some methods will return a result that is specific to that given slot.
+- When accessed independently or through a product, those methods will take into account all upcoming slots on the product.
 
 Please check the method descriptions for more details.
 
@@ -135,8 +135,8 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the modifier has unlimited stock.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the modifier has unlimited stock on the given date.
-- When accessed independently or through a product, it will return `true` if the modifier has unlimited stock on at least one of the upcoming dates.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the modifier has unlimited stock on the given slot.
+- When accessed independently or through a product, it will return `true` if the modifier has unlimited stock on at least one of the upcoming slots.
 
 ## `modifier.image`
 {: .d-inline-block }
@@ -151,8 +151,8 @@ number
 {: .label .fs-1 }
 
 The initial stock for the modifier. If the modifier has unlimited inventory this will return `nil`.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the initial stock for the modifier on the given date.
-- When accessed independently or through a product, it will return the sum of the initial stock for the modifier across all upcoming dates.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the initial stock for the modifier on the given slot.
+- When accessed independently or through a product, it will return the sum of the initial stock for the modifier across all upcoming slots.
 
 ## `modifier.label_attributes`
 {: .d-inline-block }
@@ -181,7 +181,7 @@ number
 
 The price of the modifier as a fractional in the sub-unit of the current customer's currency.
 e.g. considering the amount $19.50, it will return 1950.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the price for the modifier on the given date.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the price for the modifier on the given slot.
 - When accessed independently or through a product, it will return the default price for the modifier, managed in **Experience > Modifiers**.
 
 ## `modifier.remaining_stock`
@@ -190,8 +190,8 @@ number
 {: .label .fs-1 }
 
 The remaining stock for the modifier. If the modifier has unlimited inventory this will return `nil`.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the remaining stock for the modifier on the given date.
-- When accessed independently or through a product, it will return the sum total of remaining stock for the modifier across all upcoming dates.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the remaining stock for the modifier on the given slot.
+- When accessed independently or through a product, it will return the sum total of remaining stock for the modifier across all upcoming slots.
 
 ## `modifier.selected`
 {: .d-inline-block }
@@ -206,8 +206,8 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the modifier is sold out.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the modifier is sold out on the given date.
-- When accessed independently or through a product, it will return `true` if the modifier is sold out across all upcoming dates.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the modifier is sold out on the given slot.
+- When accessed independently or through a product, it will return `true` if the modifier is sold out across all upcoming slots.
 
 ## `modifier.start_at`
 {: .d-inline-block }

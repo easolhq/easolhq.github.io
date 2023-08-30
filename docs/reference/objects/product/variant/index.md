@@ -17,8 +17,8 @@ object
 
 
 The variant object will behave slightly differently depending on how it is accessed.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), some methods will return a result that is specific to that given date.
-- When accessed independently or through a product, those methods will take into account all upcoming dates on the product.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), some methods will return a result that is specific to that given slot.
+- When accessed independently or through a product, those methods will take into account all upcoming slots on the product.
 
 Please check the method descriptions for more details.
 
@@ -72,7 +72,7 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the variant has unlimited stock.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the variant has unlimited stock on the given date.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the variant has unlimited stock on the given slot.
 - When accessed independently or through a product, it will return `true` if the variant has unlimited stock on at least one of the upcoming product dates.
 
 ## `variant.humanized_display_amount`
@@ -112,8 +112,8 @@ number
 {: .label .fs-1 }
 
 The initial stock for the variant, if the variant has unlimited inventory this will return `nil`.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the initial stock for the variant on the given date.
-- When accessed independently or through a product, it will return the sum of the initial stock for the variant across all upcoming dates.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the initial stock for the variant on the given slot.
+- When accessed independently or through a product, it will return the sum of the initial stock for the variant across all upcoming slots.
 
 ## `variant.is_priced_per_person`
 {: .d-inline-block }
@@ -176,7 +176,7 @@ An array of [modifier groups]({% link docs/reference/objects/product/modifier_gr
 {: .label .fs-1 }
 
 The [price]({% link docs/reference/objects/product/price.md %}) of this variant in the current customer's currency.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the price for the variant on the given date.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the price for the variant on the given slot.
 - When accessed independently or through a product, it will return the default price for the variant, managed in **Experience > Variants**.
 
 {% raw %}
@@ -209,7 +209,7 @@ array of [price]({% link docs/reference/objects/product/price.md %})s
 {: .label .fs-1 }
 
 An array containing the [prices]({% link docs/reference/objects/product/price.md %}) of each tier of this variant in the current customer's currency.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the prices for the variant on the given date.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the prices for the variant on the given slot.
 - When accessed independently or through a product, it will return the default prices for the variant, managed in **Experience > Variants**.
 
 
@@ -240,8 +240,8 @@ number
 {: .label .fs-1 }
 
 The remaining stock for the variant, if the variant has infinite stock this will return `nil`.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the remaining stock for the variant on the given date.
-- When accessed independently or through a product, it will return the sum total of remaining stock for the variant across all upcoming dates.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the remaining stock for the variant on the given slot.
+- When accessed independently or through a product, it will return the sum total of remaining stock for the variant across all upcoming slots.
 
 ## `variant.segment_name`
 {: .d-inline-block }
@@ -256,8 +256,8 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the variant is sold out.
-- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the variant is sold out on the given date.
-- When accessed independently or through a product, it will return `true` if the variant is sold out across all upcoming dates.
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the variant is sold out on the given slot.
+- When accessed independently or through a product, it will return `true` if the variant is sold out across all upcoming slots.
 
 ## `variant.tagline`
 {: .d-inline-block }

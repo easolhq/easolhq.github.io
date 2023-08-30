@@ -216,7 +216,7 @@ boolean
 
 Returns `true` if the extra is sold out.
 - When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the extra is sold out on the given slot.
-- When accessed independently or through a product, it will return `true` if the extra is sold out across all upcoming slots.
+- When accessed independently or through a product, it will return `true` if the extra is sold out across all slots, i.e. all stock is sold or they have been manually marked as 'Sold Out'. Any slot in the past is also considered sold out.
 
 ## `extra.tagline`
 {: .d-inline-block }

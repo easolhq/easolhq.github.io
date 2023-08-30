@@ -151,8 +151,7 @@ When no value passed it defaults to `day`.
 ### exclude_sold_out_products
 Accepts: `true` or `false`. This can be passed as a Liquid variable or explicitly.
 
-Passing `true` will exclude [sold out]({% link docs/reference/objects/product/index.md %}#productsold_out) experience slots where the product is sold out.
-
+Passing `true` will exclude [sold out]({% link docs/reference/objects/product/index.md %}#productsold_out) experience slots where all variants for this slot are sold out, i.e. all stock is sold or they have been manually marked as 'Sold Out'. Any slot in the past is also considered sold out.
 ##### as a search tag attribute
 {% raw %}
 ```

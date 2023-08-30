@@ -207,7 +207,7 @@ boolean
 
 Returns `true` if the modifier is sold out.
 - When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the modifier is sold out on the given slot.
-- When accessed independently or through a product, it will return `true` if the modifier is sold out across all upcoming slots.
+- When accessed independently or through a product, it will return `true` if the modifier is sold out across all upcoming slots. It will also return true if all slots are in the past.
 
 ## `modifier.start_at`
 {: .d-inline-block }

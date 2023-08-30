@@ -308,8 +308,9 @@ The url for the product's cart shop page.
 boolean
 {: .label .fs-1 }
 
-Returns `true` if the product is sold out.
-If the product is an experience with multiple slots, this returns `true` if all upcoming slots are sold out.
+Returns `true` if all of the product's variants are sold out.
+
+A variant is sold out if all stock is sold, it has been manually marked as 'Sold Out', or all [slots]({% link docs/reference/objects/product/experience_slot.md %}) are in the past.
 
 ## `product.subcategory`
 {: .d-inline-block }

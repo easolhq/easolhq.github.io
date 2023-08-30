@@ -74,7 +74,7 @@ The url for the date's cart shop page.
 boolean
 {: .label .fs-1 }
 
-Returns `true` if all stock for this date is sold out.
+Returns `true` if all stock for this date is sold out, i.e. all stock is sold or variants have been manually marked as 'Sold Out'. Any slot in the past is also considered sold out.
 
 ## `experience_slot.start_on`
 {: .d-inline-block }

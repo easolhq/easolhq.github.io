@@ -20,7 +20,7 @@ The product search will only return public, published products i.e. experiences 
 
 > Notes:
 - Only one product_search tag should be used on a page to ensure expected results.
-- To return a separate search result for each date in an experience with multiple dates, use the [experience_date_search tag]({% link docs/reference/tags/experience_date_search_tag/index.md %})
+- To return a separate search result for each date in an experience with multiple slots, use the [experience_slot_search tag]({% link docs/reference/tags/experience_slot_search_tag/index.md %})
 
 {% raw %}
 ```liquid

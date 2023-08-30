@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Experience date search
+title: Experience slot search
 parent: Tags
 grand_parent: Reference
 ---
 
-# Experience date search
+# Experience slot search
 
-For additional examples see [here]({% link docs/experience_date_search/index.md %}).
+For additional examples see [here]({% link docs/experience_slot_search/index.md %}).
 
-The experience date search tag executes a search on the company's product dates and paginates the results.
+The experience slot search tag executes a search on the company's product dates and paginates the results.
 
 ##### input
 {% raw %}
 ```liquid
-{% experience_date_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: month, sort: 'departure_date_asc' %}
+{% experience_slot_search name: 'Beyond', duration: { greater_than: 3, less_than: 8 }, page_size: month, sort: 'departure_date_asc' %}
     {% for item in result.items %}
         <p>{{ item.name }}</p>
     {% endfor %}
@@ -22,7 +22,7 @@ The experience date search tag executes a search on the company's product dates 
         {{ paginate.collection_size }} Results
         {{ paginate | default_pagination }}
     </div>
-{% endexperience_date_search %}
+{% endexperience_slot_search %}
 ```
 {% endraw %}
 
@@ -73,7 +73,7 @@ You can paginate results into equal page sizes, defining the number of results t
 Alternatively, you can paginate results by month, by setting the `page_size` to `month`.
 
 ## Available Months
-The experience date search returns `available_months`, an array of `Date` objects, which can be used to construct the month and year filters for searching.
+The experience slot search returns `available_months`, an array of `Date` objects, which can be used to construct the month and year filters for searching.
 
 Each `Date` is dated 1st of the month, and there is one for each month in which a product's slots `start_on` dates occur.
 
@@ -95,7 +95,7 @@ You can use these to construct search filters, e.g.
 
 {% raw %}
 ```liquid
-{% experience_date_search %}
+{% experience_slot_search %}
   ...
 
   <select name="departure_month">
@@ -105,7 +105,7 @@ You can use these to construct search filters, e.g.
       </option>
     {% endfor %}
   </select>
-{% endexperience_date_search %}
+{% endexperience_slot_search %}
 ```
 {% endraw %}
 
@@ -153,7 +153,7 @@ The value passed defaults to a `duration_unit` of `day`. There are three possibl
 To define a `duration_unit` just add it to the search params e.g. `duration: {greater_than: 3, less_than: 8 }, duration_unit: 'hour'`.
 
 #### duration_unit
-To be used in combination with [`duration`]({% link docs/reference/tags/experience_date_search_tag/index.md %}#duration). This value can be: `day`, `hour` and `minute`.
+To be used in combination with [`duration`]({% link docs/reference/tags/experience_slot_search_tag/index.md %}#duration). This value can be: `day`, `hour` and `minute`.
 When no value passed it defaults to `day`.
 
 #### name

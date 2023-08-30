@@ -55,7 +55,7 @@ string
 The dates of the product as a formatted string.
 e.g. `15 November 2024` for an experience with a duration of less than or equal to one day.
 e.g. `15 - 20 November 2024` for an experience with a duration of more than one day.
-If a product is an experience with multiple dates, this returns the range based on the depature dates, and does not account for the experience duration.
+If a product is an experience with multiple slots, this returns the range based on the depature dates, and does not account for the experience duration.
 e.g. `November 2024` for an experience with multiple departure dates in the same month.
 e.g. `November 2024 - January 2025` for an experience with multiple departure dates over more than one month.
 
@@ -65,7 +65,7 @@ timestamp
 {: .label .fs-1 }
 
 - If the product has a fixed date this returns the start date of the event as a timestamp, this can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
-- If the product is an experience with multiple dates, this returns the start date of the next upcoming or ongoing date if there is one, or the most recent date if all dates are in the past.
+- If the product is an experience with multiple slots, this returns the start date of the next upcoming or ongoing slot if there is one, or the start date of the most recent slot if all slots are in the past.
 
 ## `product.deposit`
 {: .d-inline-block }
@@ -133,7 +133,7 @@ An array of the products [accommodations]({% link docs/reference/objects/product
 {: .label .fs-1 }
 
 The "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
-If the product is an experience with multiple dates, this returns the display or cheapest variant across all upcoming dates.
+If the product is an experience with multiple slots, this returns the display or cheapest variant across all upcoming dates.
 
 ## `product.gallery`
 {: .d-inline-block }
@@ -150,7 +150,7 @@ deprecated
 {: .label .fs-1 .label-red .ml-0 .mt-0 }
 
 Returns `true` if any variant on the product has infinite stock.
-If a product is an experience with multiple dates, this returns `true` if any variant on any upcoming date has infinite stock.
+If a product is an experience with multiple slots, this returns `true` if any variant on any upcoming date has infinite stock.
 
 Deprecated. Not being maintained as it's no longer used in Easol themes.
 
@@ -258,7 +258,7 @@ number
 {: .label .fs-1 }
 
 The sum of remaining stock for a product's variants, if any of the variants have infinite stock this will return `nil`.
-If the product is an experience with multiple dates, this returns the sum total of remaining stock for all variants across all upcoming dates.
+If the product is an experience with multiple slots, this returns the sum total of remaining stock for all variants across all upcoming dates.
 
 ## `product.schedule`
 {: .d-inline-block }
@@ -309,7 +309,7 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` if the product is sold out.
-If the product is an experience with multiple dates, this returns `true` if all upcoming dates are sold out.
+If the product is an experience with multiple slots, this returns `true` if all upcoming dates are sold out.
 
 ## `product.subcategory`
 {: .d-inline-block }
@@ -357,12 +357,12 @@ string
 
 The type of this product, one of `"experience"` or `"accommodation"`.
 
-## `product.upcoming_or_recent_date`
+## `product.upcoming_or_recent_slot`
 {: .d-inline-block }
-[Experience date]({% link docs/reference/objects/product/experience_date.md %})
+[experience slot]({% link docs/reference/objects/product/experience_slot.md %})
 {: .label .fs-1 }
 
-The product's next upcoming or ongoing [Experience date]({% link docs/reference/objects/product/experience_date.md %}) if there are any.
+The product's next upcoming or ongoing [experience slot]({% link docs/reference/objects/product/experience_slot.md %}) if there are any.
 If all dates are in the past, this returns the most recent date.
 
 ## `product.url`

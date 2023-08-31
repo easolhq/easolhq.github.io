@@ -4,24 +4,6 @@ title: Experience slot search parameters
 parent: Experience slot search
 ---
 
-### active_promotion
-Accepts: `true` or `false`. This can be passed as a Liquid variable or explicitly.
-
-Passing `true` will only return items with a currently active [promotion]({% link docs/reference/objects/product/promotion.md %}#promotionactive).
-
-##### as a search tag attribute
-{% raw %}
-```
-{% experience_slot_search active_promotion: true %}
-{% endexperience_slot_search %}
-```
-{% endraw %}
-
-##### as a query parameter
-```
-https://mysite.com/search?search[active_promotion]=true
-```
-
 ### category
 Accepts a string and is case-sensitive. This can be passed as a Liquid variable or explicitly.
 

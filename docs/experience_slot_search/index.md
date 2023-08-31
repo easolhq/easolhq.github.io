@@ -93,7 +93,6 @@ You can use these to construct search filters, e.g.
 {% endraw %}
 
 ## Parameters
-- [active_promotion]({% link docs/experience_slot_search/parameters.md %}#active_promotion)
 - [category]({% link docs/experience_slot_search/parameters.md %}#category)
 - [country]({% link docs/experience_slot_search/parameters.md %}#country)
 - [departure_date]({% link docs/experience_slot_search/parameters.md %}#departure_date)

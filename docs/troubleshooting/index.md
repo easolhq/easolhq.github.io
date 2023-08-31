@@ -9,6 +9,7 @@ has_toc: false
 # Troubleshooting
 
 - [Items are not added to a customer's cart when submitting a create_line_item form]({% link docs/troubleshooting/add_to_cart_failure.md %})
+- [Past dates are showing as current]({% link docs/troubleshooting/past_dates.md %})
 
 * * *
 

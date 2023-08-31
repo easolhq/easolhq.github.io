@@ -128,9 +128,6 @@ Search params can be handled in one of two ways:
 
 It's possible to use any of the following attributes in the search tag itself, this is useful for building a page responsible for a specific type of product.
 
-#### active_promotion
-Passing `true` to this will mean all items returned will have a currently active promotion.
-
 #### category
 Will search for experience dates which match the category passed, this must use one of Easol's predefined categories and will accept either a single Category or an array.
 

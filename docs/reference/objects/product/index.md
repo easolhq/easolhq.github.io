@@ -133,7 +133,7 @@ An array of the products [accommodations]({% link docs/reference/objects/product
 {: .label .fs-1 }
 
 The "featured" [variant]({% link docs/reference/objects/product/variant/index.md %}). This will be the display variant for this product or if none has been set, the variant with the cheapest per-person price, factoring in any promotions.
-If the product is an experience with multiple slots, this returns the display or cheapest variant across all upcoming dates.
+If the product is an experience with multiple slots, this returns the display or cheapest variant across all upcoming slots.
 
 ## `product.gallery`
 {: .d-inline-block }
@@ -258,7 +258,7 @@ number
 {: .label .fs-1 }
 
 The sum of remaining stock for a product's variants, if any of the variants have infinite stock this will return `nil`.
-If the product is an experience with multiple slots, this returns the sum total of remaining stock for all variants across all upcoming dates.
+If the product is an experience with multiple slots, this returns the sum total of remaining stock for all variants across all upcoming slots.
 
 ## `product.schedule`
 {: .d-inline-block }
@@ -308,8 +308,9 @@ The url for the product's cart shop page.
 boolean
 {: .label .fs-1 }
 
-Returns `true` if the product is sold out.
-If the product is an experience with multiple slots, this returns `true` if all upcoming dates are sold out.
+Returns `true` if all of the product's variants are sold out.
+
+A variant is sold out if all stock is sold, it has been manually marked as 'Sold Out', or all [slots]({% link docs/reference/objects/product/experience_slot.md %}) are in the past.
 
 ## `product.subcategory`
 {: .d-inline-block }

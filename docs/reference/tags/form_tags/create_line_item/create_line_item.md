@@ -7,7 +7,7 @@ grand_parent: Reference
 
 # Create line item
 
-The `create_line_item` tag renders a form which acts as a wrapper for a single item, an item can be a [variant]({% link docs/reference/objects/product/variant/index.md %}) or an [extra]({% link docs/reference/objects/product/extra.md %}).<br>
+The `create_line_item` tag renders a form which acts as a wrapper for a single or multiple items, an item can be a [variant]({% link docs/reference/objects/product/variant/index.md %}) or an [extra]({% link docs/reference/objects/product/extra.md %}).<br>
 Extra HTML input tags can be used to add item quantity, modifiers, adult count or start and end date.<br>
 An [experience slot]({% link docs/reference/objects/product/experience_slot.md %}) can be referenced to book a specific date.
 
@@ -27,6 +27,25 @@ An [experience slot]({% link docs/reference/objects/product/experience_slot.md %
     <input type="hidden" name="return_to" id="return_to" value="/admin/site_builder/sites/c94b650e/previews/book-tickets" autocomplete="off">
     <input type="hidden" name="items[][variant_id]" value="BAh7CEkiCGdpZAY6Bk....">
 </form>
+```
+{% endraw %}
+
+## Including multiple items
+Multiple items can be submitted in a single form. Any additional input tags can be included below each `items[][variant_id]` field as required. 
+
+{% raw %}
+```liquid
+  {% form "create_line_item" %}
+    <input type="hidden" name="items[][variant_id]" value="**<variant.id or extra.id>**"/>
+    <input type="hidden" name="items[][quantity]" value="**<quantity>**" />
+    <input type="hidden" name="items[][adult_count]" value="**<adult count>**" />
+
+    <input type="hidden" name="items[][variant_id]" value="**<variant.id or extra.id>**"/>
+    <input type="hidden" name="items[][quantity]" value="**<quantity>**" />
+    <input type="hidden" name="items[][modifier_ids][]" value="**<modifier.id>**" />
+
+    <input type="submit" value="add to cart" />
+  {% endform %}
 ```
 {% endraw %}
 

@@ -6,9 +6,7 @@ parent: Internationalisation
 
 # Localisation
 
-The Easol platform has built-in localisation so Creators can use the platform in their native language.
-
-The checkout pages on sites powered by Easol are also available in the following languages. The language is automically set based on the customer's browser language preferences.
+The checkout pages on sites powered by Easol are available in the following languages. The language is automically set based on the customer's browser language preferences.
 
 - British English
 - American English

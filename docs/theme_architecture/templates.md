@@ -47,6 +47,8 @@ The product is passed via a single `product` [Product]({% link docs/reference/ob
 
 Each product page is automatically generated at `site.com/products/product-slug`. If the product is part of a series, the product page will also be available at `site.com/products/*series-slug*/*product-departure-date*`.
 
+Product templates can include a [schema]({% link docs/theme_architecture/blocks/schema/index.md %}) in order to define the [variables]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) a Creator can use to customise the template.
+
 ## Selections
 `Optional`
 
@@ -70,3 +72,5 @@ On each step of the journey, the customer adds one of the available options and 
 Behind the scenes, the platform is "orchestrating" the booking journey by linking them from step URL to step URL until checkout, and steps are rendered using the Package Booking template.
 
 The details of the current step (name, description, available variants, URL of the next page) are exposed to the template via the `package_step` [Package Step]({% link docs/reference/objects/package/step.md %}) object.
+
+Package booking templates can include a [schema]({% link docs/theme_architecture/blocks/schema/index.md %}) in order to define the [variables]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) a Creator can use to customise the template.

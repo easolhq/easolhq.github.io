@@ -16,6 +16,7 @@ This will add all of the package's included items to the cart.
 | Field name                         | Description                                            |
 | ---------------------------------- | ------------------------------------------------------ |
 | `package[id]`                      | The ID of the package to add to the cart.              |
+| `package[quantity]`                | The number of the packages to add to the cart at once. |
 | `package[items][][id]`             | The ID of the package item for which to add modifiers. |
 | `package[items][][modifier_ids][]` | The ID of the modifier to add to the cart.             |
 
@@ -26,6 +27,7 @@ This will add all of the package's included items to the cart.
 ```liquid
 {% form 'add_package_to_cart' %}
   <input name="package[id]" value="1" type="hidden" />
+  <input name="package[quantity]" min="1" value="1" type="number" />
   <input type="submit" value="Add">
 {% endform %}
 ```
@@ -41,6 +43,7 @@ Creators may choose to provide customers with additional modification options, s
 ```liquid
 {% form 'add_package_to_cart' %}
   <input name="package[id]" value="1" type="hidden" />
+  <input name="package[quantity]" min="1" value="1" type="number" />
 
   <h3>Package name</h3>
   {% for item in package.items %}

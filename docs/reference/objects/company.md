@@ -116,3 +116,12 @@ string
 {: .label .fs-1 }
 
 The Twitter username set within **My Site** > **Social**.
+
+## `company.booking_fee_name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The custom booking fee name, which can be overridden.
+To enable this feature, please reach out to our support team at support@easol.com.
+The default booking fee name is 'Booking Fee'.

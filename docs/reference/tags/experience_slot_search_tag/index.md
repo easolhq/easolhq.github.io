@@ -157,7 +157,7 @@ When no value passed it defaults to `day`.
 This executes a partial search on the string passed in and will return any dates where the products whose name matches the argument.
 
 #### product_id
- The `id` of the product to filter by.
+ The `id` of the product to filter by. It will accept either a single id or an array.
 
 #### subcategory
 Will search for experience dates which match the subcategory passed, this must use one of Easol's predefined subcategories and will accept either a single Subcategory or an array.

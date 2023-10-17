@@ -166,14 +166,21 @@ https://mysite.com/search?search[name]=my+experience
 ```
 
 ### product_id
-Accepts a product id. This can be passed as a Liquid variable or explicitly.
+Will accept either a single product id or an array. This can be passed as a Liquid variable or explicitly.
 
-Will return slots for only the [product]({% link docs/reference/objects/product/index.md %}#productid) passed.
+Will return slots for only the [product ids]({% link docs/reference/objects/product/index.md %}#productid) passed.
 
 ##### as a search tag attribute
 {% raw %}
 ```
 {% experience_slot_search product_id: 'abcd1234-1234-abcd-1234-abcd1234abcd' %}
+{% endexperience_slot_search %}
+
+{% experience_slot_search product_id: ['abcd1234-1234-abcd-1234-abcd1234abcd', 'wxyz9876-9876-wxyz-9876-wxyz9876wxyz'] %}
+{% endexperience_slot_search %}
+
+{% assign product_ids = products | map: "id" %}
+{% experience_slot_search product_id: product_ids %}
 {% endexperience_slot_search %}
 ```
 {% endraw %}

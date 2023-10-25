@@ -89,3 +89,12 @@ array of [variant]({% link docs/reference/objects/product/variant/index.md %})s
 {: .label .fs-1 }
 
 An array of the slot's [variants]({% link docs/reference/objects/product/variant/index.md %}).
+
+## `experience_slot.deposit`
+{: .d-inline-block }
+[Deposit]({% link docs/reference/objects/product/deposit.md %})
+{: .label .fs-1 }
+
+The [deposit]({% link docs/reference/objects/product/deposit.md %}) for this
+slot's experience. The returned deposit will consider this slot's `start_on`
+when determining if the deposit is enabled for use.

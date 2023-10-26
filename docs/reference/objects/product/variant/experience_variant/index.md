@@ -18,6 +18,18 @@ it has access to the following attributes.
 
 #### Attributes
 
+## `experience_variant.deposit`
+{: .d-inline-block }
+[Deposit]({% link docs/reference/objects/product/deposit.md %})
+{: .label .fs-1 }
+
+The [deposit]({% link docs/reference/objects/product/deposit.md %}) of this
+experience variant if there's a deposit present on the product. If the
+experience variant is accessed through an [experience slot]({% link
+docs/reference/objects/product/experience_slot.md %}), the deposit will consider
+its availability on that specific slot, otherwise it will consider the last
+available slot's `start_on`.
+
 ## `experience_variant.payment_plan`
 {: .d-inline-block }
 [Payment Plan]({% link docs/reference/objects/product/variant/payment_plan.md %})

@@ -52,7 +52,7 @@ Returns the departure_month as a string in the form it was passed in i.e. `Jan` 
 object
 {: .label .fs-1 }
 
-Returns the duration as an object i.e. `{"greater_than"=>"3", "less_than"=>"8"}`. 
+Returns the duration as an object i.e. `{"greater_than"=>"3", "less_than"=>"8"}`.
 Specific values can be accessed via: `search.duration.equal_to`, `search.duration.greater_than` and `search.duration.less_than` as relevant.
 
 ## `search.exclude_sold_out_products`
@@ -68,6 +68,13 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` or `false`.
+
+## `search.month`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+Returns the month as a number, e.g. `2` would represent February.
 
 ## `search.series_id`
 {: .d-inline-block }
@@ -89,3 +96,10 @@ string
 {: .label .fs-1 }
 
 Returns `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` or `departure_date_desc`.
+
+## `search.year`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+Returns the year as a number, e.g. `2023`.

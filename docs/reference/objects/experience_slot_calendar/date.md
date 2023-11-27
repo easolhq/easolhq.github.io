@@ -30,6 +30,22 @@ This is determined by finding the cheapest variant that is available across the 
 
 The price used is the total price of the variant at its maximum occupancy, not the per person price, and promotions are not taken into consideration.
 
+## `date.experience`
+{: .d-inline-block }
+[product]({% link docs/reference/objects/product/index.md %})
+{: .label .fs-1 }
+
+The experience associated with this date. If the date is associated with multiple experiences, this will return the first one.
+
+This is a convenience method to be used when you know there is only one single experience. If it's possible the date is associated with multiple experiences, `date.experiences` should be used instead.
+
+## `date.experiences`
+{: .d-inline-block }
+array of [products]({% link docs/reference/objects/product/index.md %})
+{: .label .fs-1 }
+
+The experiences associated with this date.
+
 ## `date.slot_count`
 {: .d-inline-block }
 number

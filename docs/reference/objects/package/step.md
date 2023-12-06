@@ -93,3 +93,28 @@ Array of strings
 {: .label .fs-1 }
 
 If the customer has not added enough elements to the cart to honour the requirements set by the creator for this step, will contain an explanation of the fact.
+
+## `package_step.accommodated_adult_count`
+{: .d-inline-block }
+Integer
+{: .label .fs-1 }
+
+The total guests that have been selected so far for this package step.
+
+## `package_step.min_guests_required`
+{: .d-inline-block }
+Integer
+{: .label .fs-1 }
+
+If the package step requires a specific guest count equal to the package adult count, then we return the package adult count.
+
+If we don't require the guest count to equal the package adult count, but the step has required dates, the minimum will be 1.
+
+Otherwise, this will be 0.
+
+## `package_step.max_guests_required`
+{: .d-inline-block }
+Integer
+{: .label .fs-1 }
+
+This is the package adult count.

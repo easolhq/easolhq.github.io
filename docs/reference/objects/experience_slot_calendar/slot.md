@@ -19,6 +19,15 @@ timestamp
 
 The date the slot ends on. This can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
 
+## `experience_slot.end_time`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The end time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
+
+This will return nil if the experience does not have a start time.
+
 ## `slot.id`
 {: .d-inline-block }
 string

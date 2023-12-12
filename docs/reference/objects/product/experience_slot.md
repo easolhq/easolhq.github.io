@@ -12,12 +12,30 @@ object
 
 #### Attributes
 
+## `experience_slot.deposit`
+{: .d-inline-block }
+[Deposit]({% link docs/reference/objects/product/deposit.md %})
+{: .label .fs-1 }
+
+The [deposit]({% link docs/reference/objects/product/deposit.md %}) for this
+slot's experience. The returned deposit will consider this slot's `start_on`
+when determining if the deposit is enabled for use.
+
 ## `experience_slot.end_on`
 {: .d-inline-block }
 timestamp
 {: .label .fs-1 }
 
-This can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
+The date the slot ends on. This can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
+
+## `experience_slot.end_time`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The end time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
+
+This will return nil if the experience does not have a start time.
 
 ## `experience_slot.extras`
 {: .d-inline-block }
@@ -81,7 +99,16 @@ Returns `true` if all stock for this date is sold out, i.e. all stock is sold or
 timestamp
 {: .label .fs-1 }
 
-This can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
+The date the slot starts on. This can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
+
+## `experience_slot.start_time`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The start time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
+
+This will return nil if the experience does not have a start time.
 
 ## `experience_slot.variants`
 {: .d-inline-block }
@@ -89,12 +116,3 @@ array of [variant]({% link docs/reference/objects/product/variant/index.md %})s
 {: .label .fs-1 }
 
 An array of the slot's [variants]({% link docs/reference/objects/product/variant/index.md %}).
-
-## `experience_slot.deposit`
-{: .d-inline-block }
-[Deposit]({% link docs/reference/objects/product/deposit.md %})
-{: .label .fs-1 }
-
-The [deposit]({% link docs/reference/objects/product/deposit.md %}) for this
-slot's experience. The returned deposit will consider this slot's `start_on`
-when determining if the deposit is enabled for use.

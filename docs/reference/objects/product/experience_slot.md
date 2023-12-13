@@ -66,6 +66,17 @@ string
 {: .label .fs-1 }
 
 The experience slot id.
+
+## `experience_slot.payment_plan`
+{: .d-inline-block }
+[Payment Plan]({% link docs/reference/objects/product/variant/payment_plan.md %})
+{: .label .fs-1 }
+
+Returns a [payment plan]({% link
+docs/reference/objects/product/variant/payment_plan.md %}) if one is available
+on this slot's experience and the last payment date is before the slot's
+`start_on`.
+
 ## `experience_slot.product`
 {: .d-inline-block }
 [Product]({% link docs/reference/objects/product/index.md %})

@@ -27,3 +27,17 @@ The unique id of the item.
 {: .label .fs-1 }
 
 The variant of the item.
+
+## `item.adult_count`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The number of guests for the item.
+
+## `item.quantity`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The quantity of the item.

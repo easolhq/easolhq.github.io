@@ -19,6 +19,7 @@ Represents an included item in a [package]({% link docs/reference/objects/packag
 {: .d-inline-block }
 string
 {: .label .fs-1 }
+
 The unique id of the item.
 
 ## `item.variant`

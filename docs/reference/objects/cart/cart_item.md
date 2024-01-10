@@ -25,6 +25,14 @@ timestamp
 
 The end date of the product associated with the cart item.
 
+## `item.experience_slot`
+{: .d-inline-block }
+[Experience Slot]({% link docs/reference/objects/product/experience_slot.md %})
+{: .label .fs-1 }
+
+The [Experience Slot]({% link docs/reference/objects/product/experience_slot.md
+%}) for the cart item, if the cart item product is an Experience-type.
+
 ## `item.id`
 {: .d-inline-block }
 string

@@ -13,6 +13,8 @@ Returns an [Experience Slot Calendar Date]({% link docs/reference/objects/experi
 
 Accepts a `default` of `next_upcoming` which will select the next available date from the Creator's published experiences.
 
+> Note: For performance reasons, the variants available via experience_date will be the 'blueprint' variant, i.e. it will have default pricing and stock levels. This does not match the specific pricing and stock for the variant on the chosen date if overrides have been applied.
+
 ##### syntax
 {% raw %}
 ```

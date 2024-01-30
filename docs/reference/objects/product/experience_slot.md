@@ -10,6 +10,10 @@ has_children: false
 object
 {: .label .fs-1 }
 
+*Note:* Experience slots are returned as part of an [`experience_slot_search`]({% link docs/experience_slot_search/index.md %}) or when using the [`experience_slot` variable type]({% link docs/theme_architecture/blocks/schema/variables/variable_types/experience_slot.md %}). Not to be mistaken for a [calendar `slot`]({% link docs/reference/objects/experience_slot_calendar/slot.md %}).
+
+<br>
+
 #### Attributes
 
 ## `experience_slot.deposit`

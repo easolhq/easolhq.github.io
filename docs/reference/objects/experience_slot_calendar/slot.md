@@ -10,6 +10,11 @@ grand_parent: Objects
 object
 {: .label .fs-1 }
 
+
+*Note:* This is a slot accessed via [calendar `dates`]({% link docs/reference/objects/experience_slot_calendar/date.md %}). Not to be mistaken for an [`experience_slot`]({% link docs/reference/objects/product/experience_slot.md %}).
+
+<br>
+
 #### Attributes
 
 ## `slot.end_on`

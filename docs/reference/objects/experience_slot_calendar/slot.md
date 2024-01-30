@@ -19,7 +19,7 @@ timestamp
 
 The date the slot ends on. This can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
 
-## `experience_slot.end_time`
+## `slot.end_time`
 {: .d-inline-block }
 string
 {: .label .fs-1 }

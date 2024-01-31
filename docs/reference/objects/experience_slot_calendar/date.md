@@ -26,9 +26,12 @@ The date.
 
 The display price for this date in the current user's currency.
 
-This is determined by finding the cheapest variant that is available across the slots for this date. If an experience has defined a "display" variant, it will use the price of that variant and ignore prices of other variant from that experience.
+This is determined by finding the cheapest variant that is available across the slots for this date, accounting for promotions.
 
-The price used is the total price of the variant at its maximum occupancy, not the per person price, and promotions are not taken into consideration.
+The price used is the price of the variant at its maximum occupancy, not the per person price.
+
+If an experience has a "display" variant defined, it will use the price of that variant and ignore prices of other variant from that experience.
+
 
 ## `date.experience`
 {: .d-inline-block }

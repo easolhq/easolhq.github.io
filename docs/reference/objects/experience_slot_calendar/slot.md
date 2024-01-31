@@ -10,6 +10,11 @@ grand_parent: Objects
 object
 {: .label .fs-1 }
 
+
+*Note:* This is a slot accessed via [calendar `dates`]({% link docs/reference/objects/experience_slot_calendar/date.md %}). Not to be mistaken for an [`experience_slot`]({% link docs/reference/objects/product/experience_slot.md %}).
+
+<br>
+
 #### Attributes
 
 ## `slot.end_on`
@@ -19,7 +24,7 @@ timestamp
 
 The date the slot ends on. This can then be used in conjunction with Liquid's [built-in filters](https://shopify.github.io/liquid/filters/date/).
 
-## `experience_slot.end_time`
+## `slot.end_time`
 {: .d-inline-block }
 string
 {: .label .fs-1 }

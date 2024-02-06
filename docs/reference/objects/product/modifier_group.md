@@ -59,4 +59,4 @@ The validation message to be shown if an incorrect number of modifiers have been
 string
 {: .label .fs-1 }
 
-The tagline of the modifier group.
+The tagline of the modifier group. This is labelled 'Help text for customer' in the Creator Admin.

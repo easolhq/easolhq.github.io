@@ -15,7 +15,7 @@ A deposit is set at a product level and applies to all [variants]({% link docs/r
 To display the deposit amount in Sites, note;
 
 - Deposits can be set on both Experience and Accommodation product types, but cannot currently be displayed in Sites for Accommodation types. 
-- If a promotion is applied, the deposit applies to the promotional price. 
+- If a promotion is applied, the deposit applies to the promotional price.
 - If the price is 0, `deposit.enabled` may return true, but it doesn't make sense to present a deposit price.
 - If the due date has passed (or is today), the method `deposit.enabled` will return false, you don't need to check for this.
 - You cannot access deposits directly through an extra, i.e. `extra.deposit` returns nil. It must be accessed through the parent product.

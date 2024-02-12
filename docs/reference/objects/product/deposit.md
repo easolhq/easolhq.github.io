@@ -35,3 +35,23 @@ Example
 {{ deposit_price | money }}
 ```
 {% endraw %}
+
+
+## `deposit.due_date`
+{: .d-inline-block }
+Date
+{: .label .fs-1 }
+
+The date the final balance payment will be due, if this can be calculate and the deposit is enabled. This can be formatted with Liquid's [date filters](https://shopify.github.io/liquid/filters/date/). The Creator may have set this as a number of days relative to the experience or accommodation start date, or they may have selected a specific date from a calendar. They also may have not set a value, in which case a default of 60 days before start date is used.
+
+- When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}) it will return a date.
+- When accessed through a single slot experience it will return a date.
+- When accessed through a multislot experience or an accommodation, it will return nil.
+
+Example
+{% raw %}
+```liquid
+{{ deposit.due_date | date: "%Y-%m-%d" }}
+{% endif %}
+```
+{% endraw %}

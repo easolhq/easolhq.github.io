@@ -8,7 +8,7 @@ parent: Pricing & payments
 
 For quick reference please see [Deposit]({% link docs/reference/objects/product/deposit.md %}).
 
-Setting a deposit on a product allows customers to choose to pay a percentage of the total product price at the time of booking, and the remaining balance any time before the due date. 
+Setting a deposit on a product allows customers to choose to pay a percentage or fixed amount of the total product price at the time of booking, and the remaining balance any time before the due date.
 
 A deposit is set at a product level and applies to all [variants]({% link docs/reference/objects/product/variant/index.md %}) and [extras]({% link docs/reference/objects/product/extra.md %}) of that product. It does not apply to [modifiers]({% link docs/reference/objects/product/modifier.md %}).
 
@@ -18,6 +18,7 @@ To display the deposit amount in Sites, note;
 - If a promotion is applied, the deposit applies to the promotional price. 
 - If the price is 0, `deposit.enabled` may return true, but it doesn't make sense to present a deposit price.
 - If the due date has passed (or is today), the method `deposit.enabled` will return false, you don't need to check for this.
+- You cannot access deposits directly through an extra, i.e. `extra.deposit` returns nil. It must be accessed through the parent product.
 
 Check for the deposit at the product level:
 
@@ -63,6 +64,8 @@ When displaying a series summary, the approach is similar (i.e. only the feature
 {% endif %}
 ```
 {% endraw %}
+
+> Note: Experiences in a series will all have 1 departure date. So `series.featured_variant.product.deposit.due_date` will return a date but this should not be shown in the series summary, as it will be the due date for the specific product rather than relating to the series generally.
 
 You may wish to display the deposit amount for each variant or extra when looping through them:
 {% raw %}

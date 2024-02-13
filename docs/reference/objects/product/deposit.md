@@ -46,7 +46,7 @@ The date the final balance payment will be due, if this can be calculate and the
 
 - When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}) it will return a date.
 - When accessed through a single slot experience it will return a date.
-- When accessed through a multislot experience or an accommodation, it will return nil.
+- When accessed through a multislot experience or an accommodation, it will return `nil`.
 
 Example
 {% raw %}

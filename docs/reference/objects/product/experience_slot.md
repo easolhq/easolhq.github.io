@@ -39,7 +39,7 @@ string
 
 The end time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
 
-This will return nil if the experience does not have a start time.
+This will return `nil` if the experience does not have a start time.
 
 ## `experience_slot.extras`
 {: .d-inline-block }
@@ -123,7 +123,7 @@ string
 
 The start time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
 
-This will return nil if the experience does not have a start time.
+This will return `nil` if the experience does not have a start time.
 
 ## `experience_slot.variants`
 {: .d-inline-block }

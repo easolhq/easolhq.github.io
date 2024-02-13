@@ -21,7 +21,7 @@ The upfront payment for this payment plan, in the quantity of the
 smallest unit for this currency. (e.g. cents for USD, pence for GBP, yen
 for JPY etc.)
 
-This will be nil if there is no custom initial payment amount set.
+This will be `nil` if there is no custom initial payment amount set.
 In the case of no custom amount being set, the initial payment will be the total payment divided by the number of instalments.
 
 ## `payment_plan.is_initial_payment_fixed`

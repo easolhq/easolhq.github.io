@@ -31,7 +31,7 @@ string
 
 The end time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
 
-This will return nil if the experience does not have a start time.
+This will return `nil` if the experience does not have a start time.
 
 ## `slot.id`
 {: .d-inline-block }
@@ -52,7 +52,7 @@ The price of this variant on this slot in the current user's currency.
 number
 {: .label .fs-1 }
 
-The remaining stock for this variant on this slot. It will return nil if there is infinite stock.
+The remaining stock for this variant on this slot. It will return `nil` if there is infinite stock.
 
 ## `slot.shop_url`
 {: .d-inline-block }
@@ -82,4 +82,4 @@ string
 
 The start time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
 
-This will return nil if the experience does not have a start time.
+This will return `nil` if the experience does not have a start time.

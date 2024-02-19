@@ -211,6 +211,14 @@ boolean
 
 Returns a boolean indicating whether or not the product includes accommodation or is just a ticket.
 
+## `product.is_multi_slot_experience`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Returns a boolean indicating whether or not the product is an experience with
+multiple slots.
+
 ## `product.min_price`
 {: .d-inline-block }
 boolean

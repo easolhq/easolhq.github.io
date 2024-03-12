@@ -60,6 +60,15 @@ The selection is passed via a single `item` [Modifier Selection]({% link docs/re
 
 Each selection page is automatically generated at `site.com/items/*booking-id*/selections` and can only be accessed by the customer to whose booking the selection applies.
 
+## Recommendation
+`Optional`
+
+The template is passed via a single `recommendation` [Recommendation]({% link docs/reference/objects/recommendation.md %}) object.
+
+The recommendation page is automatically generated at site.com/recommendations/*recommendation_slug* when a valid recommendation has been created.
+
+This template will only render if it has been configured on the associated site - otherwise, the default recommendation page will be rendered.
+
 ## Package booking
 `Optional`
 

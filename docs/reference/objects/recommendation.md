@@ -41,6 +41,14 @@ string
 The guest email set on the recommendation.
 Note: This may not be the same as the user who books the recommendation.
 
+## `recommendation.guest_count`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The guest count set on the recommendation.
+Note: This is an optional field and may not be set.
+
 ## `recommendation.booking`
 {: .d-inline-block }
 [CartDrop]({% link docs/reference/objects/cart/index.md %})

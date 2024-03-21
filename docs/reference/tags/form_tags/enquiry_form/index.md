@@ -8,7 +8,7 @@ grand_parent: Reference
 # Enquiry form
 
 The `enquiry_form` tag renders a form which represents an Enquiry form that the Creator has constructed in the Admin.
-Each input and label can be generated with [Input and label tags]({% link docs/reference/objects/form/field/input_and_label_tags.md %}).
+Each input and label can be generated with [Input and label tags]({% link docs/reference/tags/form_tags/enquiry_form/field/input_and_label_tags.md %}).
 It requires an enquiry form parameter to be passed. In the below example that is `swim_enquiry_form`.
 
 <br>
@@ -25,10 +25,10 @@ The unique ID for the form.
 
 ## `form.fields`
 {: .d-inline-block }
-array of [Field]({% link docs/reference/objects/form/field/index.md %})s
+array of [Field]({% link docs/reference/tags/form_tags/enquiry_form/field/index.md %})s
 {: .label .fs-1 }
 
-An array of all the form's [Field]({% link docs/reference/objects/form/field/index.md %})s
+An array of all the form's [Field]({% link docs/reference/tags/form_tags/enquiry_form/field/index.md %})s
 
 <br>
 

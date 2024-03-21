@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Input and Label tags
-parent: Field
+parent: Form field
+grand_parent: Enquiry form
 ---
 
 # Form field tags
@@ -9,7 +10,7 @@ parent: Field
 object
 {: .label .fs-1 }
 
-The input and label tags can be used to render each [field]({% link docs/reference/objects/form/field/index.md %}) in an [Enquiry form]({% link docs/reference/tags/form_tags/enquiry_form/index.md %})
+The input and label tags can be used to render each [field]({% link docs/reference/tags/form_tags/enquiry_form/field/index.md %}) in an [Enquiry form]({% link docs/reference/tags/form_tags/enquiry_form/index.md %})
 
 ##### input
 {% raw %}

@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Field
-parent: Form
+title: Form field
+parent: Enquiry form
+grand_parent: Tags
 ---
 
 # Form field
@@ -45,3 +46,10 @@ boolean
 {: .label .fs-1 }
 
 Returns `true` or `false` depending on whether the field is required for successful form submission.
+
+## `field.type`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+Returns a string indicating the input type, e.g. `text` for a element type of `<input type="text">`.

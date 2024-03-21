@@ -41,7 +41,7 @@ Returns the string that should be set as the name attribute, to ensure successfu
 
 ## `field.required`
 {: .d-inline-block }
-string
+boolean
 {: .label .fs-1 }
 
 Returns `true` or `false` depending on whether the field is required for successful form submission.

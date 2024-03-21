@@ -37,3 +37,11 @@ string
 {: .label .fs-1 }
 
 Returns the string that should be set as the name attribute, to ensure successful form submission.
+
+
+## `field.required`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+Returns `true` or `false` depending on whether the field is required for successful form submission.

@@ -125,3 +125,12 @@ string
 The custom booking fee name, which can be overridden.
 To enable this feature, please reach out to our support team at support@easol.com.
 The default booking fee name is 'Booking Fee'.
+
+## `company.organisation`
+{: .d-inline-block }
+[Organisation]({% link docs/reference/objects/organisation.md %})
+{: .label .fs-1 }
+
+The company's [organisation]({% link docs/reference/objects/organisation.md %}).
+
+Note: Not all companies have an organisation.

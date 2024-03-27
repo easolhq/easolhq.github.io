@@ -40,6 +40,13 @@ string
 
 The category the product belongs to.
 
+## `product.company`
+{: .d-inline-block }
+[Company]({% link docs/reference/objects/company.md %})
+{: .label .fs-1 }
+
+The company the product is associated with.
+
 ## `product.country`
 {: .d-inline-block }
 string

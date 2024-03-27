@@ -16,6 +16,17 @@ Represents each field of an Enquiry form that the Creator has constructed in the
 
 #### Attributes
 
+## `field.errors`
+{: .d-inline-block }
+array of strings
+{: .label .fs-1 }
+
+After a failed form submission, `errors` will return an array of error messages for any
+validations that have failed for this field. These will all be lowercase.
+
+E.g. `can't be blank`, `is invalid`.
+
+
 ## `field.hint`
 {: .d-inline-block }
 string

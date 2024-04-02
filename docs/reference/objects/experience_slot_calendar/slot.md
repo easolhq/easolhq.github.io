@@ -47,6 +47,13 @@ The ID of the experience slot.
 
 The price of this variant on this slot in the current user's currency.
 
+## `slot.product`
+{: .d-inline-block }
+[Product]({% link docs/reference/objects/product/index.md %})
+{: .label .fs-1 }
+
+The experience that this slot belongs to.
+
 ## `slot.remaining_stock`
 {: .d-inline-block }
 number

@@ -82,7 +82,7 @@ URL pointing to the next page of the booking journey. Navigating to this URL is 
 
 ## `package_step.step_valid?`
 {: .d-inline-block }
-`true` or `false`
+boolean
 {: .label .fs-1 }
 
 This will return `false` if the customer has not added enough elements to the cart to honour the requirements set by the creator for this step, and `true` if they have.

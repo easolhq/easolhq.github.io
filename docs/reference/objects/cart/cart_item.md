@@ -40,6 +40,13 @@ string
 
 A unique ID for the cart item.
 
+## `item.in_custom_priced_package`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Whether the item is part of a custom priced package.
+
 ## `item.quantity`
 {: .d-inline-block }
 number
@@ -60,6 +67,13 @@ The price of the cart item _not_ including any modifier selections and _not_ inc
 {: .label .fs-1 }
 
 The [product]({% link docs/reference/objects/product/index.md %}) associated with the cart item.
+
+## `item.removable?`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Whether the item is eligible for removal from the cart or not. Please note: items included in a package can only be removed while the customer is on the corresponding package step.
 
 ## `item.selections`
 {: .d-inline-block }

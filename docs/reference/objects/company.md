@@ -51,6 +51,13 @@ string
 
 The Facebook username set within **My Site** > **Social**.
 
+## `company.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The id of the company. String representation of [Uuid format](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+
 ## `company.instagram_username`
 {: .d-inline-block }
 string

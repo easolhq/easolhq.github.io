@@ -37,6 +37,15 @@ array of [Content]({% link docs/reference/objects/content_library.md %})s
 
 An array of the company's [biographies]({% link docs/reference/objects/content_library.md %}).
 
+## `company.booking_fee_name`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The custom booking fee name, which can be overridden.
+To enable this feature, please reach out to our support team at support@easol.com.
+The default booking fee name is 'Booking Fee'.
+
 ## `company.countries`
 {: .d-inline-block }
 array of strings
@@ -50,6 +59,13 @@ string
 {: .label .fs-1 }
 
 The Facebook username set within **My Site** > **Social**.
+
+## `company.id`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The id of the company. String representation of [Uuid format](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ## `company.instagram_username`
 {: .d-inline-block }
@@ -72,6 +88,15 @@ string
 {: .label .fs-1 }
 
 The name of the company.
+
+## `company.organisation`
+{: .d-inline-block }
+[Organisation]({% link docs/reference/objects/organisation.md %})
+{: .label .fs-1 }
+
+The company's [organisation]({% link docs/reference/objects/organisation.md %}).
+
+Note: Not all companies have an organisation.
 
 ## `company.posts`
 {: .d-inline-block }
@@ -116,21 +141,3 @@ string
 {: .label .fs-1 }
 
 The Twitter username set within **My Site** > **Social**.
-
-## `company.booking_fee_name`
-{: .d-inline-block }
-string
-{: .label .fs-1 }
-
-The custom booking fee name, which can be overridden.
-To enable this feature, please reach out to our support team at support@easol.com.
-The default booking fee name is 'Booking Fee'.
-
-## `company.organisation`
-{: .d-inline-block }
-[Organisation]({% link docs/reference/objects/organisation.md %})
-{: .label .fs-1 }
-
-The company's [organisation]({% link docs/reference/objects/organisation.md %}).
-
-Note: Not all companies have an organisation.

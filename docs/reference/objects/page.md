@@ -24,6 +24,16 @@ The site's domain.
 
 `=> example.com`
 
+## `page.params`
+{: .d-inline-block }
+object
+{: .label .fs-1 }
+
+The query params included in the current URL.
+
+For example, given the URL https://my-url.com?page=4,
+using {% raw %}`{{page.params.page}}`{% endraw %} would return "4".
+
 ## `page.path`
 {: .d-inline-block }
 string

@@ -17,6 +17,8 @@ This will add all of the package's included items to the cart.
 | ---------------------------------- | ------------------------------------------------------ |
 | `package[id]`                      | The ID of the package to add to the cart.              |
 | `package[quantity]`                | The number of the packages to add to the cart at once. |
+| `package[start_date]`              | The customers selected start date for the package. (Only required if packages.requires_date is true)|
+| `package[start_time]`              | The customers selected start time for the package. (optional)|
 | `package[items][][id]`             | The ID of the package item for which to add modifiers. |
 | `package[items][][modifier_ids][]` | The ID of the modifier to add to the cart.             |
 

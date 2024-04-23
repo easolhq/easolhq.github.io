@@ -35,3 +35,10 @@ Array of [Variant]({% link docs/reference/objects/product/variant/index.md %})
 {: .label .fs-1 }
 
 The variants of the `package_product.product` that the creator has included in the package and are eligible for booking by the customer.
+
+## `package_product.items`
+{: .d-inline-block }
+Array of [Package Step Item]({% link docs/reference/objects/package/step/item.md %})
+{: .label .fs-1 }
+
+An array of package step items for the `package_product.product`.

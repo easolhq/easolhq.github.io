@@ -7,7 +7,7 @@ nav_order: 2
 
 # Footer Template
 Apart from the [main site navigation]({% link docs/site_navigation/header.md %}) the site can have a secondary navigation in the **footer template** (partials/footer/index.html). One can't be accessed from the other.
-The [footer]({% link docs/reference/objects/footer/index.md %}) is a special kind of [partial]({% link docs/theme_architecture/partials.md %}) which is rendered in all site pages, always at the end of the `body` tag. It contains a [schema]({% link docs/theme_architecture/blocks/schema/index.md %}) where [variables]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) can be added, removed or edited. The footer template might be used to include additional [libraries]({% link docs/libraries/index.md %}).
+The [footer]({% link docs/reference/objects/footer/index.md %}) is a special kind of [partial]({% link docs/theme_architecture/partials.md %}) which is rendered in all site pages, always at the end of the `body` tag. It contains a [schema]({% link docs/theme_architecture/blocks/schema/index.md %}) where [variables]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) can be added, removed or edited. The footer template might be used to include additional [libraries]({% link docs/libraries/index.md %}). Also note, the footer is cached.
 
 ## Common examples
 

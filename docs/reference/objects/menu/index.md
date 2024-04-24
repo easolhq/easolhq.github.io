@@ -11,7 +11,7 @@ has_toc: false
 object
 {: .label .fs-1 }
 
-Menu templates define their own schema, in a similar way to blocks. All of the attributes defined on a menu's schema are made available via the `Menu` object.
+Menu templates define their own schema, in a similar way to blocks. All of the attributes defined on a menu's schema are made available via the `Menu` object. Also note, the menu is cached.
 
 For example, consider the following menu schema:
 

@@ -50,6 +50,16 @@ number
 The total price for the package represented in the sub-unit of the current
 customer's currency. e.g. considering the amount $19.50, it will return 1950.
 
+## `package.requires_date`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Whether the package requires a date to be selected when adding to the cart.
+A date field with the name `package[start_date]` will be required when adding
+the package to the cart, optionally with a `package[start_time]` field matching
+the format `HH:MM` can be added to the form.
+
 ## `package.price_per_person_fractional`
 {: .d-inline-block }
 number

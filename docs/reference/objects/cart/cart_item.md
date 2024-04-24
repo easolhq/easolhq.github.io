@@ -158,3 +158,12 @@ string
 {: .label .fs-1 }
 
 The name of the variant associated with the cart item.
+
+## `item.package_booking`
+{: .d-inline-block }
+[PackageBooking]({% link docs/reference/objects/package_booking.md %}).
+{: .label .fs-1 }
+
+The associated package booking if the item is being booked as part of a package.
+
+It will return `nil` if the item isn't part of a package.

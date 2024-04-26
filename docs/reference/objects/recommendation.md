@@ -31,7 +31,7 @@ boolean
 {: .label .fs-1 }
 
 Whether the recommendation has expired.
-Users can still visit the recommendation show page is the recommendation has expired, but they will not be able to book it.
+Users can still visit the recommendation page if the recommendation has expired, but they will not be able to book it.
 
 ## `recommendation.user_email`
 {: .d-inline-block }

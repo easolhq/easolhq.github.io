@@ -25,5 +25,5 @@ e.g. considering the amount $19.50, it will return 1950.
 {: .d-inline-block }
 number
 {: .label .fs-1 }
-The per-person price for a package based on the sepcified adult count represented in the sub-unit of the current customer's currency.
+The per-person price for a package based on the specified adult count represented in the sub-unit of the current customer's currency.
 e.g. considering the amount a total amount of $30.00 and an adult count of 3, it will return 1000.

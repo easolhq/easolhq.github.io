@@ -69,3 +69,11 @@ string
 {: .label .fs-1 }
 
 This url will direct the user to checkout in order to purchase the recommendation.
+
+## `recommendation.terms_and_conditions_url`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The URL of the recommendation's terms.
+If the recommendation has custom terms it will display those, otherwise it will default to the company's terms.

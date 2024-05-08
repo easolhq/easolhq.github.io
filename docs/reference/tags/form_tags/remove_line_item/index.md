@@ -14,7 +14,7 @@ The tag can be used with a single line item or when iterating over a collection 
 {% raw %}
 ```liquid
 {% form 'remove_line_item' %}
-   <input name="items[]" value="**<variant.id or extra.id>**" type="hidden" />
+   <input name="items[]" value="**<cart_item.id>**" type="hidden" />
    <input type="submit" value="Remove" />
 {% endform %}
 ```

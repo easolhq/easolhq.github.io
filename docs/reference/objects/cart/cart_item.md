@@ -25,6 +25,21 @@ timestamp
 
 The end date of the product associated with the cart item.
 
+## `item.start_time`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
+
+The start time of the cart item, if present, as a string in the form of a 24 hour clock, e.g. "11:00"
+
+## `item.end_time`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
+
+The end time of the cart item, if present, as a string in the form of a 24 hour clock, e.g. "11:00"
+Note: This considers custom durations and should be used instead of the experience slot's end time.
+
 ## `item.experience_slot`
 {: .d-inline-block }
 [Experience Slot]({% link docs/reference/objects/product/experience_slot.md %})

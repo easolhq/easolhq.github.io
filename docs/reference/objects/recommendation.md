@@ -49,12 +49,12 @@ string
 The guest count set on the recommendation.
 Note: This is an optional field and may not be set.
 
-## `recommendation.booking`
+## `recommendation.cart`
 {: .d-inline-block }
 [CartDrop]({% link docs/reference/objects/cart/index.md %})
 {: .label .fs-1 }
 
-The booking associated with the recommendation.
+The cart associated with the recommendation.
 
 ## `recommendation.hero_image`
 {: .d-inline-block }

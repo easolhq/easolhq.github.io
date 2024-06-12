@@ -25,6 +25,13 @@ string
 
 The currency code associated with the cart.
 
+## `cart.custom_data`
+{: .d-inline-block }
+object
+{: .label .fs-1 }
+
+An object containing any custom data properties associated with the cart
+
 ## `cart.subtotal`
 {: .d-inline-block }
 number

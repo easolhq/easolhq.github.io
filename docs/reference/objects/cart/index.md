@@ -27,10 +27,10 @@ The currency code associated with the cart.
 
 ## `cart.custom_data`
 {: .d-inline-block }
-An array of [Custom Data]({% link docs/reference/objects/cart/custom_data.md %})
+array of [Custom Data]({% link docs/reference/objects/cart/custom_data.md %})
 {: .label .fs-1 }
 
-An array containing [custom data]({% link docs/reference/objects/cart/custom_data.md %}) of booking custom fields with values.
+An array of [custom data]({% link docs/reference/objects/cart/custom_data.md %}) that the creator has chosen to be visible. For use in recommendation templates where the cart is the booking.
 
 ## `cart.subtotal`
 {: .d-inline-block }

@@ -7,10 +7,22 @@ grand_parent: Objects
 
 # Custom data
 
-Used to display booking custom field values on a [cart object]({% link docs/reference/objects/cart/index.md %}).
+The custom data the creator has chosen to be visible for this [cart]({% link docs/reference/objects/cart/index.md %}) aka booking.
+Each custom data is its own array of 2 strings, the display name of the custom field & the value assigned to it. If the custom field is a checkbox, we only return the data when the checkbox is checked, with the value 'Yes'. If a Creator wants to display e.g. 'Includes a drink: true/false', they should use a multi-select data type with the options 'true' and 'false'.
 
-## `cart_drop.custom_data`
-{: .d-inline-block }
-array
-{: .label .fs-1 }
-custom_data returns an array of 2 things, the internal label & the value.
+##### input
+{% raw %}
+```liquid
+{% for custom_data in cart.custom_data %}
+  <p>{{ custom_data[0] }}: {{ custom_data[1] }}</p>
+{% endfor %}
+```
+{% endraw %}
+
+##### output
+{% raw %}
+```html
+  <p>Assigned tour guide: Ellie</p>
+  <p>Where to meet: October 10 2025, 12:15pm (local time) outside the Opera House.</p>
+```
+{% endraw %}

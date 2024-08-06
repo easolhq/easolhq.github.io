@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Package Step Item
-parent: Package Step Product
+parent: Package Product
 ---
 
 # Package Step Item

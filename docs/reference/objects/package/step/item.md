@@ -35,4 +35,4 @@ Whether the item requires a slot selection.
 Array of [Experience Slot]({% link docs/reference/objects/product/experience_slot.md %})s
 {: .label .fs-1 }
 
-The available experience slots for the item. This will only be present if `requires_slot_selection` is `true`.
+The available experience slots for the item. If `requires_slot_selection` is `false`, then this will return an array with a single experience slot.

@@ -32,6 +32,13 @@ array of [Custom Data]({% link docs/reference/objects/cart/custom_data.md %})
 
 An array of [custom data]({% link docs/reference/objects/cart/custom_data.md %}) that the creator has chosen to be visible. For use in recommendation templates where the cart is the booking.
 
+## `cart.gratuity`
+{: .d-inline-block }
+[Gratuity]({% link docs/reference/objects/adjustment/gratuity.md %})
+{: .label .fs-1 }
+
+The [gratuity]({% link docs/reference/objects/adjustment/gratuity.md %}) set for the current cart.
+
 ## `cart.subtotal`
 {: .d-inline-block }
 number

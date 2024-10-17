@@ -96,6 +96,13 @@ string
 
 The copy to display when the package is off sale.
 
+## `package.payment_plan`
+{: .d-inline-block }
+[Payment Plan]({% link docs/reference/objects/product/variant/payment_plan.md %})
+{: .label .fs-1 }
+
+If the package is custom priced and has a payment plan associated with it, this will return that payment plan. The payment plan won’t be returned if the instalment schedule cannot be completed before the start date of the package.
+
 ## `package.state`
 {: .d-inline-block }
 string

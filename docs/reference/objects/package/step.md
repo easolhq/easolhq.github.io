@@ -73,6 +73,26 @@ Date
 
 Creators may specify that customers must book accommodation dates which include a specific date range. This will return the end date of that range.
 
+## `package_step.earliest_check_in_date`
+{: .d-inline-block }
+Date
+{: .label .fs-1 }
+
+If an accommodation step has required dates, the creator can specify a certain number of additional nights the customer can book. This method will return the earliest possible check in date. It will return nil if any number of additional nights can be booked, or if it's a fixed-date package.
+It will return the required start date if there are no additional nights available before check-in.
+
+This method is only applicable to accommodation steps within a multi-date package.
+
+## `package_step.latest_check_out_date`
+{: .d-inline-block }
+Date
+{: .label .fs-1 }
+
+If an accommodation step has required dates, the creator can specify a certain number of additional nights the customer can book. This method will return the latest possible check out date. It will return nil if any number of additional nights can be booked, or if it's a fixed-date package.
+It will return the required end date if there are no additional nights available after check-out.
+
+This method is only applicable to accommodation steps within a multi-date package.
+
 ## `package_step.next_page_path`
 {: .d-inline-block }
 URL

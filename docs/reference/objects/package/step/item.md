@@ -28,11 +28,14 @@ The variant for the item.
 boolean
 {: .label .fs-1 }
 
-Whether the item requires a slot selection.
+Whether the item requires the customer to select a slot.
 
 ## `item.available_slots_for_selection`
 {: .d-inline-block }
 Array of [Experience Slot]({% link docs/reference/objects/product/experience_slot.md %})s
 {: .label .fs-1 }
 
-The available experience slots for the item. If `requires_slot_selection` is `false`, then this will return an array with a single experience slot.
+If the item requires the customer to select a slot, this will return an array of available experience slots. If the item does not require the customer to select a slot, this will return an array with a single experience slot.
+
+In the event that there are no available slots, the array will be empty.
+

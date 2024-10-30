@@ -38,3 +38,12 @@ array of [Price]({% link docs/reference/objects/product/price.md %})s
 {: .label .fs-1 }
 
 An array of [Price]({% link docs/reference/objects/product/price.md %}) objects for the date.
+
+## `availability_day.remaining_stock`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The remaining stock for the accommodation day if variant uses inventory per night stock strategy.
+
+Otherwise this will return `nil`.

@@ -4,7 +4,7 @@ title: Paginate
 parent: Objects
 ---
 
-# Pagination
+# Paginate
 {: .d-inline-block }
 object
 {: .label .fs-1 }

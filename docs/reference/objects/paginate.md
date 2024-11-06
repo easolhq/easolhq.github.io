@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pagination
+title: Paginate
 parent: Objects
 ---
 

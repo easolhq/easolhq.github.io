@@ -16,7 +16,7 @@ The blog overview template consists of an `index.html` and an `index.css` file.
 
 Blog posts are passed via a `posts` array of [Post]({% link docs/reference/objects/blog_post.md %}) objects.
 
-The blog overview page automatically implements pagination, displaying 12 posts per page. A [Pagination]({% link docs/reference/objects/pagination.md %}) object can be accessed via `paginate` in the `index.html` code to generate links to other pages, display page counts etc.
+The blog overview page automatically implements pagination, displaying 12 posts per page. A [Paginate]({% link docs/reference/objects/paginate.md %}) object can be accessed via `paginate` in the `index.html` code to generate links to other pages, display page counts etc.
 
 The blog overview page is automatically generated at `site.com/blog`.
 

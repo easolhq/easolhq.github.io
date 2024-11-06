@@ -14,7 +14,7 @@ Product search enables you to filter a Creator's experiences, for example, you c
 - Return products for a specific date range or year
 - Sort the results by departure date
 
-The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object and a `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
+The product search is executed using the [product_search tag]({% link docs/reference/tags/product_search/index.md %}). The tag returns an `items` array of [products]({% link docs/reference/objects/product/index.md %}), a `paginate` [Paginate]({% link docs/reference/objects/paginate.md %}) object and a `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
 
 The product search will only return public, published products i.e. experiences which are published and have not been marked as private under 'Manage product availability' in the product settings.
 
@@ -49,7 +49,7 @@ http://beyondadventures.com/search?search[name]=beyond&search[departure_date][gr
 ## Pagination
 The results of the search are paginated to speed up page load, you can define the number of results displayed per page using the [page_size]({% link docs/product_search/parameters.md %}#page_size) parameter.
 
-You can enable customers to move between the results pages using the `paginate` [Pagination]({% link docs/reference/objects/pagination.md %}) object. The [default_pagination]({% link docs/reference/filters/pagination.md %}) filter can be used to return a complete pagination UI.
+You can enable customers to move between the results pages using the `paginate` [Paginate]({% link docs/reference/objects/paginate.md %}) object. The [default_pagination]({% link docs/reference/filters/pagination.md %}) filter can be used to return a complete pagination UI.
 
 You can assign the value of a Liquid variable to `page_size`.
 

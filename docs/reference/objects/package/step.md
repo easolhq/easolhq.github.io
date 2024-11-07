@@ -100,6 +100,15 @@ URL
 
 URL pointing to the next page of the booking journey. Navigating to this URL is only possible if the customer has added enough/the correct elements to the cart to honour the requirements set by the creator for this step.
 
+## `package_step.auto_progress?`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Whether or not this package step has been configured by the creator to
+auto-progress to the next step when the customer has added enough items to
+their cart to satisfy its requirements.
+
 ## `package_step.step_valid?`
 {: .d-inline-block }
 boolean

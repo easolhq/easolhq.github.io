@@ -62,6 +62,12 @@ The package step product search tag executes a search on the given step's listab
 
 The tag returns an `items` array and a `Paginate` pagination object to the block passed in, the items array represents 1 page of the results from the search.
 
+## Search Params
+
+#### include_organisation_products
+
+This allows you to find the step products if the current package step is associated with a company that is different to the company for the current site, but they are linked by the same organisation. e.g. `include_organisation_products: true`
+
 ## Pagination
 
 The results of this search are paginated for performance reasons.

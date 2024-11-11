@@ -7,12 +7,12 @@ grand_parent: Reference
 
 # Package step product search
 
-The package step product search tag executes a search on the given step's listable products, and paginates the results. The results are [PackageStepProducts]({% link docs/reference/objects/package/product.md %}). The only parameter it accepts right now is `step_id`. When we use this on the package booking template, we'll have access to this via the `package_step`.
+The package step product search tag executes a search on the given step's listable products, and paginates the results. The results are [PackageStepProducts]({% link docs/reference/objects/package/product.md %}). This automatically uses the step that the current page is loaded in the context of.
 
 ##### Input
 {% raw %}
 ```liquid
-{% package_step_product_search step_id: package_step.id, page_size: 3 %}
+{% package_step_product_search page_size: 3 %}
     {% for item in result.items %}
         <p>{{ item.product.name }}</p>
     {% endfor %}

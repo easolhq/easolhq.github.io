@@ -62,11 +62,28 @@ The package step product search tag executes a search on the given step's listab
 
 The tag returns an `items` array and a `Paginate` pagination object to the block passed in, the items array represents 1 page of the results from the search.
 
-## Search Params
+## Tag-based filtering
 
-#### include_organisation_products
+If the company has added tags to the step's products, these can be used to filter the results outputted by the search tag.
 
-This allows you to find the step products if the current package step is associated with a company that is different to the company for the current site, but they are linked by the same organisation. e.g. `include_organisation_products: true`
+Product tags are textual values that identify attributes of the products. They are grouped under categories which the company is also able to define.
+
+Some examples of these might be "Star Rating", "Amenities", "Distance" etc. Consult the company for the available tags and categories.
+
+**Syntax**
+
+`package_step_product_search` filters results if one or more `search` query parameters are present in the URL. The search query parameters are in the format `search[<tag category>][]=<tag value>`; add as many as needed to filter the results.
+
+You can specify multiple categories and values by repeating the `search[][]` query parameter.
+
+At the moment, filtering returns products that match at least one of the provided values in _all_ of the filtered categories.
+
+**Examples**
+
+- `?search[Star Rating][]=5` - Products with a 5 star rating only.
+- `?search[Star Rating][]=4&search[Star Rating][]=5` - Products with either a 4 star rating or a 5 star rating.
+- `?search[Amenities][]=Pool&search[Star Rating][]=5` - Products with a 5 star rating and pool access.
+- `?search[Amenities][]=Pool&search[Star Rating][]=5&search[Star Rating][]=4` - Products with pool access and either a 4 or 5 star rating.
 
 ## Pagination
 

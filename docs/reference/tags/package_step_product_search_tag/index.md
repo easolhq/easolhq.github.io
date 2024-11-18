@@ -89,3 +89,18 @@ At the moment, filtering returns products that match at least one of the provide
 
 The results of this search are paginated for performance reasons.
 You can paginate results into equal page sizes, defining the number of results to display per page using the `page_size` attribute. There is a maximum page size of 100.
+
+## Additional parameters
+
+### exclude_sold_out_products
+Accepts: `true` or `false`. This can be passed as a Liquid variable or explicitly.
+
+Passing `true` will exclude step products if all its items are sold out. For some package/step configurations this will be limitted based on the package's selected start date. E.g. for a multi-date package with required nights, we will check if the product has any available items for the required nights.
+
+##### as a search tag attribute
+{% raw %}
+```
+{% experience_slot_search exclude_sold_out_products: true %}
+{% endexperience_slot_search %}
+```
+{% endraw %}

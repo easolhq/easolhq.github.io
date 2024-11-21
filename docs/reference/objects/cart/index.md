@@ -58,7 +58,14 @@ The amount of the cart after all price reductions have been applied. This is ret
 number
 {: .label .fs-1 }
 
-The booking fee amount returned as a fractional in the sub-unit of the current customer's currency.
+The booking fee amount returned as a fractional in the sub-unit of the current customer's currency. Does not include off-platform fees.
+
+## `cart.total_off_platform_fee`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The off-platform booking fee amount returned as a fractional in the sub-unit of the current customer's currency.
 
 ## `cart.total_price_reduction`
 {: .d-inline-block }

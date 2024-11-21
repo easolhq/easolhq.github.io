@@ -137,7 +137,14 @@ The minimum amount to be paid for the item at checkout. If no deposit is enabled
 number
 {: .label .fs-1 }
 
-The booking fee amount for the item returned as a fractional in the sub-unit of the current customer's currency.
+The booking fee amount for the item returned as a fractional in the sub-unit of the current customer's currency. Does not include off-platform fees.
+
+## `item.total_off_platform_fee`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The off-platform booking fee amount for the item returned as a fractional in the sub-unit of the current customer's currency.
 
 ## `item.total_guests`
 {: .d-inline-block }

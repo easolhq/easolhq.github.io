@@ -272,7 +272,7 @@ The products overview [image]({% link docs/reference/objects/image.md %}).
 number
 {: .label .fs-1 }
 
-The sum of remaining stock for a product's variants, if any of the variants have infinite stock this will return `nil`.
+The sum of remaining stock for a product's variants. If any variants are manually marked as 'Sold Out', they will contribute 0 towards this value. If any of the variants have infinite stock this will return `nil`.
 If the product is an experience with multiple slots, this returns the sum total of remaining stock for all variants across all upcoming slots.
 
 ## `product.schedule`

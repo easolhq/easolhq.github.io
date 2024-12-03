@@ -93,7 +93,7 @@ The product that the date belongs to.
 number
 {: .label .fs-1 }
 
-The sum of remaining stock for a date's variants. If any of the variants have infinite stock this will return `nil`.
+The sum of remaining stock for a date's variants. If any of the variants for this slot are manually marked as 'Sold Out', they will contribute 0 towards this value. If any of the variants have infinite stock this will return `nil`.
 
 ## `experience_slot.shop_url`
 {: .d-inline-block }

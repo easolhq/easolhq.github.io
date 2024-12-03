@@ -239,7 +239,7 @@ The variant's current active [promotion]({% link docs/reference/objects/product/
 number
 {: .label .fs-1 }
 
-The remaining stock for the variant, if the variant has infinite stock this will return `nil`.
+The remaining stock for the variant. If the variant has been manually marked as 'Sold Out' this will return 0. If the variant has infinite stock this will return `nil`.
 - When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the remaining stock for the variant on the given slot.
 - When accessed independently or through a product, it will return the sum total of remaining stock for the variant across all upcoming slots.
 

@@ -59,7 +59,7 @@ The experience that this slot belongs to.
 number
 {: .label .fs-1 }
 
-The remaining stock for this variant on this slot. It will return `nil` if there is infinite stock.
+The remaining stock for this variant on this slot. It will return 0 if this variant on this slot is manually marked as 'Sold Out'. It will return `nil` if there is infinite stock.
 
 ## `slot.shop_url`
 {: .d-inline-block }

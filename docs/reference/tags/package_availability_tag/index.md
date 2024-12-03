@@ -39,7 +39,7 @@ The `package_availability` tag returns an object with the package availability a
 boolean
 {: .label .fs-1 }
 
-Whether the package is avaialable or not. A package will be available when all its included items and required steps items (if any) have availability on the specified date and the variants with availabilty will have enough stock to accomodate the specified adult count based on the quantity strategy chosen for that item when the package has been put toghether.
+Whether the package is available or not. A package will be available when all its included items and required steps items (if any) have availability on the specified date and the variants with availabilty will have enough stock to accommodate the specified adult count based on the quantity strategy chosen for that item when the package has been put toghether.
 
 - If package is fixed date, all the slots need to have enough availability given the adult_count.
 - If package is multi_date, there needs to be at least one available slot for each included item and each required step.
@@ -61,7 +61,7 @@ It's possible to use any of the following attributes in the package availability
 
 ### adult_acount
 The number of guests used to look up the package availability.
-e.g If passed "3", the package avaialabilty tag will use return avaialability information based on whether the package has enough stock to acommodate 3 guests on the given `start_date` and `start_time`
+e.g If passed "3", the package avaialabilty tag will use return avaialability information based on whether the package has enough stock to accommodate 3 guests on the given `start_date` and `start_time`
 
 ### start_date
 The date the package used to look up the package availability.

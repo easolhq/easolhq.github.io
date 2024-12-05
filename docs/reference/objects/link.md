@@ -71,4 +71,4 @@ The path of the URL for this link.
 string
 {: .label .fs-1 }
 
-The full URL for the link.
+Returns either the relative path to the linked resource, or a full URL if it's a static link.

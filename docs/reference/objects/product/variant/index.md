@@ -66,6 +66,15 @@ Deprecated, the deposit should be calculated in Liquid, using a mixture of the `
 ```
 {% endraw %}
 
+## `variant.fees`
+{: .d-inline-block }
+array of [fee item rate]({% link docs/reference/objects/product/variant/fee_item_rate.md %})s
+{: .label .fs-1 }
+
+Returns an array of [fee item rates]({% link
+docs/reference/objects/product/variant/fee_item_rate.md %}) that apply to this
+variant.
+
 ## `variant.has_infinite_stock`
 {: .d-inline-block }
 boolean
@@ -275,3 +284,12 @@ The type of the variant, one of `experience_variant` or `accommodation_variant`.
 Check what other methods you can call on this drop according to their type,
 [Experience Variant]({% link docs/reference/objects/product/variant/experience_variant/index.md %}),
 [Accommodation Variant]({% link docs/reference/objects/product/variant/accommodation_variant/index.md %}).
+
+## `variant.taxes`
+{: .d-inline-block }
+array of [tax item rate]({% link docs/reference/objects/product/variant/tax_item_rate.md %})s
+{: .label .fs-1 }
+
+Returns an array of [tax item rates]({% link
+docs/reference/objects/product/variant/tax_item_rate.md %}) that apply to this
+variant.

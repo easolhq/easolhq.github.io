@@ -221,6 +221,7 @@ An array containing the [prices]({% link docs/reference/objects/product/price.md
 - When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return the prices for the variant on the given slot.
 - When accessed independently or through a product, it will return the default prices for the variant, managed in **Experience > Variants**.
 
+*Note:* this returns the first 50 prices.
 
 {% raw %}
 ```liquid

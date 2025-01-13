@@ -18,13 +18,6 @@ object
 
 The cart associated with the recommendation.
 
-## `recommendation.can_change_currency`
-{: .d-inline-block }
-boolean
-{: .label .fs-1 }
-
-Whether the current user is able to change the currency on this recommendation. This can be used to conditionally show the currency switcher on the recommendation page.
-
 ## `recommendation.checkout_url`
 {: .d-inline-block }
 string

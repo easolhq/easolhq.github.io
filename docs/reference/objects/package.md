@@ -134,3 +134,10 @@ number
 
 The package's total booking fee represented in the sub-unit of the current customer’s currency.
 e.g. considering the amount $19.50, it will return 1950.
+
+## `package.possible_adult_counts`
+{: .d-inline-block }
+array of numbers
+{: .label .fs-1 }
+
+All possible adult counts for the package.

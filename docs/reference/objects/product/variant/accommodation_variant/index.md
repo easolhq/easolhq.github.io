@@ -26,6 +26,15 @@ number
 
 Returns the minimum number of nights the variant can be booked for.
 
+## `accommodation_variant.min_price_of_stay_fractional`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The minimum price of stay represented as a sub-unit of the current customer's currency.
+If present, the customer will be charged at least this amount, regardless of how many
+nights they book the accommodation for.
+
 ## `accommodation_variant.type`
 {: .d-inline-block }
 string

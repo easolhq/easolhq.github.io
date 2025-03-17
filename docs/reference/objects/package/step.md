@@ -146,4 +146,6 @@ Otherwise, this will be 0.
 Integer
 {: .label .fs-1 }
 
-This is the package adult count.
+If the package step requires a specific guest count equal to the package adult count, then it will return the package adult count.
+
+If we don't require the guest count to equal the package adult count, then it will return infinity.

@@ -42,6 +42,13 @@ string
 
 Will always return "`package`".
 
+## `package.has_custom_price`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Whether the package has a custom price or not.
+
 ## `package.price_fractional`
 {: .d-inline-block }
 number

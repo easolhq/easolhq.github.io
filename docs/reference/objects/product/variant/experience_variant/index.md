@@ -43,6 +43,20 @@ with the caveat that if the experience variant is accessed through an
 docs/reference/objects/product/variant/payment_plan.md %}) will only be
 returned if the last payment date is before the slot's `start_on`.
 
+## `experience_variant.pricing_strategy_per_item`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Reflects the creator's chosen pricing strategy for this variant. If true, this variant's price is determined by the price tier configured for the chosen occupancy.
+
+## `experience_variant.pricing_strategy_per_person`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Reflects the creator's chosen pricing strategy for this variant. If true, this variant's price is proportional to the chosen occupancy, with the proportional increase determined by the configured price tiers.
+
 ## `experience_variant.type`
 {: .d-inline-block }
 string

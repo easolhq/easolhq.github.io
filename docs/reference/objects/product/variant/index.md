@@ -128,8 +128,10 @@ The initial stock for the variant, if the variant has unlimited inventory this w
 {: .d-inline-block }
 boolean
 {: .label .fs-1 }
+deprecated
+{: .label .fs-1 .label-red .ml-0 .mt-0 }
 
-Returns `true` if the variant is priced per person.
+Deprecated. New sites should avoid using this method; it is being kept for backwards compatibility only.
 
 ## `variant.modifier_groups`
 {: .d-inline-block }

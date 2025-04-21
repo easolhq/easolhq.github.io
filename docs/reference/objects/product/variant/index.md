@@ -259,6 +259,13 @@ string
 
 If the variant belongs to a segment this will return the segment name.
 
+## `variant.segment_position`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+If the variant belongs to a segment this will return the segment position.
+
 ## `variant.sold_out`
 {: .d-inline-block }
 boolean

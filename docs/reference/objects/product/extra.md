@@ -209,6 +209,13 @@ string
 
 If the extra belongs to a segment this will return the segment name.
 
+## `extra.segment_position`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+If the extra belongs to a segment this will return the segment position.
+
 ## `extra.sold_out`
 {: .d-inline-block }
 boolean

@@ -37,7 +37,7 @@ The date the slot ends on. This can then be used in conjunction with Liquid's [b
 string
 {: .label .fs-1 }
 
-The end time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
+The end time for this slot as a string in the hour and minute format, i.e. “11:00”
 
 This will return `nil` if the experience does not have a start time.
 
@@ -121,7 +121,7 @@ The date the slot starts on. This can then be used in conjunction with Liquid's 
 string
 {: .label .fs-1 }
 
-The start time for this slot as a formatted time string in the current user's locale. For example, "11:00" for English or "11:00AM" for American English.
+The start time for this slot as a string in the hour and minute format, i.e. “11:00”
 
 This will return `nil` if the experience does not have a start time.
 

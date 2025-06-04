@@ -66,6 +66,7 @@ Parameter | Description | Required
 `adult_count` | Number of guests to consider in price calculation | Yes
 `start_on` | Check-in date to consider in price calculation | If rendering for an Accommodation Variant
 `end_on` | Check-in date to consider in price calculation | If rendering for an Accommodation Variant
+`include_fees` | Option to include booking fees and custom on platform fees in the price | No
 
 ## Bootstrapping and fetching new prices
 
@@ -133,5 +134,22 @@ you might hook onto the relevant elements' events:
 
       variantPricingTag.dataset.variantPricingEndOnValue = e.target.value
     })
+
+{% endraw %}
+
+
+## Consideration with packages
+
+When this tag is used in the context of a package step, the user may need to
+choose from a range of time slots for the variant. In this case we calculate
+the cheapest possible price of the possible slots. We recommend
+pre-pending the price with 'From' in this case.
+
+The slot which is used to generate the price is included in the data attributes:
+
+{% raw %}
+
+    <span data-variant-pricing-experience-slot-value="<slot id>">
+    </span>
 
 {% endraw %}

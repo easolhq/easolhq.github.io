@@ -110,6 +110,13 @@ The copy to display when the package is off sale.
 
 If the package is custom priced and has a payment plan associated with it, this will return that payment plan. The payment plan won’t be returned if the instalment schedule cannot be completed before the start date of the package.
 
+## `package.deposit`
+{: .d-inline-block }
+[Deposit]({% link docs/reference/objects/product/deposit.md %})
+
+If the package is custom priced, it'll always return a deposit which will either be enabled or disabled (see deposit docs).
+
+
 ## `package.state`
 {: .d-inline-block }
 string

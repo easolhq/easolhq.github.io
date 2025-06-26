@@ -17,7 +17,7 @@ object
 boolean
 {: .label .fs-1 }
 
-Returns `true` if this variant or extra can be paid with a deposit.
+Returns `true` if this variant, extra or package can be paid with a deposit.
 
 ## `deposit.rate`
 {: .d-inline-block }
@@ -46,7 +46,8 @@ The date the final balance payment will be due, if this can be calculate and the
 
 - When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}) it will return a date.
 - When accessed through a single slot experience it will return a date.
-- When accessed through a multislot experience or an accommodation, it will return `nil`.
+- When accessed through a fixed-date package it will return a date.
+- When accessed through a multislot experience, an accommodation, or a multi-date package, it will return `nil`.
 
 Example
 {% raw %}

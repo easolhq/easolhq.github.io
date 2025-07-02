@@ -54,7 +54,7 @@ The experiences associated with this date.
 number
 {: .label .fs-1 }
 
-The number of slots available on this date.
+The total number of slots across all variants for this date. Note that this number does not represent available slots, but rather the total number of slots created on this date.
 
 ## `date.slots_by_variant`
 {: .d-inline-block }

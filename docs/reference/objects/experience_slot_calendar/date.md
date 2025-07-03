@@ -49,6 +49,20 @@ array of [products]({% link docs/reference/objects/product/index.md %})
 
 The experiences associated with this date.
 
+## `date.initial_stock`
+{: .d-inline-block }
+number or nil
+{: .label .fs-1 }
+
+Sums the starting inventory for all slot-variant mappings on this date, unless any mapping is infinite (in which case it returns nil).
+
+## `date.remaining_stock`
+{: .d-inline-block }
+number or nil
+{: .label .fs-1 }
+
+Sums the available inventory for all slot-variant mappings on this date, unless any mapping is infinite (in which case it returns nil). If any slot is marked as sold out, it is treated as having zero remaining stock.
+
 ## `date.slot_count`
 {: .d-inline-block }
 number

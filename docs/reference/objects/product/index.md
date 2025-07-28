@@ -395,6 +395,13 @@ The url for the product's page on the site.
 
 The product's [useful info]({% link docs/reference/objects/product/useful_info.md %}).
 
+## `product.utc_offset`
+{: .d-inline-block }
+integer
+{: .label .fs-1 }
+
+The product's current observed UTC offset, so you can calculate when 'now' is for the product. This may be negative.
+
 ## `product.variants`
 {: .d-inline-block }
 array of [variant]({% link docs/reference/objects/product/variant/index.md %})s

@@ -400,7 +400,7 @@ The product's [useful info]({% link docs/reference/objects/product/useful_info.m
 integer
 {: .label .fs-1 }
 
-The product's current observed UTC offset, so you can calculate when 'now' is for the product. This may be negative.
+The product's current observed UTC offset in seconds, so you can calculate when 'now' is for the product. This may be negative.
 
 ## `product.variants`
 {: .d-inline-block }

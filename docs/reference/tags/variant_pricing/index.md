@@ -22,7 +22,7 @@ part of the package price.
 ##### input
 {% raw %}
 
-    {% variant_pricing variant: variant, class: "my-nice-class", adult_count: 2, start_on: "2023-01-01", end_on: "2023-01-04" %}
+    {% variant_pricing variant: variant, class: "my-nice-class", adult_count: 2, start_on: "2023-01-01", start_time: "10:00", end_on: "2023-01-04" %}
 
 {% endraw %}
 
@@ -37,6 +37,7 @@ The `<span>` tag will initially be rendered empty:
       data-variant-pricing-variant-value="<id>"
       data-variant-pricing-adult-count-value="2"
       data-variant-pricing-start-on-value="2023-01-01"
+      data-variant-pricing-start-time-value="10:00"
       data-variant-pricing-end-on-value="2023-01-04">
     </span>
 
@@ -51,6 +52,7 @@ If rendering in the context of a package booking template, the package step ID i
       data-variant-pricing-variant-value="<id>"
       data-variant-pricing-adult-count-value="2"
       data-variant-pricing-start-on-value="2023-01-01"
+      data-variant-pricing-start-time-value="10:00"
       data-variant-pricing-end-on-value="2023-01-04"
       data-variant-pricing-package-step-id-value="<step id>">
     </span>
@@ -64,8 +66,9 @@ Parameter | Description | Required
 `variant` | The variant to display the price for | Yes
 `class` | The value of the span's `class` attribute (for styling and targeting in scripts) | Yes
 `adult_count` | Number of guests to consider in price calculation | Yes
-`start_on` | Check-in date to consider in price calculation | If rendering for an Accommodation Variant
-`end_on` | Check-in date to consider in price calculation | If rendering for an Accommodation Variant
+`start_on` | Check-in date or start date to consider in price calculation
+`start_time` | Start time in HH:MM format to consider in price calculation | If rendering for an Experience Variant with time-specific pricing
+`end_on` | Check-out date to consider in price calculation | If rendering for an Accommodation Variant
 `include_fees` | Option to include booking fees and custom on platform fees in the price | No
 
 ## Bootstrapping and fetching new prices
@@ -81,6 +84,7 @@ Attribute | Description | Expected values
 --------- | ----------- | ---------------
 `data-variant-pricing-adult-count-value` | Adult count chosen by the user | Integer > 0
 `data-variant-pricing-start-on-value` | Check-in date chosen by the user | Date string in ISO format `YYYY-MM-DD`
+`data-variant-pricing-start-time-value` | Start time chosen by the user | Time string in HH:MM format (e.g., "10:00", "14:30")
 `data-variant-pricing-end-on-value` | Check-out date chosen by the user | Date string in ISO format `YYYY-MM-DD`
 
 **Important: this tag is initially rendered empty. If you need it to have
@@ -100,19 +104,21 @@ To "bootstrap" the contents on initial page load, you might hook onto the
 
     function bootstrapVariantPricingTags() {
       const defaultStartOn = "2023-01-01"
+      const defaultStartTime = "10:00"
       const defaultEndOn = "2023-01-04"
       const defaultAdultCount = "4"
 
       const variantPricingTag = document.querySelector(".my-nice-class")
       variantPricingTag.dataset.variantPricingAdultCountValue = defaultAdultCount
       variantPricingTag.dataset.variantPricingStartOnValue = defaultStartOn
+      variantPricingTag.dataset.variantPricingStartTimeValue = defaultStartTime
       variantPricingTag.dataset.variantPricingEndOnValue = defaultEndOn
     }
 
     document.addEventListener('DOMContentLoaded', bootstrapVariantPricingTags)
 {% endraw %}
 
-And to respond to changes to the selected adult count and check-in/out dates
+And to respond to changes to the selected adult count, check-in/out dates, and start time
 you might hook onto the relevant elements' events:
 
 {% raw %}
@@ -127,6 +133,12 @@ you might hook onto the relevant elements' events:
       const variantPricingTag = document.querySelector(".my-nice-class")
 
       variantPricingTag.dataset.variantPricingStartOnValue = e.target.value
+    })
+
+    document.querySelector(".start-time-dropdown").addEventListener("change", (e) => {
+      const variantPricingTag = document.querySelector(".my-nice-class")
+
+      variantPricingTag.dataset.variantPricingStartTimeValue = e.target.value
     })
 
     document.querySelector(".end-on-calendar").addEventListener("change", (e) => {

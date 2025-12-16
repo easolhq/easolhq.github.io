@@ -9,7 +9,9 @@ parent: Objects
 object
 {: .label .fs-1 }
 
-The calendar object used by [experience_slot_calendar]({% link docs/reference/tags/experience_slot_calendar_tag.md %}) tag
+The calendar object is used by both:
+- [experience_slot_calendar]({% link docs/reference/tags/experience_slot_calendar_tag.md %}) tag
+- [packages_search_and_calendar]({% link docs/reference/tags/packages_search_and_calendar_tag/index.md %}) tag
 
 #### Attributes
 
@@ -18,7 +20,11 @@ The calendar object used by [experience_slot_calendar]({% link docs/reference/ta
 array of dates
 {: .label .fs-1 }
 
-The [experience slot dates]({% link docs/reference/objects/experience_slot_calendar/date.md %}) returned within this calendar month.
+The dates within this calendar month.
+
+The date objects returned depend on the context:
+- In `experience_slot_calendar`: returns [experience slot dates]({% link docs/reference/objects/experience_slot_calendar/date.md %})
+- In `packages_search_and_calendar`: returns [package calendar dates]({% link docs/reference/tags/packages_search_and_calendar_tag/index.md %}#date-object)
 
 ## `calendar.first_day`
 {: .d-inline-block }

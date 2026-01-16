@@ -25,6 +25,13 @@ string
 
 Returns the category searched.
 
+## `search.city`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+Returns the city searched.
+
 ## `search.country`
 {: .d-inline-block }
 string

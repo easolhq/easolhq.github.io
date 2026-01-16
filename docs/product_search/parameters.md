@@ -50,6 +50,30 @@ Will return products which match the [category]({% link docs/reference/objects/p
 https://mysite.com/search?search[category]=active
 ```
 
+### city
+Accepts a string and is case-insensitive. This can be passed as a Liquid variable or explicitly.
+
+Will accept either a single city or an array. An array must be passed explicitly (not as a Liquid variable).
+
+Will return products which match the [address city]({% link docs/reference/objects/product/address.md %}#addresscity) passed. Products without an address will be excluded from results.
+
+##### as a search tag attribute
+{% raw %}
+```
+{% product_search city: 'London' %}
+{% endproduct_search %}
+
+{% product_search city: ['London','Paris'] %}
+{% endproduct_search %}
+```
+{% endraw %}
+
+##### as a query parameter
+```
+https://mysite.com/search?search[city]=London
+https://mysite.com/search?search[city][]=London&search[city][]=Paris
+```
+
 ### country
 Accepts any of the Easol predefined [countries]({% link docs/reference/objects/product/index.md %}#productcountry) as either Country Codes or Country Names. This can be passed as a Liquid variable or explicitly.
 

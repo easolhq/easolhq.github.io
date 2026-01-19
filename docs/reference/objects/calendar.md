@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Calendar
-parent: Experience Slot Calendar
-grand_parent: Objects
+parent: Objects
 ---
 
 # Calendar
@@ -10,14 +9,16 @@ grand_parent: Objects
 object
 {: .label .fs-1 }
 
+The calendar object used by [experience_slot_calendar]({% link docs/reference/tags/experience_slot_calendar_tag.md %}) tag
+
 #### Attributes
 
 ## `calendar.dates`
 {: .d-inline-block }
-array of [dates]({% link docs/reference/objects/experience_slot_calendar/date.md %})
+array of dates
 {: .label .fs-1 }
 
-The dates within this calendar month.
+The [experience slot dates]({% link docs/reference/objects/experience_slot_calendar/date.md %}) returned within this calendar month.
 
 ## `calendar.first_day`
 {: .d-inline-block }

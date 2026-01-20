@@ -10,7 +10,7 @@ object
 {: .label .fs-1 }
 
 The calendar object is used by both:
-- [experience_slot_calendar]({% link docs/reference/tags/experience_slot_calendar_tag.md %}) tag
+- [experience_slot_calendar]({% link docs/reference/tags/experience_slot_calendar_tag/index.md %}) tag
 - [packages_search_and_calendar]({% link docs/reference/tags/packages_search_and_calendar_tag/index.md %}) tag
 
 #### Attributes

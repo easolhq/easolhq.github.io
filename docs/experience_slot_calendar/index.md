@@ -10,9 +10,9 @@ has_toc: false
 
 The `experience_slot_calendar` provides a way to render a calendar month with information about what experience slots are available on each date. The tag is scoped to one or more experiences.
 
-The tag makes a [calendar]({% link docs/reference/objects/experience_slot_calendar/calendar.md %}) object available, which contains an array of [dates]({% link docs/reference/objects/experience_slot_calendar/date.md %}). Each `date` has information about the experience slots that are available on the date, such as `date.slot_count`, `date.sold_out`, `date.display_price` and `date.slots_by_variant`.
+The tag makes a [calendar]({% link docs/reference/objects/calendar.md %}) object available, which contains an array of [dates]({% link docs/reference/objects/experience_slot_calendar/date.md %}). Each `date` has information about the experience slots that are available on the date, such as `date.slot_count`, `date.sold_out`, `date.display_price` and `date.slots_by_variant`.
 
-The [calendar]({% link docs/reference/objects/experience_slot_calendar/calendar.md %}) object also includes information about the current, next and previous months. Combining this with the use of the [search]({% link docs/reference/objects/search_query.md %}) object, it is possible to build a calendar UI that allows a user to navigate between months. See the example in [Navigatable calendar UI]({% link docs/experience_slot_calendar/index.md %}#navigatable-calendar-ui) for how this is possible.
+The [calendar]({% link docs/reference/objects/calendar.md %}) object also includes information about the current, next and previous months. Combining this with the use of the [search]({% link docs/reference/objects/search_query.md %}) object, it is possible to build a calendar UI that allows a user to navigate between months. See the example in [Navigatable calendar UI]({% link docs/experience_slot_calendar/index.md %}#navigatable-calendar-ui) for how this is possible.
 
 The [date]({% link docs/reference/objects/experience_slot_calendar/date.md %}) object will ignore variants that have been hidden on specific experience slots.
 
@@ -97,7 +97,7 @@ It is possible to send the `month` and `year` parameters in the URL via the `?se
 
 We can pass these properties directly into the tag as arguments. If the `month` or `year` arguments are blank, it will default to using the next month that contains available experience slots.
 
-The [calendar]({% link docs/reference/objects/experience_slot_calendar/calendar.md %}) object also exposes the current, next and previous months, which allows building a navigatable calendar UI.
+The [calendar]({% link docs/reference/objects/calendar.md %}) object also exposes the current, next and previous months, which allows building a navigatable calendar UI.
 
 The `calendar.first_day` method returns the first day in the month as a date, which can be used to render the name of the month. The same can be done with the next and previous months, e.g. `{% raw %}{{ calendar.next.first_day | date: "%B %Y" }}{% endraw %}`.
 

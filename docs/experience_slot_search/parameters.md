@@ -30,6 +30,30 @@ passed.
 https://mysite.com/search?search[category]=active
 ```
 
+### city
+Accepts a string and is case-insensitive. This can be passed as a Liquid variable or explicitly.
+
+Will accept either a single city or an array. An array must be passed explicitly (not as a Liquid variable).
+
+Will return experience slots where the product's [address city]({% link docs/reference/objects/product/address.md %}#addresscity) matches the city passed. Products without an address will be excluded from results.
+
+##### as a search tag attribute
+{% raw %}
+```
+{% experience_slot_search city: 'London' %}
+{% endexperience_slot_search %}
+
+{% experience_slot_search city: ['London','Paris'] %}
+{% endexperience_slot_search %}
+```
+{% endraw %}
+
+##### as a query parameter
+```
+https://mysite.com/search?search[city]=London
+https://mysite.com/search?search[city][]=London&search[city][]=Paris
+```
+
 ### country
 Accepts any of the Easol predefined [countries]({% link docs/reference/objects/product/index.md %}#productcountry) as either Country Codes or Country Names. This can be passed as a Liquid variable or explicitly.
 

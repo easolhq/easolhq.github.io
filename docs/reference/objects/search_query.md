@@ -76,6 +76,13 @@ boolean
 
 Returns `true` or `false`.
 
+## `search.include_organisation_packages`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Returns `true` or `false`.
+
 ## `search.month`
 {: .d-inline-block }
 number

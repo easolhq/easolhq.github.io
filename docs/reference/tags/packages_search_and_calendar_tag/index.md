@@ -91,7 +91,7 @@ The year to display in the calendar view. Used together with `month` to control 
 
 **Type:** Object
 
-Filter results to a specific departure date. Pass an object with an `equal_to` key containing a date in YYYY-MM-DD format. When set, `result.start_times` will only include start times for that specific date.
+Accepts an object which specifies how to handle the search through `equal_to`, `greater_than`, `greater_or_equal_than` or `less_than` each taking a date in SQL format `YYYY-MM-DD`. The date(s) can be passed as a Liquid variable or explicitly. When set, `result.start_times` will only include start times for the filtered dates.
 
 {% raw %}
 ```liquid

@@ -132,6 +132,20 @@ When true, excludes packages that are sold out from the results.
 ```
 {% endraw %}
 
+### include_organisation_packages
+
+**Type:** Boolean
+
+**Default:** false
+
+When true, allows searching for packages belonging to any company in the current company's organisation.
+
+{% raw %}
+```liquid
+{% packages_search_and_calendar include_organisation_packages: true %}
+```
+{% endraw %}
+
 ---
 
 ## Search Params
@@ -149,7 +163,8 @@ You can pass any of the parameters listed above directly as attributes in the ta
    guest_count: 4,
    month: 6,
    year: 2025,
-   exclude_sold_out_products: true
+   exclude_sold_out_products: true,
+   include_organisation_packages: true
 %}
 ```
 {% endraw %}
@@ -178,6 +193,7 @@ Once the search has been executed, you can get a reference to the params and val
 {{ search.year }}
 {{ search.departure_date.equal_to }}
 {{ search.exclude_sold_out_products }}
+{{ search.include_organisation_packages }}
 ```
 {% endraw %}
 

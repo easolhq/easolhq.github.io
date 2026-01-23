@@ -157,6 +157,9 @@ This allows you to include products from other companies which are linked in the
 #### sort
 The sorting order of results. The available options are: `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `departure_date_asc` and `departure_date_desc`, where the `_asc` and `_desc` parts represent ascending and descending orders respectively.
 
+#### product_id
+Filters products by their ID. This attribute accepts either a single product ID or an array of product IDs, e.g. `product_id: 'abc123'` or `product_id: ['abc123', 'def456']`
+
 #### series_id
 The id of the series to filter by.
 

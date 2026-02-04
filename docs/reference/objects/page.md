@@ -34,6 +34,15 @@ The query params included in the current URL.
 For example, given the URL https://my-url.com?page=4,
 using {% raw %}`{{page.params.page}}`{% endraw %} would return "4".
 
+## `page.locale`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The locale for the current request (e.g. `en-GB`, `en-US`). Resolved from the URL param, the user's preferred language, or the Accept-Language header. Use this to format content by region, for example UK vs US date formats.
+
+`=> en`
+
 ## `page.path`
 {: .d-inline-block }
 string

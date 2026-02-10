@@ -341,6 +341,13 @@ string
 
 The tagline of the product.
 
+## `product.tags`
+{: .d-inline-block }
+array of [Tag Category]({% link docs/reference/objects/product/tag_category.md %})s
+{: .label .fs-1 }
+
+An array of the product's [tag categories]({% link docs/reference/objects/product/tag_category.md %}) and their values.
+
 ## `product.testimonials`
 {: .d-inline-block }
 array of [Testimonial]({% link docs/reference/objects/product/testimonial.md %})s

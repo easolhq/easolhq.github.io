@@ -171,6 +171,19 @@ Passing `true` will exclude [sold out]({% link docs/reference/objects/product/in
 https://mysite.com/search?search[exclude_sold_out_products]=true
 ```
 
+### guest_count
+If a guest count provided, it will affect the availability logic. In particular, it will be used to check the resource minimum occupancy rules when there are variants that use resources.
+
+It will not affect what slots are returned but will affect the `slot.sold_out` and `slot.remaining_stock` methods on the slots that are returned.
+
+##### as a search tag attribute
+{% raw %}
+```
+{% experience_slot_search guest_count: 5 %}
+{% endexperience_slot_search %}
+```
+{% endraw %}
+
 ### name
 Executes a partial search on the string passed in. Case insensitive. This can be passed as a Liquid variable or explicitly.
 

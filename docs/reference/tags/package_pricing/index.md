@@ -57,3 +57,4 @@ Parameter | Description | Required
 `adult_count` | Number of guests for the package | Yes
 `start_date` | The selected start date for the package | If the package is multi-date
 `start_time` | The selected start time for the package | No
+`number_of_nights` | The number of required nights for the package, to display per-night pricing | No

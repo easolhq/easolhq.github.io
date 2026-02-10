@@ -277,6 +277,7 @@ boolean
 Returns `true` if the variant is sold out.
 - When accessed through an [experience slot]({% link docs/reference/objects/product/experience_slot.md %}), it will return `true` if the variant is sold out on the given slot.
 - When accessed independently or through a product, it will return `true` if the variant is sold out across all upcoming slots. It will also return true if all slots are in the past.
+- Always returns `false` if the variant's parent experience has an active recurring schedule that creates new slots every day.
 
 ## `variant.tagline`
 {: .d-inline-block }

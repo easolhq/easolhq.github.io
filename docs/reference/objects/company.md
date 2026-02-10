@@ -135,6 +135,31 @@ string
 
 The subdomain of the company.
 
+## `company.time_zone_identifier`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The company's timezone identifier (e.g., `"America/New_York"`, `"Europe/Madrid"`, or `"UTC"`).
+
+This is useful when working with dates stored with timezone offsets in site builder custom fields. When dates are selected in datepickers, they are stored with the company's timezone offset applied. Use this attribute along with `time_zone_offset` to correctly interpret and display dates in Liquid templates.
+
+## `company.time_zone_offset`
+{: .d-inline-block }
+integer
+{: .label .fs-1 }
+
+The company's UTC offset in seconds, accounting for daylight saving time (DST).
+
+This value changes throughout the year for timezones that observe DST. For example:
+- Eastern Standard Time (EST): `-18000` seconds (UTC-5)
+- Eastern Daylight Time (EDT): `-14400` seconds (UTC-4)
+- Central European Time (CET): `3600` seconds (UTC+1)
+- Central European Summer Time (CEST): `7200` seconds (UTC+2)
+- UTC: `0` seconds
+
+Use this along with `time_zone_identifier` when working with dates from site builder custom fields to ensure dates are displayed correctly, especially for companies in timezones behind GMT where dates might otherwise shift to the previous day.
+
 ## `company.twitter_username`
 {: .d-inline-block }
 string

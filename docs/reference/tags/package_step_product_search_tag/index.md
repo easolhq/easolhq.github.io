@@ -85,6 +85,24 @@ At the moment, filtering returns products that match at least one of the provide
 - `?search[Amenities][]=Pool&search[Star Rating][]=5` - Products with a 5 star rating and pool access.
 - `?search[Amenities][]=Pool&search[Star Rating][]=5&search[Star Rating][]=4` - Products with pool access and either a 4 or 5 star rating.
 
+## Star rating filtering
+
+Accommodation products that have a star rating set can be filtered using the `search[star_rating][]` query parameter. This filters on the product's star rating attribute directly, rather than on tags.
+
+The allowed star rating values are: 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5.
+
+**Syntax**
+
+Add one or more `search[star_rating][]=<value>` query parameters to the URL.
+
+Products are included if their star rating matches any of the provided values. Products without a star rating (including non-accommodation products) are excluded when this filter is active.
+
+**Examples**
+
+- `?search[star_rating][]=5` - Only products with a 5 star rating.
+- `?search[star_rating][]=3&search[star_rating][]=4.5` - Products with either a 3 or 4.5 star rating.
+- `?search[star_rating][]=4&search[Amenities][]=Pool` - Can be combined with tag-based filtering. Products with a 4 star rating and pool access.
+
 ## Pagination
 
 The results of this search are paginated for performance reasons.

@@ -327,6 +327,13 @@ Returns `true` if all of the product's variants are sold out.
 
 A variant is sold out if all stock is sold, it has been manually marked as 'Sold Out', or all [slots]({% link docs/reference/objects/product/experience_slot.md %}) are in the past.
 
+## `product.star_rating`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The star rating of the product. Currently only available for accommodation products. Can be `nil` if not set. Possible values: `1`, `1.5`, `2`, `2.5`, `3`, `3.5`, `4`, `4.5`, `5`.
+
 ## `product.subcategory`
 {: .d-inline-block }
 string

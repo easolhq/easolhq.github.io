@@ -25,13 +25,6 @@ timestamp
 
 The end date of the product associated with the cart item.
 
-## `item.start_time`
-{: .d-inline-block }
-timestamp
-{: .label .fs-1 }
-
-The start time of the cart item, if present, as a string in the form of a 24 hour clock, e.g. "11:00"
-
 ## `item.end_time`
 {: .d-inline-block }
 timestamp
@@ -62,12 +55,14 @@ boolean
 
 Whether the item is part of a custom priced package.
 
-## `item.quantity`
+## `item.package_booking`
 {: .d-inline-block }
-number
+[PackageBooking]({% link docs/reference/objects/package_booking.md %}).
 {: .label .fs-1 }
 
-The quantity selected on the cart item.
+The associated package booking if the item is being booked as part of a package.
+
+It will return `nil` if the item isn't part of a package.
 
 ## `item.price`
 {: .d-inline-block }
@@ -82,6 +77,13 @@ The price of the cart item _not_ including any modifier selections and _not_ inc
 {: .label .fs-1 }
 
 The [product]({% link docs/reference/objects/product/index.md %}) associated with the cart item.
+
+## `item.quantity`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The quantity selected on the cart item.
 
 ## `item.removable?`
 {: .d-inline-block }
@@ -103,6 +105,13 @@ timestamp
 {: .label .fs-1 }
 
 The start date of the product associated with the cart item.
+
+## `item.start_time`
+{: .d-inline-block }
+timestamp
+{: .label .fs-1 }
+
+The start time of the cart item, if present, as a string in the form of a 24 hour clock, e.g. "11:00"
 
 ## `item.sub_items`
 {: .d-inline-block }
@@ -139,13 +148,6 @@ number
 
 The booking fee amount for the item returned as a fractional in the sub-unit of the current customer's currency. Does not include off-platform fees.
 
-## `item.total_off_platform_fee`
-{: .d-inline-block }
-number
-{: .label .fs-1 }
-
-The off-platform booking fee amount for the item returned as a fractional in the sub-unit of the current customer's currency.
-
 ## `item.total_guests`
 {: .d-inline-block }
 number
@@ -159,6 +161,13 @@ number
 {: .label .fs-1 }
 
 The total of all the modifier selections made on the cart item. This is returned as a fractional in the sub-unit of the current customer's currency.
+
+## `item.total_off_platform_fee`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The off-platform booking fee amount for the item returned as a fractional in the sub-unit of the current customer's currency.
 
 ## `item.total_package_upgrade_amount`
 {: .d-inline-block }
@@ -180,12 +189,3 @@ string
 {: .label .fs-1 }
 
 The name of the variant associated with the cart item.
-
-## `item.package_booking`
-{: .d-inline-block }
-[PackageBooking]({% link docs/reference/objects/package_booking.md %}).
-{: .label .fs-1 }
-
-The associated package booking if the item is being booked as part of a package.
-
-It will return `nil` if the item isn't part of a package.

@@ -18,6 +18,13 @@ number
 
 The number of guests selected for the variant.
 
+## `item.seats`
+{: .d-inline-block }
+[Seat]({% link docs/reference/objects/seating/seat.md %})
+{: .label .fs-1 }
+
+An array of Seating::Seat records that are related to the item.
+
 ## `item.end_on`
 {: .d-inline-block }
 timestamp

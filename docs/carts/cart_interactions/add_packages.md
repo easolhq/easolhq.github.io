@@ -71,3 +71,39 @@ Creators may choose to provide customers with additional modification options, s
 
 {% endraw %}
 > If a modification selection is required on a package item's variant and one is not specified on the form the entire package will not be added to the customer's cart.
+
+### Forwarding params to the booking journey
+
+You can forward date selections to the package booking template by including hidden inputs under the `step_params` namespace. These values will be appended as query params on the redirect to the first step of the booking journey, making them accessible via `page.params` in the package booking template.
+
+| Field name                  | Description                                                           |
+| --------------------------- | --------------------------------------------------------------------- |
+| `step_params[start_date]`   | A start date to forward as a query param to the step page URL.        |
+| `step_params[end_date]`     | An end date to forward as a query param to the step page URL.         |
+
+Only `start_date` and `end_date` are supported. Any other keys are ignored.
+
+##### syntax
+{% raw %}
+
+```liquid
+{% form 'add_package_to_cart' %}
+  <input name="package[id]" value="{{ package.id }}" type="hidden" />
+  <input name="step_params[start_date]" value="2025-06-15" type="hidden" />
+  <input name="step_params[end_date]" value="2025-06-20" type="hidden" />
+  <input type="submit" value="Add">
+{% endform %}
+```
+
+{% endraw %}
+
+The values are then available in the [package booking template]({% link docs/package_booking_template/index.md %}) via the [`page.params`]({% link docs/reference/objects/page.md %}#pageparams) object:
+
+{% raw %}
+
+```liquid
+{{ page.params.start_date }}
+{{ page.params.end_date }}
+```
+
+{% endraw %}

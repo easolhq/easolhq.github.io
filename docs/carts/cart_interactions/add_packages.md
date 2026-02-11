@@ -97,7 +97,7 @@ Only `start_date` and `end_date` are supported. Any other keys are ignored.
 
 {% endraw %}
 
-The values are then available in the [package booking template]({% link docs/package_booking_template/index.md %}) via the [`page.params`]({% link docs/reference/objects/page.md %}#pageparams) object:
+The values are then available in the package booking template via the [`page.params`]({% link docs/reference/objects/page.md %}#pageparams) object:
 
 {% raw %}
 

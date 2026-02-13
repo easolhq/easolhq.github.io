@@ -59,6 +59,39 @@ If rendering in the context of a package booking template, the package step ID i
 
 {% endraw %}
 
+##### Per-person and per-night pricing
+
+You can display the price divided per person, per night, or both. This is
+useful when you want to show a nightly rate or a per-guest rate instead of the
+total price.
+
+{% raw %}
+
+    {% variant_pricing variant: variant, class: "my-nice-class", adult_count: 2, start_on: "2023-01-01", end_on: "2023-01-04", show_per_person_price: true, show_per_night_price: true %}
+
+{% endraw %}
+
+With both parameters enabled, the returned price will be the total divided by
+the number of guests and the number of nights. For example, a total of £600 for
+2 adults over 3 nights would display as £100 (600 / 2 / 3).
+
+**Per-night behaviour:**
+- For accommodation variants, the price is divided by the number of nights
+  derived from the `start_on` and `end_on` dates, falling back to the
+  package's accommodation step if dates are not provided
+- For experience and extra variants in a package booking context, the night
+  count is derived from the package's first accommodation step
+- Outside a package booking context, per-night division has no effect on
+  experience and extra variants
+- When used with `package_total`, the total package price is divided by the
+  number of nights from the package's accommodation step
+
+**Per-person behaviour:**
+- When `adult_count` is passed, the price is divided by that value
+- If `adult_count` is not passed and a `package_booking_id` is in context,
+  the price is divided by the package booking's guest count
+- Applies to all variant types (accommodation, experience, and extra)
+
 ## Tag parameters
 
 Parameter | Description | Required
@@ -70,6 +103,8 @@ Parameter | Description | Required
 `start_time` | Start time in HH:MM format to consider in price calculation | If rendering for an Experience Variant with time-specific pricing
 `end_on` | Check-out date to consider in price calculation | If rendering for an Accommodation Variant
 `include_fees` | Option to include booking fees and custom on platform fees in the price | No
+`show_per_night_price` | When `true`, divides the price by the number of nights | No
+`show_per_person_price` | When `true`, divides the price by the guest count | No
 
 ## Bootstrapping and fetching new prices
 

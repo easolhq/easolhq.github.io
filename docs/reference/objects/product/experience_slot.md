@@ -95,6 +95,13 @@ number
 
 The sum of remaining stock for a date's variants. If any of the variants for this slot are manually marked as 'Sold Out', they will contribute 0 towards this value. If any of the variants have infinite stock this will return `nil`.
 
+## `experience_slot.seating_event`
+{: .d-inline-block }
+[Seating event]({% link docs/reference/objects/seating/event.md %})
+{: .label .fs-1 }
+
+The seating event associated with this experience slot.
+
 ## `experience_slot.shop_url`
 {: .d-inline-block }
 string

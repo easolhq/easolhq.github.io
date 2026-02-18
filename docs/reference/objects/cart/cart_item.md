@@ -18,12 +18,12 @@ number
 
 The number of guests selected for the variant.
 
-## `item.seats`
+## `item.seat_groups`
 {: .d-inline-block }
-[Seat]({% link docs/reference/objects/seating/seat.md %})
+array of [Seat Group]({% link docs/reference/objects/seating/seat_group.md %})s
 {: .label .fs-1 }
 
-An array of Seating::Seat records that are related to the item.
+An array of seat groups for the item, where seats are grouped by section and row.
 
 ## `item.end_on`
 {: .d-inline-block }

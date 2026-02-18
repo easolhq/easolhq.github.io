@@ -27,7 +27,7 @@ An array of the company's [authors]({% link docs/reference/objects/author.md %})
 [Image]({% link docs/reference/objects/image.md %})
 {: .label .fs-1 }
 
-The company's logo as an [image]({% link docs/reference/objects/image.md %}). 
+The company's logo as an [image]({% link docs/reference/objects/image.md %}).
 The logo is set within **Settings** > **Your Brand**.
 
 ## `company.biographies`
@@ -79,7 +79,7 @@ The Instagram username set within **My Site** > **Social**.
 [Image]({% link docs/reference/objects/image.md %})
 {: .label .fs-1 }
 
-The company's wordmark logo as an [image]({% link docs/reference/objects/image.md %}). 
+The company's wordmark logo as an [image]({% link docs/reference/objects/image.md %}).
 The logo is set within **Settings** > **Your Brand**.
 
 ## `company.name`
@@ -120,6 +120,13 @@ e.g.
 {% endfor %}
 ```
 {% endraw %}
+
+## `company.seatsio_public_key`
+{: .d-inline-block }
+string
+{: .label .fs-1 }
+
+The company's public seats.io workspace key.
 
 ## `company.series`
 {: .d-inline-block }

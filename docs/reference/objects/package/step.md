@@ -109,6 +109,13 @@ Whether or not this package step has been configured by the creator to
 auto-progress to the next step when the customer has added enough items to
 their cart to satisfy its requirements.
 
+## `package_step.single_item_constraint?`
+{: .d-inline-block }
+boolean
+{: .label .fs-1 }
+
+Whether or not this package step has been configured by the creator to restrict the customer to selecting a single item. When `true`, the customer must choose exactly one accommodation option that fits the entire group.
+
 ## `package_step.step_valid?`
 {: .d-inline-block }
 boolean

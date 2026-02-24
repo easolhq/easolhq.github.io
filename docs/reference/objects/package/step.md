@@ -59,6 +59,24 @@ Each step contains a creator-selected number of bookable elements. Those selecti
 - the subset of variants that the creator chose to belong to the package
 - and the product which those chosen variants are part of
 
+## `package_step.available_tags`
+{: .d-inline-block }
+Array of [Tag Category]({% link docs/reference/objects/product/tag_category.md %})s
+{: .label .fs-1 }
+
+The tag categories and values present across the step's listable products, grouped by category and deduplicated. Use this to build filter UIs that show only options which will yield results. Each item has `category` (string) and `values` (array of strings). Empty when the step has no listable products or none have tags.
+
+Use with the [package_step_product_search]({% link docs/reference/tags/package_step_product_search_tag/index.md %}) tag: filter by tags using `search[<category name>][]=<value>` in the URL.
+
+## `package_step.available_star_ratings`
+{: .d-inline-block }
+Array of numbers
+{: .label .fs-1 }
+
+The unique star ratings present on the step's listable accommodations, sorted ascending. Use this to build filter UIs for star rating. Empty when the step has no accommodations or none have a star rating set.
+
+Use with the [package_step_product_search]({% link docs/reference/tags/package_step_product_search_tag/index.md %}) tag: filter by star rating using `search[star_rating][]=<value>` in the URL.
+
 ## `package_step.required_start_date`
 {: .d-inline-block }
 Date

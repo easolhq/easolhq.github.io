@@ -11,6 +11,22 @@ The main site navigation can be managed by Creators in **My Site > Header** or a
 ## Menu template
 The [menu]({% link docs/reference/objects/menu/index.md %}) is a special kind of [partial]({% link docs/theme_architecture/partials.md %}) which is rendered in all site pages, always at the start of the `body` tag. It contains a [schema]({% link docs/theme_architecture/blocks/schema/index.md %}) where [variables]({% link docs/theme_architecture/blocks/schema/variables/index.md %}) can be added, removed or edited. The site navigation and all its attributes can be accessed through the [menu]({% link docs/reference/objects/menu/index.md %}) object. Refer to it for a full reference and examples.
 
+## Header caching
+By default, the header template is cached so it renders quickly. If your header needs **dynamic content** that changes per request (for example a cart item count), set `cache: false` in the front matter. The header will then be rendered on every request.
+
+When using `cache: false`, wrap static parts of the header (logo, links, CTA button) in the [cache tag]({% link docs/reference/tags/cache_tag/index.md %}) so they are still cached and performance stays good.
+
+{% raw %}
+```yaml
+---
+max_item_levels: 1
+cache: false
+attributes:
+  ...
+---
+```
+{% endraw %}
+
 ## Common examples
 
 ### Rendering navigation

@@ -103,6 +103,57 @@ Products are included if their star rating matches any of the provided values. P
 - `?search[star_rating][]=3&search[star_rating][]=4.5` - Products with either a 3 or 4.5 star rating.
 - `?search[star_rating][]=4&search[Amenities][]=Pool` - Can be combined with tag-based filtering. Products with a 4 star rating and pool access.
 
+## Occupancy filtering
+
+Accommodation products can be filtered by guest occupancy using the `search[occupancy][]` query parameter. This filters products based on whether their variants can accommodate the specified number of guests.
+
+**Syntax**
+
+Add one or more `search[occupancy][]=<number>` query parameters to the URL, where `<number>` is the desired guest count (e.g., 1, 2, 4).
+
+You can optionally specify a filtering mode using `search[occupancy_match]=<mode>`:
+- `any` (default if omitted) - Products must have at least one variant that can accommodate **any** of the specified occupancies
+- `all` - Products must have variants that can accommodate **all** specified occupancies
+
+Products are included if at least one of their listable variants has a `min_occupancy` and `max_occupancy` range that includes the requested occupancy value. Non-accommodation products are not affected by this filter.
+
+**Examples**
+
+- `?search[occupancy][]=2` - Products with variants that can accommodate 2 guests.
+- `?search[occupancy][]=2&search[occupancy][]=4` - Products with variants that can accommodate either 2 or 4 guests (OR mode).
+- `?search[occupancy][]=2&search[occupancy][]=6&search[occupancy_match]=all` - Products that have variants accommodating both 2 and 6 guests (ALL mode).
+- `?search[occupancy][]=4&search[star_rating][]=5` - Can be combined with other filters. Products with 4-guest capacity and a 5 star rating.
+
+### Accessing occupancy params in Liquid
+
+You can access the occupancy parameters in your Liquid templates using the `search` object:
+
+{% raw %}
+```liquid
+{{ search["occupancy"] | join: ', ' }}
+{{ search["occupancy_match"] }}
+```
+{% endraw %}
+
+Or via `page.params`:
+
+{% raw %}
+```liquid
+{{ page.params.search.occupancy | join: ', ' }}
+{{ page.params.search.occupancy_match }}
+```
+{% endraw %}
+
+To iterate over the occupancy array:
+
+{% raw %}
+```liquid
+{% for occ in search["occupancy"] %}
+  {{ occ }}{% unless forloop.last %}, {% endunless %}
+{% endfor %}
+```
+{% endraw %}
+
 ## Pagination
 
 The results of this search are paginated for performance reasons.
@@ -118,7 +169,7 @@ Passing `true` will exclude step products if all its items are sold out. For som
 ##### as a search tag attribute
 {% raw %}
 ```
-{% experience_slot_search exclude_sold_out_products: true %}
-{% endexperience_slot_search %}
+{% package_step_product_search exclude_sold_out_products: true %}
+{% endpackage_step_product_search %}
 ```
 {% endraw %}

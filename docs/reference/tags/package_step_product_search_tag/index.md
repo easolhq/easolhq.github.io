@@ -154,6 +154,39 @@ To iterate over the occupancy array:
 ```
 {% endraw %}
 
+## End date filtering
+
+Accommodation products can be filtered by end date using the `search[end_date]` query parameter. This filters products to only show those with at least one variant that is bookable between the package booking's selected start date and the specified end date.
+
+This filter only applies to accommodation steps and requires the package booking to have a selected start date.
+
+**Syntax**
+
+Add `search[end_date]=<YYYY-MM-DD>` as a query parameter to the URL, where the value is a date in `YYYY-MM-DD` format.
+
+**Examples**
+
+- `?search[end_date]=2025-06-20` - Only accommodation products with availability between the booking's start date and 20th June 2025.
+- `?search[end_date]=2025-06-20&search[occupancy][]=2` - Can be combined with other filters. Accommodation products available until 20th June 2025 that accommodate 2 guests.
+
+### Accessing end date params in Liquid
+
+You can access the end date parameter in your Liquid templates using the `search` object:
+
+{% raw %}
+```liquid
+{{ search["end_date"] }}
+```
+{% endraw %}
+
+Or via `page.params`:
+
+{% raw %}
+```liquid
+{{ page.params.search.end_date }}
+```
+{% endraw %}
+
 ## Pagination
 
 The results of this search are paginated for performance reasons.

@@ -79,11 +79,11 @@ You can forward date selections to the package booking template by including hid
 | Field name                              | Description                                                           |
 | --------------------------------------- | --------------------------------------------------------------------- |
 | `step_params[start_date]`               | A start date to forward as a query param to the step page URL.        |
-| `step_params[end_date]`                 | An end date to forward as a query param to the step page URL.         |
+| `step_params[search][end_date]`         | An end date to forward as a search query param to the step page URL.  |
 | `step_params[search][occupancy][]`      | Guest occupancy values to forward as search query params.             |
 | `step_params[search][occupancy_match]`  | Occupancy matching mode: `"all"` or `"any"` (defaults to `"any"`).    |
 
-Only `start_date`, `end_date`, and `search` parameters are supported. Any other keys are ignored.
+Only `start_date` and `search` parameters are supported. Any other keys are ignored.
 
 ##### syntax
 {% raw %}
@@ -92,7 +92,24 @@ Only `start_date`, `end_date`, and `search` parameters are supported. Any other 
 {% form 'add_package_to_cart' %}
   <input name="package[id]" value="{{ package.id }}" type="hidden" />
   <input name="step_params[start_date]" value="2025-06-15" type="hidden" />
-  <input name="step_params[end_date]" value="2025-06-20" type="hidden" />
+  <input name="step_params[search][end_date]" value="2025-06-20" type="hidden" />
+  <input type="submit" value="Add">
+{% endform %}
+```
+
+{% endraw %}
+
+You can also forward search parameters (such as end date and occupancy filters) to the package booking template:
+
+{% raw %}
+
+```liquid
+{% form 'add_package_to_cart' %}
+  <input name="package[id]" value="{{ package.id }}" type="hidden" />
+  <input name="step_params[search][end_date]" value="2025-06-20" type="hidden" />
+  <input name="step_params[search][occupancy][]" value="2" type="hidden" />
+  <input name="step_params[search][occupancy][]" value="4" type="hidden" />
+  <input name="step_params[search][occupancy_match]" value="all" type="hidden" />
   <input type="submit" value="Add">
 {% endform %}
 ```
@@ -121,7 +138,7 @@ The values are then available in the package booking template via the [`page.par
 
 ```liquid
 {{ page.params.start_date }}
-{{ page.params.end_date }}
+{{ page.params.search.end_date }}
 {{ page.params.search.occupancy | join: ', ' }}
 {{ page.params.search.occupancy_match }}
 ```

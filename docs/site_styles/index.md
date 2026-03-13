@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Site styles
+has_children: true
 nav_order: 3
 ---
 
@@ -42,3 +43,5 @@ More than two fonts can be uploaded however they will not automatically be decla
 
 ## Custom CSS
 Custom CSS can be added here that will override the default compiled CSS file (/style.css). This is available to all Creators with or without developer access.
+
+The platform also generates a set of accessible [design tokens]({% link docs/site_styles/design_tokens.md %}) from the four palette colours above. These semantic CSS variables are injected as `:root` variables at runtime and are available for use in your theme.

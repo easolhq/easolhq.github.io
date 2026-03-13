@@ -146,6 +146,28 @@ When true, allows searching for packages belonging to any company in the current
 ```
 {% endraw %}
 
+### tags
+
+**Type:** String
+
+Filter results based on the product tags applied to the packages' items. It is case-sensitive.
+
+Will accept either a single tag or an array. An array must be passed explicitly (not as a Liquid variable).
+
+a single tag
+{% raw %}
+```liquid
+{% packages_search_and_calendar tags: '90s_disco' %}
+```
+{% endraw %}
+
+as an array
+{% raw %}
+```liquid
+{% packages_search_and_calendar tags: ['90s_disco','futuristic'] %}
+```
+{% endraw %}
+
 ---
 
 ## Search Params
@@ -164,7 +186,8 @@ You can pass any of the parameters listed above directly as attributes in the ta
    month: 6,
    year: 2025,
    exclude_sold_out_products: true,
-   include_organisation_packages: true
+   include_organisation_packages: true,
+   tags: 90s_disco
 %}
 ```
 {% endraw %}
@@ -194,12 +217,32 @@ Once the search has been executed, you can get a reference to the params and val
 {{ search.departure_date.equal_to }}
 {{ search.exclude_sold_out_products }}
 {{ search.include_organisation_packages }}
+{{ search.tags }}
 ```
 {% endraw %}
 
 ---
 
 ## Objects Exposed
+
+### tags
+
+The `tags` object lists all the [Tag Category]({% link docs/reference/objects/product/tag_category.md %})s applied to the products used in the packages passed to this liquid tag. Each `category.values` lists only the tag values attached to these packages.
+
+Use this to construct a tag filter on the search
+
+{% raw %}
+```liquid
+<select>
+  {% for tag in tags %}
+    {% for value in tag.values %}
+      <option value="{{ value }}">{{ tag.category }} - {{ value }}</option>
+    {% endfor %}
+  {% endfor %}
+</select>
+```
+{% endraw %}
+---
 
 ### calendar
 
@@ -291,6 +334,13 @@ Integer or nil
 {: .label .fs-1 }
 
 The total remaining stock across all packages. Returns nil if any package has infinite stock.
+
+#### start_time.tags
+{: .d-inline-block }
+array of [Tag Category]({% link docs/reference/objects/product/tag_category.md %})s
+{: .label .fs-1 }
+
+The [Tag Category]({% link docs/reference/objects/product/tag_category.md %})s applied to the products used in the packages available on this start time.
 
 ---
 

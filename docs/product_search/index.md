@@ -114,6 +114,7 @@ You can use these to construct search filters, e.g.
 - [subcategory]({% link docs/product_search/parameters.md %}#subcategory)
 - [page_size]({% link docs/product_search/parameters.md %}#page_size)
 - [sort]({% link docs/product_search/parameters.md %}#sort)
+- [tag categories]({% link docs/product_search/parameters.md %}#tag-categories)
 
 
 ## Accessing query params

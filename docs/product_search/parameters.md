@@ -294,3 +294,25 @@ Will determine the order of the returned products.
 ```
 https://mysite.com/search?search[sort]=departure_date_asc
 ```
+
+### tag categories
+Products can be filtered by their tag categories and values. Tag categories and values are defined per company — consult the company for available tags.
+
+Filtering returns products that match at least one of the provided values in _all_ of the filtered categories (AND across categories, OR within a category).
+
+Tag-based filtering is only available as a query parameter — it cannot be passed as a search tag attribute.
+
+For **accommodations**, star rating is a separate product field (not a tag). Use tag categories for other merchandising-style filters (for example **Amenities**, **Difficulty**, **Distance**).
+
+##### as a query parameter
+```
+https://mysite.com/search?search[Difficulty][]=Easy
+https://mysite.com/search?search[Difficulty][]=Easy&search[Difficulty][]=Moderate
+https://mysite.com/search?search[Amenities][]=Pool&search[Difficulty][]=Hard
+```
+
+##### examples
+- `?search[Difficulty][]=Easy` — Products tagged **Easy** under **Difficulty** only.
+- `?search[Difficulty][]=Easy&search[Difficulty][]=Moderate` — Products tagged **Easy** or **Moderate** under **Difficulty** (OR within the same category).
+- `?search[Amenities][]=Pool&search[Difficulty][]=Hard` — Products tagged **Pool** under **Amenities** and **Hard** under **Difficulty** (AND across categories).
+- `?search[Amenities][]=Pool&search[Amenities][]=Gym&search[Difficulty][]=Hard` — Products tagged **Pool** or **Gym** under **Amenities**, and **Hard** under **Difficulty**.

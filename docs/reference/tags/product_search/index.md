@@ -174,6 +174,31 @@ e.g.
 
 Params passed through a query param will overwrite any of those specified as an attribute
 
+## Tag-based filtering
+
+If the company has added tags to their products, these can be used to filter the results outputted by the search tag.
+
+Product tags are textual values that identify attributes of the products. They are grouped under categories which the company is also able to define.
+
+Some examples of these might be **Amenities**, **Difficulty**, **Distance**, etc. Consult the company for the available tags and categories.
+
+Star rating for **accommodations** is a separate product field, not a tag — do not use tag categories to represent it in examples.
+
+**Syntax**
+
+`product_search` filters results if one or more `search` query parameters are present in the URL. The search query parameters are in the format `search[<tag category>][]=<tag value>`; add as many as needed to filter the results.
+
+You can specify multiple categories and values by repeating the `search[][]` query parameter.
+
+Filtering returns products that match at least one of the provided values in _all_ of the filtered categories.
+
+**Examples**
+
+- `?search[Difficulty][]=Easy` - Products tagged **Easy** under **Difficulty** only.
+- `?search[Difficulty][]=Easy&search[Difficulty][]=Moderate` - Products tagged **Easy** or **Moderate** under **Difficulty**.
+- `?search[Amenities][]=Pool&search[Difficulty][]=Hard` - Products tagged **Pool** under **Amenities** and **Hard** under **Difficulty**.
+- `?search[Amenities][]=Pool&search[Amenities][]=Gym&search[Difficulty][]=Hard` - Products tagged **Pool** or **Gym** under **Amenities**, and **Hard** under **Difficulty**.
+
 ## Sorting
 
 It's possible to also sort the results by name, departure date and duration. This can be done either through an attribute on the tag or through the search query param.

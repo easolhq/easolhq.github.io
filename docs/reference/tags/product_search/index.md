@@ -230,7 +230,7 @@ or
 Once the search has been executed, it can be helpful to get a reference to the params and values in the search.
 For that, we can use the [Search]({% link docs/reference/objects/search_query.md %}) object. It exposes the fixed params listed under [Passing explicit attributes](#passing-explicit-attributes) when they appear in the URL’s `search[...]` query string.
 
-The `search` assign is only defined when the request includes those query params. On pages that can load with or without a `search` query, wrap reads in `{% if search %}`. See also [Product search — Accessing query params]({% link docs/product_search/index.md %}#accessing-query-params).
+The `search` assign is only defined when the request includes those query params. On pages that can load with or without a `search` query, wrap reads in {% raw %}`{% if search %}`{% endraw %}. See also [Product search — Accessing query params]({% link docs/product_search/index.md %}#accessing-query-params).
 
 [Tag-based filtering](#tag-based-filtering) values from the URL are not separate assigns: read them on the same object with the category name in brackets, for example `{{ search["Difficulty"] }}` or `{{ search["Amenities"] }}` (match the company’s category name exactly).
 

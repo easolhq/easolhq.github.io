@@ -75,7 +75,7 @@ The product search returns `available_months`, an array of `Date` objects, which
 
 Each `Date` is dated 1st of the month, and there is one for each month in which a product's slot `start_on` date occurs.
 
-E.g. Today is `1st Jan 2024``. You have a product with a 10 day duration, with the following slots (all future or ongoing);
+E.g. Today is `1st Jan 2024`. You have a product with a 10 day duration, with the following slots (all future or ongoing);
 - `31th Dec 2023`
 - `15th Jan 2024`
 - `20th Jan 2024`
@@ -228,14 +228,18 @@ or
 ## Accessing the query params
 
 Once the search has been executed, it can be helpful to get a reference to the params and values in the search.
-For that, we can use the `Search` object, which exposes all of the params listed above in the "Passing explicit attributes" section.
+For that, we can use the [Search]({% link docs/reference/objects/search_query.md %}) object. It exposes the fixed params listed under [Passing explicit attributes](#passing-explicit-attributes) when they appear in the URL’s `search[...]` query string.
+
+The `search` assign is only defined when the request includes those query params. On pages that can load with or without a `search` query, wrap reads in `{% if search %}`. See also [Product search — Accessing query params]({% link docs/product_search/index.md %}#accessing-query-params).
+
+[Tag-based filtering](#tag-based-filtering) values from the URL are not separate assigns: read them on the same object with the category name in brackets, for example `{{ search["Difficulty"] }}` or `{{ search["Amenities"] }}` (match the company’s category name exactly).
 
 {% raw %}
 ```liquid
-{{ search.departure_date }}
-
-or
-
-{{ search["departure_date"] }}
+{% if search %}
+  {{ search.departure_date }}
+  {{ search["departure_date"] }}
+  {{ search["Amenities"] }}
+{% endif %}
 ```
 {% endraw %}

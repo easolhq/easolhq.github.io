@@ -316,3 +316,5 @@ https://mysite.com/search?search[Amenities][]=Pool&search[Difficulty][]=Hard
 - `?search[Difficulty][]=Easy&search[Difficulty][]=Moderate` — Products tagged **Easy** or **Moderate** under **Difficulty** (OR within the same category).
 - `?search[Amenities][]=Pool&search[Difficulty][]=Hard` — Products tagged **Pool** under **Amenities** and **Hard** under **Difficulty** (AND across categories).
 - `?search[Amenities][]=Pool&search[Amenities][]=Gym&search[Difficulty][]=Hard` — Products tagged **Pool** or **Gym** under **Amenities**, and **Hard** under **Difficulty**.
+
+In Liquid, the same values are available on the `search` object when the URL includes these params, for example `{{ search["Amenities"] }}`. See [Accessing query params]({% link docs/product_search/index.md %}#accessing-query-params) and the [Search]({% link docs/reference/objects/search_query.md %}) object reference.

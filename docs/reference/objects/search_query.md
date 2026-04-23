@@ -9,6 +9,12 @@ parent: Objects
 object
 {: .label .fs-1 }
 
+The Search object reflects permitted `search[...]` query parameters from the current page URL. It is only assigned when the request includes a `search` query string; otherwise `search` is not defined in Liquid — use `{% if search %}` before accessing it.
+
+Use dot syntax for the fixed attributes documented below (for example `search.name`). You can also use bracket syntax for those keys (for example `{{ search["departure_date"] }}`).
+
+[Tag category]({% link docs/product_search/parameters.md %}#tag-categories) filters from the URL are exposed on the same object with bracket syntax and the category name as it appears in the query, for example `{{ search["Amenities"] }}` or `{{ search["Difficulty"] }}`. There is no `search.amenities`-style dot accessor for dynamic category names.
+
 #### Attributes
 
 ## `search.active_promotion`

@@ -9,7 +9,7 @@ parent: Objects
 object
 {: .label .fs-1 }
 
-The Search object reflects permitted `search[...]` query parameters from the current page URL. It is only assigned when the request includes a `search` query string; otherwise `search` is not defined in Liquid — use `{% if search %}` before accessing it.
+The Search object reflects permitted `search[...]` query parameters from the current page URL. It is only assigned when the request includes a `search` query string; otherwise `search` is not defined in Liquid — use {% raw %}`{% if search %}`{% endraw %} before accessing it.
 
 Use dot syntax for the fixed attributes documented below (for example `search.name`). You can also use bracket syntax for those keys (for example `{{ search["departure_date"] }}`).
 

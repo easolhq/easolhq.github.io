@@ -120,7 +120,7 @@ You can use these to construct search filters, e.g.
 ## Accessing query params
 Once the search has been executed, it can be helpful to get a reference to the params and values in the search. For that, we can use the `search` [Search]({% link docs/reference/objects/search_query.md %}) object.
 
-The `search` assign is only present when the page URL includes a `search[...]` query string (for example `?search[name]=…` or [tag category]({% link docs/product_search/parameters.md %}#tag-categories) filters). If the request has no `search` query params, `search` is not defined — use `{% if search %}` before reading values so filters and copy stay safe on pages that sometimes load without query params.
+The `search` assign is only present when the page URL includes a `search[...]` query string (for example `?search[name]=…` or [tag category]({% link docs/product_search/parameters.md %}#tag-categories) filters). If the request has no `search` query params, `search` is not defined — use {% raw %}`{% if search %}`{% endraw %} before reading values so filters and copy stay safe on pages that sometimes load without query params.
 
 Fixed search keys use dot or bracket syntax (for example `search.departure_date` or `{{ search["departure_date"] }}`). [Tag category]({% link docs/product_search/parameters.md %}#tag-categories) values from the URL are read with the category name in brackets, for example `{{ search["Amenities"] }}` (names and spacing must match the company’s tag category).
 

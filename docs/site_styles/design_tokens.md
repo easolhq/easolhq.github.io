@@ -45,10 +45,16 @@ Steps run from lightest (50) to darkest (950).
 
 | Variable | Description |
 |----------|-------------|
-| `--border-muted` | Subtle/decorative border |
+| `--border-muted` | Subtle border for non-critical boundaries. Generated from the neutral scale to remain visible on both dark and light backgrounds while staying softer than accessible borders |
 | `--border-brand-accessible` | Accessible border from brand scale; 3:1 |
 | `--border-neutral-accessible` | Standard accessible border from neutral scale; 3:1 |
 | `--border-accent-accessible` | Accessible border from accent scale; 3:1 |
+
+`--border-muted` targets a subtle contrast band (typically around 1.7–2.4, with tolerance when the palette is constrained). It also flips direction by background luminance:
+- lighter border on dark backgrounds
+- darker border on light backgrounds
+
+Use `--border-neutral-accessible` for key control boundaries (inputs, selectors, toggles, and other interactive UI where the boundary must be clearly legible).
 
 ## Semantic tokens — Surfaces and errors
 
@@ -67,7 +73,7 @@ Reference these tokens in your theme CSS instead of hard-coded colours so that c
 .card {
   background: var(--surface-primary);
   color: var(--text-default);
-  border: 1px solid var(--border-default);
+  border: 1px solid var(--border-neutral-accessible);
 }
 
 .badge {

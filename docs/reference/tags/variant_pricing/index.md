@@ -9,11 +9,13 @@ grand_parent: Reference
 
 The `variant_pricing` tag renders a self-updating `<span>` which can
 interactively fetch and display up-to-date pricing information for a given
-variant, provided an adult count/start date/end date combination.
+variant, provided an adult count/start date/end date combination. You can
+also pass a `quantity` to price multiple units of the same variant (for
+example, several rooms or tickets); it defaults to `1` when omitted.
 
 You can use this tag to display up-to-date prices of each variant you're
-rendering on the page, responding to user interactions with the calendar and
-adult count for each displayed variant.
+rendering on the page, responding to user interactions with the calendar,
+adult count, and quantity for each displayed variant.
 
 The tag is package-aware; if you use it in a package step template, it will
 display how much upgrading to that variant will cost, or `Included` if it is
@@ -22,7 +24,7 @@ part of the package price.
 ##### input
 {% raw %}
 
-    {% variant_pricing variant: variant, class: "my-nice-class", adult_count: 2, start_on: "2023-01-01", start_time: "10:00", end_on: "2023-01-04" %}
+    {% variant_pricing variant: variant, class: "my-nice-class", adult_count: 2, quantity: 2, start_on: "2023-01-01", start_time: "10:00", end_on: "2023-01-04" %}
 
 {% endraw %}
 
@@ -36,6 +38,7 @@ The `<span>` tag will initially be rendered empty:
       data-controller="variant-pricing"
       data-variant-pricing-variant-value="<id>"
       data-variant-pricing-adult-count-value="2"
+      data-variant-pricing-quantity-value="2"
       data-variant-pricing-start-on-value="2023-01-01"
       data-variant-pricing-start-time-value="10:00"
       data-variant-pricing-end-on-value="2023-01-04">
@@ -51,6 +54,7 @@ If rendering in the context of a package booking template, the package step ID i
       data-controller="variant-pricing"
       data-variant-pricing-variant-value="<id>"
       data-variant-pricing-adult-count-value="2"
+      data-variant-pricing-quantity-value="2"
       data-variant-pricing-start-on-value="2023-01-01"
       data-variant-pricing-start-time-value="10:00"
       data-variant-pricing-end-on-value="2023-01-04"
@@ -99,6 +103,7 @@ Parameter | Description | Required
 `variant` | The variant to display the price for | Yes
 `class` | The value of the span's `class` attribute (for styling and targeting in scripts) | Yes
 `adult_count` | Number of guests to consider in price calculation | Yes
+`quantity` | Number of units of the variant to price (for example, rooms or tickets). The returned total is multiplied by this value | No (defaults to `1`)
 `start_on` | Check-in date or start date to consider in price calculation
 `start_time` | Start time in HH:MM format to consider in price calculation | If rendering for an Experience Variant with time-specific pricing
 `end_on` | Check-out date to consider in price calculation | If rendering for an Accommodation Variant
@@ -118,6 +123,7 @@ attributes on the `<span>` are programatically updated:
 Attribute | Description | Expected values
 --------- | ----------- | ---------------
 `data-variant-pricing-adult-count-value` | Adult count chosen by the user | Integer > 0
+`data-variant-pricing-quantity-value` | Number of variant units to price | Integer > 0 (defaults to `1` when not set on the tag)
 `data-variant-pricing-start-on-value` | Check-in date chosen by the user | Date string in ISO format `YYYY-MM-DD`
 `data-variant-pricing-start-time-value` | Start time chosen by the user | Time string in HH:MM format (e.g., "10:00", "14:30")
 `data-variant-pricing-end-on-value` | Check-out date chosen by the user | Date string in ISO format `YYYY-MM-DD`
@@ -142,9 +148,11 @@ To "bootstrap" the contents on initial page load, you might hook onto the
       const defaultStartTime = "10:00"
       const defaultEndOn = "2023-01-04"
       const defaultAdultCount = "4"
+      const defaultQuantity = "1"
 
       const variantPricingTag = document.querySelector(".my-nice-class")
       variantPricingTag.dataset.variantPricingAdultCountValue = defaultAdultCount
+      variantPricingTag.dataset.variantPricingQuantityValue = defaultQuantity
       variantPricingTag.dataset.variantPricingStartOnValue = defaultStartOn
       variantPricingTag.dataset.variantPricingStartTimeValue = defaultStartTime
       variantPricingTag.dataset.variantPricingEndOnValue = defaultEndOn
@@ -153,7 +161,7 @@ To "bootstrap" the contents on initial page load, you might hook onto the
     document.addEventListener('DOMContentLoaded', bootstrapVariantPricingTags)
 {% endraw %}
 
-And to respond to changes to the selected adult count, check-in/out dates, and start time
+And to respond to changes to the selected adult count, quantity, check-in/out dates, and start time
 you might hook onto the relevant elements' events:
 
 {% raw %}
@@ -162,6 +170,12 @@ you might hook onto the relevant elements' events:
       const variantPricingTag = document.querySelector(".my-nice-class")
 
       variantPricingTag.dataset.variantPricingAdultCountValue = e.target.value
+    })
+
+    document.querySelector(".quantity-dropdown").addEventListener("change", (e) => {
+      const variantPricingTag = document.querySelector(".my-nice-class")
+
+      variantPricingTag.dataset.variantPricingQuantityValue = e.target.value
     })
 
     document.querySelector(".start-on-calendar").addEventListener("change", (e) => {

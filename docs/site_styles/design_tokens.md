@@ -50,6 +50,8 @@ Steps run from lightest (50) to darkest (950).
 | `--border-neutral-accessible` | Standard accessible border from neutral scale; 3:1 |
 | `--border-accent-accessible` | Accessible border from accent scale; 3:1 |
 
+The accessible border tokens select the subtlest colour from their scale that still meets 3:1 against their respective surface, preferring a lighter border on dark surfaces and a darker border on light surfaces.
+
 `--border-muted` targets a subtle contrast band (typically around 1.7–2.4, with tolerance when the palette is constrained). It also flips direction by background luminance:
 - lighter border on dark backgrounds
 - darker border on light backgrounds

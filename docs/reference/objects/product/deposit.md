@@ -56,3 +56,25 @@ Example
 {% endif %}
 ```
 {% endraw %}
+
+## `deposit.due_date_threshold`
+{: .d-inline-block }
+number
+{: .label .fs-1 }
+
+The number of days before the start date when the final balance payment will be due. If the creator has not set a value, the platform default of `7` is returned.
+
+This value is used when calculating [`deposit.due_date`](#depositdue_date) and [`deposit.enabled`](#depositenabled). When `deposit.due_date` is `nil`, you can use this value to explain the advance booking requirement. A customer must book at least `deposit.due_date_threshold | plus: 1` days before the start date to pay by deposit.
+
+Example
+{% raw %}
+```liquid
+{% assign deposit_advance_days = deposit.due_date_threshold | plus: 1 %}
+
+{% if deposit.due_date %}
+  Pay the rest on or before {{ deposit.due_date | date: "%d %B %Y" }}.
+{% else %}
+  Pay the rest before your experience starts. You must book at least {{ deposit_advance_days }} days in advance to pay by deposit.
+{% endif %}
+```
+{% endraw %}
